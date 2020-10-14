@@ -1,0 +1,30 @@
+
+state={
+	id=837
+	name="STATE_837"
+	manpower = 275853
+	resources={
+		aluminium=1
+	}
+	
+	state_category = city
+
+	history={
+		owner = AUG
+	    add_core_of = AUG
+		victory_points = {
+			708 3 #10
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		
+
+	}
+
+	provinces={
+		708 6540
+	}
+}

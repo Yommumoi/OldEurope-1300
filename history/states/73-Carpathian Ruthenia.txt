@@ -1,0 +1,27 @@
+state={
+	id=73
+	name="STATE_73"
+	manpower = 213575
+	
+	state_category = rural
+	
+	resources={
+		aluminium=20
+	}
+	
+	history={
+		owner = HUN
+	    add_core_of = HUN
+		victory_points = {
+			3548 1 
+		}
+		
+		buildings = {
+			infrastructure = 5
+		}
+	}
+
+	provinces={
+		3548 6571 9563 11536 11691 
+	}
+}

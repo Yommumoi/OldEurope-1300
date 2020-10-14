@@ -1,0 +1,30 @@
+
+state={
+	id=778
+	name="STATE_778" # Upper Volta
+	manpower = 766546
+	
+	resources={
+		aluminium=20
+		oil = 19
+	}
+	
+	state_category = pastoral
+	history={
+		
+		owner = MOS
+	    add_core_of = MOS
+		victory_points = {
+			10836 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		2001 7950 7983 8071 10836 12851 12794 8116
+	}
+}

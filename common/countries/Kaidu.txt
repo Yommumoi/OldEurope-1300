@@ -1,0 +1,6 @@
+
+
+graphical_culture = horde_gfx
+graphical_culture_2d = horde_2d
+
+color = { 0  0  0 }

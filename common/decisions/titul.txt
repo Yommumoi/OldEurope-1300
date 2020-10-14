@@ -1,0 +1,94 @@
+titul_cat = {
+	
+	titul1_1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 50
+		days_remove = 75
+		available = {
+			
+		}
+		
+
+		visible = {
+			has_idea = titul1
+		}
+
+		remove_effect = {
+			add_stability = 0.07
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	titul1_2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 50
+		days_remove = 150
+		available = {
+			
+		}
+		
+
+		visible = {
+			has_idea = titul1
+		}
+
+		remove_effect = {
+			add_manpower = 300
+			add_war_support = 0.005
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	titul4_1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 600
+		days_remove = 75
+		available = {
+			
+		}
+		
+
+		visible = {
+			has_idea = titul4
+			
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					add_stability = -0.03
+				}
+				50 = {
+					add_to_variable = {adm_limit = 10}
+					custom_effect_tooltip = adm_limit10
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

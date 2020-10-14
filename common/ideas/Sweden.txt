@@ -1,0 +1,82 @@
+ideas = {
+	country = {
+		sweden_lion = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = sweden_lion
+			
+			modifier = {
+				conscription = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+	
+
+		sweden_repub = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = swedenrep
+			
+			modifier = {
+				democratic_drift = 0.15
+			}
+		}
+	
+
+		sweden_duh = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = sweden_lion
+			
+			modifier = {
+				training_time_army_factor = 0.1
+				army_morale_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+	
+
+		sweden_fanatism = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = swedenrep
+			
+			modifier = {
+				production_speed_buildings_factor = -0.10
+				army_attack_factor = 0.05
+			}
+		}
+	
+
+		sweden_nerelegiosnost = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = swedenrep
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+	}
+}

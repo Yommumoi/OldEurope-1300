@@ -1,0 +1,36 @@
+
+state={
+	id=556
+	name="STATE_556" # Mali (previously French West Africa)
+	manpower = 541695
+	
+	state_category = rural
+	
+	resources={
+		aluminium=52 
+		oil = 60
+		steel = 10
+	}
+
+	history={
+		
+		owner = MLE
+	    add_core_of = MLE
+		victory_points = {
+			4927 20
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 4
+			money_town = 1
+			4927 = {
+				bunker = 3
+			}
+		}
+	}
+
+	provinces={
+		2012 4927 5045 10812 10829 10915 12751
+	}
+}

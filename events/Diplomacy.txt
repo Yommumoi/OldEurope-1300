@@ -1,0 +1,396 @@
+add_namespace = dip
+
+country_event = {
+	id = dip.1 
+	title = dip.1.t
+	desc = dip.1.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dip.1.a
+	}
+	
+}
+country_event = {
+	id = dip.2
+	title = dip.2.t
+	desc = dip.2.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dip.2.a
+		random_owned_state = {
+			
+				limit = {
+					OR = {
+						has_resources_amount = {
+							resource = oil
+							amount > 5
+							state = THIS
+						}
+						has_resources_amount = {
+							resource = steel
+							amount > 5
+							state = THIS
+						}
+						has_resources_amount = {
+							resource = tungsten
+							amount > 5
+							state = THIS
+						}
+						has_resources_amount = {
+							resource = aluminium
+							amount > 5
+							state = THIS
+						}
+						has_resources_amount = {
+							resource = rubber
+							amount > 5
+							state = THIS
+						}
+						has_resources_amount = {
+							resource = chromium
+							amount > 5
+							state = THIS
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = oil
+							amount > 5
+							state = THIS
+						}
+					}
+					FROM = {
+						country_event = dip.6
+					}
+					random_list = {
+						50 = {
+							add_resource = {
+								type = oil
+								amount = -2
+							}
+						}
+						50 = {
+							add_resource = {
+								type = oil
+								amount = -4
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = rubber
+							amount > 5
+							state = THIS
+						}
+					}
+					FROM = {
+						country_event = dip.5
+					}
+					random_list = {
+						50 = {
+							add_resource = {
+								type = rubber
+								amount = -2
+							}
+						}
+						50 = {
+							add_resource = {
+								type = rubber
+								amount = -4
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = aluminium
+							amount > 5
+							state = THIS
+						}
+					}
+					FROM = {
+						country_event = dip.4
+					}
+					random_list = {
+						50 = {
+							add_resource = {
+								type = aluminium
+								amount = -2
+							}
+						}
+						50 = {
+							add_resource = {
+								type = aluminium
+								amount = -4
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = chromium
+							amount > 5
+							state = THIS
+						}
+					}
+					FROM = {
+						country_event = dip.8
+					}
+					random_list = {
+						50 = {
+							add_resource = {
+								type = chromium
+								amount = -2
+							}
+						}
+						50 = {
+							add_resource = {
+								type = chromium
+								amount = -4
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = tungsten
+							amount > 5
+							state = THIS
+						}
+					}
+					FROM = {
+						country_event = dip.7
+					}
+					random_list = {
+						50 = {
+							add_resource = {
+								type = tungsten
+								amount = -2
+							}
+						}
+						50 = {
+							add_resource = {
+								type = tungsten
+								amount = -4
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_resources_amount = {
+							resource = steel
+							amount > 5
+							state = THIS
+						}
+					}
+					FROM = {
+						country_event = dip.3
+					}
+					random_list = {
+						50 = {
+							add_resource = {
+								type = steel
+								amount = -2
+							}
+						}
+						50 = {
+							add_resource = {
+								type = steel
+								amount = -4
+							}
+						}
+					}
+				}
+			
+		}
+	}
+	
+}
+country_event = {
+	id = dip.3
+	title = dip.3.t
+	desc = dip.3.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dip.3.a
+		random_owned_state = {
+			random_list = {
+				50 = {
+					add_resource = {
+						type = steel
+						amount = 2
+					}
+				}
+				50 = {
+					add_resource = {
+						type = steel
+						amount = 4
+					}
+				}
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = dip.4
+	title = dip.4.t
+	desc = dip.4.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dip.4.a
+		random_owned_state = {
+			random_list = {
+				50 = {
+					add_resource = {
+						type = aluminium
+						amount = 2
+					}
+				}
+				50 = {
+					add_resource = {
+						type = aluminium
+						amount = 4
+					}
+				}
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = dip.5
+	title = dip.5.t
+	desc = dip.5.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dip.5.a
+		random_owned_state = {
+			random_list = {
+				50 = {
+					add_resource = {
+						type = rubber
+						amount = 2
+					}
+				}
+				50 = {
+					add_resource = {
+						type = rubber
+						amount = 4
+					}
+				}
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = dip.6
+	title = dip.6.t
+	desc = dip.6.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dip.6.a
+		random_owned_state = {
+			random_list = {
+				50 = {
+					add_resource = {
+						type = oil
+						amount = 2
+					}
+				}
+				50 = {
+					add_resource = {
+						type = oil
+						amount = 4
+					}
+				}
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = dip.7
+	title = dip.7.t
+	desc = dip.7.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dip.7.a
+		random_owned_state = {
+			random_list = {
+				50 = {
+					add_resource = {
+						type = tungsten
+						amount = 2
+					}
+				}
+				50 = {
+					add_resource = {
+						type = tungsten
+						amount = 4
+					}
+				}
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = dip.8
+	title = dip.8.t
+	desc = dip.8.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = dip.8.a
+		random_owned_state = {
+			random_list = {
+				50 = {
+					add_resource = {
+						type = chromium
+						amount = 2
+					}
+				}
+				50 = {
+					add_resource = {
+						type = chromium
+						amount = 4
+					}
+				}
+			}
+		}
+	}
+	
+}

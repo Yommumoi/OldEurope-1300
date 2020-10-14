@@ -1,0 +1,129 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+default = {
+	male = {
+		names = { "Johannes " "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes" "Jacob" "William" "Olaf" "Ivan" "Vladimir" "Dovmont"
+		"Vitaut" "Svyatoslav" "Albert" "Valdemar" "Daniil" "Fernando" "Pietro" "Enrique" "Michael" "Malik" "Abbas" "Asad" "Vazir" "Gazi" "Ismail" "Mustafa" "Raif" "Salah" "Anikey" 
+		"Vitold" "Gustav" "Kazimir" "Kir" "Leopold" "Ludvig" "Otto" "Oskar" "Robert" "Sigizmund" "Taras" "Jan" "Lucas" "Henry" "Roman" "Vincent" "Eric" "Emmanuel" "Richard" 
+		"Edvard" "Alan" "Peter" "Paul" "Jorge" "Oglan" "Murad" "Kiaf" "Bybra" "Kas" "Nung" "Temur" "Tuen" "Shaan" "Hemhaeng" "Sora" "Haruto" "Adam" "Rafael" "Lev" "Karim" "Rashid" 
+		"Vimal" "Saadi" "Igor" "Vseslav" "Indra" 
+		
+		}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { "Juliette" "Anna" }
+		surnames = { }
+		callsigns = { "Queen Of The Sky" "The Red Princess" }
+	}
+	surnames = { "I" "II" "III" "IV" "V" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" }
+	callsigns = { "The Great" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" "The Wise"}
+}
+AZT = {
+	male = {
+		names = { "Kuohtli " "Nelli" "Ksochipep" "Ilhikamina" "Zolin" "Zipaktonal" "Achhotli" "Atl" "Ikstli" "Ksochipilli" 
+		
+		
+		}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { "Juliette" "Anna" }
+		surnames = { }
+		callsigns = { "Queen Of The Sky" "The Red Princess" }
+	}
+	surnames = { "I" "II" "III" "IV" "V" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" }
+	callsigns = { "The Great" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" "The Wise"}
+}
+TAM = {
+	male = {
+		names = { "Kuohtli " "Nelli" "Ksochipep" "Ilhikamina" "Zolin" "Zipaktonal" "Achhotli" "Atl" "Ikstli" "Ksochipilli" 
+		
+		
+		}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { "Juliette" "Anna" }
+		surnames = { }
+		callsigns = { "Queen Of The Sky" "The Red Princess" }
+	}
+	surnames = { "I" "II" "III" "IV" "V" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" }
+	callsigns = { "The Great" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" "The Wise"}
+}
+OAH = {
+	male = {
+		names = { "Kuohtli " "Nelli" "Ksochipep" "Ilhikamina" "Zolin" "Zipaktonal" "Achhotli" "Atl" "Ikstli" "Ksochipilli" 
+		
+		
+		}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { "Juliette" "Anna" }
+		surnames = { }
+		callsigns = { "Queen Of The Sky" "The Red Princess" }
+	}
+	surnames = { "I" "II" "III" "IV" "V" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" }
+	callsigns = { "The Great" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" "The Wise"}
+}
+MIX = {
+	male = {
+		names = { "Kuohtli " "Nelli" "Ksochipep" "Ilhikamina" "Zolin" "Zipaktonal" "Achhotli" "Atl" "Ikstli" "Ksochipilli" 
+		
+		
+		}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { "Juliette" "Anna" }
+		surnames = { }
+		callsigns = { "Queen Of The Sky" "The Red Princess" }
+	}
+	surnames = { "I" "II" "III" "IV" "V" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" }
+	callsigns = { "The Great" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" "The Wise"}
+}
+MAY = {
+	male = {
+		names = { "Kuohtli " "Nelli" "Ksochipep" "Ilhikamina" "Zolin" "Zipaktonal" "Achhotli" "Atl" "Ikstli" "Ksochipilli" 
+		
+		
+		}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { "Juliette" "Anna" }
+		surnames = { }
+		callsigns = { "Queen Of The Sky" "The Red Princess" }
+	}
+	surnames = { "I" "II" "III" "IV" "V" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" }
+	callsigns = { "The Great" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" "The Wise"}
+}
+TLA = {
+	male = {
+		names = { "Kuohtli " "Nelli" "Ksochipep" "Ilhikamina" "Zolin" "Zipaktonal" "Achhotli" "Atl" "Ikstli" "Ksochipilli" 
+		
+		
+		}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { "Juliette" "Anna" }
+		surnames = { }
+		callsigns = { "Queen Of The Sky" "The Red Princess" }
+	}
+	surnames = { "I" "II" "III" "IV" "V" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" }
+	callsigns = { "The Great" "Angry" "The Warrior" "The Brave Heart" "The Great" "The Miracle Worker" "The Wise"}
+}
+ 

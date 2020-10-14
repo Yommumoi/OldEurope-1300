@@ -1,0 +1,103 @@
+﻿division_template = {
+	name = "Civil-Detachment"		# Only had a force of reservists, which were later disbanded altogether in 1948
+	division_names_group = AFG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12732 
+		division_template = "Civil-Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2045 
+		division_template = "Civil-Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Civil-Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4999 
+		division_template = "Civil-Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1647 
+		division_template = "Civil-Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10724 
+		division_template = "Civil-Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4783 
+		division_template = "Civil-Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12598 
+		division_template = "Civil-Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3745 
+		division_template = "Civil-Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=814
+	name="STATE_814"
+	manpower = 6197
+	
+	state_category = town
+
+	history={
+		owner = KAL
+	    add_core_of = KAL
+		add_core_of = SPR
+		victory_points = {
+			3953 1
+		}
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 2
+			infrastructure = 5
+			3953 = {
+				bunker = 2
+			}
+		}
+		
+	}
+
+	provinces={
+		3953 
+	}
+}

@@ -1,0 +1,55 @@
+add_namespace = tevton
+
+country_event = {
+	id = tevton.1
+	title = tevton.1.t
+	desc = tevton.1.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = tevton.1.a
+		TVT = {
+			country_event = tevton.2
+		}
+		add_political_power = 1000
+	}
+	option = {
+		name = tevton.1.b
+		TVT = {
+			country_event = tevton.3
+		}
+	}
+	
+}
+country_event = {
+	id = tevton.2
+	title = tevton.2.t
+	desc = tevton.2.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = tevton.2.a
+		transfer_state = 101
+		transfer_state = 808
+		transfer_state = 809
+		add_political_power = -1000
+	}
+	
+}
+country_event = {
+	id = tevton.3
+	title = tevton.3.t
+	desc = tevton.3.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = tevton.3.a
+	}
+	
+}

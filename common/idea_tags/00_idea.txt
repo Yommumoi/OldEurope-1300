@@ -1,0 +1,109 @@
+idea_categories = {
+
+	hidden_ideas = {
+		hidden = yes
+	
+		cost = 0
+		removal_cost = -1
+	}
+
+	country = {
+		national_spirit = yes
+		
+		cost = 0
+		removal_cost = -1
+	}
+	
+	government = {
+		slot = titul_status
+		slot = bolezn
+		slot = techgroup
+		slot = tip
+		slot = zaems
+		slot = ideol
+		slot = izolation
+		slot = bankrotstvo
+		cost = 150
+		
+		ledger = civilian
+		removal_cost = 0
+	}
+	
+	
+	research_production = {
+		slot = mobilization_laws
+		slot = religion
+		slot = laws
+		slot = trade_laws
+		slot = sie
+		slot = sila
+		slot = centr
+		slot = pop_laws
+		cost = 150
+		removal_cost = 0
+		
+		ledger = civilian
+
+	}
+	
+	military_staff = {
+		slot = monet 
+		slot = poshliny 
+		slot = torgregs
+		slot = medic
+		slot = corruption
+		slot = HRE_status
+		slot = dobicha
+		slot = relotn
+		cost = 150
+		removal_cost = 0
+		
+		ledger = civilian
+	}
+	
+	inlaws = {
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		
+		ledger = civilian
+		
+		cost = 150
+		removal_cost = 0
+	}
+}
+slot_ledgers = {
+	monet = civilian
+	poshliny = civilian
+	torgregs = civilian
+	medic = civilian
+	corruption = civilian
+	HRE_status = civilian
+	dobicha = civilian
+	relotn = civilian
+	political_advisor = civilian
+	
+	mobilization_laws = civilian
+	religion = civilian
+	laws = civilian
+	trade_laws = civilian
+	sie = civilian
+	sila = civilian
+	centr = civilian
+	pop_laws = civilian
+	
+	titul_status = civilian
+	bolezn = civilian
+	techgroup = civilian
+	tip = civilian
+	zaems = civilian
+	ideol = civilian
+	izolation = civilian
+	bankrotstvo = civilian
+}
+

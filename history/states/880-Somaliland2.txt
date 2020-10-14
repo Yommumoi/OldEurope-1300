@@ -1,0 +1,29 @@
+state=
+{
+	id=880
+	name="STATE_880"
+	manpower = 177223
+	
+	state_category = rural
+	
+	history={
+		
+		owner = SOM
+	    add_core_of = SOM
+		victory_points = {
+			12840 1 
+		}
+		buildings = {
+			infrastructure = 3
+			12840 = {
+				naval_base = 2
+			}
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	provinces=
+	{
+	2020 5065 12840 1964 10818 4909 10891 1966
+ 	}
+}

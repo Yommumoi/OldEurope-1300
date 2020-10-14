@@ -1,0 +1,705 @@
+add_namespace = oth
+
+country_event = {
+	id = oth.1
+	title = oth.1.t
+	desc = oth.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.1.a
+		TNG = { add_to_faction = SMD }
+	}
+	option = {
+		name = oth.1.b
+		
+	}
+}
+
+country_event = {
+	id = oth.2
+	title = oth.2.t
+	desc = oth.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.2.a
+		TNG = { 
+			transfer_state = 463
+			add_political_power = -50
+		}
+		ATA = {
+			add_political_power = 50
+		}
+	}
+	option = {
+		name = oth.2.b
+		
+	}
+}
+
+country_event = {
+	id = oth.3
+	title = oth.3.t
+	desc = oth.3.desc
+	picture = GFX_report_polotsk2
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.3.a
+		LIT = {
+			annex_country = {
+				target = BLR
+				transfer_troops = yes
+			}
+		}
+		news_event = {
+			id = news.1005
+		}
+	}
+	option = {
+		name = oth.3.b
+		add_political_power = 100
+		
+	}
+}
+country_event = {
+	id = oth.4
+	title = oth.4.t
+	desc = oth.4.desc
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.4.a
+		random_state = {
+			If = {
+				limit = {
+					NOT = {
+						is_owned_by = XXX
+						is_on_continent = north_america
+						is_on_continent = south_america
+					}
+				}
+				SME = {
+					transfer_state = PREV
+					set_capital = PREV
+					add_state_core = PREV
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 1000000
+						producer = LIT
+					}
+					add_manpower = 2000000
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = oth.5
+	title = oth.5.t
+	desc = oth.5.desc
+	picture = GFX_report_federationIn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.5.a
+		LIT = { add_to_faction = FROM }
+		add_political_power = 50
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = oth.5.b
+		
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = oth.6
+	title = oth.6.t
+	desc = oth.6.desc
+	picture = GFX_report_hordehelp
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.6.a
+		DHR = {
+			transfer_state = 590
+			declare_war_on = {
+				target = WHO
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KAI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SMD
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TNG
+				type = annex_everything
+			}
+			load_oob = "DHR_1936"
+			add_state_core = 590
+			add_state_core = 583
+			add_state_core = 572
+			add_state_core = 582
+			add_state_core = 403
+			add_state_core = 571
+			add_state_core = 578
+			add_state_core = 570
+			add_state_core = 588
+			add_state_core = 40
+			add_state_core = 654
+			add_state_core = 569
+		}
+
+	}
+	
+}
+country_event = {
+	id = oth.7
+	title = oth.7.t
+	desc = oth.7.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.7.a
+		ARA = {
+			puppet = NEA
+			
+		}
+		NEA = {
+			transfer_state = 115
+		}
+
+	}
+	
+}
+country_event = {
+	id = oth.8
+	title = oth.8.t
+	desc = oth.8.desc
+	picture = GFX_report_federationIn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.8.a
+		LIT = {
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
+			}
+		}
+		ai_chance = { factor = 80 }
+
+	}
+	option = {
+		name = oth.8.b
+		end_puppet = FROM
+		declare_war_on = {
+			target = LIT
+			type = annex_everything
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+}
+country_event = {
+	id = oth.9
+	title = oth.9.t
+	desc = oth.9.desc
+	picture = GFX_report_federationIn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.9.a
+		create_faction = NOVLIT
+		add_to_faction = NOV
+		add_to_faction = LIT
+		LIT = {
+			country_event = {
+				id = oth.10
+			}
+		}
+		ai_chance = { factor = 90 }
+
+	}
+	option = {
+		name = oth.9.b
+		LIT = {
+			country_event = {
+				id = oth.11
+			}
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+}
+country_event = {
+	id = oth.10
+	title = oth.10.t
+	desc = oth.10.desc
+	picture = GFX_report_kanbu
+	
+	is_triggered_only = yes
+
+	option = {
+		name = oth.10.a
+		KNB = {
+			transfer_state = 841
+			load_oob = "KNB_1936"
+			news_event = news.1035
+			create_wargoal = {
+				type = annex_everything
+				target = MLE
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BON
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = JOL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ALG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = EGY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BNT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ZIM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOI
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KIL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MDG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YAU
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KEN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ABY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SOM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MLW
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KAT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TUA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LBA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TUN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BER
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HAU
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = JUB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KAN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = OYO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = DAG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BEN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = UAT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GVY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = AKK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GEN
+			}
+			add_state_core = 298
+			add_state_core = 877
+			add_state_core = 780
+			add_state_core = 700
+			add_state_core = 296
+			add_state_core = 779
+			add_state_core = 843
+			add_state_core = 274
+			add_state_core = 842
+			add_state_core = 823
+			add_state_core = 777
+			add_state_core = 776
+			add_state_core = 781
+			add_state_core = 778
+			add_state_core = 841
+			add_state_core = 556
+			add_state_core = 272
+			add_state_core = 701
+			add_state_core = 876
+			add_state_core = 557
+			add_state_core = 558
+			add_state_core = 773
+			add_state_core = 515
+			add_state_core = 660
+			add_state_core = 774
+			add_state_core = 549
+			add_state_core = 271
+			add_state_core = 855
+			add_state_core = 856
+			add_state_core = 269
+			add_state_core = 268
+			add_state_core = 550
+			add_state_core = 559
+			add_state_core = 880
+			add_state_core = 543
+			add_state_core = 544
+			add_state_core = 545
+			add_state_core = 770
+			add_state_core = 546
+			add_state_core = 547
+			add_state_core = 769
+			add_state_core = 768
+			add_state_core = 548
+			add_state_core = 719
+			add_state_core = 681
+			add_state_core = 275
+			add_state_core = 542
+			add_state_core = 541
+			add_state_core = 297
+			add_state_core = 539
+			add_state_core = 772
+			add_state_core = 903
+			add_state_core = 538
+			add_state_core = 718
+			add_state_core = 295
+			add_state_core = 771
+			add_state_core = 540
+			add_state_core = 699
+			add_state_core = 462
+			add_state_core = 783
+			add_state_core = 461
+			add_state_core = 290
+			add_state_core = 782
+			add_state_core = 513
+			add_state_core = 460
+			add_state_core = 459
+			add_state_core = 665
+			add_state_core = 458
+			add_state_core = 661
+			add_state_core = 448
+			add_state_core = 449
+			add_state_core = 662
+			add_state_core = 450
+			add_state_core = 663
+			add_state_core = 451
+			add_state_core = 452
+			add_state_core = 447
+			add_state_core = 446
+			add_state_core = 457
+			add_state_core = 456
+			add_state_core = 552
+			add_state_core = 551
+			add_state_core = 767
+		}
+
+	}
+	option = {
+		name = oth.10.b
+		KNB = {
+			transfer_state = 841
+			news_event = news.1035
+			load_oob = "KNB_1936"
+			create_wargoal = {
+				type = annex_everything
+				target = MLE
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BON
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = JOL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ALG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = EGY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BNT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ZIM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HOI
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KIL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MDG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YAU
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KEN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ABY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SOM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MLW
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KAT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TUA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LBA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TUN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BER
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MOS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = HAU
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = JUB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KAN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = OYO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = DAG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BEN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = UAT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GVY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = AKK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = GEN
+			}
+			add_state_core = 298
+			add_state_core = 877
+			add_state_core = 780
+			add_state_core = 700
+			add_state_core = 296
+			add_state_core = 779
+			add_state_core = 843
+			add_state_core = 274
+			add_state_core = 842
+			add_state_core = 823
+			add_state_core = 777
+			add_state_core = 776
+			add_state_core = 781
+			add_state_core = 778
+			add_state_core = 841
+			add_state_core = 556
+			add_state_core = 272
+			add_state_core = 701
+			add_state_core = 876
+			add_state_core = 557
+			add_state_core = 558
+			add_state_core = 773
+			add_state_core = 515
+			add_state_core = 660
+			add_state_core = 774
+			add_state_core = 549
+			add_state_core = 271
+			add_state_core = 855
+			add_state_core = 856
+			add_state_core = 269
+			add_state_core = 268
+			add_state_core = 550
+			add_state_core = 559
+			add_state_core = 880
+			add_state_core = 543
+			add_state_core = 544
+			add_state_core = 545
+			add_state_core = 770
+			add_state_core = 546
+			add_state_core = 547
+			add_state_core = 769
+			add_state_core = 768
+			add_state_core = 548
+			add_state_core = 719
+			add_state_core = 681
+			add_state_core = 275
+			add_state_core = 542
+			add_state_core = 541
+			add_state_core = 297
+			add_state_core = 539
+			add_state_core = 772
+			add_state_core = 903
+			add_state_core = 538
+			add_state_core = 718
+			add_state_core = 295
+			add_state_core = 771
+			add_state_core = 540
+			add_state_core = 699
+			add_state_core = 462
+			add_state_core = 783
+			add_state_core = 461
+			add_state_core = 290
+			add_state_core = 782
+			add_state_core = 513
+			add_state_core = 460
+			add_state_core = 459
+			add_state_core = 665
+			add_state_core = 458
+			add_state_core = 661
+			add_state_core = 448
+			add_state_core = 449
+			add_state_core = 662
+			add_state_core = 450
+			add_state_core = 663
+			add_state_core = 451
+			add_state_core = 452
+			add_state_core = 447
+			add_state_core = 446
+			add_state_core = 457
+			add_state_core = 456
+			add_state_core = 552
+			add_state_core = 551
+			add_state_core = 767
+			change_tag_from = KNB
+		}
+	}
+	
+}
+

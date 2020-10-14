@@ -1,0 +1,39 @@
+capital = 590
+set_technology = {
+	infantry_weapons = 1
+}
+set_variable = { adm_limit = 30 }
+set_convoys = 0
+add_political_power = 1000
+set_research_slots = 1
+set_stability = 1.0
+set_war_support = 1.0
+set_oob = "DHR_1936"
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 0
+	communism = 100
+	democratic = 0
+	neutrality = 0
+}
+set_variable = { numnasled_value = 10 }
+set_variable = { soslovia_dvor = 100 }
+set_variable = { soslovia_duh = 100 }
+set_variable = { soslovia_gor = 100 }
+set_variable = { soslovia_kre = 100 }
+set_variable = { soslovia_rem = 100 }
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 150 }
+add_ideas = techgroup5
+add_ideas = Islam
+add_manpower = 300000
+

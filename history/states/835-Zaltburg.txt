@@ -1,0 +1,30 @@
+
+state={
+	id=835
+	name="STATE_835"
+	manpower = 318844
+	
+	state_category = city
+	
+	resources={
+		steel=5 # was: 8
+	}
+
+	history={
+		owner = ZAL
+	    add_core_of = ZAL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			688 5 
+		}
+		
+	}
+
+	provinces={
+		688 6691 3684 6708
+	}
+}

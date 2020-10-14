@@ -1,0 +1,58 @@
+﻿capital = 230 #Yerevan, Armenia
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+oob = "AZR_1936"
+set_variable = { soslovia_dvor = 60 }
+set_variable = { soslovia_duh = 50 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 55 }
+set_variable = { soslovia_rem = 40 }
+set_research_slots = 3
+set_oob = "ARM_1936"
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+add_ideas = techgroup2
+set_popularities = {	fascism = 34
+	democratic = 30
+	communism = 36
+}
+
+create_country_leader = {
+	name = "Drastamat Kanayan"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Hovhannes Kajaznuni"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Grigor Harutyunyan"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+

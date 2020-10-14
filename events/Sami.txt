@@ -1,0 +1,159 @@
+add_namespace = sam
+
+country_event = {
+	id = sam.1
+	title = sam.1.t
+	desc = sam.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sam.1.a
+		create_country_leader = {
+            name = "Baevi"
+            desc = ""
+            picture = "gfx/characters/Baevi.dds"
+            expire = "1965.1.1"
+            ideology = despotism
+        }
+		create_country_leader = {
+            name = "Baevi"
+            desc = ""
+            picture = "gfx/characters/Baevi.dds"
+            expire = "1965.1.1"
+            ideology = stalinism
+        }
+		create_country_leader = {
+            name = "Baevi"
+            desc = ""
+            picture = "gfx/characters/Baevi.dds"
+            expire = "1965.1.1"
+            ideology = fascism_ideology
+        }
+		create_country_leader = {
+            name = "Baevi"
+            desc = ""
+            picture = "gfx/characters/Baevi.dds"
+            expire = "1965.1.1"
+            ideology = conservatism
+        }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+	}
+	option = {
+		name = sam.1.b
+		create_country_leader = {
+            name = "Ante"
+            desc = ""
+            picture = "gfx/characters/Ante.dds"
+            expire = "1965.1.1"
+            ideology = despotism
+        }
+		create_country_leader = {
+            name = "Ante"
+            desc = ""
+            picture = "gfx/characters/Ante.dds"
+            expire = "1965.1.1"
+            ideology = stalinism
+        }
+		create_country_leader = {
+            name = "Ante"
+            desc = ""
+            picture = "gfx/characters/Ante.dds"
+            expire = "1965.1.1"
+            ideology = fascism_ideology
+        }
+		create_country_leader = {
+            name = "Ante"
+            desc = ""
+            picture = "gfx/characters/Ante.dds"
+            expire = "1965.1.1"
+            ideology = conservatism
+        }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.2
+		}
+	}
+	option = {
+		name = sam.1.c
+		create_country_leader = {
+            name = "Lempo"
+            desc = ""
+            picture = "gfx/characters/Lempo.dds"
+            expire = "1965.1.1"
+            ideology = despotism
+        }
+		create_country_leader = {
+            name = "Lempo"
+            desc = ""
+            picture = "gfx/characters/Lempo.dds"
+            expire = "1965.1.1"
+            ideology = stalinism
+        }
+		create_country_leader = {
+            name = "Lempo"
+            desc = ""
+            picture = "gfx/characters/Lempo.dds"
+            expire = "1965.1.1"
+            ideology = fascism_ideology
+        }
+		create_country_leader = {
+            name = "Lempo"
+            desc = ""
+            picture = "gfx/characters/Lempo.dds"
+            expire = "1965.1.1"
+            ideology = conservatism
+        }
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.2
+		}
+	}
+	
+}
+
+country_event = {
+	id = sam.2
+	title = sam.2.t
+	desc = sam.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sam.2.a
+		give_guarantee = SAM
+		SAM = {give_guarantee = SWE}
+	}
+	option = {
+		name = sam.2.b
+		
+	}
+	
+}
+country_event = {
+	id = sam.3
+	title = sam.3.t
+	desc = sam.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = sam.3.a
+		SAM = {
+			transfer_state = 149
+			add_political_power = -300
+		}
+		add_political_power = 300
+	}
+	option = {
+		name = sam.3.b
+		
+	}
+	
+}

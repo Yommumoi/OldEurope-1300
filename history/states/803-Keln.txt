@@ -1,0 +1,33 @@
+
+state={
+	id=803
+	name="STATE_803"
+	manpower = 601583
+	state_category = large_city
+	resources={
+		steel=3 # was: 48
+		aluminium = 1
+	}
+	history={
+		owner = KLN
+	    add_core_of = KLN
+		victory_points = {
+			587 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			587 = {
+				bunker = 2
+			}
+
+		}
+		
+
+	}
+
+	provinces={
+		405 3355 9443 9509 11431 587
+	}
+}

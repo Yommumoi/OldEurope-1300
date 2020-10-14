@@ -1,0 +1,27 @@
+state={
+	id=515
+	name="STATE_515"
+	
+	state_category = pastoral
+
+
+	history={
+		owner = TUA
+	    add_core_of = TUA
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			8128 1
+		}
+	}
+
+	provinces={ 
+		1956 4913 7939 8028 8128 10758 10780 10805 10917 12022 5004 10884 12082 12866 4962 5095 10749 1043 2068
+	}
+	manpower=39870
+	buildings_max_level_factor=1.000
+}

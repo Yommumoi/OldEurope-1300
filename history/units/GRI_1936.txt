@@ -1,0 +1,19 @@
+﻿division_template = {
+	name = "Detachment"		# Only had a force of reservists, which were later disbanded altogether in 1948
+	division_names_group = AFG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+units = {
+	fleet = {
+		name = "Ships #1"			
+		naval_base = 12512  
+		task_force = {
+			name = "Fleet"
+			location = 12512  
+			ship = { name = "Kogg1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRI } } }
+		}
+	}
+}

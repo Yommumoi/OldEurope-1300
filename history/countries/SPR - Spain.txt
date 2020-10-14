@@ -1,0 +1,80 @@
+﻿capital = 41
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 980 }
+set_major = yes
+oob = "SPR_1936"
+set_variable = { adm_limit = 20 }
+add_ideas = techgroup1
+set_research_slots = 3
+set_variable = { soslovia_dvor = 80 }
+set_variable = { soslovia_duh = 66 }
+set_variable = { soslovia_gor = 37 }
+set_variable = { soslovia_kre = 60 }
+set_variable = { soslovia_rem = 47 }
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_ship_hull_submarine = 1 
+    basic_ship_hull_submarine = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1 
+    basic_ship_hull_light = 1
+	early_ship_hull_cruiser = 1 
+    basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	spear_weapons = 1
+	gwtank = 1
+}
+set_variable = { numnasled_value = 8 }
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 5
+	fascism = 5
+	communism = 0
+	neutrality = 90
+}
+
+set_convoys = 150
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Fernando IV"
+	desc = ""
+	picture = "gfx/characters/Fernando IV.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fernando IV"
+	desc = ""
+	picture = "gfx/characters/Fernando IV.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fernando IV"
+	desc = ""
+	picture = "gfx/characters/Fernando IV.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

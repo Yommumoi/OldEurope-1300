@@ -1,0 +1,21 @@
+
+state={
+	id=421
+	name="STATE_421"
+	manpower = 195069
+	
+	state_category = rural
+
+	history={
+		owner = HUL
+	    add_core_of = HUL
+		buildings = {
+			infrastructure = 3
+		}
+		
+	}
+
+	provinces={
+		829 4943 5050 5098 9816 10774 12773 
+	}
+}

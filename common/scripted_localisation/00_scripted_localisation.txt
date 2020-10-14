@@ -1,0 +1,343 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+
+defined_text = {
+	name = GetHouseElectionOutcome
+	text = {
+		trigger = {
+			check_variable = { representatives_for_reelection < 0 }
+		}
+		localization_key = HouseElectionLost
+	}
+	text = {
+		trigger = {
+			check_variable = { var = representatives_for_reelection value = 0 compare = greater_than_or_equals }
+		}
+		localization_key = HouseElectionGained
+	}
+}
+
+
+defined_text = { # Country
+	name = NedovolGetName_1 #стартовая лока
+	text = {
+		trigger = {
+			has_idea = pop_laws4
+		}
+		localization_key = nedovol_pop
+	}
+}
+defined_text = { # Country
+	name = NedovolGetName_2 #стартовая лока
+	
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { A < 15 }
+				check_variable = { A2 < 15 }
+				check_variable = { A3 < 15 }
+				check_variable = { A4 < 15 }
+			}
+		}
+		localization_key = nedovol_sod_mil #новая лока
+	}
+	
+}
+defined_text = { # Country
+	name = NedovolGetName_3 #стартовая лока
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { A > 80 }
+				check_variable = { A3 > 80 }
+				check_variable = { A4 > 80 }
+			}
+		}
+		localization_key = nedovol_sod_good #новая лока
+	}
+}
+defined_text = { # Country
+	name = NedovolGetName_4 #стартовая лока
+	text = {
+		trigger = {
+			has_idea = bankrot
+		}
+		localization_key = nedovol_sod_bankrot #новая лока
+	}
+}
+defined_text = { # Country
+	name = NedovolGetName_main #стартовая лока
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = nedovol_desc2 #новая лока
+	}
+}
+
+
+
+
+
+defined_text = {
+	name = Dinast_1 
+	text = {
+		trigger = {
+			OR = {
+				ROOT = {
+					has_idea = tip24
+				}
+				THIS = {
+					has_idea = tip24
+				}
+			}
+		}
+		localization_key = Ne_udikat
+	}
+}
+defined_text = {
+	name = Dinast_2 
+	text = {
+		trigger = {
+			OR = {
+				ROOT = {
+					has_idea = tip3
+				}
+				THIS = {
+					has_idea = tip3
+				}
+			}
+		}
+		localization_key = Ne_orden
+	}
+}
+defined_text = {
+	name = Dinast_3 
+	text = {
+		trigger = {
+			OR = {
+				ROOT = {
+					has_idea = tip9
+				}
+				THIS = {
+					has_idea = tip9
+				}
+			}
+		}
+		localization_key = Ne_monastir
+	}
+}
+defined_text = {
+	name = Dinast_4 
+	text = {
+		trigger = {
+			OR = {
+				ROOT = {
+					has_government = communism
+				}
+				THIS = {
+					has_government = communism
+				}
+			}
+		}
+		localization_key = Ne_koch
+	}
+}
+defined_text = {
+	name = Dinast_5 
+	text = {
+		trigger = {
+			OR = {
+				ROOT = {
+					has_government = democratic
+				}
+				THIS = {
+					has_government = democratic
+				}
+			}
+		}
+		localization_key = Ne_resp
+	}
+}
+defined_text = {
+	name = Dinast_6 
+	text = {
+		trigger = {
+			OR = {
+				ROOT = {
+					has_idea = tip19
+				}
+				THIS = {
+					has_idea = tip19
+				}
+			}
+		}
+		localization_key = Ne_teokr
+	}
+}
+defined_text = {
+	name = Dinast_7 
+	text = {
+		trigger = {
+			THIS = {
+				has_relation_modifier = {
+					target = ROOT
+					modifier = Dinbrak_modREL
+				}
+				ROOT = {
+					has_relation_modifier = {
+						target = PREV
+						modifier = Dinbrak_modREL
+					}
+				}
+			}
+		}
+		localization_key = Ne_uzejest
+	}
+}
+defined_text = {
+	name = Dinast_8 
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					AND = {
+						THIS = {has_idea = Islam}
+						ROOT = {has_idea = Islam}
+					}
+					AND = {
+						THIS = {has_idea = Zoro}
+						ROOT = {has_idea = Zoro}
+					}
+					AND = {
+						THIS = {has_idea = Slavic}
+						ROOT = {has_idea = Slavic}
+					}
+					AND = {
+						THIS = {has_idea = Animism}
+						ROOT = {has_idea = Animism}
+					}
+					AND = {
+						THIS = {has_idea = Induism}
+						ROOT = {has_idea = Induism}
+					}
+					AND = {
+						THIS = {has_idea = Iudaism}
+						ROOT = {has_idea = Iudaism}
+					}
+					AND = {
+						THIS = {has_idea = Konfucii}
+						ROOT = {has_idea = Konfucii}
+					}
+					AND = {
+						THIS = {has_idea = Daosism}
+						ROOT = {has_idea = Daosism}
+					}
+					AND = {
+						THIS = {has_idea = Romuva}
+						ROOT = {has_idea = Romuva}
+					}
+					AND = {
+						THIS = {has_idea = Nautl}
+						ROOT = {has_idea = Nautl}
+					}
+					AND = {
+						THIS = {has_idea = Tengri}
+						ROOT = {has_idea = Tengri}
+					}
+					AND = {
+						THIS = {has_idea = ReformPag}
+						ROOT = {has_idea = ReformPag}
+					}
+					AND = {
+						THIS = {has_idea = Totemism}
+						ROOT = {has_idea = Totemism}
+					}
+					AND = {
+						THIS = {has_idea = Finn}
+						ROOT = {has_idea = Finn}
+					}
+					AND = {
+						THIS = {has_idea = Gerpag}
+						ROOT = {has_idea = Gerpag}
+					}
+					AND = {
+						THIS = {has_idea = Sinto}
+						ROOT = {has_idea = Sinto}
+					}
+					AND = {
+						THIS = {has_idea = Buddism}
+						ROOT = {has_idea = Buddism}
+					}
+					AND = {
+						THIS = {
+							OR = {
+								has_idea = Miafizit
+								has_idea = Orthodox
+								has_idea = Catholic
+							}
+						}
+						ROOT = {
+							OR = {
+								has_idea = Miafizit
+								has_idea = Orthodox
+								has_idea = Catholic
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = Ne_relig
+	}
+}
+defined_text = {
+	name = Dinast_9 
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					AND = {
+						THIS = {capital_scope = {is_on_continent = europe}}
+						ROOT = {capital_scope = {is_on_continent = europe}}
+					}
+					AND = {
+						THIS = {capital_scope = {is_on_continent = south_america}}
+						ROOT = {capital_scope = {is_on_continent = south_america}}
+					}
+					AND = {
+						THIS = {capital_scope = {is_on_continent = north_america}}
+						ROOT = {capital_scope = {is_on_continent = north_america}}
+					}
+					AND = {
+						THIS = {capital_scope = {is_on_continent = australia}}
+						ROOT = {capital_scope = {is_on_continent = australia}}
+					}
+					AND = {
+						THIS = {capital_scope = {is_on_continent = asia}}
+						ROOT = {capital_scope = {is_on_continent = asia}}
+					}
+					AND = {
+						THIS = {capital_scope = {is_on_continent = africa}}
+						ROOT = {capital_scope = {is_on_continent = africa}}
+					}
+					AND = {
+						THIS = {capital_scope = {is_on_continent = middle_east}}
+						ROOT = {capital_scope = {is_on_continent = middle_east}}
+					}
+				}
+			}
+		}
+		localization_key = Ne_contin
+	}
+}
+
+

@@ -1,0 +1,24 @@
+
+state={
+	id=353
+	name="STATE_353"
+	manpower = 130884
+	state_category = rural
+
+	history={
+		owner = HUL
+	    add_core_of = HUL
+		add_core_of = GRE
+		victory_points = {
+			11853 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		
+	}
+
+	provinces={
+		652 876 4583 7470 9858 9954 10399 11853 11880 12376 13121 
+	}
+}

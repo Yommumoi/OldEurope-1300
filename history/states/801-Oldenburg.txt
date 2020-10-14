@@ -1,0 +1,31 @@
+state={
+	id=801
+	name="STATE_801"
+	manpower = 158467
+	
+	state_category = city
+
+	history={
+		owner = OLD
+	    add_core_of = OLD
+		victory_points = {
+			241 2 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			dockyard = 1
+			arms_factory = 1
+			241 = {
+				naval_base = 3
+
+			}
+
+		}
+		
+	}
+
+	provinces={
+		241 336 
+	}
+}

@@ -1,0 +1,448 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "regionbuy1"
+		position = { x=-6 y =-549 }
+		
+		orientation = lower_left
+		size = { width=436 height=496 }
+		
+		
+		buttonType = {
+			name = "regionbuybutton"
+			position = { x = -39 y = 462 }
+			quadTextureSprite ="GFX_RegBuy"
+			buttonFont = "nom3_22"
+			Orientation = "UPPER_RIGHT"
+			text = "Buy"
+			pdx_tooltip = "buyreg_desc"
+		}
+		buttonType = {
+			name = "genacidbutton"
+			position = { x = 63 y = 496 }
+			quadTextureSprite ="GFX_RegBuy"
+			buttonFont = "nom3_22"
+			Orientation = "UPPER_RIGHT"
+			text = "Genacid"
+			pdx_tooltip = "genacid_desc"
+		}
+		buttonType = {
+			name = "capitalbutton"
+			position = { x = 63 y = 462 }
+			quadTextureSprite ="GFX_RegBuy"
+			buttonFont = "nom3_22"
+			Orientation = "UPPER_RIGHT"
+			text = "Capital"
+			pdx_tooltip = "capital_desc"
+		}
+		buttonType = {
+			name = "factoria_build_button"
+			position = { x = 165 y = 496 }
+			quadTextureSprite ="GFX_RegBuy"
+			buttonFont = "nom3_22"
+			text = "Build"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "factoria_build_desc"
+		}
+		buttonType = {
+			name = "invest_button"
+			position = { x = 165 y = 462 }
+			quadTextureSprite ="GFX_RegBuy"
+			buttonFont = "nom3_22"
+			text = "Invest"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "Invest_desc"
+		}
+		
+	}
+	containerWindowType = {
+		name = "regionbuy2"
+		position = { x=-6 y =-549 }
+		
+		orientation = lower_left
+		size = { width=436 height=496 }
+		
+		
+		buttonType = {
+			name = "regionzacelbutton2"
+			position = { x = -39 y = 496 }
+			quadTextureSprite ="GFX_RegBuy"
+			buttonFont = "nom3_22"
+			Orientation = "UPPER_RIGHT"
+			text = "Populate"
+			pdx_tooltip = "Populate_desc"
+		}
+		instantTextboxType = { 
+			name = "torg_text_1"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_1"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_2"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_2"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_3"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_3"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_4"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_4"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_5"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_5"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_6"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_6"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_7"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_7"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_8"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_8"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_9"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_9"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_10"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_10"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_11"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_11"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_12"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_12"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_13"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_13"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_14"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_14"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_15"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_15"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_16"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_16"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_17"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_17"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_18"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_18"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_19"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_19"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_20"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_20"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_21"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_21"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_22"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_22"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_23"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_23"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_24"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_24"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_25"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_25"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_26"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_26"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_27"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_27"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_28"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_28"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_29"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_29"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_30"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_30"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_31"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_31"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_32"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_32"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_33"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_33"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = { 
+			name = "torg_text_34"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_34"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_35"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_35"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = { 
+			name = "torg_text_36"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_36"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		instantTextboxType = {
+			name = "torg_text_37"
+			position = { x = 25 y = 458 }
+			font = "hoi_20b"
+			text = "Torg_reg_37"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "Torg_reg_desc"			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,35 @@
+ai_historical_focus_list_AZT = {
+	ai_national_focuses = {
+		AZT_1
+		AZT_18
+		AZT_19
+		AZT_3
+		AZT_22
+		AZT_5
+		AZT_20
+		AZT_13
+		AZT_21
+		AZT_2
+		AZT_8
+		AZT_10
+		AZT_23
+		AZT_24
+		AZT_39
+		AZT_41
+		AZT_7
+		AZT_9
+		AZT_43
+		AZT_25
+		AZT_38
+		AZT_37
+		AZT_26
+		AZT_27
+		AZT_28
+		AZT_34
+		AZT_4
+		AZT_29
+		AZT_6
+		AZT_33
+		
+	}
+}

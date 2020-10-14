@@ -1,0 +1,157 @@
+add_namespace = swe
+
+country_event = {
+	id = swe.1
+	title = swe.1.t
+	desc = swe.1.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = swe.1.a
+		SWE = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = ARG
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -5000
+			producer = ARG
+		}
+		
+	}
+	option = {
+		name = swe.1.b
+		IOA = {
+			declare_war_on = {
+			target = NOV
+			type = annex_everything
+			}
+		}
+		KAL = {
+			declare_war_on = {
+			target = NOV
+			type = annex_everything
+			}
+		}
+		SNT = {
+			declare_war_on = {
+			target = NOV
+			type = annex_everything
+			}
+		}
+		ALK = {
+			declare_war_on = {
+			target = NOV
+			type = annex_everything
+			}
+		}
+		AVI = {
+			declare_war_on = {
+			target = NOV
+			type = annex_everything
+			}
+		}
+		
+	}
+	option = {
+		name = swe.1.c
+		SWE = {
+			add_political_power = 300
+		}
+		add_political_power = -300
+		
+	}
+	option = {
+		name = swe.1.d
+		
+	}
+	
+}
+country_event = {
+	id = swe.2
+	title = swe.2.t
+	desc = swe.2.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = swe.2.a
+		DEN = {
+			declare_war_on = {
+			target = NOV
+			type = annex_everything
+			}
+		}
+		
+	}
+	option = {
+		name = swe.2.b
+		
+	}
+	
+}
+country_event = {
+	id = swe.3
+	title = swe.3.t
+	desc = swe.3.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = swe.3.a
+		SWE = { add_to_faction = DEN }
+		
+	}
+	option = {
+		name = swe.3.b
+		
+	}
+	
+}
+
+country_event = {
+	id = swe.4
+	title = swe.4.t
+	desc = swe.4.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = swe.4.a
+		SWE = { add_to_faction = NOR }
+		
+	}
+	option = {
+		name = swe.4.b
+		
+	}
+	
+}
+country_event = {
+	id = swe.5
+	title = swe.5.t
+	desc = swe.5.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = swe.5.a
+		SWE = { add_to_faction = SAM }
+		
+	}
+	option = {
+		name = swe.5.b
+		
+	}
+	
+}
+

@@ -1,0 +1,19 @@
+state=
+{
+	id=648
+	name="STATE_648"
+	state_category = tiny_island
+	manpower=1
+	history=
+	{
+		owner = XXX
+	    add_core_of = XXX
+		buildings = {
+			infrastructure = 0
+		}
+
+	}
+	provinces=
+	{
+13026 	}
+}

@@ -1,0 +1,39 @@
+ai_historical_focus_list_LIT = {
+	ai_national_focuses = {
+		LIT_1
+		LIT_15
+		LIT_30
+		LIT_54
+		LIT_42
+		LIT_44
+		LIT_2
+		LIT_6
+		LIT_3
+		LIT_7
+		LIT_4
+		LIT_10
+		LIT_71
+		LIT_35
+		LIT_36
+		LIT_37
+		LIT_25
+		LIT_8
+		LIT_14
+		LIT_9
+		LIT_45
+		LIT_5
+		LIT_46
+		LIT_47
+		LIT_69	
+		LIT_69
+		LIT_67
+		LIT_68
+		LIT_11
+		LIT_12
+		LIT_49
+		LIT_32
+		LIT_13
+
+		
+	}
+}

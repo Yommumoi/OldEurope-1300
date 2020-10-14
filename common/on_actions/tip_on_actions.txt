@@ -1,0 +1,185 @@
+on_actions = {
+
+	on_monthly = { #+5 к лояльности дворян каждый месяц
+		effect = {
+			if = {
+				limit = {
+					has_idea = tip1
+				}
+				add_to_variable = { soslovia_dvor = 5 }
+				clamp_variable = {
+					var = soslovia_dvor
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+	# ауе всем ворам свободу мусорам
+
+	on_daily = { #+5 админ лимита если ты аристократ республика
+		effect = {
+
+			if = {
+				limit = { 
+					check_variable = { tip1_added = 0 }
+					has_idea = tip1
+				}
+				set_variable = { tip1_added = 1 }
+				add_to_variable = { adm_limit = 5 }
+			}
+
+			if = {
+				limit = {
+					check_variable = { tip1_added = 1 }
+					NOT = { has_idea = tip1 }
+				}
+				set_variable = { tip1_added = 0 }
+				add_to_variable = { adm_limit = -5 }
+			}
+
+		}
+	}
+
+	on_daily = { #-0.05 усталости для икты
+		effect = {
+
+			if = {
+				limit = {
+					has_war = yes
+					has_idea = tip5
+				}
+				add_to_variable = { warust_value = -0.05 }
+				clamp_variable = {
+					var = warust_value
+					min = 0
+					max = 100
+				}
+			}
+
+
+		}
+	}
+
+	on_daily = { #-3 админ лимита если ты конунг и удаление нац духа Лейданг
+		effect = {
+
+			if = {
+				limit = { 
+					check_variable = { tip7_added = 0 }
+					has_idea = tip7
+				}
+				set_variable = { tip7_added = 1 }
+				add_to_variable = { adm_limit = -3 }
+				clamp_variable = {
+					var = adm_limit
+					min = 0
+					max = 99999
+				}
+			}
+
+			if = {
+				limit = {
+					check_variable = { tip7_added = 1 }
+					NOT = { has_idea = tip7 }
+				}
+				set_variable = { tip7_added = 0 }
+				add_to_variable = { adm_limit = 3 }
+			}
+
+			if = {
+				limit = {
+					NOT = { has_idea = tip7 }
+					has_idea = laydang
+				}
+				remove_ideas = laydang
+			}
+
+		}
+	}
+
+
+	on_monthly = { #+3 к лояльности духов каждый месяц для монастырского управ
+		effect = {
+			if = {
+				limit = {
+					has_idea = tip9
+				}
+				add_to_variable = { soslovia_duh = 3 }
+				clamp_variable = {
+					var = soslovia_duh
+					min = 0
+					max = 100
+				}
+			}
+
+		}
+	}
+
+	on_weekly = { #+15 цехов в неделю для монастырского управ
+		effect = {
+			if = {
+				limit = {
+					has_idea = tip9
+				}
+				add_to_variable = { product_masters_value = 15 }
+			}
+		}
+	}
+
+	on_weekly = { #-2 недовольства в неделю для вече
+		effect = {
+			if = {
+				limit = {
+					has_idea = tip11
+				}
+				add_to_variable = { nedovol_valuess = -2 }
+				clamp_variable = {
+					var = nedovol_valuess
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+
+	on_daily = { #для орденов чтобы они как ебанутые не жали имбовый бафф
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_idea = tip3 }
+					check_variable = { razvit_vmorden_4_buff = 1 }
+				}
+				remove_ideas = purificatioperlaborem
+				set_variable = { razvit_vmorden_4_buff = 1 }
+			}
+		}
+	}
+
+	on_monthly = { #османы создают янычар и получают 100 человек за каждый ресурс рабов
+		effect = {
+			set_temp_variable = { fucking_slaves = resource@oil }
+
+			set_temp_variable = { add_fucking_slaves = fucking_slaves }
+			multiply_temp_variable = { add_fucking_slaves = 100}
+			if = {
+				limit = {
+					has_idea = tip13
+					check_variable = { fucking_slaves > 0 }
+					check_variable = { razvit_ottoman_1_buff = 1 }
+				}
+				add_manpower = add_fucking_slaves
+			}
+
+			if = {
+				limit = {
+					NOT = { has_idea = tip13 }
+					check_variable = { razvit_ottoman_1_buff = 1 }
+				}
+				set_variable = { razvit_ottoman_1_buff = 1 }
+			}
+		}
+	}
+
+}

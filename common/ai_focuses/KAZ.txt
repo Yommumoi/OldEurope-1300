@@ -1,0 +1,57 @@
+ai_historical_focus_list_KAZ = {
+	ai_national_focuses = {
+		KAZ_34
+		KAZ_103
+		KAZ_104
+		KAZ_1
+		KAZ_2
+		KAZ_4
+		KAZ_9
+		KAZ_95
+		KAZ_96
+		KAZ_97
+		KAZ_100
+		KAZ_31
+		KAZ_94
+		KAZ_72
+		KAZ_57
+		KAZ_68
+		KAZ_64
+		KAZ_65
+		KAZ_59
+		KAZ_70
+		KAZ_66
+		KAZ_60
+		KAZ_61
+		KAZ_67
+		KAZ_71
+		KAZ_62
+		KAZ_58
+		KAZ_63
+		KAZ_69
+		KAZ_86
+		KAZ_87
+		KAZ_11
+		KAZ_13
+		KAZ_98
+		KAZ_10
+		KAZ_12
+		KAZ_14
+		KAZ_99
+		KAZ_8
+		KAZ_24
+		KAZ_16
+		KAZ_23
+		KAZ_15
+		KAZ_30
+		KAZ_17
+		KAZ_22
+		KAZ_55
+		KAZ_54
+		KAZ_25
+		KAZ_26
+		KAZ_19
+
+		
+	}
+}

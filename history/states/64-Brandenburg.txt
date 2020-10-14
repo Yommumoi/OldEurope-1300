@@ -1,0 +1,35 @@
+
+state={
+	id=64
+	name="STATE_64"
+	manpower = 1566257
+
+	state_category = megalopolis
+
+
+	history={
+		owner = BRN
+	    add_core_of = BRN
+		victory_points = {
+			6521 15 
+		}
+		victory_points = {
+			3522 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			6521 = {
+				bunker = 2
+			}
+
+		}
+		
+
+	}
+
+	provinces={
+		375 478 3367 3499 6487 6521 9428 9456 9496 9560 11219 11359 11415 11444 11505 
+	}
+}

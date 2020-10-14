@@ -1,0 +1,181 @@
+add_namespace = lux
+
+country_event = {
+	id = lux.1
+	title = lux.1.t
+	desc = lux.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lux.1.a
+		add_to_variable = { global.RON_rebel = 1 } 
+
+	}
+
+
+}
+country_event = {
+	id = lux.11
+	title = lux.1b.t
+	desc = lux.1b.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lux.1b.a
+
+	}
+
+
+}
+country_event = {
+	id = lux.2
+	title = lux.2.t
+	desc = lux.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lux.2.a
+		add_to_variable = { global.PUA_rebel = 1 }
+	}
+
+
+}
+country_event = {
+	id = lux.22
+	title = lux.2b.t
+	desc = lux.2b.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lux.2b.a
+
+	}
+
+
+}
+country_event = {
+	id = lux.3
+	title = lux.3.t
+	desc = lux.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lux.3.a
+		add_to_variable = { global.AKV_rebel = 1 }
+	}
+
+
+}
+country_event = {
+	id = lux.33
+	title = lux.3b.t
+	desc = lux.3b.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lux.3b.a
+
+	}
+
+
+}
+country_event = {
+	id = lux.4
+	title = lux.4.t
+	desc = lux.4.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lux.4.a
+		LUX = {
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
+		}
+		FRA = {
+			end_puppet = LUX
+		}
+		if = {
+			limit = {
+				check_variable = { global.RON_rebel = 1 }
+			}
+			RON = {
+				transfer_state = 22
+				transfer_state = 20
+				transfer_state = 26
+				22 = { add_core_of = RON }
+				20 = { add_core_of = RON }
+				26 = { add_core_of = RON }
+				load_oob = "RON_1936"
+				give_guarantee = PUA
+				give_guarantee = AKV
+				give_guarantee = LUX
+			}
+			FRA = {
+				create_wargoal = {
+					type = annex_everything
+					target = RON
+				}
+			}
+			
+		}
+		if = {
+			limit = {
+				check_variable = { global.PUA_rebel = 1 }
+			}
+			PUA = {
+				transfer_state = 23
+				transfer_state = 33
+				transfer_state = 25
+				23 = { add_core_of = PUA }
+				33 = { add_core_of = PUA }
+				25 = { add_core_of = PUA }
+				load_oob = "PUA_1936"
+				give_guarantee = RON
+				give_guarantee = AKV
+				give_guarantee = LUX
+			}
+			FRA = {
+				create_wargoal = {
+					type = annex_everything
+					target = PUA
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.AKV_rebel = 1 }
+			}
+			AKV = {
+				transfer_state = 14
+				load_oob = "AKV_1936"
+				give_guarantee = PUA
+				give_guarantee = RON
+				give_guarantee = LUX
+			}
+			FRA = {
+				create_wargoal = {
+					type = annex_everything
+					target = AKV
+				}
+			}
+		}
+	}
+
+
+}

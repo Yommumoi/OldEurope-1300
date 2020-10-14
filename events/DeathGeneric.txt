@@ -1,0 +1,598 @@
+add_namespace = deathgen
+
+country_event = {
+	id = deathgen.1 
+	title = deathgen.1.t
+	desc = deathgen.1.desc
+	picture = GFX_report_umerotstarosti
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deathgen.1.a
+		kill_country_leader = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_country_flag = fascism_tut
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_country_flag = communism_tut
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_country_flag = neutrality_tut
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_country_flag = democratic_tut
+			}
+			set_politics = {ruling_party = neutrality}
+			kill_country_leader = yes
+			set_politics = {ruling_party = fascism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = communism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = democratic}
+			kill_country_leader = yes
+			if = {
+				limit = {
+					has_country_flag = fascism_tut
+				}
+				set_politics = {ruling_party = fascism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = communism_tut
+				}
+				set_politics = {ruling_party = communism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = neutrality_tut
+				}
+				set_politics = {ruling_party = neutrality}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = democratic_tut
+				}
+				set_politics = {ruling_party = democratic}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {numnasled_value < 1}
+			}
+			country_event = {
+				id = dinbrak.1 
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {numnasled_value > 0}
+			}
+			add_to_variable = {numnasled_value = -1}
+		}
+	}
+}
+country_event = {
+	id = deathgen.2 
+	title = deathgen.2.t
+	desc = deathgen.2.desc
+	picture = GFX_report_pirogzgovnom
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deathgen.2.a
+		kill_country_leader = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_country_flag = fascism_tut
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_country_flag = communism_tut
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_country_flag = neutrality_tut
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_country_flag = democratic_tut
+			}
+			set_politics = {ruling_party = neutrality}
+			kill_country_leader = yes
+			set_politics = {ruling_party = fascism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = communism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = democratic}
+			kill_country_leader = yes
+			if = {
+				limit = {
+					has_country_flag = fascism_tut
+				}
+				set_politics = {ruling_party = fascism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = communism_tut
+				}
+				set_politics = {ruling_party = communism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = neutrality_tut
+				}
+				set_politics = {ruling_party = neutrality}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = democratic_tut
+				}
+				set_politics = {ruling_party = democratic}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {numnasled_value < 1}
+			}
+			country_event = {
+				id = dinbrak.1 
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {numnasled_value > 0}
+			}
+			add_to_variable = {numnasled_value = -1}
+		}
+	}
+}
+country_event = {
+	id = deathgen.3 
+	title = deathgen.3.t
+	desc = deathgen.3.desc
+	picture = GFX_report_karolbalkon
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deathgen.3.a
+		kill_country_leader = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_country_flag = fascism_tut
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_country_flag = communism_tut
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_country_flag = neutrality_tut
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_country_flag = democratic_tut
+			}
+			set_politics = {ruling_party = neutrality}
+			kill_country_leader = yes
+			set_politics = {ruling_party = fascism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = communism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = democratic}
+			kill_country_leader = yes
+			if = {
+				limit = {
+					has_country_flag = fascism_tut
+				}
+				set_politics = {ruling_party = fascism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = communism_tut
+				}
+				set_politics = {ruling_party = communism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = neutrality_tut
+				}
+				set_politics = {ruling_party = neutrality}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = democratic_tut
+				}
+				set_politics = {ruling_party = democratic}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {numnasled_value < 1}
+			}
+			country_event = {
+				id = dinbrak.1 
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {numnasled_value > 0}
+			}
+			add_to_variable = {numnasled_value = -1}
+		}
+	}
+}
+country_event = {
+	id = deathgen.4 
+	title = deathgen.4.t
+	desc = deathgen.4.desc
+	picture = GFX_report_kareta
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deathgen.4.a
+		kill_country_leader = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_country_flag = fascism_tut
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_country_flag = communism_tut
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_country_flag = neutrality_tut
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_country_flag = democratic_tut
+			}
+			set_politics = {ruling_party = neutrality}
+			kill_country_leader = yes
+			set_politics = {ruling_party = fascism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = communism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = democratic}
+			kill_country_leader = yes
+			if = {
+				limit = {
+					has_country_flag = fascism_tut
+				}
+				set_politics = {ruling_party = fascism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = communism_tut
+				}
+				set_politics = {ruling_party = communism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = neutrality_tut
+				}
+				set_politics = {ruling_party = neutrality}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = democratic_tut
+				}
+				set_politics = {ruling_party = democratic}
+			}
+		}
+		set_variable = {numnasled_value = 0}
+		if = {
+			limit = {
+				check_variable = {numnasled_value < 1}
+			}
+			country_event = {
+				id = dinbrak.1 
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {numnasled_value > 0}
+			}
+			add_to_variable = {numnasled_value = -1}
+		}
+	}
+}
+country_event = {
+	id = deathgen.5 
+	title = deathgen.5.t
+	desc = deathgen.5.desc
+	picture = GFX_report_umerotstarosti
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deathgen.1.a
+		kill_country_leader = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_country_flag = fascism_tut
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_country_flag = communism_tut
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_country_flag = neutrality_tut
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_country_flag = democratic_tut
+			}
+			set_politics = {ruling_party = neutrality}
+			kill_country_leader = yes
+			set_politics = {ruling_party = fascism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = communism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = democratic}
+			kill_country_leader = yes
+			if = {
+				limit = {
+					has_country_flag = fascism_tut
+				}
+				set_politics = {ruling_party = fascism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = communism_tut
+				}
+				set_politics = {ruling_party = communism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = neutrality_tut
+				}
+				set_politics = {ruling_party = neutrality}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = democratic_tut
+				}
+				set_politics = {ruling_party = democratic}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {numnasled_value < 1}
+			}
+			country_event = {
+				id = dinbrak.1 
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {numnasled_value > 0}
+			}
+			add_to_variable = {numnasled_value = -1}
+		}
+	}
+}
+country_event = {
+	id = deathgen.6
+	title = deathgen.6.t
+	desc = deathgen.6.desc
+	picture = GFX_report_umerotstarosti
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deathgen.6.a
+		kill_country_leader = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_country_flag = fascism_tut
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_country_flag = communism_tut
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_country_flag = neutrality_tut
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_country_flag = democratic_tut
+			}
+			set_politics = {ruling_party = neutrality}
+			kill_country_leader = yes
+			set_politics = {ruling_party = fascism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = communism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = democratic}
+			kill_country_leader = yes
+			if = {
+				limit = {
+					has_country_flag = fascism_tut
+				}
+				set_politics = {ruling_party = fascism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = communism_tut
+				}
+				set_politics = {ruling_party = communism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = neutrality_tut
+				}
+				set_politics = {ruling_party = neutrality}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = democratic_tut
+				}
+				set_politics = {ruling_party = democratic}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {numnasled_value < 1}
+			}
+			country_event = {
+				id = dinbrak.1 
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {numnasled_value > 0}
+			}
+			add_to_variable = {numnasled_value = -1}
+		}
+	}
+}
+country_event = {
+	id = deathgen.7
+	title = deathgen.7.t
+	desc = deathgen.7.desc
+	picture = GFX_report_sex_death
+	
+	is_triggered_only = yes
+
+	option = {
+		name = deathgen.7.a
+		kill_country_leader = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				set_country_flag = fascism_tut
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				set_country_flag = communism_tut
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				set_country_flag = neutrality_tut
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_country_flag = democratic_tut
+			}
+			set_politics = {ruling_party = neutrality}
+			kill_country_leader = yes
+			set_politics = {ruling_party = fascism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = communism}
+			kill_country_leader = yes
+			set_politics = {ruling_party = democratic}
+			kill_country_leader = yes
+			if = {
+				limit = {
+					has_country_flag = fascism_tut
+				}
+				set_politics = {ruling_party = fascism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = communism_tut
+				}
+				set_politics = {ruling_party = communism}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = neutrality_tut
+				}
+				set_politics = {ruling_party = neutrality}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = democratic_tut
+				}
+				set_politics = {ruling_party = democratic}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {numnasled_value < 1}
+			}
+			country_event = {
+				id = dinbrak.1 
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {numnasled_value > 0}
+			}
+			add_to_variable = {numnasled_value = -1}
+		}
+	} 
+}

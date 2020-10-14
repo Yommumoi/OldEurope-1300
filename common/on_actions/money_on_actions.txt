@@ -1,0 +1,16 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			
+			if = {
+				limit = {
+					has_political_power = 0
+					political_power_daily < 0.01
+				}
+				add_political_power = -2
+			}
+			
+		}		
+	}
+	
+}

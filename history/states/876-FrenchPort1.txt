@@ -1,0 +1,31 @@
+
+state={
+	id=876
+	name="STATE_876"
+	manpower = 40708
+	resources={
+		steel=1
+		oil = 10
+	}
+	
+	state_category = pastoral
+
+	history={
+		owner = MLE
+	    add_core_of = MLE
+		victory_points = {
+			7972 1
+		}
+		buildings = {
+			infrastructure = 3
+			7972 = {
+				naval_base = 3
+				torgnaval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		7972
+	}
+}

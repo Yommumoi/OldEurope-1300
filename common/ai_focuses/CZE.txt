@@ -1,0 +1,31 @@
+ai_historical_focus_list_CZE = {
+	ai_national_focuses = {
+		CZE_1
+		CZE_2
+		CZE_19
+		CZE_20
+		CZE_4
+		CZE_7
+		CZE_5
+		CZE_6
+		CZE_8
+		CZE_9
+		CZE_11
+		CZE_12
+		CZE_10
+		CZE_21
+		CZE_13
+		CZE_17
+		CZE_40
+		CZE_14
+		CZE_32
+		CZE_35
+		CZE_29
+		CZE_30
+		CZE_15
+		CZE_16
+		CZE_18
+		CZE_39
+		
+	}
+}

@@ -1,0 +1,40 @@
+
+state={
+	id=152
+	name="STATE_152"
+	manpower = 506844
+	
+	state_category = city
+	
+	resources={
+		steel=2
+		aluminium=1
+	}
+
+	history={
+		owner = AUS
+	    add_core_of = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		victory_points = {
+			3673 3
+		}
+		victory_points = {
+			9665 3
+		}
+		victory_points = {
+			732 10
+		}
+		#victory_points = {
+		#	11612 3
+		#}
+		
+	}
+
+	provinces={
+		 732 3673 3674 3703 6552 6687 6723 9650 9665 11651 11612
+	}
+}

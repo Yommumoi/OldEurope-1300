@@ -1,0 +1,206 @@
+add_namespace = azt
+
+country_event = {
+	id = azt.1
+	title = azt.1.t
+	desc = azt.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = azt.1.a
+		AZT = { add_to_faction = MAY }
+		ai_chance = { factor = 90 }
+		
+	}
+	option = {
+		name = azt.1.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = azt.2
+	title = azt.2.t
+	desc = azt.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = azt.2.a
+		add_ideas = { nautl }
+		ai_chance = { factor = 90 }
+		
+	}
+	option = {
+		name = azt.2.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = azt.3
+	title = azt.3.t
+	desc = azt.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = azt.3.a
+		AZT = { add_to_faction = SEM }
+		ai_chance = { factor = 90 }
+		
+	}
+	option = {
+		name = azt.3.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+
+country_event = {
+	id = azt.4
+	title = azt.4.t
+	desc = azt.4.desc
+	picture = GFX_report_aztec1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = azt.4.a
+		random_list = {
+			85 = {
+				add_stability = 0.15
+				add_political_power = 100
+				add_war_support = 0.05
+				add_manpower = 5000
+				
+			}
+			10 = {
+				AZT = { country_event = { id = azt.5 } }
+			}
+			5 = {
+				AZT = { country_event = { id = azt.6 } }
+			}
+		}
+		
+	}
+	
+}
+country_event = {
+	id = azt.5
+	title = azt.5.t
+	desc = azt.5.desc
+	picture = GFX_report_aztec1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = azt.5.a
+		random_list = {
+			90 = {
+				add_ideas = {sifilis}
+				
+			}
+			10 = {
+				add_stability = 0.01
+			}
+		}
+		
+	}
+	
+}
+country_event = {
+	id = azt.6
+	title = azt.6.t
+	desc = azt.6.desc
+	picture = GFX_report_aztec1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = azt.6.a
+			kill_country_leader = yes
+			create_country_leader = {
+                name = "Koatl"
+                desc = ""
+                picture = "gfx/characters/Koatl.dds"
+                expire = "1965.1.1"
+                ideology = despotism
+            }
+			create_country_leader = {
+                name = "Koatl"
+                desc = ""
+                picture = "gfx/characters/Koatl.dds"
+                expire = "1965.1.1"
+                ideology = stalinism
+            }
+			create_country_leader = {
+                name = "Koatl"
+                desc = ""
+                picture = "gfx/characters/Koatl.dds"
+                expire = "1965.1.1"
+                ideology = fascism_ideology
+            }
+		create_country_leader = {
+            name = "Koatl"
+            desc = ""
+            picture = "gfx/characters/Koatl.dds"
+            expire = "1965.1.1"
+            ideology = conservatism
+        }
+		
+		
+	}
+	
+}
+country_event = {
+	id = azt.7
+	title = azt.7.t
+	desc = azt.7.desc
+	picture = GFX_report_aztec1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = azt.7.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Koatl"
+			desc = ""
+			picture = "gfx/characters/Koatl.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+        }
+		create_country_leader = {
+            name = "Koatl"
+            desc = ""
+            picture = "gfx/characters/Koatl.dds"
+            expire = "1965.1.1"
+            ideology = stalinism
+        }
+		create_country_leader = {
+            name = "Koatl"
+            desc = ""
+            picture = "gfx/characters/Koatl.dds"
+            expire = "1965.1.1"
+            ideology = fascism_ideology
+        }
+		create_country_leader = {
+            name = "Koatl"
+            desc = ""
+            picture = "gfx/characters/Koatl.dds"
+            expire = "1965.1.1"
+            ideology = conservatism
+        }
+		remove_ideas = {sifilis}
+		
+	}
+	
+}

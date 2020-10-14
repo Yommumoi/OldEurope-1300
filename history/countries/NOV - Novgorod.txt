@@ -1,0 +1,98 @@
+﻿capital = 263
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 1190 }
+set_variable = { adm_limit = 17 }
+add_ideas = techgroup2
+add_ideas = NOV_govnoarmia
+add_ideas = NOV_smescultur
+set_major = yes
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_ship_hull_submarine = 1 
+    basic_ship_hull_submarine = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1 
+    basic_ship_hull_light = 1
+	spear_weapons = 1
+}
+add_ideas = {
+	Orthodox
+}
+add_ideas = torgregs1
+add_ideas = tip11
+set_variable = { soslovia_dvor = 60 }
+set_variable = { soslovia_duh = 35 }
+set_variable = { soslovia_gor = 100 }
+set_variable = { soslovia_kre = 60 }
+set_variable = { soslovia_rem = 90 }
+set_convoys = 200
+set_oob = "NOV_1936"
+
+set_autonomy = {
+	target = PSK
+	autonomous_state = autonomy_colony
+	freedom_level = 0.15
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 5
+	communism = 0
+	neutrality = 0
+	democratic = 95
+}	
+
+create_country_leader = {
+	name = "Andrey Aleksandrovich"
+	desc = ""
+	picture = "gfx/characters/Andrey Aleksandrovich.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Andrey Aleksandrovich"
+	desc = ""
+	picture = "gfx/characters/Andrey Aleksandrovich.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Andrey Aleksandrovich"
+	desc = ""
+	picture = "gfx/characters/Andrey Aleksandrovich.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Andrey Aleksandrovich"
+	desc = ""
+	picture = "gfx/characters/Andrey Aleksandrovich.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}

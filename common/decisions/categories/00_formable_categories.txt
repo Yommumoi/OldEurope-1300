@@ -1,0 +1,134 @@
+#formable_nations = {
+#
+#	icon = generic_formable_nations
+#
+#	allowed = {
+#		has_dlc = "Waking the Tiger"
+#	}
+#}
+
+form_scandinavia_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_scandinavia
+
+}
+
+form_LitEmpire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_LitEmp
+
+}
+
+form_aztec_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_aztec
+
+}
+form_ireland_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_ireland
+
+}
+form_india_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_india
+
+}
+form_filipp_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_philippines
+
+}
+
+form_spain_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_spain
+
+}
+
+
+form_nederland_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_nederland
+
+}
+
+
+form_hre_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_hre
+
+}
+
+form_abasid_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_abbasid
+
+}
+
+form_ukk_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_britain
+
+}
+
+form_rus_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_rus
+
+}
+form_italy_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_italy
+
+}
+form_inca_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_inca
+
+}
+form_sibir_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_sibir
+
+}
+form_RECH_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_RECH
+
+}
+new_iq_level = {
+	icon = generic_formable_nations
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=810
+	name="STATE_810" # Pechora
+	manpower = 66972
+	
+	state_category = rural
+	
+
+	history={
+		owner = NOV
+	    add_core_of = NOV
+		add_core_of = KOM
+		buildings = {
+			infrastructure = 2
+
+		}
+	}
+
+	provinces={
+		10723 11119 6040 198 11047 11182 9205
+	}
+}

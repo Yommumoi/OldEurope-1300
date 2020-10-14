@@ -1,0 +1,164 @@
+add_namespace = bav
+
+country_event = {
+	id = bav.1
+	title = bav.1.t
+	desc = bav.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bav.1.a
+		BAV = {puppet = ROOT}
+		ai_chance = { factor = 90 }
+		
+	}
+	option = {
+		name = bav.1.b
+		BAV = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		} 
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = bav.2
+	title = bav.2.t
+	desc = bav.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bav.2.a
+		BAV = {puppet = PFA}
+		ai_chance = { factor = 90 }
+		
+	}
+	option = {
+		name = bav.2.b
+		add_political_power = 100
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = bav.3
+	title = bav.3.t
+	desc = bav.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bav.3.a
+		add_political_power = 50
+		add_to_war = { 
+			targeted_alliance = BAV 
+			enemy = AUS 
+			hostility_reason = asked_to_join
+		}
+		ai_chance = { factor = 23 }
+		
+	}
+	option = {
+		name = bav.3.b
+		add_political_power = 50
+		add_to_war = { 
+			targeted_alliance = AUS 
+			enemy = BAV 
+			hostility_reason = asked_to_join
+		}
+		ai_chance = { factor = 22 }
+		
+	}
+	option = {
+		name = bav.3.c
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = bav.4
+	title = bav.4.t
+	desc = bav.4.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bav.4.a
+		add_political_power = 25
+		ai_chance = { factor = 50 }
+		
+	}
+	option = {
+		name = bav.4.b
+		add_political_power = 25
+		ai_chance = { factor = 20 }
+		
+	}
+	option = {
+		name = bav.4.c
+		add_political_power = 25
+		ai_chance = { factor = 10 }
+		
+	}
+	option = {
+		name = bav.4.d
+		add_political_power = 25
+		ai_chance = { factor = 10 }
+		
+	}
+	option = {
+		name = bav.4.e
+		add_political_power = 25
+		ai_chance = { factor = 10 }
+		
+	}
+	
+	
+}
+country_event = {
+	id = bav.5
+	title = bav.5.t
+	desc = bav.5.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bav.5.a
+		add_political_power = 50
+		add_ideas = HRE_imperor	
+		if = {
+			limit = {
+				AUS = {
+					has_idea = HRE_imperor
+				}
+			}
+			AUS = {
+				remove_ideas = HRE_imperor
+			}
+		}
+		if = {
+			limit = {
+				LUX = {
+					has_idea = HRE_imperor
+				}
+			}
+			LUX = {
+				remove_ideas = HRE_imperor
+			}
+		}
+	}
+	
+}

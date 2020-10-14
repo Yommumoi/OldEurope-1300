@@ -1,0 +1,8283 @@
+focus_tree = {
+	id = Byza
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y =1450 }
+	focus = {
+		id = GRE_1
+		icon = GFX_goal_paleczakon2
+		cost = 10
+		x = 8
+		y = 0
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_2
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 7
+		y = 1
+		prerequisite = {
+			focus = GRE_1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = MSK_remsub
+		}
+
+	}
+	focus = {
+		id = GRE_3
+		icon = GFX_goal_swords
+		cost = 10
+		x = 9
+		y = 1
+		prerequisite = {
+			focus = GRE_1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_4
+		icon = GFX_goal_selhoz
+		cost = 10
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = GRE_2
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = MSK_selhos
+		}
+
+	}
+	focus = {
+		id = GRE_5
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = GRE_2
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_6
+		icon = GFX_goal_rozamech
+		cost = 10
+		x = 9
+		y = 2
+		prerequisite = {
+			focus = GRE_3
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_7
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 11
+		y = 2
+		prerequisite = {
+			focus = GRE_2
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_manpower = 50000
+		}
+
+	}
+	focus = {
+		id = GRE_8
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = GRE_5
+		}
+		available_if_capitulated = yes
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_9
+		icon = GFX_goal_metall
+		cost = 10
+		x = 10
+		y = 3
+		prerequisite = {
+			focus = GRE_6
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 341
+			}
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 44
+			}
+			add_resource = {
+				type = steel
+				amount = 4
+				state = 47
+			}
+			add_resource = {
+				type = steel
+				amount = 7
+				state = 347
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_10
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GRE_1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_11
+		icon = GFX_goal_metall
+		cost = 10
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = GRE_10
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 341
+			}
+			add_resource = {
+				type = steel
+				amount = 13
+				state = 347
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_12
+		icon = GFX_goal_ruda
+		cost = 10
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = GRE_10
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = tungsten
+				amount = 25
+				state = 47
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_13
+		icon = GFX_goal_monmon
+		cost = 10
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = GRE_10
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 15
+				state = 106
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_14
+		icon = GFX_goal_blackwhite
+		cost = 10
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = GRE_12
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 35
+				state = 44
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_15
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = GRE_11
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = chromium
+				amount = 25
+				state = 341
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_16
+		icon = GFX_goal_topor
+		cost = 10
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = GRE_13
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 30
+				state = 184
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_17
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = GRE_8
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_18
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 7
+		y = 4
+		prerequisite = {
+			focus = GRE_8
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_19
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 7
+		y = 5
+		prerequisite = {
+			focus = GRE_18
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_20
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 7
+		y = 6
+		prerequisite = {
+			focus = GRE_19
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_21
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 7
+		y = 7
+		prerequisite = {
+			focus = GRE_20
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_22
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 5
+		y = 5
+		prerequisite = {
+			focus = GRE_17
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_23
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 5
+		y = 6
+		prerequisite = {
+			focus = GRE_22
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_24
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 5
+		y = 7
+		prerequisite = {
+			focus = GRE_23
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_25
+		icon = GFX_goal_byzshield
+		cost = 10
+		x = 9
+		y = 4
+		prerequisite = {
+			focus = GRE_9
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_26
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 11
+		y = 4
+		prerequisite = {
+			focus = GRE_9
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_27
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 11
+		y = 5
+		prerequisite = {
+			focus = GRE_26
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_28
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 11
+		y = 6
+		prerequisite = {
+			focus = GRE_27
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_29
+		icon = GFX_goal_swords
+		cost = 10
+		x = 11
+		y = 7
+		prerequisite = {
+			focus = GRE_28
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_30
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 9
+		y = 5
+		prerequisite = {
+			focus = GRE_25
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_31
+		icon = GFX_goal_strely
+		cost = 10
+		x = 9
+		y = 6
+		prerequisite = {
+			focus = GRE_30
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_32
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 9
+		y = 7
+		prerequisite = {
+			focus = GRE_31
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_33
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 8
+		y = 8
+		prerequisite = {
+			focus = GRE_32
+			focus = GRE_29
+			focus = GRE_21
+			focus = GRE_24
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.03
+		}
+
+	}
+	focus = {
+		id = GRE_34
+		icon = GFX_goal_piramida
+		cost = 10
+		x = 6
+		y = 9
+		prerequisite = {
+			focus = GRE_33
+
+		}
+		mutually_exclusive = {
+			focus = GRE_35
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = byz_metafeod
+			add_to_variable = {adm_limit = 7}
+			custom_effect_tooltip = adm_limit7
+		}
+
+	}
+	focus = {
+		id = GRE_35
+		icon = GFX_goal_garilla
+		cost = 10
+		x = 10
+		y = 9
+		prerequisite = {
+			focus = GRE_33
+
+		}
+		mutually_exclusive = {
+			focus = GRE_34
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = byz_raby
+		}
+
+	}
+	focus = {
+		id = GRE_36
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 25
+		y = -1
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_37
+		icon = GFX_goal_koronaslom
+		cost = 10
+		x = 16
+		y = 1
+		prerequisite = {
+			focus = GRE_36
+
+		}
+		mutually_exclusive = {
+			focus = GRE_38
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.15
+			remove_ideas = byz_VospominaniaoRime
+		} 
+
+	}
+	focus = {
+		id = GRE_38
+		icon = GFX_goal_byzshield
+		cost = 10
+		x = 34
+		y = 1
+		prerequisite = {
+			focus = GRE_36
+
+		}
+		mutually_exclusive = {
+			focus = GRE_37
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_39
+		icon = GFX_goal_sosman
+		cost = 10
+		x = 25
+		y = 2
+		prerequisite = {
+			focus = GRE_36
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_40
+		icon = GFX_goal_Krepost
+		cost = 10
+		x = 24
+		y = 3
+		prerequisite = {
+			focus = GRE_39
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			347 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 890
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11811
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 904
+				}
+				
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_41
+		icon = GFX_goal_flagsold
+		cost = 10
+		x = 26
+		y = 3
+		prerequisite = {
+			focus = GRE_39
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = byz_podgotovka
+				days = 500
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_42
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		x = 26
+		y = 4
+		prerequisite = {
+			focus = GRE_41
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = byz_veterans
+				days = 500
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_43
+		icon = GFX_goal_cavaleria
+		cost = 10
+		x = 26
+		y = 5
+		prerequisite = {
+			focus = GRE_42
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = byz_raby_in_army
+				days = 500
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_44
+		icon = GFX_goal_goldmon
+		cost = 10
+		x = 26
+		y = 6
+		prerequisite = {
+			focus = GRE_43
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 400
+		}
+
+	}
+	focus = {
+		id = GRE_45
+		icon = GFX_goal_swords
+		cost = 10
+		x = 24
+		y = 4
+		prerequisite = {
+			focus = GRE_40
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = byz_proisvodstvo
+				days = 500
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_46
+		icon = GFX_goal_osada
+		cost = 10
+		x = 24
+		y = 5
+		prerequisite = {
+			focus = GRE_45
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.1
+				uses = 1
+				category = artillery
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_47
+		icon = GFX_goal_smert
+		cost = 10
+		x = 24
+		y = 6
+		prerequisite = {
+			focus = GRE_46
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 10
+			add_timed_idea = {
+				idea = byz_vylazki
+				days = 500
+			}
+			
+		}
+
+	}
+	focus = {
+		id = GRE_48
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		x = 15
+		y = 2
+		prerequisite = {
+			focus = GRE_37
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_49
+		icon = GFX_goal_flagsold
+		cost = 10
+		x = 15
+		y = 3
+		prerequisite = {
+			focus = GRE_48
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = corruption_3
+		}
+
+	}
+	focus = {
+		id = GRE_50
+		icon = GFX_goal_Krepost
+		cost = 10
+		x = 15
+		y = 4
+		prerequisite = {
+			focus = GRE_49
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			341 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11829
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 922
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 6895
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 3879
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_51
+		icon = GFX_goal_monmon
+		cost = 10
+		x = 15
+		y = 5
+		prerequisite = {
+			focus = GRE_50
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = -100
+			custom_effect_tooltip = sos_rem20
+			add_to_variable = {
+				soslovia_rem = 20
+			}
+			clamp_variable = {
+				var = soslovia_rem
+				min = 0
+				max = 100
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_52
+		icon = GFX_goal_greekfed
+		cost = 10
+		x = 16
+		y = 6
+		prerequisite = {
+			focus = GRE_51
+
+		}
+		prerequisite = {
+			focus = GRE_56
+
+		}
+		available = {
+			has_idea = centr1
+			has_idea = ideol4
+			has_idea = corruption_3
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_cosmetic_tag = BYZFED
+			set_politics = {
+				ruling_party = democratic
+			}
+			if = {
+				limit = {
+					controls_state = 825
+				}
+				ATH = {transfer_state = 825}
+			}
+			if = {
+				limit = {
+					controls_state = 790
+				}
+				HLK = {transfer_state = 790}
+			}
+			if = {
+				limit = {
+					controls_state = 106
+				}
+				MAK = {transfer_state = 106}
+			}
+			if = {
+				limit = {
+					controls_state = 185
+				}
+				EPR = {transfer_state = 185}
+			}
+			if = {
+				limit = {
+					controls_state = 47
+				}
+				FFS = {transfer_state = 47}
+			}
+			if = {
+				limit = {
+					controls_state = 731
+				}
+				FSL = {transfer_state = 731}
+			}
+			if = {
+				limit = {
+					controls_state = 186
+				}
+				PPS = {transfer_state = 186}
+			}
+			if = {
+				limit = {
+					controls_state = 824
+				}
+				PPS = {transfer_state = 824}
+			}
+			if = {
+				limit = {
+					controls_state = 44
+				}
+				ABL = {transfer_state = 44}
+			}
+			if = {
+				limit = {
+					controls_state = 184
+				}
+				FRK = {transfer_state = 184}
+			}
+			if = {
+				limit = {
+					controls_state = 347
+				}
+				NIK = {transfer_state = 347}
+			}
+			825 = {add_core_of = ATH}
+			790 = {add_core_of = HLK}
+			106 = {add_core_of = MAK}
+			185 = {add_core_of = EPR}
+			47 = {add_core_of = FFS}
+			731 = {add_core_of = FSL}
+			186 = {add_core_of = PPS}
+			824 = {add_core_of = PPS}
+			44 = {add_core_of = ABL}
+			184 = {add_core_of = FRK}
+			347 = {add_core_of = NIK}
+			
+			set_autonomy = {
+				target = ATH
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = HLK
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = MAK
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = EPR
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = FFS
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = FSL
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = PPS
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = ABL
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = FRK
+				autonomy_state = autonomy_integrated_puppet
+			}
+			set_autonomy = {
+				target = NIK
+				autonomy_state = autonomy_integrated_puppet
+			}
+
+		}
+
+	}
+	focus = {
+		id = GRE_53
+		icon = GFX_goal_golosovanie
+		cost = 10
+		x = 17
+		y = 2
+		prerequisite = {
+			focus = GRE_37
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.2
+		}
+
+	}
+	focus = {
+		id = GRE_54
+		icon = GFX_goal_piramida
+		cost = 10
+		x = 17
+		y = 3
+		prerequisite = {
+			focus = GRE_53
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = centr1
+		}
+
+	}
+	focus = {
+		id = GRE_55
+		icon = GFX_focus_research
+		cost = 10
+		x = 17
+		y = 4
+		prerequisite = {
+			focus = GRE_54
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = GRE_56
+		icon = GFX_goal_byzshield
+		cost = 10
+		x = 17
+		y = 5
+		prerequisite = {
+			focus = GRE_55
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ideol4
+		}
+
+	}
+	focus = {
+		id = GRE_57
+		icon = GFX_goal_wingedhussar2
+		cost = 10
+		x = 33
+		y = 2
+		prerequisite = {
+			focus = GRE_38
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.5
+				uses = 1
+				category = armor
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_58
+		icon = GFX_goal_hleb
+		cost = 10
+		x = 33
+		y = 3
+		prerequisite = {
+			focus = GRE_57
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = byz_ekoproblems
+		}
+
+	}
+	focus = {
+		id = GRE_59
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 33
+		y = 4
+		prerequisite = {
+			focus = GRE_58
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = product_plus2
+			add_to_variable = {
+				product_masters_value = 100
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_60
+		icon = GFX_goal_monmon
+		cost = 10
+		x = 33
+		y = 5
+		prerequisite = {
+			focus = GRE_59
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = byz_controldenezhnoysistemy
+		}
+
+	}
+	focus = {
+		id = GRE_61
+		icon = GFX_goal_vosstan
+		cost = 10
+		x = 35
+		y = 2
+		prerequisite = {
+			focus = GRE_38
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = byz_regarmyie
+		}
+
+	}
+	focus = {
+		id = GRE_62
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 35
+		y = 3
+		prerequisite = {
+			focus = GRE_61
+
+		}
+		available_if_capitulated = yes
+		available = {
+					any_state = {
+							is_coastal = yes
+							is_controlled_by = ROOT
+						}
+				}
+			complete_tooltip = {
+					navy_experience = 25
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+				}
+		completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = GRE_63
+		icon = GFX_goal_zakons
+		cost = 10
+		x = 35
+		y = 4
+		prerequisite = {
+			focus = GRE_62
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = byz_povysz_soderz
+		}
+
+	}
+	focus = {
+		id = GRE_64
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 35
+		y = 5
+		prerequisite = {
+			focus = GRE_63
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_65
+		icon = GFX_goal_caesar
+		cost = 10
+		x = 34
+		y = 6
+		prerequisite = {
+			focus = GRE_64
+
+		}
+		prerequisite = {
+			focus = GRE_60
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+			add_to_variable = {adm_limit = 10}
+			custom_effect_tooltip = adm_limit10
+		}
+
+	}
+	focus = {
+		id = GRE_66
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 32
+		y = 7
+		prerequisite = {
+			focus = GRE_65
+
+		}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_state_claim = 886
+			add_state_claim = 889
+			add_state_claim = 789
+			add_state_claim = 888
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = GRE_67
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 36
+		y = 7
+		prerequisite = {
+			focus = GRE_65
+
+		}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_68
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 38
+		y = 8
+		prerequisite = {
+			focus = GRE_67
+
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = KKR
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = KKR
+				}
+				has_war_with = KKR
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = KKR
+				generator = { 340 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_69
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 36
+		y = 8
+		prerequisite = {
+			focus = GRE_67
+
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = KAS
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = KAS
+				}
+				has_war_with = KAS
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = KAS
+				generator = { 356 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_70
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 40
+		y = 8
+		prerequisite = {
+			focus = GRE_67
+
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = GRM
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = GRM
+				}
+				has_war_with = GRM
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRM
+				generator = { 343 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_71
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 40
+		y = 9
+		prerequisite = {
+			focus = GRE_70
+
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = MNS
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = MNS
+				}
+				has_war_with = MNS
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = MNS
+				generator = { 342 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_72
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 38
+		y = 9
+		prerequisite = {
+			focus = GRE_68
+
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = AYD
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = AYD
+				}
+				has_war_with = AYD
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = AYD
+				generator = { 339 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_73
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 36
+		y = 9
+		prerequisite = {
+			focus = GRE_69
+
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = TPZ
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = TPZ
+				}
+				has_war_with = TPZ
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TPZ
+				generator = { 354 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_74
+		icon = GFX_goal_georgia
+		cost = 10
+		x = 42
+		y = 7
+		prerequisite = {
+			focus = GRE_65
+
+		}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_75
+		icon = GFX_goal_zakons
+		cost = 10
+		x = 42
+		y = 8
+		prerequisite = {
+			focus = GRE_74
+
+		}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			GEO = {
+				GRE = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = Dinbrak_modop
+					}
+					add_relation_modifier = {
+						target = PREV
+						modifier = Dinbrak_modREL
+					}
+				}
+			}
+			GEO = {
+				add_opinion_modifier = {
+					target = GRE
+					modifier = Dinbrak_modop
+				}
+				add_relation_modifier = {
+					target = GRE
+					modifier = Dinbrak_modREL
+				}
+			}
+			GRE = {
+				add_to_variable = {dipbrakcount_value = 1}
+				clamp_variable = {
+					var = dipbrakcount_value
+					min = 0
+					max = 5
+				}
+			}
+			GEO = {
+				add_to_variable = {dipbrakcount_value = 1}
+				clamp_variable = {
+					var = dipbrakcount_value
+					min = 0
+					max = 5
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_76
+		icon = GFX_goal_osada
+		cost = 10
+		x = 42
+		y = 9
+		prerequisite = {
+			focus = GRE_75
+
+		}
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			GEO = {
+				country_event = {
+					id = deathgen.1 
+				}
+			}
+		}
+
+	}
+	focus = { 
+		id = GRE_77
+		icon = GFX_goal_genua
+		cost = 10
+		x = 30
+		y = 8
+		prerequisite = {
+			focus = GRE_66
+
+		}
+		mutually_exclusive = {
+			focus = GRE_78
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_78
+		icon = GFX_goal_genua
+		cost = 10
+		x = 34
+		y = 8
+		prerequisite = {
+			focus = GRE_66
+
+		}
+		mutually_exclusive = {
+			focus = GRE_77
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = GEN
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = GEN
+				}
+				has_war_with = GEN
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GEN
+				generator = { 789 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_79
+		icon = GFX_goal_arabkop
+		cost = 10
+		x = 25
+		y = 10
+		prerequisite = {
+			focus = GRE_44
+
+		}
+		prerequisite = {
+			focus = GRE_47
+
+		}
+		mutually_exclusive = {
+			focus = GRE_80
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = TUR
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = TUR
+				}
+				has_war_with = TUR
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TUR
+				generator = { 49 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_80
+		icon = GFX_goal_sosman
+		cost = 10
+		x = 38
+		y = 10
+		prerequisite = {
+			focus = GRE_73
+
+		}
+		mutually_exclusive = {
+			focus = GRE_79
+		}
+		prerequisite = {
+			focus = GRE_72
+
+		}
+		prerequisite = {
+			focus = GRE_71
+
+		}
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = TUR
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = TUR
+				}
+				has_war_with = TUR
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TUR
+				generator = { 49 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_81
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 22
+		y = 0
+		mutually_exclusive = {
+			focus = GRE_82
+		}
+		prerequisite = {
+			focus = GRE_36
+
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			has_war_with = VEN
+		}
+		bypass = {
+			NOT = {
+				has_war_with = VEN
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			white_peace = VEN
+		}
+
+	}
+	focus = {
+		id = GRE_82
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 28
+		y = 0
+		mutually_exclusive = {
+			focus = GRE_81
+		}
+		prerequisite = {
+			focus = GRE_36
+
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			has_war_with = VEN
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = GRE
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_83
+		icon = GFX_goal_epir
+		cost = 10
+		x = 20
+		y = 7
+		
+		prerequisite = {
+			focus = GRE_52
+		}
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = GRE_84
+		icon = GFX_goal_serbia
+		cost = 10
+		x = 20
+		y = 8
+		
+		prerequisite = {
+			focus = GRE_83
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = SER
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = SER
+				}
+				has_war_with = SER
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SER
+				generator = { 108 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_85
+		icon = GFX_goal_bulgary
+		cost = 10
+		x = 22
+		y = 8
+		
+		prerequisite = {
+			focus = GRE_83
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = BUL
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = BUL
+				}
+				has_war_with = BUL
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BUL
+				generator = { 48 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_86
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 18
+		y = 8
+		
+		prerequisite = {
+			focus = GRE_83
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = KKR
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = KKR
+				}
+				has_war_with = KKR
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = KKR
+				generator = { 340 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_87
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 18
+		y = 9
+		
+		prerequisite = {
+			focus = GRE_86
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = AYD
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = AYD
+				}
+				has_war_with = AYD
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = AYD
+				generator = { 339 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_88
+		icon = GFX_goal_epir
+		cost = 10
+		x = 20
+		y = 9
+		
+		prerequisite = {
+			focus = GRE_84
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = EPI
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = EPI
+				}
+				has_war_with = EPI
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = EPI
+				generator = { 339 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_89
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 22
+		y = 9
+		
+		prerequisite = {
+			focus = GRE_85
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = NEA
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = NEA
+				}
+				has_war_with = NEA
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = NEA
+				generator = { 825 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_90
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 16
+		y = 9
+		
+		prerequisite = {
+			focus = GRE_52
+		}
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = EGY
+				generator = { 451 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_91
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 16
+		y = 10
+		
+		prerequisite = {
+			focus = GRE_90
+		}
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = NEA
+				generator = { 156 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = ARA
+				generator = { 115 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_92
+		icon = GFX_goal_genua
+		cost = 10
+		x = 14
+		y = 10
+		
+		prerequisite = {
+			focus = GRE_90
+		}
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GEN
+				generator = { 886 789 889 888 }
+			}
+		}
+
+	}
+	focus = {
+		id = GRE_93
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 32
+		y = 12
+		
+		prerequisite = {
+			focus = GRE_66
+		}
+		prerequisite = {
+			focus = GRE_79
+			focus = GRE_80
+		}
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_ideas = tip2
+		}
+
+	}
+	focus = {
+		id = GRE_94
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 30
+		y = 13
+		
+		prerequisite = {
+			focus = GRE_93
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = KON
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = KON
+				}
+				has_war_with = KON
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = KON
+				generator = { 346 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_95
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 34
+		y = 13
+		
+		prerequisite = {
+			focus = GRE_93
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = CIL
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = CIL
+				}
+				has_war_with = CIL
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CIL
+				generator = { 345 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_96
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 32
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_93
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = HUL
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = HUL
+				}
+				has_war_with = HUL
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			HUL = {
+				country_event = {
+					id = byz.1
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_97
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 25
+		y = 13
+		
+		prerequisite = {
+			focus = GRE_93
+		}
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_98
+		icon = GFX_goal_serbia
+		cost = 10
+		x = 25
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_97
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = SER
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = SER
+				}
+				has_war_with = SER
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SER
+				generator = { 108 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_99
+		icon = GFX_goal_bulgary
+		cost = 10
+		x = 27
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_97
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = BUL
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = BUL
+				}
+				has_war_with = BUL
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BUL
+				generator = { 48 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_100
+		icon = GFX_goal_epir
+		cost = 10
+		x = 23
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_97
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = EPI
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = EPI
+				}
+				has_war_with = EPI
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = EPI
+				generator = { 185 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_101
+		icon = GFX_goal_wloch
+		cost = 10
+		x = 23
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_100
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = ROM
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = ROM
+				}
+				has_war_with = ROM
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROM
+				generator = { 46 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_102
+		icon = GFX_goal_moldova
+		cost = 10
+		x = 27
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_99
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = MOL
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = MOL
+				}
+				has_war_with = MOL
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = MOL
+				generator = { 854 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_103
+		icon = GFX_goal_hungar
+		cost = 10
+		x = 25
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_98
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = HUN
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = HUN
+				}
+				has_war_with = HUN
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HUN
+				generator = { 104 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_104
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 32
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_96
+		}
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = NEA
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = NEA
+				}
+				has_war_with = NEA
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = NEA
+				generator = { 825 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_105
+		icon = GFX_goal_iranhelm
+		cost = 10
+		x = 32
+		y = 16
+		
+		prerequisite = {
+			focus = GRE_101
+		}
+		prerequisite = {
+			focus = GRE_102
+		}
+		prerequisite = {
+			focus = GRE_103
+		}
+		prerequisite = {
+			focus = GRE_104
+		}
+		completion_reward = {
+			add_political_power = 125
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_106
+		icon = GFX_goal_paleczakon2
+		cost = 10
+		x = 32
+		y = 17
+		
+		prerequisite = {
+			focus = GRE_105
+		}
+		available = {
+			controls_state = 450
+			controls_state = 451
+			controls_state = 663
+			controls_state = 452
+			controls_state = 447
+			controls_state = 446
+			controls_state = 453
+			controls_state = 454
+			controls_state = 455
+			controls_state = 554
+			controls_state = 553
+			controls_state = 680
+			controls_state = 677
+		}
+		completion_reward = {
+			add_state_core = 450
+			add_state_core = 451
+			add_state_core = 663
+			add_state_core = 452
+			add_state_core = 447
+			add_state_core = 446
+			add_state_core = 453
+			add_state_core = 454
+			add_state_core = 455
+			add_state_core = 554
+			add_state_core = 553
+			add_state_core = 680
+			add_state_core = 677
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_107
+		icon = GFX_goal_zakons
+		cost = 10
+		x = 34
+		y = 17
+		
+		prerequisite = {
+			focus = GRE_105
+		}
+		available = {
+			controls_state = 211
+			controls_state = 212
+			controls_state = 48
+			controls_state = 77
+			controls_state = 862
+			controls_state = 46
+			controls_state = 81
+			controls_state = 108
+			controls_state = 105
+			controls_state = 107
+			controls_state = 84
+			controls_state = 854
+			controls_state = 79
+			controls_state = 104
+			controls_state = 103
+			controls_state = 109
+			controls_state = 45
+			controls_state = 764
+			controls_state = 82
+			controls_state = 83
+			controls_state = 76
+			controls_state = 154
+			controls_state = 155
+			controls_state = 43
+		}
+		completion_reward = {
+			add_state_core = 211
+			add_state_core = 212
+			add_state_core = 48
+			add_state_core = 77
+			add_state_core = 862
+			add_state_core = 46
+			add_state_core = 81
+			add_state_core = 108
+			add_state_core = 105
+			add_state_core = 107
+			add_state_core = 84
+			add_state_core = 854
+			add_state_core = 79
+			add_state_core = 104
+			add_state_core = 103
+			add_state_core = 109
+			add_state_core = 45
+			add_state_core = 764
+			add_state_core = 82
+			add_state_core = 83
+			add_state_core = 76
+			add_state_core = 154
+			add_state_core = 155
+			add_state_core = 43
+
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_108
+		icon = GFX_goal_flagsold
+		cost = 10
+		x = 30
+		y = 17
+		
+		prerequisite = {
+			focus = GRE_105
+		}
+		available = {
+			controls_state = 115
+			controls_state = 156
+			controls_state = 117
+			controls_state = 813
+		}
+		completion_reward = {
+			add_state_core = 115
+			add_state_core = 156
+			add_state_core = 117
+			add_state_core = 813
+
+
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_109
+		icon = GFX_goal_generic_production
+		cost = 10
+		x = 39
+		y = 13
+		
+		prerequisite = {
+			focus = GRE_93
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.5
+				uses = 1
+				category = industry
+			}
+
+
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_110
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		x = 40
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_109
+		}
+		available_if_capitulated = yes
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_111
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 40
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_110
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_112
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 40
+		y = 16
+		
+		prerequisite = {
+			focus = GRE_111
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_113
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 40
+		y = 17
+		
+		prerequisite = {
+			focus = GRE_112
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_114
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		x = 38
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_109
+		}
+		available_if_capitulated = yes
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_115
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 38
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_114
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_116
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 38
+		y = 16
+		
+		prerequisite = {
+			focus = GRE_115
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_117
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 38
+		y = 17
+		
+		prerequisite = {
+			focus = GRE_116
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_118
+		icon = GFX_goal_golosovanie
+		cost = 10
+		x = 39
+		y = 18
+		
+		prerequisite = {
+			focus = GRE_117
+		}
+		prerequisite = {
+			focus = GRE_113
+		}
+		completion_reward = {
+			add_to_variable = {adm_limit = 15}
+			custom_effect_tooltip = adm_limit15
+
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_119
+		icon = GFX_goal_angel
+		cost = 10
+		x = 34
+		y = 19
+		
+		prerequisite = {
+			focus = GRE_118
+		}
+		prerequisite = {
+			focus = GRE_106
+		}
+		prerequisite = {
+			focus = GRE_107
+		}
+		prerequisite = {
+			focus = GRE_108
+		}
+		
+		completion_reward = {
+			add_political_power = 125
+
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_120
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 38
+		y = 11
+		
+		prerequisite = {
+			focus = GRE_80
+		}
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = VEN
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = VEN
+				}
+				has_war_with = VEN
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = VEN
+				generator = { 182 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_121
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 34
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_96
+		}
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = EGY
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = EGY
+				}
+				has_war_with = EGY
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = EGY
+				generator = { 446 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_122
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 5
+		x = 34
+		y = 16
+		
+		prerequisite = {
+			focus = GRE_121
+		}
+
+		
+		available_if_capitulated = yes
+		available = {
+			controls_state = 552
+			controls_state = 456
+			controls_state = 457
+			controls_state = 551
+			controls_state = 767
+		}
+		completion_reward = {
+			EGY = {
+				transfer_state = 552
+				transfer_state = 456
+				transfer_state = 457
+				transfer_state = 551
+				transfer_state = 767
+				set_capital = 456
+			}
+			puppet = EGY
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_123
+		icon = GFX_goal_caesar
+		cost = 5
+		x = 34
+		y = 20
+		
+		prerequisite = {
+			focus = GRE_119
+		}
+
+		
+		
+		completion_reward = {
+			add_political_power = 250
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_124
+		icon = GFX_goal_jorik
+		cost = 5
+		x = 26
+		y = 20
+		
+		prerequisite = {
+			focus = GRE_119
+		}
+
+		
+		
+		completion_reward = {
+			add_political_power = 250
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_125
+		icon = GFX_goal_europa
+		cost = 5
+		x = 18
+		y = 20
+		
+		prerequisite = {
+			focus = GRE_119
+		}
+
+		
+		
+		completion_reward = {
+			add_political_power = 250
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_126
+		icon = GFX_goal_africa
+		cost = 5
+		x = 42
+		y = 20
+		
+		prerequisite = {
+			focus = GRE_119
+		}
+
+		
+		
+		completion_reward = {
+			add_political_power = 250
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_127
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 42
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_126
+		}
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = LBA
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = LBA
+				}
+				has_war_with = LBA
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = LBA
+				generator = { 448 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_128
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 42
+		y = 22
+		
+		prerequisite = {
+			focus = GRE_127
+		}
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = TUN
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = TUN
+				}
+				has_war_with = TUN
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TUN
+				generator = { 665 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_129
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 43
+		y = 23
+		
+		prerequisite = {
+			focus = GRE_128
+		}
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = BER
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = BER
+				}
+				has_war_with = BER
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BER
+				generator = { 665 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_130
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 41
+		y = 23
+		
+		prerequisite = {
+			focus = GRE_128
+		}
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = ALG
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = ALG
+				}
+				has_war_with = ALG
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ALG
+				generator = { 460 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_131
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 42
+		y = 25
+		
+		prerequisite = {
+			focus = GRE_130
+		}
+		prerequisite = {
+			focus = GRE_129
+		}
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = MOR
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = MOR
+				}
+				has_war_with = MOR
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = MOR
+				generator = { 462 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_132
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 25
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_124
+		}
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = GRA
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = GRA
+				}
+				has_war_with = GRA
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRA
+				generator = { 173 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_133
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 27
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_124
+		}
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = ARA
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = ARA
+				}
+				has_war_with = ARA
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ARA
+				generator = { 165 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_134
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 26
+		y = 22
+		
+		prerequisite = {
+			focus = GRE_133
+		}
+		prerequisite = {
+			focus = GRE_132
+		}
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = SPR
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = SPR
+				}
+				has_war_with = SPR
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SPR
+				generator = { 41 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_135
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 34
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_123
+		}
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = ARG
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = ARG
+				}
+				has_war_with = ARG
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ARG
+				generator = { 2 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_136
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 35
+		y = 22
+		
+		prerequisite = {
+			focus = GRE_135
+		}
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = ARB
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = ARB
+				}
+				has_war_with = ARB
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ARB
+				generator = { 828 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_137
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 33
+		y = 22
+		
+		prerequisite = {
+			focus = GRE_135
+		}
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = SIN
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = SIN
+				}
+				has_war_with = SIN
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SIN
+				generator = { 832 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_138
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 34
+		y = 23
+		
+		prerequisite = {
+			focus = GRE_137
+		}
+		prerequisite = {
+			focus = GRE_136
+		}
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = TSK
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = TSK
+				}
+				has_war_with = TSK
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TSK
+				generator = { 162 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_139
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 33
+		y = 24
+		
+		prerequisite = {
+			focus = GRE_138
+		}
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = PIS
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = PIS
+				}
+				has_war_with = PIS
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = PIS
+				generator = { 826 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_140
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 35
+		y = 24
+		
+		prerequisite = {
+			focus = GRE_138
+		}
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = LUK
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = LUK
+				}
+				has_war_with = LUK
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = LUK
+				generator = { 831 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_141
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 34
+		y = 25
+		
+		prerequisite = {
+			focus = GRE_140
+		}
+		prerequisite = {
+			focus = GRE_139
+		}
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = LOM
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = LOM
+				}
+				has_war_with = LOM
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = LOM
+				generator = { 159 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_142
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 26
+		y = 25
+		
+		prerequisite = {
+			focus = GRE_134
+		}
+		
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = BHT
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = BHT
+				}
+				has_war_with = BHT
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BHT
+				generator = { 172 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_143
+		icon = GFX_goal_avemaria
+		cost = 5
+		x = 30
+		y = 18
+		
+		prerequisite = {
+			focus = GRE_108
+		}
+		
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = IOA
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = IOA
+				}
+				has_war_with = IOA
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = IOA
+				generator = { 183 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_144
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 21
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_125
+		}
+		
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = AUS
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = AUS
+				}
+				has_war_with = AUS
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = AUS
+				generator = { 4 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_145
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 19
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_125
+		}
+		
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = CRN
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = CRN
+				}
+				has_war_with = CRN
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CRN
+				generator = { 102 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_146
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 17
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_125
+		}
+		
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = TIR
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = TIR
+				}
+				has_war_with = TIR
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TIR
+				generator = { 153 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_147
+		icon = GFX_goal_shveitsar
+		cost = 5
+		x = 15
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_125
+		}
+		
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = SWI
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = SWI
+				}
+				has_war_with = SWI
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SWI
+				generator = { 3 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_148
+		icon = GFX_goal_flurdelis
+		cost = 5
+		x = 18
+		y = 24
+		
+		prerequisite = {
+			focus = GRE_144
+		}
+		prerequisite = {
+			focus = GRE_145
+		}
+		prerequisite = {
+			focus = GRE_146
+		}
+		prerequisite = {
+			focus = GRE_147
+		}
+		
+		
+		
+		
+
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = FRA
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = FRA
+				}
+				has_war_with = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				generator = { 16 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_149
+		icon = GFX_goal_koronafridriha
+		cost = 5
+		x = 13
+		y = 21
+		
+		prerequisite = {
+			focus = GRE_125
+		}
+		
+		
+		completion_reward = {
+			add_political_power = 150
+			add_to_variable = {adm_limit = 20}
+			custom_effect_tooltip = adm_limit20
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_150
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		x = 14
+		y = 22
+		
+		prerequisite = {
+			focus = GRE_149
+		}
+		
+		
+		completion_reward = {
+			add_to_variable = {adm_limit = 3}
+			custom_effect_tooltip = adm_limit3
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_151
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		x = 14
+		y = 23
+		
+		prerequisite = {
+			focus = GRE_150
+		}
+		
+		
+		completion_reward = {
+			add_to_variable = {adm_limit = 3}
+			custom_effect_tooltip = adm_limit3
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_152
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		x = 12
+		y = 22
+		
+		prerequisite = {
+			focus = GRE_149
+		}
+		
+		
+		completion_reward = {
+			add_to_variable = {adm_limit = 3}
+			custom_effect_tooltip = adm_limit3
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_153
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		x = 12
+		y = 23
+		
+		prerequisite = {
+			focus = GRE_152
+		}
+		
+		
+		completion_reward = {
+			add_to_variable = {adm_limit = 3}
+			custom_effect_tooltip = adm_limit3
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_154
+		icon = GFX_goal_SPQR
+		cost = 10
+		x = 30
+		y = 27
+		
+		prerequisite = {
+			focus = GRE_155
+		}
+		prerequisite = {
+			focus = GRE_142
+		}
+		prerequisite = {
+			focus = GRE_141
+		}
+		prerequisite = {
+			focus = GRE_131
+		}
+		available = {
+			controls_state = 2
+			controls_state = 41
+			controls_state = 24
+			controls_state = 4
+			controls_state = 43
+			controls_state = 107
+			controls_state = 48
+			controls_state = 341
+			controls_state = 454
+			controls_state = 446
+			controls_state = 448
+			controls_state = 458
+			controls_state = 459
+			controls_state = 461
+			controls_state = 112
+			controls_state = 19
+			controls_state = 126
+			controls_state = 17
+			controls_state = 159
+		}
+		
+		completion_reward = {
+			set_cosmetic_tag = SPQRR
+			set_capital = 2
+			add_to_variable = {adm_limit = 50}
+			custom_effect_tooltip = adm_limit50
+			add_state_core = 2
+			add_state_core = 1
+			add_state_core = 157
+			add_state_core = 832
+			add_state_core = 162
+			add_state_core = 826
+			add_state_core = 829
+			add_state_core = 831
+			add_state_core = 161
+			add_state_core = 788
+			add_state_core = 159
+			add_state_core = 827
+			add_state_core = 828
+			add_state_core = 114
+			add_state_core = 158
+			add_state_core = 735
+			add_state_core = 32
+			add_state_core = 21
+			add_state_core = 887
+			add_state_core = 160
+			add_state_core = 736
+			add_state_core = 102
+			add_state_core = 4
+			add_state_core = 152
+			add_state_core = 835
+			add_state_core = 153
+			add_state_core = 39
+			add_state_core = 151
+			add_state_core = 3
+			add_state_core = 17
+			add_state_core = 22
+			add_state_core = 20
+			add_state_core = 26
+			add_state_core = 25
+			add_state_core = 33
+			add_state_core = 27
+			add_state_core = 24
+			add_state_core = 23
+			add_state_core = 30
+			add_state_core = 18
+			add_state_core = 16
+			add_state_core = 15
+			add_state_core = 785
+			add_state_core = 29
+			add_state_core = 31
+			add_state_core = 19
+			add_state_core = 866
+			add_state_core = 14
+			add_state_core = 172
+			add_state_core = 177
+			add_state_core = 165
+			add_state_core = 900
+			add_state_core = 166
+			add_state_core = 167
+			add_state_core = 168
+			add_state_core = 173
+			add_state_core = 118
+			add_state_core = 864
+			add_state_core = 179
+			add_state_core = 901
+			add_state_core = 112
+			add_state_core = 181
+			add_state_core = 180
+			add_state_core = 896
+			add_state_core = 169
+			add_state_core = 170
+			add_state_core = 175
+			add_state_core = 41
+			add_state_core = 902
+			add_state_core = 895
+			add_state_core = 899
+			add_state_core = 176
+			add_state_core = 174
+			add_state_core = 897
+			add_state_core = 898
+			add_state_core = 863
+			add_state_core = 171
+			add_state_core = 865
+			add_state_core = 662
+			add_state_core = 449
+			add_state_core = 661
+			add_state_core = 448
+			add_state_core = 665
+			add_state_core = 458
+			add_state_core = 782
+			add_state_core = 513
+			add_state_core = 460
+			add_state_core = 459
+			add_state_core = 462
+			add_state_core = 461
+			add_state_core = 290
+			add_state_core = 123
+			add_state_core = 127
+			add_state_core = 338
+			add_state_core = 126
+			add_state_core = 122
+			add_state_core = 128
+			add_state_core = 125
+			add_state_core = 129
+			add_state_core = 130
+			add_state_core = 132
+			add_state_core = 131
+			news_event = news.1039
+			
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_155
+		icon = GFX_goal_brit
+		cost = 10
+		x = 18
+		y = 25
+		
+		prerequisite = {
+			focus = GRE_148
+		}
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = ENG
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = ENG
+				}
+				has_war_with = ENG
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 126 }
+			}
+		}
+		
+		
+		
+
+	} 
+	focus = {
+		id = GRE_156
+		icon = GFX_goal_mozgon
+		cost = 10
+		x = 26
+		y = 28
+		
+		prerequisite = {
+			focus = GRE_154
+		}
+		
+		
+		
+		completion_reward = {
+			add_research_slot = 2
+		}
+		
+		
+		
+
+	} 
+	focus = {
+		id = GRE_157
+		icon = GFX_goal_romashlem
+		cost = 10
+		x = 30
+		y = 28
+		
+		prerequisite = {
+			focus = GRE_154
+		}
+		
+		
+		
+		completion_reward = {
+			custom_effect_tooltip = legion_rim
+			hidden_effect = {
+				load_oob = "ROMA"
+			
+			
+			}
+		}
+		
+		
+		
+
+	} 
+	focus = {
+		id = GRE_158
+		icon = GFX_goal_generic_production
+		cost = 10
+		x = 34
+		y = 28
+		
+		prerequisite = {
+			focus = GRE_154
+		}
+		
+		
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_159
+		icon = GFX_goal_korabl
+		cost = 10
+		x = 20
+		y = 11
+		
+		prerequisite = {
+			focus = GRE_87
+			focus = GRE_88
+			focus = GRE_89
+		}
+		prerequisite = {
+			focus = GRE_91
+		}
+		
+		
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_160
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		x = 20
+		y = 12
+		
+		prerequisite = {
+			focus = GRE_159
+		}
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+					any_state = {
+							is_coastal = yes
+							is_controlled_by = ROOT
+						}
+				}
+			complete_tooltip = {
+					navy_experience = 25
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+				}
+		completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_161
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		x = 18
+		y = 12
+		
+		prerequisite = {
+			focus = GRE_159
+		}
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+					any_state = {
+							is_coastal = yes
+							is_controlled_by = ROOT
+						}
+				}
+			complete_tooltip = {
+					navy_experience = 25
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+				}
+		completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_162
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		x = 22
+		y = 12
+		
+		prerequisite = {
+			focus = GRE_159
+		}
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+					any_state = {
+							is_coastal = yes
+							is_controlled_by = ROOT
+						}
+				}
+			complete_tooltip = {
+					navy_experience = 25
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+				}
+		completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_163
+		icon = GFX_goal_nozhbumaga
+		cost = 10
+		x = 20
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_160
+		}
+		
+		
+		
+		
+		completion_reward = {
+			add_political_power = 200
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_164
+		icon = GFX_goal_centramer
+		cost = 10
+		x = 20
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_163
+		}
+		
+		
+		
+		
+		completion_reward = {
+			random_list = {
+				
+				20 = {
+			
+					random_state = {
+						limit = {
+							OR = {
+								state = 730
+								state = 331
+								state = 466
+								state = 464
+								state = 468
+								state = 357
+								state = 358
+								state = 359
+								state = 360
+								state = 361
+								state = 363
+								state = 365
+								state = 366
+								state = 690
+								state = 904
+								state = 920
+								state = 693
+								state = 692
+								state = 694
+								state = 308
+								state = 695
+								state = 304
+								state = 685
+								state = 316
+								state = 317
+								state = 488
+								state = 687
+								state = 309
+								state = 310
+								state = 497
+								state = 499
+								state = 496
+								state = 500
+								state = 501
+								state = 703
+								state = 503
+								state = 502
+								state = 704
+								
+								state = 916
+								state = 905
+								state = 906
+								state = 913
+								state = 914
+
+							}
+							is_owned_by = XXX
+							is_coastal = yes
+						}
+						save_event_target_as = zapadniy_state
+						add_manpower = 15000
+					}
+					transfer_state = event_target:zapadniy_state
+					random_owned_state = {
+						limit = {
+							state_population > 100000
+						}
+						add_manpower = -15000
+						
+					
+					}
+				}
+				80 = {
+					set_variable = { nepovezlo = 1}
+				}
+			}
+		}
+		
+		
+		
+
+	}	
+	focus = {
+		id = GRE_165
+		icon = GFX_goal_africa
+		cost = 10
+		x = 20
+		y = 16
+		
+		prerequisite = {
+			focus = GRE_164
+		}
+		
+		available = {
+			check_variable = {nepovezlo = 1}
+		}
+		
+		
+		completion_reward = {
+			random_list = {
+				
+				20 = {
+			
+					random_state = {
+						limit = {
+							OR = {
+								state = 730
+								state = 331
+								state = 466
+								state = 464
+								state = 468
+								state = 357
+								state = 358
+								state = 359
+								state = 360
+								state = 361
+								state = 363
+								state = 365
+								state = 366
+								state = 690
+								state = 904
+								state = 920
+								state = 693
+								state = 692
+								state = 694
+								state = 308
+								state = 695
+								state = 304
+								state = 685
+								state = 316
+								state = 317
+								state = 488
+								state = 687
+								state = 309
+								state = 310
+								state = 497
+								state = 499
+								state = 496
+								state = 500
+								state = 501
+								state = 703
+								state = 503
+								state = 502
+								state = 704
+								
+								state = 916
+								state = 905
+								state = 906
+								state = 913
+								state = 914
+
+							}
+							is_owned_by = XXX
+							is_coastal = yes
+						}
+						save_event_target_as = zapadniy_state
+						add_manpower = 15000
+					}
+					transfer_state = event_target:zapadniy_state
+					random_owned_state = {
+						limit = {
+							state_population > 100000
+						}
+						add_manpower = -15000
+						
+					
+					}
+				}
+				80 = {}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_166
+		icon = GFX_goal_vosstan
+		cost = 10
+		x = 16
+		y = 12
+		
+		prerequisite = {
+			focus = GRE_91
+		}
+		
+		
+		
+		
+		completion_reward = {
+			add_political_power = 150
+			Set_cosmetic_tag = MAKEDONSKI
+			custom_effect_tooltip = adm_limit20
+			add_to_variable = {adm_limit = 20}
+			annex_country = {
+				target = ATH
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = PPS
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = EPR
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = FFS
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = FSL
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = ABL
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = MAK
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = FRK
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = NIK
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = HLK
+				transfer_troops = yes
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_167
+		icon = GFX_goal_swords
+		
+		cost = 10
+		x = 12
+		y = 13
+		
+		prerequisite = {
+			focus = GRE_166
+		}
+		
+		
+		
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_168
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 12
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_167
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = KAS
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = KAS
+				}
+				has_war_with = KAS
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = KAS
+				generator = { 356 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_169
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 10
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_167
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = IOA
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = IOA
+				}
+				has_war_with = IOA
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = IOA
+				generator = { 183 }
+			}
+		}
+		
+		
+		
+
+	}	
+	focus = {
+		id = GRE_170
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 14
+		y = 14
+		
+		prerequisite = {
+			focus = GRE_167
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = VEN
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = VEN
+				}
+				has_war_with = VEN
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = VEN
+				generator = { 790 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_171
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 14
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_170
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = MNS
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = MNS
+				}
+				has_war_with = MNS
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = MNS
+				generator = { 342 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_172
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 10
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_169
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = GRM
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = GRM
+				}
+				has_war_with = GRM
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRM
+				generator = { 343 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_173
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 12
+		y = 15
+		
+		prerequisite = {
+			focus = GRE_168
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = KON
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = KON
+				}
+				has_war_with = KON
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = KON
+				generator = { 346 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_174
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 10
+		y = 16
+		
+		prerequisite = {
+			focus = GRE_172
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = TPZ
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = TPZ
+				}
+				has_war_with = TPZ
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TPZ
+				generator = { 354 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_175
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 14
+		y = 16
+		
+		prerequisite = {
+			focus = GRE_171
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = CIL
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = CIL
+				}
+				has_war_with = CIL
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CIL
+				generator = { 345 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_176
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 12
+		y = 16
+		
+		prerequisite = {
+			focus = GRE_173
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = GEO
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = GEO
+				}
+				has_war_with = GEO
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GEO
+				generator = { 830 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_177
+		icon = GFX_goal_swordss
+		cost = 5
+		x = 12
+		y = 17
+		
+		prerequisite = {
+			focus = GRE_174
+			focus = GRE_175
+			focus = GRE_176
+		}
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = HUL
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = HUL
+				}
+				has_war_with = HUL
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HUL
+				generator = { 266 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_178
+		icon = GFX_goal_paleczakon
+		cost = 10
+		x = 12
+		y = 18
+		
+		prerequisite = {
+			focus = GRE_177
+			
+		}
+		
+		
+		
+		
+		completion_reward = {
+			add_state_core = 677
+			add_state_core = 680
+			add_state_core = 675
+			add_state_core = 676
+			add_state_core = 291
+			add_state_core = 656
+			add_state_core = 230
+			add_state_core = 229
+			add_state_core = 231
+			add_state_core = 419
+			add_state_core = 420
+			add_state_core = 421
+			add_state_core = 417
+			add_state_core = 413
+			add_state_core = 266
+			add_state_core = 411
+			add_state_core = 412
+			add_state_core = 418
+			add_state_core = 416
+			add_state_core = 414
+			add_state_core = 410
+			add_state_core = 584
+			add_state_core = 267
+			add_state_core = 415
+			add_state_core = 444
+
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_179
+		icon = 	GFX_focus_RAJ_all_india_forward_bloc
+		cost = 5
+		x = 10
+		y = 18
+		
+		prerequisite = {
+			focus = GRE_177
+		}
+		
+		
+		
+		
+		available_if_capitulated = yes
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = DEL
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = DEL
+				}
+				has_war_with = DEL
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = DEL
+				generator = { 439 }
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_180
+		icon = GFX_goal_blackwhite
+		cost = 10
+		x = 10
+		y = 20
+		
+		prerequisite = {
+			focus = GRE_179
+		}
+		
+		
+		
+		
+		
+		completion_reward = {
+			custom_effect_tooltip = tech_porox
+			hidden_effect = {
+				set_technology = {
+					porox_tech = 1
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_181
+		icon = GFX_goal_strely
+		cost = 10
+		x = 10
+		y = 22
+		
+		prerequisite = {
+			focus = GRE_180
+		}
+		
+		
+		
+		
+		
+		completion_reward = {
+			custom_effect_tooltip = tech_arke
+			hidden_effect = {
+				set_technology = {
+					arke_tech = 1
+				}
+			}
+		}
+		
+		
+		
+
+	}
+	focus = {
+		id = GRE_182
+		icon = GFX_goal_molitva
+		cost = 10
+		x = 14
+		y = 18
+		
+		prerequisite = {
+			focus = GRE_177
+		}
+		
+		
+		
+		
+		available = {
+			controls_state = 266
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 35
+				state = 266
+			}
+		}
+		
+		
+		
+
+	}
+	
+	
+}

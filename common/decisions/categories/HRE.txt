@@ -1,0 +1,6 @@
+HRE_vlast = {
+
+	icon = generic_formable_nations
+
+
+}

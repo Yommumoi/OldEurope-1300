@@ -1,0 +1,365 @@
+on_actions = {
+	
+	
+	on_startup = { 
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = { rule = rul_europe option = VYKL }
+				}
+				XXX = {
+					annex_country = { target = SPR   transfer_troops = no }
+					annex_country = { target = ARA   transfer_troops = no }
+					annex_country = { target = AKV   transfer_troops = no }
+					annex_country = { target = FRA   transfer_troops = no }
+					annex_country = { target = GRA   transfer_troops = no }
+					annex_country = { target = POR   transfer_troops = no }
+					annex_country = { target = BHT   transfer_troops = no }
+					annex_country = { target = ENG   transfer_troops = no }
+					annex_country = { target = SNT   transfer_troops = no }
+					annex_country = { target = KAL   transfer_troops = no }
+					annex_country = { target = TMP   transfer_troops = no }
+					annex_country = { target = AVI   transfer_troops = no }
+					annex_country = { target = ALK   transfer_troops = no }
+					annex_country = { target = IRE   transfer_troops = no }
+					annex_country = { target = SCO   transfer_troops = no }
+					annex_country = { target = ARB   transfer_troops = no }
+					annex_country = { target = PIS   transfer_troops = no }
+					annex_country = { target = BUR   transfer_troops = no }
+					annex_country = { target = LUX   transfer_troops = no }
+					annex_country = { target = BEL   transfer_troops = no }
+					annex_country = { target = VLN   transfer_troops = no }
+					annex_country = { target = LUB   transfer_troops = no }
+					annex_country = { target = SWI   transfer_troops = no }
+					annex_country = { target = BUL   transfer_troops = no }
+					annex_country = { target = GEN   transfer_troops = no }
+					annex_country = { target = PRO   transfer_troops = no }
+					annex_country = { target = SAV   transfer_troops = no }
+					annex_country = { target = LOM   transfer_troops = no }
+					annex_country = { target = TIR   transfer_troops = no }
+					annex_country = { target = ZAL   transfer_troops = no }
+					annex_country = { target = ARG   transfer_troops = no }
+					annex_country = { target = NEA   transfer_troops = no }
+					annex_country = { target = BAD   transfer_troops = no }
+					annex_country = { target = AUS   transfer_troops = no }
+					annex_country = { target = SIN   transfer_troops = no }
+					annex_country = { target = TSK   transfer_troops = no }
+					annex_country = { target = LUK   transfer_troops = no }
+					annex_country = { target = BAV   transfer_troops = no }
+					annex_country = { target = VEN   transfer_troops = no }
+					annex_country = { target = HUN   transfer_troops = no }
+					annex_country = { target = CRN   transfer_troops = no }
+					annex_country = { target = SER   transfer_troops = no }
+					annex_country = { target = ROM   transfer_troops = no }
+					annex_country = { target = TRA   transfer_troops = no }
+					annex_country = { target = CZE   transfer_troops = no }
+					annex_country = { target = LUX   transfer_troops = no }
+					annex_country = { target = MAI   transfer_troops = no }
+					annex_country = { target = SAM   transfer_troops = no }
+					annex_country = { target = NOR   transfer_troops = no }
+					annex_country = { target = DEN   transfer_troops = no }
+					annex_country = { target = SWE   transfer_troops = no }
+					annex_country = { target = STA   transfer_troops = no }
+					annex_country = { target = POL   transfer_troops = no }
+					annex_country = { target = SIL   transfer_troops = no }
+					annex_country = { target = IOA   transfer_troops = no }
+					annex_country = { target = GRE   transfer_troops = no }
+					annex_country = { target = EPI   transfer_troops = no }
+					annex_country = { target = MOL   transfer_troops = no }
+					annex_country = { target = KIE   transfer_troops = no }
+					annex_country = { target = PIN   transfer_troops = no }
+					annex_country = { target = POD   transfer_troops = no }
+					annex_country = { target = LIT   transfer_troops = no }
+					annex_country = { target = BLR   transfer_troops = no }
+					annex_country = { target = ZHE   transfer_troops = no }
+					annex_country = { target = LAT   transfer_troops = no }
+					annex_country = { target = TVT   transfer_troops = no }
+					annex_country = { target = VUS   transfer_troops = no }
+					annex_country = { target = RIG   transfer_troops = no }
+					annex_country = { target = PMR   transfer_troops = no }
+					annex_country = { target = BRN   transfer_troops = no }
+					annex_country = { target = HOL   transfer_troops = no }
+					annex_country = { target = ETH   transfer_troops = no }
+					annex_country = { target = NOG   transfer_troops = no }
+					annex_country = { target = NOV   transfer_troops = no }
+					annex_country = { target = VUR   transfer_troops = no }
+					annex_country = { target = VRT   transfer_troops = no }
+					annex_country = { target = NUR   transfer_troops = no }
+					annex_country = { target = AUG   transfer_troops = no }
+					annex_country = { target = KFB   transfer_troops = no }
+					annex_country = { target = LTR   transfer_troops = no }
+					annex_country = { target = LOT   transfer_troops = no }
+					annex_country = { target = ALS   transfer_troops = no }
+					annex_country = { target = DAN   transfer_troops = no }
+					annex_country = { target = GES   transfer_troops = no }
+					annex_country = { target = PFA   transfer_troops = no }
+					annex_country = { target = SHZ   transfer_troops = no }
+					annex_country = { target = SHT   transfer_troops = no }
+					annex_country = { target = MEK   transfer_troops = no }
+					annex_country = { target = PSK   transfer_troops = no }
+					annex_country = { target = CHA   transfer_troops = no }
+					annex_country = { target = LAO   transfer_troops = no }
+					annex_country = { target = LEG   transfer_troops = no }
+					annex_country = { target = MUN   transfer_troops = no }
+					annex_country = { target = TVE   transfer_troops = no }
+					annex_country = { target = TUL   transfer_troops = no }
+					annex_country = { target = KAZ   transfer_troops = no }
+					annex_country = { target = MSK   transfer_troops = no }
+					annex_country = { target = RYZ   transfer_troops = no }
+					annex_country = { target = SUZ   transfer_troops = no }
+					annex_country = { target = MUR   transfer_troops = no }
+					annex_country = { target = YAR   transfer_troops = no }
+					annex_country = { target = LUN   transfer_troops = no }
+					annex_country = { target = BRS   transfer_troops = no }
+					annex_country = { target = FRI   transfer_troops = no }
+					annex_country = { target = KLE   transfer_troops = no }
+					annex_country = { target = KLN   transfer_troops = no }
+					annex_country = { target = MAG   transfer_troops = no }
+					annex_country = { target = ANT   transfer_troops = no }
+					annex_country = { target = TRR   transfer_troops = no }
+					annex_country = { target = OLD   transfer_troops = no }
+					annex_country = { target = FRN   transfer_troops = no }
+					annex_country = { target = NAS   transfer_troops = no }
+					annex_country = { target = AHE   transfer_troops = no }
+					annex_country = { target = BRE   transfer_troops = no }
+					annex_country = { target = GMB   transfer_troops = no }
+					annex_country = { target = FER   transfer_troops = no }
+					annex_country = { target = GRI   transfer_troops = no }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = rul_asia option = VYKL }
+				}
+				XXX = {
+					annex_country = { target = SMD   transfer_troops = no }
+					annex_country = { target = CHH   transfer_troops = no }
+					annex_country = { target = WHO   transfer_troops = no }
+					annex_country = { target = HUL   transfer_troops = no }
+					annex_country = { target = TNG   transfer_troops = no }
+					annex_country = { target = TIB   transfer_troops = no }
+					annex_country = { target = KAI   transfer_troops = no }
+					annex_country = { target = YAK   transfer_troops = no }
+					annex_country = { target = DEL   transfer_troops = no }
+					annex_country = { target = GUJ   transfer_troops = no }
+					annex_country = { target = JAB   transfer_troops = no }
+					annex_country = { target = ORI   transfer_troops = no }
+					annex_country = { target = BOM   transfer_troops = no }
+					annex_country = { target = MDU   transfer_troops = no }
+					annex_country = { target = MUI   transfer_troops = no }
+					annex_country = { target = SAU   transfer_troops = no }
+					annex_country = { target = NJJ   transfer_troops = no }
+					annex_country = { target = YEM   transfer_troops = no }
+					annex_country = { target = ASA   transfer_troops = no }
+					annex_country = { target = DAU   transfer_troops = no }
+					annex_country = { target = LAM   transfer_troops = no }
+					annex_country = { target = JOP   transfer_troops = no }
+					annex_country = { target = KRR   transfer_troops = no }
+					annex_country = { target = AIN   transfer_troops = no }
+					annex_country = { target = KMC   transfer_troops = no }
+					annex_country = { target = CUC   transfer_troops = no }
+					annex_country = { target = TUR   transfer_troops = no }
+					annex_country = { target = KAS   transfer_troops = no }
+					annex_country = { target = GRM   transfer_troops = no }
+					annex_country = { target = AYD   transfer_troops = no }
+					annex_country = { target = KKR   transfer_troops = no }
+					annex_country = { target = KON   transfer_troops = no }
+					annex_country = { target = CIL   transfer_troops = no }
+					annex_country = { target = MNS   transfer_troops = no }
+					annex_country = { target = GEO   transfer_troops = no }
+					annex_country = { target = TPZ   transfer_troops = no }
+					annex_country = { target = KHM   transfer_troops = no }
+					annex_country = { target = MIN   transfer_troops = no }
+					annex_country = { target = VIE   transfer_troops = no }
+					annex_country = { target = CMP   transfer_troops = no }
+					annex_country = { target = RUK   transfer_troops = no }
+					annex_country = { target = KLP   transfer_troops = no }
+					annex_country = { target = SIA   transfer_troops = no }
+					annex_country = { target = MND   transfer_troops = no }
+					annex_country = { target = SEB   transfer_troops = no }
+					annex_country = { target = TON   transfer_troops = no }
+					annex_country = { target = LUS   transfer_troops = no }
+				}
+				
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = rul_africa option = VYKL }
+				}
+				XXX = {
+					annex_country = { target = JUB   transfer_troops = no }
+					annex_country = { target = ABY   transfer_troops = no }
+					annex_country = { target = SOM   transfer_troops = no }
+					annex_country = { target = EGY   transfer_troops = no }
+					annex_country = { target = TUA   transfer_troops = no }
+					annex_country = { target = LBA   transfer_troops = no }
+					annex_country = { target = BNT   transfer_troops = no }
+					annex_country = { target = ZIM   transfer_troops = no }
+					annex_country = { target = KEN   transfer_troops = no }
+					annex_country = { target = MLW   transfer_troops = no }
+					annex_country = { target = KIL   transfer_troops = no }
+					annex_country = { target = MDG   transfer_troops = no }
+					annex_country = { target = HOI   transfer_troops = no }
+					annex_country = { target = YAU   transfer_troops = no }
+					annex_country = { target = HAU   transfer_troops = no }
+					annex_country = { target = BON   transfer_troops = no }
+					annex_country = { target = KAN   transfer_troops = no }
+					annex_country = { target = TUN   transfer_troops = no }
+					annex_country = { target = MOR   transfer_troops = no }
+					annex_country = { target = BER   transfer_troops = no }
+					annex_country = { target = ALG   transfer_troops = no }
+					annex_country = { target = JOL   transfer_troops = no }
+					annex_country = { target = MLE   transfer_troops = no }
+					annex_country = { target = GVY   transfer_troops = no }
+					annex_country = { target = BEN   transfer_troops = no }
+					annex_country = { target = KAT   transfer_troops = no }
+					annex_country = { target = UAT   transfer_troops = no }
+					annex_country = { target = MOS   transfer_troops = no }
+					annex_country = { target = SON   transfer_troops = no }
+					annex_country = { target = DAG   transfer_troops = no }
+					annex_country = { target = OYO   transfer_troops = no }
+					annex_country = { target = AKK   transfer_troops = no }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = rul_america option = VYKL }
+				}
+				XXX = {
+					annex_country = { target = TUP   transfer_troops = no }
+					annex_country = { target = AMA   transfer_troops = no }
+					annex_country = { target = KEC   transfer_troops = no }
+					annex_country = { target = ARK   transfer_troops = no }
+					annex_country = { target = GUR   transfer_troops = no }
+					annex_country = { target = BOR   transfer_troops = no }
+					annex_country = { target = LEN   transfer_troops = no }
+					annex_country = { target = MOC   transfer_troops = no }
+					annex_country = { target = KAR   transfer_troops = no }
+					annex_country = { target = MAY   transfer_troops = no }
+					annex_country = { target = SEM   transfer_troops = no }
+					annex_country = { target = KRI   transfer_troops = no }
+					annex_country = { target = CRI   transfer_troops = no }
+					annex_country = { target = SOS   transfer_troops = no }
+					annex_country = { target = WAK   transfer_troops = no }
+					annex_country = { target = ATA   transfer_troops = no }
+					annex_country = { target = ESK   transfer_troops = no }
+					annex_country = { target = SIU   transfer_troops = no }
+					annex_country = { target = OJI   transfer_troops = no }
+					annex_country = { target = CIR   transfer_troops = no }
+					annex_country = { target = IRO   transfer_troops = no }
+					annex_country = { target = DLW   transfer_troops = no }
+					annex_country = { target = TAM   transfer_troops = no }
+					annex_country = { target = APA   transfer_troops = no }
+					annex_country = { target = AZT   transfer_troops = no }
+					annex_country = { target = MIX   transfer_troops = no }
+					annex_country = { target = TLA   transfer_troops = no }
+					annex_country = { target = OAH   transfer_troops = no }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = rul_australia option = VYKL }
+				}
+				XXX = {
+					annex_country = { target = PAP   transfer_troops = no }
+					annex_country = { target = MAO   transfer_troops = no }
+					annex_country = { target = ABR   transfer_troops = no }
+					annex_country = { target = MAJ   transfer_troops = no }
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = rul_turnir option = VKL }
+				}
+				XXX = {
+					annex_country = { target = CHH   transfer_troops = no }
+					annex_country = { target = TNG   transfer_troops = no }
+					annex_country = { target = TIB   transfer_troops = no }
+					annex_country = { target = KAI   transfer_troops = no }
+					annex_country = { target = YAK   transfer_troops = no }
+					annex_country = { target = DEL   transfer_troops = no }
+					annex_country = { target = GUJ   transfer_troops = no }
+					annex_country = { target = JAB   transfer_troops = no }
+					annex_country = { target = ORI   transfer_troops = no }
+					annex_country = { target = BOM   transfer_troops = no }
+					annex_country = { target = MDU   transfer_troops = no }
+					annex_country = { target = MUI   transfer_troops = no }
+					annex_country = { target = ASA   transfer_troops = no }
+					annex_country = { target = DAU   transfer_troops = no }
+					annex_country = { target = LAM   transfer_troops = no }
+					annex_country = { target = JOP   transfer_troops = no }
+					annex_country = { target = KRR   transfer_troops = no }
+					annex_country = { target = AIN   transfer_troops = no }
+					annex_country = { target = KMC   transfer_troops = no }
+					annex_country = { target = CUC   transfer_troops = no }
+					annex_country = { target = KHM   transfer_troops = no }
+					annex_country = { target = MIN   transfer_troops = no }
+					annex_country = { target = VIE   transfer_troops = no }
+					annex_country = { target = CMP   transfer_troops = no }
+					annex_country = { target = RUK   transfer_troops = no }
+					annex_country = { target = KLP   transfer_troops = no }
+					annex_country = { target = SIA   transfer_troops = no }
+					annex_country = { target = MND   transfer_troops = no }
+					annex_country = { target = SEB   transfer_troops = no }
+					annex_country = { target = TON   transfer_troops = no }
+					annex_country = { target = LUS   transfer_troops = no }
+					annex_country = { target = JUB   transfer_troops = no }
+					annex_country = { target = ABY   transfer_troops = no }
+					annex_country = { target = SOM   transfer_troops = no }
+					annex_country = { target = BNT   transfer_troops = no }
+					annex_country = { target = ZIM   transfer_troops = no }
+					annex_country = { target = KEN   transfer_troops = no }
+					annex_country = { target = MLW   transfer_troops = no }
+					annex_country = { target = KIL   transfer_troops = no }
+					annex_country = { target = MDG   transfer_troops = no }
+					annex_country = { target = HOI   transfer_troops = no }
+					annex_country = { target = YAU   transfer_troops = no }
+					annex_country = { target = HAU   transfer_troops = no }
+					annex_country = { target = BON   transfer_troops = no }
+					annex_country = { target = KAN   transfer_troops = no }
+					annex_country = { target = GVY   transfer_troops = no }
+					annex_country = { target = BEN   transfer_troops = no }
+					annex_country = { target = UAT   transfer_troops = no }
+					annex_country = { target = DAG   transfer_troops = no }
+					annex_country = { target = OYO   transfer_troops = no }
+					annex_country = { target = AKK   transfer_troops = no }
+					annex_country = { target = TUP   transfer_troops = no }
+					annex_country = { target = AMA   transfer_troops = no }
+					annex_country = { target = KEC   transfer_troops = no }
+					annex_country = { target = ARK   transfer_troops = no }
+					annex_country = { target = GUR   transfer_troops = no }
+					annex_country = { target = BOR   transfer_troops = no }
+					annex_country = { target = LEN   transfer_troops = no }
+					annex_country = { target = MOC   transfer_troops = no }
+					annex_country = { target = KAR   transfer_troops = no }
+					annex_country = { target = MAY   transfer_troops = no }
+					annex_country = { target = SEM   transfer_troops = no }
+					annex_country = { target = KRI   transfer_troops = no }
+					annex_country = { target = CRI   transfer_troops = no }
+					annex_country = { target = SOS   transfer_troops = no }
+					annex_country = { target = WAK   transfer_troops = no }
+					annex_country = { target = ATA   transfer_troops = no }
+					annex_country = { target = ESK   transfer_troops = no }
+					annex_country = { target = SIU   transfer_troops = no }
+					annex_country = { target = OJI   transfer_troops = no }
+					annex_country = { target = CIR   transfer_troops = no }
+					annex_country = { target = IRO   transfer_troops = no }
+					annex_country = { target = DLW   transfer_troops = no }
+					annex_country = { target = TAM   transfer_troops = no }
+					annex_country = { target = APA   transfer_troops = no }
+					annex_country = { target = AZT   transfer_troops = no }
+					annex_country = { target = MIX   transfer_troops = no }
+					annex_country = { target = TLA   transfer_troops = no }
+					annex_country = { target = OAH   transfer_troops = no }
+					annex_country = { target = PAP   transfer_troops = no }
+					annex_country = { target = MAO   transfer_troops = no }
+					annex_country = { target = ABR   transfer_troops = no }
+					annex_country = { target = MAJ   transfer_troops = no }
+				}
+			}
+		}
+		
+	}
+	
+	
+}

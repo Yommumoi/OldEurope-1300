@@ -1,0 +1,30 @@
+state={
+	id=751
+	name="STATE_751"
+	resources={
+		steel = 78
+	}
+	provinces={
+		1999 2067 7294 10726 10841 12141 12819 
+	}
+	manpower=75000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	history={
+		
+		owner = CHH
+	    add_core_of = CHH
+		
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			12141 3
+		}
+		victory_points = {
+			7294 1
+		}
+
+	}
+}

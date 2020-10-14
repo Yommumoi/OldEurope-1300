@@ -1,0 +1,35 @@
+
+state={
+	id=429
+	name="STATE_429"
+	manpower = 4338900
+	state_category = town
+	
+	resources={
+		tungsten=19 # was: 26
+		aluminium=56 
+	}
+	
+
+	history={
+		owner = BOM
+	    add_core_of = BOM
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+			1349 = {
+				naval_base = 6
+				torgnaval_base = 3
+			}
+		}
+		victory_points = {
+			1349 20 
+		}
+
+	}
+
+	provinces={
+		1349 1405 4072 4353 7013 7060 7119 7177 7232 10019 10210 10270 12142 12182 12269 
+	}
+}

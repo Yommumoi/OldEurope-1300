@@ -1,0 +1,138 @@
+ideas = {
+	country = {
+		ROMAN_discipline = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = vospominaniaOrim
+			
+			modifier = {
+				army_org_factor = 0.1
+
+			}
+		}
+	
+
+		Bulla_1 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = bulla
+			
+			modifier = {
+				stability_factor = 0.1
+				command_power_gain = 0.1
+				political_power_factor = 0.2
+
+			}
+		}
+	
+
+		Bulla_2 = {
+				
+				removal_cost = -1
+				allowed = {
+				   always = no
+				}
+				
+				picture = bulla
+				
+				modifier = {
+					army_org_factor = 0.05
+					political_power_factor = 0.5
+
+				}
+			}
+	
+
+		Torgash = {
+				
+				removal_cost = -1
+				allowed = {
+				   always = no
+				}
+				
+				picture = chi_hyper_inflation5
+				
+				modifier = {
+					political_power_factor = 2.0
+					trade_opinion_factor = 0.3	
+
+				}
+			}
+	
+
+		YazSlav = {
+				
+				removal_cost = -1
+				allowed = {
+				   always = no
+				}
+				
+				picture = rusduh
+				
+				modifier = {
+					training_time_factor = -0.1
+					army_morale_factor = 0.07
+
+				}
+			}
+	
+
+		YazGer = {
+				
+				removal_cost = -1
+				allowed = {
+				   always = no
+				}
+				
+				picture = sever
+				
+				modifier = {
+					offence = 0.09
+
+				}
+			}
+	
+
+		YazFinn = {
+				
+				removal_cost = -1
+				allowed = {
+				   always = no
+				}
+				
+				picture = samiohota
+				
+				modifier = {
+					supply_consumption_factor = -0.20
+					winter_attrition_factor = -0.5
+					planning_speed = 0.10
+
+				}
+			}
+	
+
+		YazLit = {
+				
+				removal_cost = -1
+				allowed = {
+				   always = no
+				}
+				
+				picture = lityaz
+				
+				modifier = {
+					experience_gain_army = 0.05
+					industrial_capacity_factory = 0.1
+
+				}
+			}
+	}
+}

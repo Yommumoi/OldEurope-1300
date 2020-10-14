@@ -1,0 +1,96 @@
+add_namespace = golod
+
+country_event = {
+	id = golod.1
+	title = golod.1.t
+	desc = golod.1.desc
+	picture = GFX_report_bunt
+	is_triggered_only = yes
+
+	option = {
+		name = golod.1.a
+		random_list = {
+			30 = {
+				add_manpower = -1500
+				custom_effect_tooltip = vymer_ktoto
+				hidden_effect = {
+					random_owned_state = {
+						add_manpower = -160000
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						num_of_controlled_states > 1
+					}
+					custom_effect_tooltip = kresty
+					random_owned_state = {
+						GKR = {
+							load_oob = "GKR_1936"
+							transfer_state = PREV
+							declare_war_on = {
+								target = ROOT
+								type = annex_everything
+							}
+							set_capital = PREV
+							add_state_core = PREV
+							capital_scope = {
+								create_unit = {
+									division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.2" 
+									owner = GKR
+								}
+								create_unit = {
+									division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.2" 
+									owner = GKR
+								}
+								create_unit = {
+									division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.2" 
+									owner = GKR
+								}
+								create_unit = {
+									division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.2" 
+									owner = GKR
+								}
+								create_unit = {
+									division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.2" 
+									owner = GKR
+								}
+								create_unit = {
+									division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.2" 
+									owner = GKR
+								}
+							}
+						}
+					}
+				}
+			}
+			0 = {
+				if = {
+					limit = {
+						num_of_controlled_states > 1
+					}
+					start_civil_war = {
+						ideology = democratic
+						size = 0.2
+						
+					}
+				}
+			}
+			60 = {}
+			
+		}
+		add_stability = -0.01
+		custom_effect_tooltip = adm_limit_1
+		if = {
+			limit = {
+				check_variable = {adm_limit > 1}
+			}
+			add_to_variable = {adm_limit = -1}
+		
+		}
+
+		
+	}
+	
+}

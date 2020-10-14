@@ -1,0 +1,38 @@
+state= {
+	id=183
+	name="STATE_183"
+	manpower = 86989
+	
+	state_category = rural
+	resources={
+		chromium=3 # was: 4
+	}
+
+	history=
+	{
+		
+		owner = IOA
+	    add_core_of = IOA
+		victory_points = {
+			11984 1
+		}
+		victory_points = {
+			7193 1
+		}
+		buildings = {
+			infrastructure = 4
+			7193 = {
+				naval_base = 2
+				torgnaval_base = 2
+				bunker = 3
+			}
+			11984 = {
+				bunker = 2
+			}
+			industrial_complex = 2
+			arms_factory = 2
+		}
+
+	}
+	provinces= { 7193 11984 }
+}

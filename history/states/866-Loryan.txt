@@ -1,0 +1,39 @@
+
+state={
+	id=866
+	name="STATE_866"
+	manpower = 201150
+	
+	state_category = city
+
+	history={
+	
+		owner = AKV
+	    add_core_of = AKV
+	    add_core_of = FRA
+		
+		victory_points = {
+			6536 5
+		}
+		victory_points = {
+			9495 1
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			industrial_complex = 1
+			6536 = {
+				naval_base = 4
+				torgnaval_base = 1
+			}
+			9510 = {
+				naval_base = 1
+			}
+		}
+		
+	}
+
+	provinces={
+		6536 6548 9495 9510 9525 11508 
+	}
+}

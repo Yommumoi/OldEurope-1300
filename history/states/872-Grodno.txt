@@ -1,0 +1,30 @@
+state={
+	id=872
+	name="STATE_872"
+	
+	resources={
+		rubber=16
+	}
+
+	history={
+		
+		victory_points = {
+			3393 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		
+		owner = LIT
+	    add_core_of = LIT
+
+	}
+
+	provinces={
+		3393 13206 318 3281 3366 6359 3309
+	}
+	manpower=227920
+	state_category=town
+}

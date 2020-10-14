@@ -1,0 +1,30 @@
+state=
+{
+	id=101
+	name="STATE_101"
+	manpower = 11296
+	
+	state_category = town
+	
+	history=
+	{
+		owner = GRI
+	    add_core_of = GRI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			12512 ={
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12512 1
+		}
+		
+	}
+	provinces=
+	{
+  12512 	
+  }
+}

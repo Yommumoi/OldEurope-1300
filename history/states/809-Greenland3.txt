@@ -1,0 +1,22 @@
+state=
+{
+	id=809
+	name="STATE_809"
+	manpower = 330
+	impassable = yes
+	
+	state_category = wasteland
+	
+	history=
+	{
+		owner = GRI
+	    add_core_of = GRI
+		buildings = {
+			infrastructure = 0
+		}
+		
+	}
+	provinces=
+	{
+ 10636 13066 	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=818
+	name="STATE_818"
+
+	history={
+		owner = CUC
+	    add_core_of = CUC
+		buildings = {
+			infrastructure = 1
+			13204 ={
+				naval_base = 1
+			}
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		
+
+	}
+
+	provinces={
+		13062 5264 13063 4744 13204
+	}
+	manpower=42091
+	state_category="wasteland"
+}

@@ -1,0 +1,398 @@
+add_namespace = col
+country_event = {
+	id = col.1
+	title = col.1.t
+	desc = col.1.desc
+	picture = GFX_report_mastera
+	
+	is_triggered_only = yes
+
+	option = {
+		name = col.1.a
+		add_political_power = -1250
+		country_event = col.2
+		add_to_variable = {uspeh_chance = 20}
+		ai_chance = { factor = 10 }
+		
+	}
+	option = {
+		name = col.1.b
+		add_political_power = -700
+		country_event = col.2
+		add_to_variable = {uspeh_chance = 10}
+		ai_chance = { factor = 30 }
+		
+	}
+	option = {
+		name = col.1.c
+		add_to_variable = {uspeh_chance = 5}
+		add_political_power = -350
+		country_event = col.2
+		ai_chance = { factor = 50 }
+		
+	}
+	option = {
+		name = col.1.d
+		if = {
+			limit = {
+				check_variable = {exped = 1000}
+			}
+			add_political_power = 1000
+		}
+		if = {
+			limit = {
+				check_variable = {exped = 300}
+			}
+			add_political_power = 300
+		}
+		custom_effect_tooltip = ahtung_col
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = col.2
+	title = col.2.t
+	desc = col.2.desc
+	picture = GFX_report_moraki
+	
+	is_triggered_only = yes
+
+	option = {
+		name = col.2.a
+		add_political_power = -1250
+		country_event = col.3
+		add_to_variable = {uspeh_chance = 15}
+		ai_chance = { factor = 10 }
+		
+	}
+	option = {
+		name = col.2.b
+		add_political_power = -700
+		country_event = col.3
+		add_to_variable = {uspeh_chance = 10}
+		ai_chance = { factor = 30 }
+		
+	}
+	option = {
+		name = col.2.c
+		add_to_variable = {uspeh_chance = 5}
+		country_event = col.3
+		add_political_power = -350
+		ai_chance = { factor = 50 }
+		
+	}
+	option = {
+		name = col.2.d
+		add_political_power = -100
+		country_event = col.3
+		add_to_variable = {uspeh_chance = 1}
+		
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = col.3
+	title = col.3.t
+	desc = col.3.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = col.3.a
+		add_political_power = -1250
+		country_event = col.4
+		add_to_variable = {uspeh_chance = 15}
+		ai_chance = { factor = 10 }
+		
+	}
+	option = {
+		name = col.3.b
+		add_political_power = -700
+		country_event = col.4
+		add_to_variable = {uspeh_chance = 10}
+		ai_chance = { factor = 30 }
+		
+	}
+	option = {
+		name = col.3.c
+		add_to_variable = {uspeh_chance = 5}
+		country_event = col.4
+		add_political_power = -350
+		ai_chance = { factor = 50 }
+		
+	}
+	option = {
+		name = col.3.d
+		add_political_power = -100
+		country_event = col.4
+		add_to_variable = {uspeh_chance = 1}
+		
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = col.4
+	title = col.4.t
+	desc = col.4.desc
+	picture = GFX_report_korolkorabl
+	
+	is_triggered_only = yes
+
+	option = {
+		name = col.4.a
+		country_event = col.5
+		add_to_variable = {uspeh_chance = -1}
+		add_to_variable = {king_colonel = 1}
+		add_stability = 0.03
+		ai_chance = { factor = 50 }
+		
+	}
+	option = {
+		name = col.4.b
+		country_event = col.5
+		ai_chance = { factor = 50 }
+		
+	}
+	
+}
+country_event = {
+	id = col.5
+	title = col.5.t
+	desc = col.5.desc
+	picture = GFX_report_pirates
+	
+	is_triggered_only = yes
+
+	option = {
+		name = col.5.a
+		set_variable = {uspeh_chance = 0}
+		ai_chance = { factor = 33 }
+		set_variable = {sever = 1}
+	}
+	option = {
+		name = col.5.b
+		ai_chance = { factor = 34 }
+		set_variable = {uspeh_chance = 1}
+		set_variable = {zapad = 1}
+		
+	}
+	option = {
+		name = col.5.c
+		ai_chance = { factor = 33 }
+		set_variable = {jug = 1}
+		
+	}
+	
+}
+country_event = {
+	id = col.6
+	title = col.6.t
+	desc = col.6.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = col.6.a
+		if = {
+			limit = {
+				check_variable = {zapad = 1}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						state = 730
+						state = 331
+						state = 466
+						state = 464
+						state = 468
+						state = 357
+						state = 358
+						state = 359
+						state = 360
+						state = 361
+						state = 363
+						state = 365
+						state = 366
+						state = 690
+						state = 904
+						state = 920
+
+					}
+					is_owned_by = XXX
+					is_coastal = yes
+				}
+				save_event_target_as = zapadniy_state
+				add_manpower = 15000
+			}
+			transfer_state = event_target:zapadniy_state
+			random_owned_state = {
+				limit = {
+					state_population > 100000
+				}
+				add_manpower = -15000
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {jug = 1}
+			}
+			random_state = {
+				limit = {
+					OR = {
+						state = 693
+						state = 692
+						state = 694
+						state = 308
+						state = 695
+						state = 304
+						state = 685
+						state = 316
+						state = 317
+						state = 488
+						state = 687
+						state = 309
+						state = 310
+						state = 497
+						state = 499
+						state = 496
+						state = 500
+						state = 501
+						state = 703
+						state = 503
+						state = 502
+						state = 704
+						
+						state = 916
+						state = 905
+						state = 906
+						state = 913
+						state = 914
+
+
+					}
+					is_owned_by = XXX
+					is_coastal = yes
+				}
+				save_event_target_as = juzniy_state
+				add_manpower = 15000
+			}
+			transfer_state = event_target:juzniy_state
+			random_owned_state = {
+				limit = {
+					state_population > 100000
+				}
+				add_manpower = -15000
+			}
+		}
+		
+	}
+	
+	
+}
+country_event = {
+	id = col.7
+	title = col.7.t
+	desc = col.7.desc
+	picture = GFX_report_krushenie
+	
+	is_triggered_only = yes
+
+	option = {
+		name = col.7.a
+		if = {
+			limit = {
+				check_variable = {king_colonel > 0}
+			}
+			set_variable = {king_colonel = 0}
+			kill_country_leader = yes
+			hidden_effect = {
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					set_country_flag = fascism_tut
+				}
+				if = {
+					limit = {
+						has_government = communism
+					}
+					set_country_flag = communism_tut
+				}
+				if = {
+					limit = {
+						has_government = neutrality
+					}
+					set_country_flag = neutrality_tut
+				}
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					set_country_flag = democratic_tut
+				}
+				set_politics = {ruling_party = neutrality}
+				kill_country_leader = yes
+				set_politics = {ruling_party = fascism}
+				kill_country_leader = yes
+				set_politics = {ruling_party = communism}
+				kill_country_leader = yes
+				set_politics = {ruling_party = democratic}
+				kill_country_leader = yes
+				if = {
+					limit = {
+						has_country_flag = fascism_tut
+					}
+					set_politics = {ruling_party = fascism}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = communism_tut
+					}
+					set_politics = {ruling_party = communism}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = neutrality_tut
+					}
+					set_politics = {ruling_party = neutrality}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = democratic_tut
+					}
+					set_politics = {ruling_party = democratic}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {numnasled_value < 1}
+				}
+				country_event = {
+					id = dinbrak.1 
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {numnasled_value > 0}
+				}
+				add_to_variable = {numnasled_value = -1}
+			}
+			
+		}
+		add_stability = -0.03
+		set_variable = {sever = 0}
+		set_variable = {zapad = 0}
+		set_variable = {jug = 0}
+		
+	}
+	
+	
+}

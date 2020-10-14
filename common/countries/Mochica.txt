@@ -1,0 +1,6 @@
+
+
+graphical_culture = inca_gfx
+graphical_culture_2d = inca_2d
+
+color = { 0  0  0 }

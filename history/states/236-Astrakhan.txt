@@ -1,0 +1,32 @@
+
+state={
+	id=236
+	name="STATE_236"
+	manpower = 291802
+	
+	state_category = megalopolis
+
+	history={
+		owner = KAZ
+	    add_core_of = KAZ
+		victory_points = {
+			9753 3 
+		}
+		victory_points = {
+			11579 25 
+		}
+		buildings = {
+			infrastructure = 7
+			11579 = {
+				bunker = 3
+			}
+			industrial_complex = 10
+			arms_factory = 8
+		}
+		
+	}
+
+	provinces={
+		618 757 3435 3461 3487 3726 6486 6516 6620 6758 6760 9440 9455 9592 9735 9753 11429 11579 11706 11736 
+	}
+}

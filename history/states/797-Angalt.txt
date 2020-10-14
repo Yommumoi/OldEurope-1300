@@ -1,0 +1,28 @@
+
+state={
+	id=797
+	name="STATE_797"
+	manpower = 238286
+	
+	state_category = large_city
+
+	history={
+		owner = ANT
+	    add_core_of = ANT
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			11468 3
+		}
+		
+
+	}
+
+	provinces={
+		11468 11402
+	}
+}

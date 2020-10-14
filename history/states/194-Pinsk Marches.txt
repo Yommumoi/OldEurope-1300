@@ -1,0 +1,27 @@
+
+state={
+	id=194
+	name="STATE_194" # Mozyr
+	manpower = 233658
+	
+	state_category = rural
+
+	history={
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			6232 1
+		}
+		
+		owner = PIN
+	    add_core_of = PIN
+	}
+
+	provinces={
+		215 3203 3293 3507 6232 6319 6556 9249 9554 11453 
+	}
+}

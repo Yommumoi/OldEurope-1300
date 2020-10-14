@@ -1,0 +1,509 @@
+add_namespace = chh
+
+country_event = {
+	id = chh.1
+	title = chh.1.t
+	desc = chh.1.desc
+	picture = GFX_report_kitaygorod
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chh.1.a
+		TAI = { 
+			transfer_state = 524
+			add_state_core = 524
+			load_oob = "TAI_1936"
+			add_ideas = { Konfucii}
+		}
+		MNG = { 
+			transfer_state = 329
+			transfer_state = 330
+			transfer_state = 761
+			transfer_state = 612
+			transfer_state = 563
+			transfer_state = 564
+			add_state_core = 524
+			add_state_core = 329
+			add_state_core = 330
+			add_state_core = 761
+			add_state_core = 612
+			add_state_core = 760
+			add_state_core = 759
+			add_state_core = 756
+			add_state_core = 755
+			add_state_core = 616
+			add_state_core = 754
+			add_state_core = 283
+			add_state_core = 753
+			add_state_core = 752
+			add_state_core = 747
+			add_state_core = 751
+			add_state_core = 325
+			add_state_core = 603
+			add_state_core = 748
+			add_state_core = 605
+			add_state_core = 599
+			add_state_core = 594
+			add_state_core = 592
+			add_state_core = 729
+			add_state_core = 728
+			add_state_core = 593
+			add_state_core = 595
+			add_state_core = 600
+			add_state_core = 602
+			add_state_core = 596
+			add_state_core = 749
+			add_state_core = 606
+			add_state_core = 620
+			add_state_core = 750
+			add_state_core = 613
+			add_state_core = 598
+			add_state_core = 607
+			add_state_core = 744
+			add_state_core = 743
+			add_state_core = 597
+			add_state_core = 614
+			add_state_core = 615
+			add_state_core = 622
+			add_state_core = 746
+			add_state_core = 608
+			add_state_core = 621
+			add_state_core = 611
+			add_state_core = 609
+			add_state_core = 610
+			add_state_core = 716
+			add_state_core = 745
+			add_state_core = 715
+			add_state_core = 328
+			add_state_core = 714
+			add_state_core = 717
+			add_state_core = 591
+			add_state_core = 563
+			add_state_core = 564
+			load_oob = "MNG_1936"
+			add_ideas = { Tengri}
+			declare_war_on = {
+				target = HAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CHH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SNN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TNN
+				type = annex_everything
+			}
+		}
+		HAN = { 
+			transfer_state = 760
+			transfer_state = 759
+			transfer_state = 756
+			transfer_state = 755
+			transfer_state = 616
+			transfer_state = 754
+			transfer_state = 283
+			transfer_state = 753
+			transfer_state = 752
+			add_state_core = 524
+			add_state_core = 329
+			add_state_core = 330
+			add_state_core = 761
+			add_state_core = 612
+			add_state_core = 760
+			add_state_core = 759
+			add_state_core = 756
+			add_state_core = 755
+			add_state_core = 616
+			add_state_core = 754
+			add_state_core = 283
+			add_state_core = 753
+			add_state_core = 752
+			add_state_core = 747
+			add_state_core = 751
+			add_state_core = 325
+			add_state_core = 603
+			add_state_core = 748
+			add_state_core = 605
+			add_state_core = 599
+			add_state_core = 594
+			add_state_core = 592
+			add_state_core = 729
+			add_state_core = 728
+			add_state_core = 593
+			add_state_core = 595
+			add_state_core = 600
+			add_state_core = 602
+			add_state_core = 596
+			add_state_core = 749
+			add_state_core = 606
+			add_state_core = 620
+			add_state_core = 750
+			add_state_core = 613
+			add_state_core = 598
+			add_state_core = 607
+			add_state_core = 744
+			add_state_core = 743
+			add_state_core = 597
+			add_state_core = 614
+			add_state_core = 615
+			add_state_core = 622
+			add_state_core = 746
+			add_state_core = 608
+			add_state_core = 621
+			add_state_core = 611
+			add_state_core = 609
+			add_state_core = 610
+			add_state_core = 716
+			add_state_core = 745
+			add_state_core = 715
+			add_state_core = 328
+			add_state_core = 714
+			add_state_core = 717
+			add_state_core = 591
+			add_state_core = 563
+			add_state_core = 564
+			load_oob = "HAN_1936"
+			add_ideas = { Konfucii}
+			declare_war_on = {
+				target = MNG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CHH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SNN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TNN
+				type = annex_everything
+			}
+		}
+		TNN = { 
+			transfer_state = 747
+			transfer_state = 751
+			transfer_state = 325
+			transfer_state = 603
+			transfer_state = 748
+			transfer_state = 605
+			transfer_state = 599
+			transfer_state = 594
+			transfer_state = 592
+			transfer_state = 729
+			transfer_state = 728
+			add_state_core = 524
+			add_state_core = 329
+			add_state_core = 330
+			add_state_core = 761
+			add_state_core = 612
+			add_state_core = 760
+			add_state_core = 759
+			add_state_core = 756
+			add_state_core = 755
+			add_state_core = 616
+			add_state_core = 754
+			add_state_core = 283
+			add_state_core = 753
+			add_state_core = 752
+			add_state_core = 747
+			add_state_core = 751
+			add_state_core = 325
+			add_state_core = 603
+			add_state_core = 748
+			add_state_core = 605
+			add_state_core = 599
+			add_state_core = 594
+			add_state_core = 592
+			add_state_core = 729
+			add_state_core = 728
+			add_state_core = 593
+			add_state_core = 595
+			add_state_core = 600
+			add_state_core = 602
+			add_state_core = 596
+			add_state_core = 749
+			add_state_core = 606
+			add_state_core = 620
+			add_state_core = 750
+			add_state_core = 613
+			add_state_core = 598
+			add_state_core = 607
+			add_state_core = 744
+			add_state_core = 743
+			add_state_core = 597
+			add_state_core = 614
+			add_state_core = 615
+			add_state_core = 622
+			add_state_core = 746
+			add_state_core = 608
+			add_state_core = 621
+			add_state_core = 611
+			add_state_core = 609
+			add_state_core = 610
+			add_state_core = 716
+			add_state_core = 745
+			add_state_core = 715
+			add_state_core = 328
+			add_state_core = 714
+			add_state_core = 717
+			add_state_core = 591
+			add_state_core = 563
+			add_state_core = 564
+			load_oob = "TNN_1936"
+			add_ideas = { Konfucii}
+			declare_war_on = {
+				target = HAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CHH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SNN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MNG
+				type = annex_everything
+			}
+		}
+		
+		SNN = { 
+			transfer_state = 593
+			transfer_state = 595
+			transfer_state = 600
+			transfer_state = 602
+			transfer_state = 596
+			transfer_state = 749
+			transfer_state = 606
+			transfer_state = 620
+			transfer_state = 750
+			transfer_state = 613
+			transfer_state = 598
+			transfer_state = 607
+			transfer_state = 744
+			add_state_core = 524
+			add_state_core = 329
+			add_state_core = 330
+			add_state_core = 761
+			add_state_core = 612
+			add_state_core = 760
+			add_state_core = 759
+			add_state_core = 756
+			add_state_core = 755
+			add_state_core = 616
+			add_state_core = 754
+			add_state_core = 283
+			add_state_core = 753
+			add_state_core = 752
+			add_state_core = 747
+			add_state_core = 751
+			add_state_core = 325
+			add_state_core = 603
+			add_state_core = 748
+			add_state_core = 605
+			add_state_core = 599
+			add_state_core = 594
+			add_state_core = 592
+			add_state_core = 729
+			add_state_core = 728
+			add_state_core = 593
+			add_state_core = 595
+			add_state_core = 600
+			add_state_core = 602
+			add_state_core = 596
+			add_state_core = 749
+			add_state_core = 606
+			add_state_core = 620
+			add_state_core = 750
+			add_state_core = 613
+			add_state_core = 598
+			add_state_core = 607
+			add_state_core = 744
+			add_state_core = 743
+			add_state_core = 597
+			add_state_core = 614
+			add_state_core = 615
+			add_state_core = 622
+			add_state_core = 746
+			add_state_core = 608
+			add_state_core = 621
+			add_state_core = 611
+			add_state_core = 609
+			add_state_core = 610
+			add_state_core = 716
+			add_state_core = 745
+			add_state_core = 715
+			add_state_core = 328
+			add_state_core = 714
+			add_state_core = 717
+			add_state_core = 591
+			add_state_core = 563
+			add_state_core = 564
+			add_ideas = { Konfucii}
+			declare_war_on = {
+				target = HAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CHH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MNG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TNN
+				type = annex_everything
+			}
+			load_oob = "SNN_1936"
+		}
+		load_oob = "CHH_193"
+		delete_unit_template_and_units = {
+			division_template = "Detachment"
+		}
+		end_puppet = KRR
+		KRR = {
+			transfer_state = 745 
+			transfer_state = 716 
+			transfer_state = 328 
+			transfer_state = 717 
+		}
+		news_event = {
+			id = news.1017
+		}
+	}
+	
+	
+}
+
+country_event = {
+	id = chh.2
+	title = chh.2.t
+	desc = chh.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chh.2.a
+		CHH = { add_to_faction = JOP}
+		
+	}
+	option = {
+		name = chh.2.b
+		
+	}
+	
+	
+}
+country_event = {
+	id = chh.3
+	title = chh.3.t
+	desc = chh.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chh.3.a
+		CHH = { add_to_faction = TIB}
+		
+	}
+	option = {
+		name = chh.3.b
+		
+	}
+	
+	
+}
+country_event = {
+	id = chh.5
+	title = chh.5.t
+	desc = chh.5.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chh.5.a
+		CHH = { add_to_faction = VIE}
+		
+	}
+	option = {
+		name = chh.5.b
+		
+	}
+	
+	
+}
+country_event = {
+	id = chh.6
+	title = chh.6.t
+	desc = chh.6.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chh.6.a
+		CHH = { add_to_faction = CMP}
+		
+	}
+	option = {
+		name = chh.6.b
+		
+	}
+	
+	
+}
+country_event = {
+	id = chh.7
+	title = chh.7.t
+	desc = chh.7.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chh.7.a
+		CHH = { add_to_faction = KHM}
+		
+	}
+	option = {
+		name = chh.7.b
+		
+	}
+	
+	
+}
+country_event = {
+	id = chh.8
+	title = chh.8.t
+	desc = chh.8.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = chh.8.a
+		CHH = { add_to_faction = SIA}
+		
+	}
+	option = {
+		name = chh.8.b
+		
+	}
+	
+	
+}

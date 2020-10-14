@@ -1,0 +1,36 @@
+
+state={
+	id=65
+	name="STATE_65"
+	manpower = 1398144
+	resources={
+		steel=53 # was: 90
+	}
+
+	state_category = metropolis
+
+
+	history={
+		owner = ETH
+	    add_core_of = ETH
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 3
+			514 = {
+				bunker = 2
+			}
+		}
+		victory_points = {
+			514 10 
+		}
+		victory_points = {
+			3535 5 
+		}
+		
+	}
+
+	provinces={
+		514 573 3514 3535 6441 6559 9441 9471 9535 11481 11545 
+	}
+}

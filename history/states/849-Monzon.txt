@@ -1,0 +1,33 @@
+
+state={
+	id=849
+	name="STATE_849"
+	manpower = 10010
+	
+	state_category = metropolis
+	
+
+	history={
+		owner = TMP
+	    add_core_of = TMP
+		add_core_of = ARA
+		
+		victory_points = {
+			11793 1 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			11793 = {
+				bunker = 1
+
+			}
+		}
+		
+	}
+
+	provinces={
+		11793 
+	}
+}

@@ -1,0 +1,3092 @@
+focus_tree = {
+	id = Aztec
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AZT
+		}
+	}
+	default = no
+	focus = {
+		id = AZT_1
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10
+		x = 11
+		y = 0
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = AZT_75
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 5
+		y = 18
+		prerequisite = {
+			focus = AZT_73
+		}
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_76
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 7
+		y = 18
+		prerequisite = {
+			focus = AZT_74
+		}
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_2
+		icon = GFX_goal_yaguar
+		cost = 10
+		prerequisite = {
+			focus = AZT_1
+		}
+		x = 7
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 2.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_15
+		icon = GFX_goal_generic_CAS
+		cost = 10
+		prerequisite = {
+			focus = AZT_2
+		}
+		x = 5
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_16
+		icon = GFX_goal_ink
+		cost = 10
+		prerequisite = {
+			focus = AZT_2
+		}
+		x = 7
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_17
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		prerequisite = {
+			focus = AZT_16
+		}
+		x = 7
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_42
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = AZT_17
+		}
+		x = 7
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = AZT_44
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+		cost = 10
+		prerequisite = {
+			focus = AZT_2
+		}
+		x = 9
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_23
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 20
+		prerequisite = {
+			focus = AZT_44
+		}
+		prerequisite = {
+			focus = AZT_42
+		}
+		prerequisite = {
+			focus = AZT_15
+		}
+		x = 7
+		y = 5
+			available_if_capitulated = no
+			completion_reward = {
+					add_manpower = 500000
+				}
+
+	}
+	focus = {
+		id = AZT_9
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_23
+		}
+		x = 6
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_11
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_23
+		}
+		x = 8
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_18
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_1
+		}
+		x = 11
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = AZT_53
+		icon = GFX_goal_kalendar
+		cost = 10
+		prerequisite = {
+			focus = AZT_18
+		}
+		x = 11
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = 0.8
+					add_political_power = 50
+					add_manpower = -2500
+				}
+
+	}
+	focus = {
+		id = AZT_54
+		icon = GFX_goal_pyramid
+		cost = 10
+		prerequisite = {
+			focus = AZT_53
+		}
+		x = 11
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+				remove_ideas = obrech
+					kill_country_leader = yes
+					create_country_leader = {
+							name = "Syntheua"
+							desc = ""
+							picture = "gfx/characters/Syntheua.dds"
+							expire = "1965.1.1"
+							ideology = despotism
+						}
+					create_country_leader = {
+							name = "Syntheua"
+							desc = ""
+							picture = "gfx/characters/Syntheua.dds"
+							expire = "1965.1.1"
+							ideology = stalinism
+						}
+					create_country_leader = {
+							name = "Syntheua"
+							desc = ""
+							picture = "gfx/characters/Syntheua.dds"
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+						}
+					create_country_leader = {
+							name = "Syntheua"
+							desc = ""
+							picture = "gfx/characters/Syntheua.dds"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_24
+		icon = GFX_goal_goldmon
+		cost = 10
+		prerequisite = {
+			focus = AZT_54
+		}
+		x = 11
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 500
+				}
+
+	}
+	focus = {
+		id = AZT_46
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_24
+		}
+		mutually_exclusive = {
+			focus = AZT_19
+		}
+		x = 10
+		y = 6
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = TLA
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = TLA
+								}
+							has_war_with = TLA
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = TLA
+							generator = { 477 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_26
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		cost = 10
+		prerequisite = {
+			focus = AZT_46
+		}
+		x = 10
+		y = 7
+			available_if_capitulated = yes
+			available = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+			}
+			completion_reward = {
+					AZT = {
+							transfer_state = 696
+							
+						}
+						696 = {add_manpower = 10000}
+				}
+
+	}
+	focus = {
+		id = AZT_52
+		icon = GFX_goal_topor
+		cost = 10
+		prerequisite = {
+			focus = AZT_26
+		}
+		x = 12
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_full_control_of_state = 696
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					696 = {
+							add_resource = {
+									type = rubber
+									amount = 8
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_3
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = AZT_1
+		}
+		x = 14
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 1
+							category = industry
+						}
+				}
+			ai_will_do = {
+					factor = 3
+					modifier = {
+							factor = 0
+							date < 1939.1.1
+							OR = {
+									tag = GXC
+									tag = YUN
+									tag = SHX
+									tag = XSM
+									tag = BEL
+									tag = LUX
+									tag = HOL
+									tag = DEN
+									num_of_controlled_states < 2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_5
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_3
+		}
+		x = 13
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_14
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = AZT_5
+		}
+		x = 13
+		y = 3
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_7
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_14
+		}
+		x = 13
+		y = 4
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_8
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_7
+		}
+		x = 13
+		y = 5
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_3
+		}
+		x = 15
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_13
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = AZT_4
+		}
+		x = 15
+		y = 3
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_6
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_13
+		}
+		x = 15
+		y = 4
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_10
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_6
+		}
+		x = 15
+		y = 5
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_19
+		icon = GFX_goal_centramer
+		cost = 10
+		prerequisite = {
+			focus = AZT_24
+		}
+		mutually_exclusive = {
+			focus = AZT_46
+		}
+		x = 18
+		y = 6
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = TLA
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = TLA
+								}
+							has_war_with = TLA
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = TLA
+							generator = { 477 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_22
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_19
+		}
+		x = 16
+		y = 7
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = OAH
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = OAH
+								}
+							has_war_with = OAH
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = OAH
+							generator = { 476 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_12
+		icon = GFX_goal_ruda
+		cost = 10
+		prerequisite = {
+			focus = AZT_3
+		}
+		x = 17
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_full_control_of_state = 277
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					277 = {
+							add_resource = {
+									type = steel
+									amount = 10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_43
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = AZT_12
+		}
+		x = 17
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = AZT_21
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_19
+		}
+		x = 18
+		y = 7
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = MIX
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = MIX
+								}
+							has_war_with = MIX
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = MIX
+							generator = { 485 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_20
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_19
+		}
+		x = 20
+		y = 7
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = TAM
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = TAM
+								}
+							has_war_with = TAM
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = TAM
+							generator = { 479 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_39
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_57
+		}
+		mutually_exclusive = {
+			focus = AZT_47
+		}
+		x = 17
+		y = 10
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = MAY
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = MAY
+								}
+							has_war_with = MAY
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = MAY
+							generator = { 475 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_40
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_39
+		}
+		mutually_exclusive = {
+			focus = AZT_41
+		}
+		x = 15
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = APA
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = APA
+								}
+							has_war_with = APA
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = APA
+							generator = { 480 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_45
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = AZT_1
+		}
+		x = 20
+		y = 1
+			available_if_capitulated = yes
+			available = {
+					any_state = {
+							is_coastal = yes
+							is_controlled_by = ROOT
+						}
+				}
+			complete_tooltip = {
+					navy_experience = 25
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_38
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = AZT_45
+		}
+		x = 19
+		y = 2
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+			available_if_capitulated = yes
+			completion_reward = {
+					set_technology = {
+							transport = 1
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_47
+		icon = GFX_goal_maya
+		cost = 10
+		prerequisite = {
+			focus = AZT_57
+		}
+		mutually_exclusive = {
+			focus = AZT_39
+		}
+		x = 19
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					create_faction = Nauatl
+					add_to_faction = AZT
+				}
+
+	}
+	focus = {
+		id = AZT_48
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = AZT_47
+		}
+		x = 19
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					MAY = {
+							country_event = {
+									id = azt.1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_55
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = AZT_45
+		}
+		x = 21
+		y = 2
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+			available_if_capitulated = yes
+			completion_reward = {
+					set_technology = {
+							early_ship_hull_submarine = 1
+							basic_ship_hull_submarine = 1
+							basic_torpedo = 1
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_37
+		icon = GFX_goal_generic_navy_submarine
+		cost = 20
+		prerequisite = {
+			focus = AZT_38
+		}
+		prerequisite = {
+			focus = AZT_55
+		}
+		x = 20
+		y = 3
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 500
+				producer = AZT
+			}
+		}
+
+	}
+	focus = {
+		id = AZT_25
+		icon = GFX_goal_korabl
+		cost = 20
+		prerequisite = {
+			focus = AZT_37
+		}
+		x = 20
+		y = 4
+			available = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+			}
+			available_if_capitulated = yes
+			completion_reward = {
+					load_oob = "AZT_1936_NAVAL"
+				}
+
+	}
+	focus = {
+		id = AZT_41
+		icon = GFX_goal_anschluss
+		cost = 10
+		prerequisite = {
+			focus = AZT_39
+		}
+		mutually_exclusive = {
+			focus = AZT_40
+		}
+		x = 17
+		y = 11
+			available_if_capitulated = no
+			completion_reward = {
+					SOS = {
+							add_to_faction = AZT
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_49
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = AZT_47
+		}
+		x = 21
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					SEM = {
+							country_event = {
+									id = azt.2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_50
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = AZT_49
+		}
+		x = 21
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					SEM = {
+							country_event = {
+									id = azt.3
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_51
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_48
+		}
+		prerequisite = {
+			focus = AZT_50
+		}
+		x = 19
+		y = 13
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = KAR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = KAR
+								}
+							has_war_with = KAR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 5
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = KAR
+							generator = { 317 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_27
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		cost = 10
+		prerequisite = {
+			focus = AZT_26
+		}
+		x = 10
+		y = 8
+			available_if_capitulated = yes
+			available = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+			}
+			completion_reward = {
+					AZT = {
+							transfer_state = 698
+						}
+						698 = {add_manpower = 10000}
+				}
+
+	}
+	focus = {
+		id = AZT_28
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		cost = 10
+		prerequisite = {
+			focus = AZT_27
+		}
+		x = 10
+		y = 9
+			available_if_capitulated = yes
+			available = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+			}
+			completion_reward = {
+					AZT = {
+							transfer_state = 697
+						}
+						697 = {add_manpower = 10000}
+				}
+
+	}
+	focus = {
+		id = AZT_29
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_58
+		}
+		x = 9
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = SPR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = SPR
+								}
+							has_war_with = SPR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = SPR
+							generator = { 171 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_30
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_29
+		}
+		x = 9
+		y = 12
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = POR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = POR
+								}
+							has_war_with = POR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = POR
+							generator = { 112 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_31
+		icon = GFX_goal_brit
+		cost = 10
+		prerequisite = {
+			focus = AZT_34
+		}
+		x = 18
+		y = 17
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = ENG
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = ENG
+								}
+							has_war_with = ENG
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = ENG
+							generator = { 123 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_32
+		icon = GFX_goal_flurdelis
+		cost = 10
+		prerequisite = {
+			focus = AZT_63
+			focus = AZT_62
+		}
+		x = 16
+		y = 14
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = FRA
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = FRA
+								}
+							has_war_with = FRA
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = FRA
+							generator = { 23 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_33
+		icon = GFX_goal_islam2
+		cost = 10
+		prerequisite = {
+			focus = AZT_64
+		}
+		x = 1
+		y = 15
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = MOR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = MOR
+								}
+							has_war_with = MOR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = MOR
+							generator = { 461 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_34
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_32
+		}
+		x = 18
+		y = 15
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = BHT
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = BHT
+								}
+							has_war_with = BHT
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = BHT
+							generator = { 172 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_35
+		icon = GFX_goal_greenland
+		cost = 10
+		prerequisite = {
+			focus = AZT_32
+		}
+		x = 16
+		y = 16
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = GRI
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = GRI
+								}
+							has_war_with = GRI
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = GRI
+							generator = { 101 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_36
+		icon = GFX_goal_islam2
+		cost = 10
+		prerequisite = {
+			focus = AZT_64
+		}
+		x = 3
+		y = 16
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = ALG
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = ALG
+								}
+							has_war_with = ALG
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = ALG
+							generator = { 513 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_58
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10
+		prerequisite = {
+			focus = AZT_28
+		}
+		mutually_exclusive = {
+			focus = AZT_59
+		}
+		x = 9
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					AZT = {
+							transfer_state = 863
+						}
+					set_province_name = {
+							id = 11707
+							name = Anahuac
+						}
+					news_event = {
+							id = news.1010
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_59
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10
+		prerequisite = {
+			focus = AZT_28
+		}
+		mutually_exclusive = {
+			focus = AZT_58
+		}
+		x = 11
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					AZT = {
+							transfer_state = 864
+						}
+					set_province_name = {
+							id = 3790
+							name = Melciquiuhtzin
+						}
+					news_event = {
+							id = news.1010
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_60
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_59
+		}
+		x = 11
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = POR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = POR
+								}
+							has_war_with = POR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = POR
+							generator = { 112 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_61
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = AZT_60
+		}
+		x = 11
+		y = 12
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = SPR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = SPR
+								}
+							has_war_with = SPR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = SPR
+							generator = { 171 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_62
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = AZT_30
+		}
+		x = 9
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					set_capital = 863
+					863 = {add_core_of = AZT}
+				}
+
+	}
+	focus = {
+		id = AZT_63
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = AZT_61
+		}
+		x = 11
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					set_capital = 864 
+					864 = {add_core_of = AZT}
+				}
+
+	}
+	focus = {
+		id = AZT_64
+		icon = GFX_goal_islam2
+		cost = 10
+		prerequisite = {
+			focus = AZT_62
+			focus = AZT_63
+		}
+		x = 3
+		y = 14
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = GRA
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = GRA
+								}
+							has_war_with = GRA
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = GRA
+							generator = { 173 }
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_65
+		icon = GFX_goal_europa
+		cost = 10
+		prerequisite = {
+			focus = AZT_62
+			focus = AZT_63
+		}
+		x = 8
+		y = 14
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = techgroup1
+				}
+
+	}
+	focus = {
+		id = AZT_66
+		icon = GFX_goal_molitva
+		cost = 10
+		prerequisite = {
+			focus = AZT_65
+		}
+		mutually_exclusive = {
+			focus = AZT_77
+		}
+		x = 13
+		y = 15
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = AZT_67
+		icon = GFX_goal_iudaism
+		cost = 10
+		prerequisite = {
+			focus = AZT_66
+		}
+		x = 12
+		y = 16
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = Iudaism
+				}
+
+	}
+	focus = {
+		id = AZT_69
+		icon = GFX_goal_catholic
+		cost = 10
+		prerequisite = {
+			focus = AZT_66
+		}
+		x = 13
+		y = 17
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = Catholic
+				}
+
+	}
+	focus = {
+		id = AZT_68
+		icon = GFX_goal_islam
+		cost = 10
+		prerequisite = {
+			focus = AZT_66
+		}
+		x = 14
+		y = 16
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = Islam
+				}
+
+	}
+	focus = {
+		id = AZT_70
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = AZT_65
+		}
+		x = 6
+		y = 15
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.2
+							uses = 1
+							category = industry
+						}
+				}
+			ai_will_do = {
+					factor = 3
+				}
+
+	}
+	focus = {
+		id = AZT_71
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_70
+		}
+		x = 5
+		y = 16
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_72
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_70
+		}
+		x = 7
+		y = 16
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_73
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_71
+		}
+		x = 5
+		y = 17
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_74
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_72
+		}
+		x = 7
+		y = 17
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_77
+		icon = GFX_goal_blackwhite
+		cost = 10
+		prerequisite = {
+			focus = AZT_65
+		}
+		mutually_exclusive = {
+			focus = AZT_66
+		}
+		x = 10
+		y = 15
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 60
+				}
+
+	}
+	focus = {
+		id = AZT_78
+		icon = GFX_goal_tiger
+		cost = 10
+		prerequisite = {
+			focus = AZT_77
+		}
+		x = 10
+		y = 16
+			available_if_capitulated = yes
+			completion_reward = {
+					UIC = {
+							transfer_state = 865
+							load_oob = "UIC_1936"
+							add_manpower = 10000
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_56
+		icon = GFX_goal_pyramid
+		cost = 10
+		prerequisite = {
+			focus = AZT_22
+			focus = AZT_20
+			focus = AZT_21
+		}
+		x = 18
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+				add_ideas = tip8
+			}
+
+	}
+	focus = {
+		id = AZT_57
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = {
+			focus = AZT_56
+		}
+		x = 18
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+				random_list = {
+					60 = {
+						add_ideas = centr3
+					}
+					40 = {
+						start_civil_war = {
+							ruling_party = fascism
+							ideology = ROOT
+							size = 0.5
+						}
+					}
+				}
+			}
+
+	}
+	focus = {
+		id = AZT_79
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = AZT_41
+		}
+		x = 17
+		y = 12
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AZT_80
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = AZT_50
+		}
+		x = 21
+		y = 13
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	
+}

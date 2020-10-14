@@ -1,0 +1,29 @@
+
+state={
+	id=840
+	name="STATE_840"
+	manpower = 345089
+	
+	state_category = city
+	
+	resources={
+		tungsten=1 # was: 2
+	}
+
+	history={
+		owner = MND
+	    add_core_of = MND
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			1488 1 
+		}
+	}
+
+	provinces={
+		7312 7492 7531 1253 1488 10371 7675 4496 8045 1990  
+	}
+}

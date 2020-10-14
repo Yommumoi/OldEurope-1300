@@ -1,0 +1,35 @@
+
+state={
+	id=476
+	name="STATE_476"
+	manpower = 415832
+	
+	state_category = rural
+
+	resources={
+		oil=8
+		aluminium=10
+	}
+	
+	history={
+		owner = OAH
+	    add_core_of = OAH
+		buildings = {
+			infrastructure = 3
+			10889 = {
+				naval_base = 2
+			}
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		
+		victory_points = {
+			10889 3
+		}
+	}
+
+	provinces={
+		2021 8236 10773 10889 12712 
+	}
+	
+}

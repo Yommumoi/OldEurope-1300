@@ -1,0 +1,246 @@
+﻿capital = 512
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 40 }
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_variable = { adm_limit = 1 }
+set_convoys = 0
+set_oob = "TEU_1936"
+set_variable = { soslovia_dvor = 60 }
+set_variable = { soslovia_duh = 50 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 55 }
+set_variable = { soslovia_rem = 40 }
+add_ideas = {
+tupost
+Animism
+}
+add_ideas = techgroup8
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 1
+	communism = 90
+	neutrality = 0
+	democratic = 9
+}	
+
+create_country_leader = {
+	name = "Mohammed V"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+add_opinion_modifier = {target = SPR  modifier = chuzezemec}
+add_opinion_modifier = {target = POR  modifier = chuzezemec}
+add_opinion_modifier = {target = ARA  modifier = chuzezemec}
+add_opinion_modifier = {target = GRA  modifier = chuzezemec}
+add_opinion_modifier = {target = FRA  modifier = chuzezemec}
+add_opinion_modifier = {target = ENG  modifier = chuzezemec}
+add_opinion_modifier = {target = SCO  modifier = chuzezemec}
+add_opinion_modifier = {target = IRE  modifier = chuzezemec}
+add_opinion_modifier = {target = ALG  modifier = chuzezemec}
+add_opinion_modifier = {target = TUN  modifier = chuzezemec}
+add_opinion_modifier = {target = AKV  modifier = chuzezemec}
+add_opinion_modifier = {target = BHT  modifier = chuzezemec}
+add_opinion_modifier = {target = KAL  modifier = chuzezemec}
+add_opinion_modifier = {target = SNT  modifier = chuzezemec}
+add_opinion_modifier = {target = AVI  modifier = chuzezemec}
+add_opinion_modifier = {target = TMP  modifier = chuzezemec}
+add_opinion_modifier = {target = IOA  modifier = chuzezemec}
+add_opinion_modifier = {target = ALK  modifier = chuzezemec}
+add_opinion_modifier = {target = AUS  modifier = chuzezemec}
+add_opinion_modifier = {target = MOR  modifier = chuzezemec}
+add_opinion_modifier = {target = GEN  modifier = chuzezemec}
+add_opinion_modifier = {target = JOL  modifier = chuzezemec}
+add_opinion_modifier = {target = MLE  modifier = chuzezemec}
+add_opinion_modifier = {target = TUA  modifier = chuzezemec}
+add_opinion_modifier = {target = BER  modifier = chuzezemec}
+add_opinion_modifier = {target = LBA  modifier = chuzezemec}
+add_opinion_modifier = {target = EGY  modifier = chuzezemec}
+add_opinion_modifier = {target = ABY  modifier = chuzezemec}
+add_opinion_modifier = {target = SON  modifier = chuzezemec}
+add_opinion_modifier = {target = MOS  modifier = chuzezemec}
+add_opinion_modifier = {target = KAT  modifier = chuzezemec}
+add_opinion_modifier = {target = BEN  modifier = chuzezemec}
+add_opinion_modifier = {target = GVY  modifier = chuzezemec}
+add_opinion_modifier = {target = DAG  modifier = chuzezemec}
+add_opinion_modifier = {target = YAU  modifier = chuzezemec}
+add_opinion_modifier = {target = OYO  modifier = chuzezemec}
+add_opinion_modifier = {target = BON  modifier = chuzezemec}
+add_opinion_modifier = {target = UAT  modifier = chuzezemec}
+add_opinion_modifier = {target = AKK  modifier = chuzezemec}
+add_opinion_modifier = {target = HAU  modifier = chuzezemec}
+add_opinion_modifier = {target = KAN  modifier = chuzezemec}
+add_opinion_modifier = {target = JUB  modifier = chuzezemec}
+add_opinion_modifier = {target = MDG  modifier = chuzezemec}
+add_opinion_modifier = {target = BNT  modifier = chuzezemec}
+add_opinion_modifier = {target = SOM  modifier = chuzezemec}
+add_opinion_modifier = {target = KEN  modifier = chuzezemec}
+add_opinion_modifier = {target = ZIM  modifier = chuzezemec}
+add_opinion_modifier = {target = KIL  modifier = chuzezemec}
+add_opinion_modifier = {target = HOI  modifier = chuzezemec}
+add_opinion_modifier = {target = MLW  modifier = chuzezemec}
+add_opinion_modifier = {target = SAU  modifier = chuzezemec}
+add_opinion_modifier = {target = YEM  modifier = chuzezemec}
+add_opinion_modifier = {target = NJJ  modifier = chuzezemec}
+add_opinion_modifier = {target = HUL  modifier = chuzezemec}
+add_opinion_modifier = {target = TPZ  modifier = chuzezemec}
+add_opinion_modifier = {target = GEO  modifier = chuzezemec}
+add_opinion_modifier = {target = DEL  modifier = chuzezemec}
+add_opinion_modifier = {target = CIL  modifier = chuzezemec}
+add_opinion_modifier = {target = KAS  modifier = chuzezemec}
+add_opinion_modifier = {target = TUR  modifier = chuzezemec}
+add_opinion_modifier = {target = WHO  modifier = chuzezemec}
+add_opinion_modifier = {target = KAZ  modifier = chuzezemec}
+add_opinion_modifier = {target = KON  modifier = chuzezemec}
+add_opinion_modifier = {target = GRE  modifier = chuzezemec}
+add_opinion_modifier = {target = VEN  modifier = chuzezemec}
+add_opinion_modifier = {target = GRM  modifier = chuzezemec}
+add_opinion_modifier = {target = BUL  modifier = chuzezemec}
+add_opinion_modifier = {target = MOL  modifier = chuzezemec}
+add_opinion_modifier = {target = SER  modifier = chuzezemec}
+add_opinion_modifier = {target = KAI  modifier = chuzezemec}
+add_opinion_modifier = {target = SMD  modifier = chuzezemec}
+add_opinion_modifier = {target = SAM  modifier = chuzezemec}
+add_opinion_modifier = {target = MNS  modifier = chuzezemec}
+add_opinion_modifier = {target = AYD  modifier = chuzezemec}
+add_opinion_modifier = {target = KKR  modifier = chuzezemec}
+add_opinion_modifier = {target = MSK  modifier = chuzezemec}
+add_opinion_modifier = {target = ROM  modifier = chuzezemec}
+add_opinion_modifier = {target = TRA  modifier = chuzezemec}
+add_opinion_modifier = {target = HUN  modifier = chuzezemec}
+add_opinion_modifier = {target = EPI  modifier = chuzezemec}
+add_opinion_modifier = {target = NEA  modifier = chuzezemec}
+add_opinion_modifier = {target = CHA  modifier = chuzezemec}
+add_opinion_modifier = {target = STA  modifier = chuzezemec}
+add_opinion_modifier = {target = LIT  modifier = chuzezemec}
+add_opinion_modifier = {target = PIN  modifier = chuzezemec}
+add_opinion_modifier = {target = LAT  modifier = chuzezemec}
+add_opinion_modifier = {target = TVT  modifier = chuzezemec}
+add_opinion_modifier = {target = ZHE  modifier = chuzezemec}
+add_opinion_modifier = {target = RIG  modifier = chuzezemec}
+add_opinion_modifier = {target = SWE  modifier = chuzezemec}
+add_opinion_modifier = {target = NOR  modifier = chuzezemec}
+add_opinion_modifier = {target = VUS  modifier = chuzezemec}
+add_opinion_modifier = {target = KIE  modifier = chuzezemec}
+add_opinion_modifier = {target = NOV  modifier = chuzezemec}
+add_opinion_modifier = {target = TNG  modifier = chuzezemec}
+add_opinion_modifier = {target = LAO  modifier = chuzezemec}
+add_opinion_modifier = {target = BLR  modifier = chuzezemec}
+add_opinion_modifier = {target = TUL  modifier = chuzezemec}
+add_opinion_modifier = {target = MUR  modifier = chuzezemec}
+add_opinion_modifier = {target = SUZ  modifier = chuzezemec}
+add_opinion_modifier = {target = RYZ  modifier = chuzezemec}
+add_opinion_modifier = {target = TVE  modifier = chuzezemec}
+add_opinion_modifier = {target = PSK  modifier = chuzezemec}
+add_opinion_modifier = {target = DEN  modifier = chuzezemec}
+add_opinion_modifier = {target = POD  modifier = chuzezemec}
+add_opinion_modifier = {target = POL  modifier = chuzezemec}
+add_opinion_modifier = {target = SIL  modifier = chuzezemec}
+add_opinion_modifier = {target = CZE  modifier = chuzezemec}
+add_opinion_modifier = {target = BAV  modifier = chuzezemec}
+add_opinion_modifier = {target = SHZ  modifier = chuzezemec}
+add_opinion_modifier = {target = YAR  modifier = chuzezemec}
+add_opinion_modifier = {target = ARB  modifier = chuzezemec}
+add_opinion_modifier = {target = PIS  modifier = chuzezemec}
+add_opinion_modifier = {target = ARG  modifier = chuzezemec}
+add_opinion_modifier = {target = LOM  modifier = chuzezemec}
+add_opinion_modifier = {target = SAV  modifier = chuzezemec}
+add_opinion_modifier = {target = BUR  modifier = chuzezemec}
+add_opinion_modifier = {target = ETH  modifier = chuzezemec}
+add_opinion_modifier = {target = BRN  modifier = chuzezemec}
+add_opinion_modifier = {target = BRS  modifier = chuzezemec}
+add_opinion_modifier = {target = HOL  modifier = chuzezemec}
+add_opinion_modifier = {target = FRI  modifier = chuzezemec}
+
+add_opinion_modifier = {target = DAN  modifier = chuzezemec}
+add_opinion_modifier = {target = LUX  modifier = chuzezemec}
+add_opinion_modifier = {target = BAD  modifier = chuzezemec}
+add_opinion_modifier = {target = BEL  modifier = chuzezemec}
+add_opinion_modifier = {target = VLN  modifier = chuzezemec}
+add_opinion_modifier = {target = ANT  modifier = chuzezemec}
+add_opinion_modifier = {target = MAG  modifier = chuzezemec}
+add_opinion_modifier = {target = CRN  modifier = chuzezemec}
+add_opinion_modifier = {target = TIR  modifier = chuzezemec}
+add_opinion_modifier = {target = ZAL  modifier = chuzezemec}
+add_opinion_modifier = {target = SIN  modifier = chuzezemec}
+add_opinion_modifier = {target = TSK  modifier = chuzezemec}
+add_opinion_modifier = {target = LUK  modifier = chuzezemec}
+add_opinion_modifier = {target = FRN  modifier = chuzezemec}
+add_opinion_modifier = {target = MAI  modifier = chuzezemec}
+add_opinion_modifier = {target = NUR  modifier = chuzezemec}
+add_opinion_modifier = {target = VUR  modifier = chuzezemec}
+add_opinion_modifier = {target = SWI  modifier = chuzezemec}
+add_opinion_modifier = {target = LTR  modifier = chuzezemec}
+add_opinion_modifier = {target = PRO  modifier = chuzezemec}
+add_opinion_modifier = {target = MEK  modifier = chuzezemec}
+add_opinion_modifier = {target = SHT  modifier = chuzezemec}
+add_opinion_modifier = {target = ALS  modifier = chuzezemec}
+add_opinion_modifier = {target = LUN  modifier = chuzezemec}
+add_opinion_modifier = {target = VRT  modifier = chuzezemec}
+add_opinion_modifier = {target = GMB  modifier = chuzezemec}
+add_opinion_modifier = {target = MUN  modifier = chuzezemec}
+add_opinion_modifier = {target = KLN  modifier = chuzezemec}
+add_opinion_modifier = {target = NAS  modifier = chuzezemec}
+add_opinion_modifier = {target = LEG  modifier = chuzezemec}
+add_opinion_modifier = {target = PFA  modifier = chuzezemec}
+add_opinion_modifier = {target = GES  modifier = chuzezemec}
+add_opinion_modifier = {target = KFB  modifier = chuzezemec}
+add_opinion_modifier = {target = AUG  modifier = chuzezemec}
+add_opinion_modifier = {target = TRR  modifier = chuzezemec}
+add_opinion_modifier = {target = KLE  modifier = chuzezemec}
+add_opinion_modifier = {target = LUB  modifier = chuzezemec}
+add_opinion_modifier = {target = BRE  modifier = chuzezemec}
+add_opinion_modifier = {target = OLD  modifier = chuzezemec}
+add_opinion_modifier = {target = FER  modifier = chuzezemec}
+add_opinion_modifier = {target = AHE  modifier = chuzezemec}
+add_opinion_modifier = {target = LOT  modifier = chuzezemec}
+add_opinion_modifier = {target = GEL  modifier = chuzezemec}
+add_opinion_modifier = {target = GRI  modifier = chuzezemec}
+add_opinion_modifier = {target = CUC  modifier = chuzezemec}
+add_opinion_modifier = {target = YAK  modifier = chuzezemec}
+add_opinion_modifier = {target = CHH  modifier = chuzezemec}
+add_opinion_modifier = {target = MAJ  modifier = chuzezemec}
+add_opinion_modifier = {target = DAU  modifier = chuzezemec}
+add_opinion_modifier = {target = JOP  modifier = chuzezemec}
+add_opinion_modifier = {target = KRR  modifier = chuzezemec}
+add_opinion_modifier = {target = VIE  modifier = chuzezemec}
+add_opinion_modifier = {target = CMP  modifier = chuzezemec}
+add_opinion_modifier = {target = KHM  modifier = chuzezemec}
+add_opinion_modifier = {target = MDU  modifier = chuzezemec}
+add_opinion_modifier = {target = BOM  modifier = chuzezemec}
+add_opinion_modifier = {target = GUJ  modifier = chuzezemec}
+add_opinion_modifier = {target = ASA  modifier = chuzezemec}
+add_opinion_modifier = {target = TIB  modifier = chuzezemec}
+add_opinion_modifier = {target = LUS  modifier = chuzezemec}
+add_opinion_modifier = {target = TON  modifier = chuzezemec}
+add_opinion_modifier = {target = MND  modifier = chuzezemec}
+add_opinion_modifier = {target = JAB  modifier = chuzezemec}
+add_opinion_modifier = {target = ABR  modifier = chuzezemec}
+add_opinion_modifier = {target = MIN  modifier = chuzezemec}
+add_opinion_modifier = {target = KLP  modifier = chuzezemec}
+add_opinion_modifier = {target = SEB  modifier = chuzezemec}
+add_opinion_modifier = {target = XXX  modifier = chuzezemec}
+add_opinion_modifier = {target = MUI  modifier = chuzezemec}
+add_opinion_modifier = {target = ORI  modifier = chuzezemec}
+add_opinion_modifier = {target = RUK  modifier = chuzezemec}
+add_opinion_modifier = {target = AIN  modifier = chuzezemec}
+add_opinion_modifier = {target = LAM  modifier = chuzezemec}
+add_opinion_modifier = {target = PAP  modifier = chuzezemec}
+add_opinion_modifier = {target = MAO  modifier = chuzezemec}

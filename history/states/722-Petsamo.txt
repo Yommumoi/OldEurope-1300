@@ -1,0 +1,23 @@
+state={
+	id=722
+	name="STATE_722"
+	manpower = 1071
+
+	state_category = enclave
+
+	history={
+		owner = SAM
+	    add_core_of = SAM
+		buildings = {
+			infrastructure = 3
+			9140 = {
+				naval_base = 1
+			}
+		}
+		
+	}
+	
+	provinces={
+		6012 6183 9140 11142 
+	}
+}

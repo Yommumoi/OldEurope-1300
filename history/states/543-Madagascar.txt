@@ -1,0 +1,30 @@
+
+state={
+	id=543
+	name="STATE_543"
+	manpower = 923652
+	
+	state_category = rural
+	
+	history={
+		owner = MDG
+	    add_core_of = MDG
+		
+		victory_points = {
+			5128 1
+		}
+		buildings = {
+			infrastructure = 3
+			5222 = {
+				naval_base = 1
+			}
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		2200 5128 5185 5222 8180 8188 8246 10993 11015 12956 
+	}
+}

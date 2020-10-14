@@ -1,0 +1,139 @@
+equipments = {
+    spear_equipment = { # ID архитипа
+        year = 1300 
+        picture = GFX_spear_equipment 
+        
+        is_archetype = yes 
+        is_buildable = no 
+        active = yes 
+        
+        type = infantry 
+
+        group_by = archetype 
+        interface_category = interface_category_land 
+        
+        # Ресурсы, используемые для создания этой экипировки
+        resources = {
+            rubber = 1
+			steel = 1
+        }
+        
+        # Модификаторы, используемые оборудованием
+        reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 45
+		hard_attack = 70
+		ap_attack = 10
+		build_cost_ic = 0.3
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+    }
+}
+equipments = {
+    spear_equipment0 = { # ID нашей регулярной экипировки.
+        year = 1282 
+        
+        active = no 
+
+        archetype = spear_equipment 
+        priority = 5 
+        visual_level = 0
+        
+        # Ресурсы, используемые для создания этой экипировки
+
+       
+    }
+}
+equipments = {
+    spear_equipment1 = { # ID нашей регулярной экипировки.
+        year = 1300 
+        
+        active = no 
+
+        archetype = spear_equipment 
+        priority = 5 
+        visual_level = 0
+        
+        # Ресурсы, используемые для создания этой экипировки
+        
+
+        # Модификаторы, используемые оборудованием 
+        #Defensive Abilities
+		defense = 24
+		breakthrough = 3
+
+		#Offensive Abilities
+		soft_attack = 48
+		hard_attack = 75
+		ap_attack = 14
+
+
+		build_cost_ic = 0.4
+    }
+}equipments = {
+    spear_equipment2 = { # ID нашей регулярной экипировки.
+        year = 1303 
+        
+        active = no 
+
+        archetype = spear_equipment 
+        priority = 5 
+        visual_level = 0
+        
+        # Ресурсы, используемые для создания этой экипировки
+        resources = {
+            rubber = 1
+			steel = 2
+        }
+
+        # Модификаторы, используемые оборудованием 
+        defense = 27
+		breakthrough = 4
+
+		#Offensive Abilities
+		soft_attack = 51
+		hard_attack = 80
+		ap_attack = 16
+		
+		build_cost_ic = 0.5
+    }
+}
+equipments = {
+    spear_equipment3 = { # ID нашей регулярной экипировки.
+        year = 1306 
+        
+        active = no 
+
+        archetype = spear_equipment 
+        priority = 5 
+        visual_level = 0
+        
+        # Ресурсы, используемые для создания этой экипировки
+        resources = {
+            rubber = 2
+			steel = 2
+        }
+
+        # Модификаторы, используемые оборудованием 
+        #Defensive Abilities
+		defense = 30
+		breakthrough = 5
+
+		#Offensive Abilities
+		soft_attack = 53
+		hard_attack = 85
+		ap_attack = 20
+		
+		reliability = 0.8
+		build_cost_ic = 0.6
+    }
+}

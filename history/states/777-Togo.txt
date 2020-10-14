@@ -1,0 +1,23 @@
+state={
+	id=777
+	name="STATE_777"
+
+	history={
+		
+		owner = OYO
+	    add_core_of = OYO
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		12843 13212 
+	}
+	manpower=175336
+	state_category=pastoral
+}

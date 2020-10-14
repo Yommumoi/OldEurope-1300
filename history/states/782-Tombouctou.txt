@@ -1,0 +1,28 @@
+
+state={
+	id=782
+	name="STATE_782" # Tombouctou
+	manpower = 21560
+	
+	state_category = wasteland
+	resources={
+		steel = 1
+	}
+	history={
+		owner = BER
+	    add_core_of = BER
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			8077 1
+		}
+
+	}
+
+	provinces={
+		12842 2049 5035 4903 8077 8061
+	}
+}

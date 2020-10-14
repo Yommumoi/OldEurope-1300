@@ -1,0 +1,29 @@
+state=
+{
+	id=889
+	name="STATE_889"
+	manpower = 5000
+	
+	state_category = rural
+	
+	history= {
+		victory_points = {
+			6727 1
+		}
+		owner = GEN
+	    add_core_of = GEN
+		add_core_of = NOG
+		
+		buildings = {
+			infrastructure = 4
+			6727 = {
+				naval_base = 1
+				torgnaval_base = 1
+			}
+		}
+		
+	}
+	provinces=
+	{
+6727	}
+}

@@ -1,0 +1,425 @@
+add_namespace = pap
+
+country_event = {
+	id = pap.1
+	title = pap.1.t
+	desc = pap.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.1.a
+		ARG = {
+			annex_country = {
+                target = ARB
+                transfer_troops = yes
+            }
+		}
+		news_event = {
+			id = news.1022
+		}
+		
+		
+	}
+	option = {
+		name = pap.1.b
+		ARG = {
+			declare_war_on = {
+				target = ARB
+				type = annex_everything
+			}
+		}
+		news_event = {
+			id = news.1023
+		}
+	}
+
+
+}
+country_event = {
+	id = pap.2
+	title = pap.2.t
+	desc = pap.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.2.a
+		ARG = {
+			annex_country = {
+                target = GEN
+                transfer_troops = yes
+            }
+		}
+		GEN = {
+			add_political_power = 500
+		}
+		
+		
+		
+	}
+	option = {
+		name = pap.2.b
+		ARG = {
+			add_political_power = 500
+		}
+		
+	}
+
+
+}
+country_event = {
+	id = pap.3
+	title = pap.3.t
+	desc = pap.3.desc
+	picture = GFX_report_papa_1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.3.a
+		ARG = {
+			add_political_power = 300
+		}
+		add_political_power = -300
+		
+		
+		
+	}
+	option = {
+		name = pap.3.b
+		FRA = {
+			country_event = {
+				id = pap.4
+				days = 5
+			}
+		}
+		
+		
+	}
+
+
+}
+country_event = {
+	id = pap.4
+	title = pap.4.t
+	desc = pap.4.desc
+	picture = GFX_report_gensta
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.4.a
+		
+		add_political_power = 50
+		ARG = {
+			add_stability = -0.1
+			country_event = {
+				id = pap.5
+				days = 5
+			}
+		}
+		
+		
+		
+	}
+
+
+}
+country_event = {
+	id = pap.5
+	title = pap.5.t
+	desc = pap.5.desc
+	picture = GFX_report_gensta
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.5.a		
+	}
+
+
+}
+country_event = {
+	id = pap.6
+	title = pap.3.t
+	desc = pap.3.desc
+	picture = GFX_report_papa_1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.3.a
+		ARG = {
+			add_political_power = 300
+		}
+		add_political_power = -300
+		
+		
+		
+	}
+	option = {
+		name = pap.6.b
+		
+		
+	}
+
+
+}
+country_event = {
+	id = pap.7
+	title = pap.7.t
+	desc = pap.7.desc
+	picture = GFX_report_tevton
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.7.a
+		add_political_power = 150
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+			producer = ARG
+		}
+	}
+
+
+}
+country_event = {
+	id = pap.8
+	title = pap.8.t
+	desc = pap.8.desc
+	picture = GFX_report_tevton
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.8.a
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = ARG
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 847
+				}
+			}
+			transfer_state = 847
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 852
+				}
+			}
+			transfer_state = 852
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 845
+				}
+			}
+			transfer_state = 845
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 853
+				}
+			}
+			transfer_state = 853
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 851
+				}
+			}
+			transfer_state = 851
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 846
+				}
+			}
+			transfer_state = 846
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 849
+				}
+			}
+			transfer_state = 849
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 850
+				}
+			}
+			transfer_state = 850
+		}
+		if = {
+			limit = {
+				ARG = {
+					controls_state = 848
+				}
+			}
+			transfer_state = 848
+		}
+	}
+
+
+}
+
+country_event = {
+	id = pap.9
+	title = pap.9.t
+	desc = pap.9.desc
+	picture = GFX_report_tevton
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.9.a
+		add_political_power = 100
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = ARG
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = HUL 
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = EGY 
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = LBA 
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = CIL 
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = KAS 
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = KON 
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = NJJ 
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = SAU 
+		}
+		add_to_war = { 
+			targeted_alliance = ARG 
+			enemy = YEM 
+		}
+		ai_chance = { factor = 30 }
+	}
+	option = {
+		name = pap.9.b
+		add_stability = -0.02
+		ai_chance = { factor = 70 }
+		
+		
+	}
+
+
+}
+country_event = {
+	id = pap.10
+	title = pap.10.t
+	desc = pap.10.desc
+	picture = GFX_report_tevton
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.10.a
+		add_political_power = 50
+		add_stability = 0.05
+		add_ideas = Slavic
+	}
+	
+
+
+}
+country_event = {
+	id = pap.11
+	title = pap.10.t
+	desc = pap.10.desc
+	picture = GFX_report_tevton
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.10.a
+		add_political_power = 50
+		add_stability = 0.05
+		add_ideas = Gerpag
+	}
+	
+
+
+}
+country_event = {
+	id = pap.12
+	title = pap.12.t
+	desc = pap.12.desc
+	picture = GFX_report_yazpag
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.12.a
+		add_ideas = ReformPag
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = pap.12.b
+		ai_chance = { factor = 30 }
+	}
+	
+
+
+}
+country_event = {
+	id = pap.13
+	title = pap.13.t
+	desc = pap.13.desc
+	picture = GFX_report_yazpag
+	
+	is_triggered_only = yes
+
+	option = {
+		name = pap.13.a
+		ARG = { add_to_faction = FROM }
+		ai_chance = { factor = 99 }
+	}
+	option = {
+		name = pap.13.b
+		ai_chance = { factor = 1 }
+	}
+	
+
+
+}

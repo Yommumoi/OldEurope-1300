@@ -1,0 +1,26 @@
+state={
+	id=191
+	name="STATE_191"
+	
+	state_category = rural
+
+	history={
+		owner = LAT
+	    add_core_of = LAT
+		victory_points = {
+			9221 1 
+		}
+		buildings = {
+			infrastructure = 5
+
+		}
+		
+
+	}
+
+	provinces={
+		592 6178 6408 9221 9485 13127 
+	}
+	manpower=94100
+	buildings_max_level_factor=1.000
+}

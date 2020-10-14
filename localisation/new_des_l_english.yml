@@ -1,0 +1,63 @@
+﻿l_english:
+
+ torgcompanies_category:0 "Form of government"
+ ###### ЭТУ ЛОКУ ВСТАВЬ В oldeurope_l_russian ПОТОМУ ЧТО ОНА УЖЕ ЕСТЬ В ТВОЕМ МОДЕ!!!
+
+ #специальный закон для обьединенных провинций
+ centr0:0 "Absolute decentralization"
+
+ Buff_dvor5:0 "Every month the relation of the estate §Y Nobles§! changes to §G5§!.\n"
+ Buff_adm5:0 "The administrative limit will be changed to §G5§!.\n"
+ Buff_voenyst70:0 "Every day, military fatigue will decrease by §G0.05% §!.\n"
+ Buff_konung1:0 "§R Cannot nationalize provinces§!"
+ Buff_konung2:0 "The administrative limit will be changed to §R5§!.\n"
+ Buff_monastr1:0 "Every month the relation of the estate §YClergy§! changes to §G3§!.\n"
+ Buff_monastr2:0 "§G15§ will be built every week! workshops.\n"
+ Buff_monastr3:0 "§G100§ will be built! workshops.\n"
+ Buff_monastr4:0 "War fatigue will change to §G30§!.\n"
+ Buff_monastr5:0 "The discontent of the population will change to §G30§ !.\n"
+ Buff_veche1:0 "Every week, the discontent of the population changes to §G2§!.\n"
+ Buff_veche2:0 "War fatigue will change to §G20§!.\n"
+ Buff_veche3:0 "The discontent of the population will change to §G20§!.\n"
+ Buff_provincii1:0 "§R Cannot raise administrative limit§ !.\n"
+ Buff_khalifat:0 "§GLooting the regions does not reduce stability§!\n"
+ Buff_khalifat2:0 "Attitude §Yall§! the nightingale will change to §G5§!\n"
+ Buff_ottoman1:0 "Human resources §G + 1000§! every month\n" 
+ Buff_ottoman2:0 "Every month §G + 100§! human resources for each resource unit §YРабы§!\n"
+
+ razvit_ikta_3:0 "Propaganda of the spread of Islam"
+ razvit_konung_4:0 "Prepare Leydang"
+ laydang:0 "Leidang"
+ razvit_monastr_1:0 "Give alms to the peasants"
+ razvit_monastr_2:0 "Establish production"
+ razvit_monastr_3:0 "Black-sown peasants in hard work"
+ razvit_monastr_4:0 "Calm the people"
+ niggapeasant:0 "Black-sown peasants in hard work"
+ razvit_veche_4:0 "Convene a militia"
+ razvit_provincii_1:0 "Establishment of a condonium over new lands"
+ razvit_provincii_2:0 "Decentralized management"
+ razvit_provincii_3:0 "State mercenary"
+ razvit_provincii_4:0 "Convene a meeting to address benefits and financing"
+ razvit_vmorden_1:0 "Reduce standards for service in the Order"
+ razvit_vmorden_2:0 "It is self-seeking to collect church tithe"
+ razvit_vmorden_3:0 "Purificatio per Laborem"
+ razvit_vmorden_4:0 "Request Pope to recognize your order as the only true one"
+ purificatioperlaborem:0 "Purificatio per Laborem"
+ razvit_khalif_1:0 "Relentless Jihad"
+ razvit_khalif_2:0 "A true example of faith"
+ razvit_khalif_3:0 "Summon Protectors of the Faith"
+ razvit_ottoman_1:0 "Formation of the Enicheri corps"
+ razvit_ottoman_2:0 "Increase the autonomy of the local population"
+ razvit_ottoman_3:0 "Holding Devshirme"
+ razvit_ottoman_4:0 "Replacing Devshire for the Jews with a production tax"
+ ottoman_avtonomia:0 "Increased local autonomy"
+ ottoman_devshirme:0 "Devshire"
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

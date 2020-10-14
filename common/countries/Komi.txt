@@ -1,0 +1,4 @@
+graphical_culture = sibir_gfx
+graphical_culture_2d = sibir_2d	 
+
+color = {72  23  11}

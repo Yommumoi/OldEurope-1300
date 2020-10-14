@@ -1,0 +1,37 @@
+state= {
+	id=2
+	name="STATE_2" # Latium
+	manpower = 695492
+	
+	state_category = city
+	resources={
+		aluminium=20 # was: 16
+		steel = 5 # was: 24
+	}
+	history=
+	{
+		owner = ARG
+	    add_core_of = ARG
+		victory_points = { 9904 75 }
+		victory_points = { 11846 5 }
+		buildings = {
+			infrastructure = 8
+			money_town = 3
+			arms_factory = 1
+			industrial_complex = 4
+			11751 = {
+				naval_base = 5
+			}
+			11846 = {
+				naval_base = 2
+			}
+			9904 = {
+				bunker = 3
+			}
+		}
+	}
+
+	provinces= {
+		923 9794 9904 11751 11846 11882
+ 	}
+}

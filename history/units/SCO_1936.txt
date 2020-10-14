@@ -1,0 +1,106 @@
+﻿division_template = {
+	name = "Detachment"		# Only had a force of reservists, which were later disbanded altogether in 1948
+	division_names_group = AFG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9392 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11378 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11218 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 6350 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 6350 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9314 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	fleet = {
+		name = "Ships"			
+		naval_base = 6300  
+		task_force = {
+			name = "Kogg"
+			location = 6300  
+			ship = { name = "Kogg1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg15" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			ship = { name = "Kogg16" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SCO } } }
+			
+		}
+	}
+}

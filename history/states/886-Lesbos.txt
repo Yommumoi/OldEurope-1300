@@ -1,0 +1,35 @@
+
+state={
+	id=886
+	name="STATE_886"
+	manpower = 9150
+	
+	state_category = small_island
+	
+	resources={
+		steel = 1 
+	}
+
+	history={
+		victory_points = {
+			8435 1
+		}
+		owner = GEN
+	    add_core_of = GEN
+		add_core_of = GRE
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			8435 = {
+				naval_base = 1
+				torgnaval_base = 2
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		8435 
+	}
+}

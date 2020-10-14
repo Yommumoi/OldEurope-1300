@@ -1,0 +1,3612 @@
+focus_tree = {
+	id = Luxemburg
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LUX
+		}
+	}
+	default = no
+	focus = {
+		id = LUX_1
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		x = 17
+		y = 0
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = LUX_2
+		icon = GFX_goal_support_fascism
+		cost = 10
+		prerequisite = {
+			focus = LUX_1
+		}
+		mutually_exclusive = {
+			focus = LUX_7
+		}
+		x = 15
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_timed_idea = {
+							idea = nationalism
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_3
+		icon = GFX_goal_generic_build_tank
+		cost = 10
+		prerequisite = {
+			focus = LUX_2
+		}
+		x = 16
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_bonus
+							bonus = 1.2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_5
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_3
+		}
+		x = 14
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = LUX_4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_3
+		}
+		x = 16
+		y = 3
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_6
+		icon = GFX_goal_demand_sudetenland
+		cost = 10
+		prerequisite = {
+			focus = LUX_4
+			focus = LUX_5
+		}
+		x = 15
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { LUX_army_reform }
+				}
+
+	}
+	focus = {
+		id = LUX_7
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = {
+			focus = LUX_1
+		}
+		mutually_exclusive = {
+			focus = LUX_2
+		}
+		x = 19
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_timed_idea = {
+							idea = neutrality_plus
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_9
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_7
+		}
+		x = 18
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_8
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_7
+		}
+		x = 20
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_10
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = LUX_8
+			focus = LUX_9
+		}
+		x = 18
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.3
+							uses = 1
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_11
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		prerequisite = {
+			focus = LUX_10
+		}
+		x = 19
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { LUX_reform }
+				}
+
+	}
+	focus = {
+		id = LUX_12
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		prerequisite = {
+			focus = LUX_6
+			focus = LUX_11
+		}
+		x = 17
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = LUX_13
+		icon = GFX_goal_lux
+		cost = 10
+		prerequisite = {
+			focus = LUX_12
+		}
+		mutually_exclusive = {
+			focus = LUX_14
+		}
+		x = 17
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = LUX_14
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = LUX_12
+		}
+		mutually_exclusive = {
+			focus = LUX_13
+		}
+		x = 27
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = LUX_15
+		icon = GFX_goal_monax
+		cost = 10
+		prerequisite = {
+			focus = LUX_13
+			focus = LUX_14
+		}
+		x = 22
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 50
+					add_stability = 0.08
+				}
+
+	}
+	focus = {
+		id = LUX_17
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_13
+		}
+		x = 16
+		y = 7
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_16
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_13
+		}
+		x = 18
+		y = 7
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_28
+		icon = GFX_goal_catholic
+		cost = 10
+		prerequisite = {
+			focus = LUX_15
+		}
+		mutually_exclusive = {
+			focus = LUX_29
+		}
+		x = 20
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = 0.08
+					add_ideas = { Catholic }
+				}
+
+	}
+	focus = {
+		id = LUX_29
+		icon = GFX_goal_germanpag
+		cost = 10
+		prerequisite = {
+			focus = LUX_15
+		}
+		mutually_exclusive = {
+			focus = LUX_28
+		}
+		x = 24
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = -0.08
+					add_ideas = { Gerpag }
+				}
+
+	}
+	focus = {
+		id = LUX_72
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = {
+			focus = LUX_28
+			focus = LUX_29
+		}
+		x = 22
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = 0.15
+				}
+
+	}
+	focus = {
+		id = LUX_89
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = LUX_20
+		}
+		x = 19
+		y = 10
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_full_control_of_state = 8
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					8 = {
+							add_resource = {
+									type = steel
+									amount = 10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_25
+		icon = GFX_focus_rom_abdicate
+		cost = 10
+		prerequisite = {
+			focus = LUX_14
+		}
+		x = 27
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+				FRA = {
+					set_autonomy = {
+						target = LUX
+						autonomy_state = autonomy_dominion
+					}
+				}
+				news_event = {
+					id = news.1001
+					days = 1
+				}
+			}
+
+	}
+	focus = {
+		id = LUX_26
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10
+		prerequisite = {
+			focus = LUX_25
+		}
+		mutually_exclusive = {
+			focus = LUX_27
+		}
+		x = 26
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 300
+				}
+
+	}
+	focus = {
+		id = LUX_27
+		icon = GFX_goal_continuous_suppression
+		cost = 10
+		prerequisite = {
+			focus = LUX_25
+		}
+		mutually_exclusive = {
+			focus = LUX_26
+		}
+		x = 28
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_manpower = 30000
+				}
+
+	}
+	focus = {
+		id = LUX_30
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_26
+			focus = LUX_27
+		}
+		x = 27
+		y = 9
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_31
+		icon = GFX_goal_generic_secret_weapon
+		cost = 5
+		prerequisite = {
+			focus = LUX_30
+		}
+		x = 27
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = LUX_40
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = LUX_31
+		}
+		x = 24
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					random_list = {
+							50 = {
+									country_event = {
+											id = lux.3
+										}
+								}
+							50 = {
+									country_event = {
+											id = lux.33
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_38
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = LUX_31
+		}
+		x = 26
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					random_list = {
+							50 = {
+									country_event = {
+											id = lux.1
+										}
+								}
+							50 = {
+									country_event = {
+											id = lux.11
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_39
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = LUX_31
+		}
+		x = 28
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					random_list = {
+							50 = {
+									country_event = {
+											id = lux.2
+										}
+								}
+							50 = {
+									country_event = {
+											id = lux.22
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_52
+		icon = GFX_goal_FRA_del
+		cost = 10
+		prerequisite = {
+			focus = LUX_38
+		}
+		prerequisite = {
+			focus = LUX_39
+		}
+		x = 27
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					FRA = {
+							country_event = {
+									id = lux.4
+								}
+						}
+					add_political_power = 50
+				}
+
+	}
+	focus = {
+		id = LUX_61
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		prerequisite = {
+			focus = LUX_52
+		}
+		x = 28
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					puppet = PUA
+				}
+			available = {
+					country_exists = PUA
+				}
+
+	}
+	focus = {
+		id = LUX_65
+		icon = GFX_goal_generic_attack_allies
+		cost = 10
+		prerequisite = {
+			focus = LUX_61
+		}
+		x = 28
+		y = 14
+			available_if_capitulated = no
+			completion_reward = {
+					annex_country = {
+							target = PUA
+							transfer_troops = yes
+						}
+				}
+			available = {
+					country_exists = PUA
+					PUA = {
+							is_puppet_of = LUX
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_53
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = LUX_30
+		}
+		x = 30
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = LUX_55
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		prerequisite = {
+			focus = LUX_53
+		}
+		x = 30
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					custom_effect_tooltip = product_plus1
+					add_to_variable = {
+							product_masters_value = 20
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_56
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_55
+		}
+		x = 30
+		y = 12
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_18
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = LUX_17
+			focus = LUX_16
+		}
+		x = 17
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = LUX_19
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_17
+		}
+		x = 16
+		y = 9
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_20
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_16
+		}
+		x = 18
+		y = 9
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_21
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = LUX_13
+		}
+		x = 14
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 30
+				}
+
+	}
+	focus = {
+		id = LUX_22
+		icon = GFX_goal_generic_build_tank
+		cost = 10
+		prerequisite = {
+			focus = LUX_21
+		}
+		x = 14
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_bonus
+							bonus = 1.2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_23
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = LUX_22
+		}
+		x = 14
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_24
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = LUX_22
+		}
+		x = 12
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_32
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = LUX_35
+		}
+		x = 10
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = TRR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = TRR
+								}
+							has_war_with = TRR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = TRR
+							generator = { 807 }
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_33
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = LUX_35
+		}
+		x = 12
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = LTR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = LTR
+								}
+							has_war_with = LTR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = LTR
+							generator = { 838 }
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_34
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = LUX_35
+		}
+		x = 14
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = LOT
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = LOT
+								}
+							has_war_with = LOT
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = LOT
+							generator = { 42 }
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_35
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10
+		prerequisite = {
+			focus = LUX_23
+			focus = LUX_19
+		}
+		x = 12
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = LUX_36
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_32
+			focus = LUX_33
+			focus = LUX_34
+		}
+		x = 10
+		y = 12
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_37
+		icon = GFX_focus_ger_revive_kaiserreich
+		cost = 20
+		prerequisite = {
+			focus = LUX_20
+		}
+		x = 18
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { HRE_imperor }
+				}
+			
+
+	}
+	
+	focus = {
+		id = LUX_42
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_36
+		}
+		x = 10
+		y = 13
+			available_if_capitulated = yes
+			bypass = {
+				custom_trigger_tooltip = {
+					tooltip = infrastructure_effort_tt
+					all_owned_state = {
+						free_building_slots = {
+							building = infrastructure
+							size < 1
+						}
+					}
+				}
+			}
+			complete_tooltip = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+	}
+	focus = {
+		id = LUX_41
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_37
+		}
+		x = 18
+		y = 12
+		available_if_capitulated = yes
+		available = {
+			controls_state = 8
+		}
+		completion_reward = {
+			8 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 6583
+				}
+			}
+			
+			
+		}
+
+	}
+	focus = {
+		id = LUX_43
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = LUX_32
+		}
+		prerequisite = {
+			focus = LUX_33
+		}
+		prerequisite = {
+			focus = LUX_34
+		}
+		x = 12
+		y = 12
+			available_if_capitulated = no
+			completion_reward = {
+					42 = {
+							add_core_of = LUX
+						}
+					807 = {
+							add_core_of = LUX
+						}
+					838 = {
+							add_core_of = LUX
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_44
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		prerequisite = {
+			focus = LUX_41
+		}
+		x = 16
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_45
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		prerequisite = {
+			focus = LUX_44
+		}
+		x = 15
+		y = 14
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_46
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = LUX_41
+		}
+		x = 20
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_47
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = LUX_46
+		}
+		x = 21
+		y = 14
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_48
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = LUX_41
+		}
+		x = 18
+		y = 14
+		available = {
+			is_puppet = no
+		}
+		bypass = {
+			NOT = {
+				country_exists = GEN
+				country_exists = LUK
+				country_exists = PIS
+				country_exists = TSK
+				country_exists = SIN
+			}
+			has_war_with = GEN
+			has_war_with = LUK
+			has_war_with = PIS
+			has_war_with = TSK
+			has_war_with = SIN
+		}
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			add_named_threat = {
+				threat = 3
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = GEN
+				generator = { 788 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = LUK
+				generator = { 831 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = PIS
+				generator = { 826 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = TSK
+				generator = { 162 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = SIN
+				generator = { 832 }
+			}
+			SAV = {
+				create_wargoal = {
+					type = take_state_focus
+					target = GEN
+					generator = { 788 }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = LUK
+					generator = { 831 }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = PIS
+					generator = { 826 }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = TSK
+					generator = { 162 }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = SIN
+					generator = { 832 }
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = LUX_49
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = LUX_48
+		}
+		x = 18
+		y = 15
+			available_if_capitulated = yes
+			available = {
+					any_state = {
+							is_coastal = yes
+							is_controlled_by = ROOT
+						}
+				}
+			complete_tooltip = {
+					navy_experience = 25
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_50
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = LUX_48
+		}
+		x = 16
+		y = 15
+			available_if_capitulated = yes
+			completion_reward = {
+				add_research_slot = 1
+			}
+
+	}
+	focus = {
+		id = LUX_51
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = LUX_48
+		}
+		x = 20
+		y = 15
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_bonus
+							bonus = 1.2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_54
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		prerequisite = {
+			focus = LUX_19
+			focus = LUX_20
+		}
+		x = 17
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					custom_effect_tooltip = product_plus2
+					add_to_variable = {
+							product_masters_value = 100
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_57
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = LUX_49
+		}
+		x = 18
+		y = 16
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_58
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 20
+		prerequisite = {
+			focus = LUX_37
+		}
+		x = 22
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = centr5 
+				}
+
+	}
+	focus = {
+		id = LUX_59
+		icon = GFX_focus_research
+		cost = 20
+		prerequisite = {
+			focus = LUX_58
+		}
+		x = 22
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { sie3 }
+				}
+
+	}
+	focus = {
+		id = LUX_60
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		prerequisite = {
+			focus = LUX_52
+		}
+		x = 26
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					puppet = RON
+				}
+			available = {
+					country_exists = RON
+				}
+
+	}
+	focus = {
+		id = LUX_62
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		prerequisite = {
+			focus = LUX_52
+		}
+		prerequisite = {
+			focus = LUX_40
+		}
+		x = 24
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					puppet = AKV
+				}
+			available = {
+					country_exists = AKV
+				}
+
+	}
+	focus = {
+		id = LUX_64
+		icon = GFX_focus_hol_war_on_pacifism
+		cost = 10
+		prerequisite = {
+			focus = LUX_60
+		}
+		x = 26
+		y = 14
+			available_if_capitulated = no
+			completion_reward = {
+					annex_country = {
+							target = RON
+							transfer_troops = yes
+						}
+				}
+			available = {
+					country_exists = RON
+					RON = {
+							is_puppet_of = LUX
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_63
+		icon = GFX_focus_AST_rats_tobruk
+		cost = 10
+		prerequisite = {
+			focus = LUX_62
+		}
+		x = 24
+		y = 14
+			available_if_capitulated = no
+			completion_reward = {
+					annex_country = {
+							target = AKV
+							transfer_troops = yes
+						}
+				}
+			available = {
+					country_exists = AKV
+					AKV = {
+							is_puppet_of = LUX
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_66
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10
+		prerequisite = {
+			focus = LUX_63
+			focus = LUX_64
+			focus = LUX_65
+		}
+		x = 26
+		y = 15
+			available_if_capitulated = yes
+			completion_reward = {
+					set_cosmetic_tag = FRANK
+					22 = {
+							add_core_of = LUX
+						}
+					31 = {
+							add_core_of = LUX
+						}
+					19 = {
+							add_core_of = LUX
+						}
+					20 = {
+							add_core_of = LUX
+						}
+					26 = {
+							add_core_of = LUX
+						}
+					25 = {
+							add_core_of = LUX
+						}
+					23 = {
+							add_core_of = LUX
+						}
+					33 = {
+							add_core_of = LUX
+						}
+					27 = {
+							add_core_of = LUX
+						}
+					24 = {
+							add_core_of = LUX
+						}
+					30 = {
+							add_core_of = LUX
+						}
+					14 = {
+							add_core_of = LUX
+						}
+					18 = {
+							add_core_of = LUX
+						}
+					16 = {
+							add_core_of = LUX
+						}
+					15 = {
+							add_core_of = LUX
+						}
+					785 = {
+							add_core_of = LUX
+						}
+					29 = {
+							add_core_of = LUX
+						}
+					17 = {
+							add_core_of = LUX
+						}
+					21 = {
+							add_core_of = LUX
+						}
+					32 = {
+							add_core_of = LUX
+						}
+					735 = {
+							add_core_of = LUX
+						}
+					158 = {
+							add_core_of = LUX
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_67
+		icon = GFX_focus_hol_gateway_to_europe
+		cost = 20
+		prerequisite = {
+			focus = LUX_66
+		}
+		x = 24
+		y = 16
+			available = {
+					is_puppet = no
+				}
+			bypass = {
+					NOT = {
+							country_exists = BEL
+							country_exists = VLN
+							country_exists = LTR
+							country_exists = LOT
+							country_exists = TRR
+							country_exists = KLN
+							country_exists = LEG
+							country_exists = HOL
+							country_exists = FRI
+							country_exists = AHE
+							country_exists = GEL
+							country_exists = NAS
+							country_exists = KLE
+							country_exists = MUN
+							country_exists = OLD
+							country_exists = BRE
+							country_exists = FER
+							country_exists = GMB
+							country_exists = BRS
+							country_exists = GES
+							country_exists = FRN
+							country_exists = PFA
+							country_exists = MAI
+							country_exists = VUR
+							country_exists = BAD
+							country_exists = ALS
+						}
+					has_war_with = BEL
+					has_war_with = VLN
+					has_war_with = LTR
+					has_war_with = LOT
+					has_war_with = TRR
+					has_war_with = KLN
+					has_war_with = LEG
+					has_war_with = HOL
+					has_war_with = FRI
+					has_war_with = AHE
+					has_war_with = GEL
+					has_war_with = NAS
+					has_war_with = KLE
+					has_war_with = MUN
+					has_war_with = OLD
+					has_war_with = BRE
+					has_war_with = FER
+					has_war_with = GMB
+					has_war_with = BRS
+					has_war_with = GES
+					has_war_with = FRN
+					has_war_with = PFA
+					has_war_with = MAI
+					has_war_with = VUR
+					has_war_with = BAD
+					has_war_with = ALS
+				}
+			ai_will_do = {
+					factor = 15
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 5
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = BEL
+							generator = { 6 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = VLN
+							generator = { 34 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = LTR
+							generator = { 838 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = LOT
+							generator = { 42 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = TRR
+							generator = { 807 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = KLN
+							generator = { 803 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = LEG
+							generator = { 805 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = HOL
+							generator = { 35 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = FRI
+							generator = { 36 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = AHE
+							generator = { 806 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = GEL
+							generator = { 51 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = NAS
+							generator = { 57 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = KLE
+							generator = { 802 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = MUN
+							generator = { 56 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = OLD
+							generator = { 801 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = BRE
+							generator = { 792 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = FER
+							generator = { 798 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = GMB
+							generator = { 799 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = BRS
+							generator = { 796 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = GES
+							generator = { 55 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = FRN
+							generator = { 795 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = PFA
+							generator = { 804 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = MAI
+							generator = { 54 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = VUR
+							generator = { 50 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = BAD
+							generator = { 836 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = ALS
+							generator = { 28 }
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_68
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = LUX_67
+		}
+		x = 24
+		y = 17
+			available_if_capitulated = yes
+			completion_reward = {
+					34 = {
+							add_core_of = LUX
+						}
+					838 = {
+							add_core_of = LUX
+						}
+					42 = {
+							add_core_of = LUX
+						}
+					807 = {
+							add_core_of = LUX
+						}
+					6 = {
+							add_core_of = LUX
+						}
+					35 = {
+							add_core_of = LUX
+						}
+					7 = {
+							add_core_of = LUX
+						}
+					36 = {
+							add_core_of = LUX
+						}
+					805 = {
+							add_core_of = LUX
+						}
+					803 = {
+							add_core_of = LUX
+						}
+					806 = {
+							add_core_of = LUX
+						}
+					51 = {
+							add_core_of = LUX
+						}
+					802 = {
+							add_core_of = LUX
+						}
+					56 = {
+							add_core_of = LUX
+						}
+					801 = {
+							add_core_of = LUX
+						}
+					792 = {
+							add_core_of = LUX
+						}
+					798 = {
+							add_core_of = LUX
+						}
+					799 = {
+							add_core_of = LUX
+						}
+					796 = {
+							add_core_of = LUX
+						}
+					55 = {
+							add_core_of = LUX
+						}
+					54 = {
+							add_core_of = LUX
+						}
+					795 = {
+							add_core_of = LUX
+						}
+					804 = {
+							add_core_of = LUX
+						}
+					50 = {
+							add_core_of = LUX
+						}
+					836 = {
+							add_core_of = LUX
+						}
+					28 = {
+							add_core_of = LUX
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_70
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = LUX_69
+		}
+		x = 28
+		y = 17
+			available_if_capitulated = yes
+			completion_reward = {
+					151 = {
+							add_core_of = LUX
+						}
+					3 = {
+							add_core_of = LUX
+						}
+					159 = {
+							add_core_of = LUX
+						}
+					788 = {
+							add_core_of = LUX
+						}
+					161 = {
+							add_core_of = LUX
+						}
+					831 = {
+							add_core_of = LUX
+						}
+					1 = {
+							add_core_of = LUX
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_69
+		icon = GFX_focus_usa_attack_italy
+		cost = 20
+		prerequisite = {
+			focus = LUX_66
+		}
+		x = 28
+		y = 16
+			available = {
+					is_puppet = no
+				}
+			bypass = {
+					NOT = {
+							country_exists = PRO
+							country_exists = SAV
+							country_exists = GEN
+							country_exists = LOM
+							country_exists = SWI
+							country_exists = BUR
+							country_exists = LUK
+						}
+					has_war_with = PRO
+					has_war_with = SAV
+					has_war_with = GEN
+					has_war_with = LOM
+					has_war_with = SWI
+					has_war_with = BUR
+					has_war_with = LUK
+				}
+			ai_will_do = {
+					factor = 15
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 3
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = PRO
+							generator = { 21 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = SAV
+							generator = { 32 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = SWI
+							generator = { 3 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = BUR
+							generator = { 17 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = LOM
+							generator = { 159 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = GEN
+							generator = { 788 }
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = LUK
+							generator = { 831 }
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_71
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = LUX_68
+		}
+		prerequisite = {
+			focus = LUX_70
+		}
+		x = 26
+		y = 18
+			available_if_capitulated = yes
+			completion_reward = {
+					set_capital = 16
+				}
+
+	}
+	focus = {
+		id = LUX_73
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_79
+		}
+		x = 30
+		y = 17
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_75
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_73
+		}
+		prerequisite = {
+			focus = LUX_74
+		}
+		x = 31
+		y = 18
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_74
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_79
+		}
+		x = 32
+		y = 17
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_76
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_79
+		}
+		x = 34
+		y = 17
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_77
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_79
+		}
+		x = 36
+		y = 17
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_78
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = LUX_76
+		}
+		prerequisite = {
+			focus = LUX_77
+		}
+		x = 35
+		y = 18
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_79
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = LUX_66
+		}
+		x = 33
+		y = 16
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 1
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_80
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_75
+		}
+		x = 32
+		y = 19
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_81
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_78
+		}
+		x = 34
+		y = 19
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_82
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_78
+		}
+		x = 36
+		y = 19
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_83
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = LUX_75
+		}
+		x = 30
+		y = 19
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_84
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = LUX_83
+		}
+		prerequisite = {
+			focus = LUX_80
+		}
+		prerequisite = {
+			focus = LUX_81
+		}
+		prerequisite = {
+			focus = LUX_82
+		}
+		x = 33
+		y = 20
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = library
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = library
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = library
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = library
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = library
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_85
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = LUX_84
+		}
+		x = 33
+		y = 21
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = LUX_86
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		prerequisite = {
+			focus = LUX_82
+		}
+		x = 36
+		y = 20
+			available_if_capitulated = yes
+			completion_reward = {
+					custom_effect_tooltip = product_plus2
+					add_to_variable = {
+							product_masters_value = 100
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_87
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		prerequisite = {
+			focus = LUX_83
+		}
+		x = 30
+		y = 20
+			available_if_capitulated = yes
+			completion_reward = {
+					custom_effect_tooltip = product_plus2
+					add_to_variable = {
+							product_masters_value = 100
+						}
+				}
+
+	}
+	focus = {
+		id = LUX_88
+		icon = GFX_focus_generic_air_defense
+		cost = 10
+		prerequisite = {
+			focus = LUX_37
+		}
+		x = 16
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = paramilitarism_focus
+				}
+
+	}
+}

@@ -1,0 +1,81 @@
+﻿capital = 2
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_major = yes
+oob = "ARG_1936"
+set_variable = { adm_limit = 10 }
+set_variable = { soslovia_dvor = 100 }
+set_variable = { soslovia_duh = 100 }
+set_variable = { soslovia_gor = 100 }
+set_variable = { soslovia_kre = 100 }
+set_variable = { soslovia_rem = 100 }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	early_ship_hull_submarine = 1 
+    basic_ship_hull_submarine = 1 
+	basic_torpedo = 1
+}
+add_ideas = techgroup1
+add_ideas = tip19
+set_convoys = 10
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.11.8"
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+
+create_country_leader = {
+	name = "Boniface VIII"
+	desc = ""
+	picture = "gfx/characters/Boniface VIII.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Boniface VIII"
+	desc = ""
+	picture = "gfx/characters/Boniface VIII.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Boniface VIII"
+	desc = ""
+	picture = "gfx/characters/Boniface VIII.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Boniface VIII"
+	desc = ""
+	picture = "gfx/characters/Boniface VIII.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}

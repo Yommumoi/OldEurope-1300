@@ -1,0 +1,30 @@
+
+state={
+	id=817
+	name="STATE_817"
+	manpower = 7502
+	
+	state_category = town
+
+	history={
+		owner = AVI
+	    add_core_of = AVI
+		add_core_of = POR
+		victory_points = {
+			6986 1
+		}
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 2
+			infrastructure = 5
+			6986 = {
+				bunker = 2
+			}
+		}
+		
+	}
+
+	provinces={
+		6986 
+	}
+}

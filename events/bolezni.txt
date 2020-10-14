@@ -1,0 +1,141 @@
+add_namespace = bol
+
+country_event = {
+	id = bol.1
+	title = bol.1.t
+	desc = bol.1.desc
+	picture = GFX_report_bolezn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bol.1.a
+		if = {
+			limit = {
+				tag = XXX
+			}
+			add_ideas = zdorof
+		}
+		else_if = {
+			add_ideas = sifilis
+			
+		}
+	}
+	
+}
+
+country_event = {
+	id = bol.2
+	title = bol.1.t
+	desc = bol.1.desc
+	picture = GFX_report_bolezn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bol.1.a
+		if = {
+			limit = {
+				tag = XXX
+			}
+			add_ideas = zdorof
+		}
+		else_if = {
+			add_ideas = chuma
+			
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = bol.3
+	title = bol.1.t
+	desc = bol.1.desc
+	picture = GFX_report_bolezn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bol.1.a
+		if = {
+			limit = {
+				tag = XXX
+			}
+			add_ideas = zdorof
+		}
+		else_if = {
+			add_ideas = siptif
+			
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = bol.4
+	title = bol.1.t
+	desc = bol.1.desc
+	picture = GFX_report_bolezn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bol.1.a
+		if = {
+			limit = {
+				tag = XXX
+			}
+			add_ideas = zdorof
+		}
+		else_if = {
+			add_ideas = brutif
+			
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = bol.5
+	title = bol.1.t
+	desc = bol.1.desc
+	picture = GFX_report_bolezn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bol.1.a
+		if = {
+			limit = {
+				tag = XXX
+			}
+			add_ideas = zdorof
+		}
+		else_if = {
+			add_ideas = ospa
+			
+		}
+		
+	}
+	
+}
+country_event = {
+	id = bol.6
+	title = bol.6.t
+	desc = bol.6.desc
+	picture = GFX_report_bolezn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bol.6.a
+		add_ideas = zdorof
+		
+		
+	}
+	
+}

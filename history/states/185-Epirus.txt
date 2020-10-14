@@ -1,0 +1,52 @@
+
+state={
+	id=185
+	name="STATE_185"
+	manpower = 220225
+	
+	state_category = town
+	
+	resources={
+		chromium=14 # was: 20
+		steel = 14 # was: 20
+	}
+
+	history={
+		owner = EPI
+	    add_core_of = EPI
+		add_core_of = GRE
+		victory_points = {
+			10203 1
+		}
+		victory_points = {
+			3914 3
+		}
+		victory_points = {
+			1205 1
+		}
+		
+		buildings = {
+			infrastructure = 4
+			9805 = {
+				naval_base = 1
+				
+			}
+			industrial_complex = 2
+			arms_factory = 2
+			3914 = {
+				bunker = 3
+			}
+			10203 = {
+				bunker = 2
+			}
+			1205 = {
+				bunker = 2
+			}
+		}
+		
+	}
+
+	provinces={
+		841 1106 1205 3914 3980 9805 9837 9916 10203 11786 11895 12001 
+	}
+}

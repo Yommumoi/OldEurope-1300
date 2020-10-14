@@ -1,0 +1,27 @@
+
+state={
+	id=929
+	name="STATE_929"
+	manpower = 138282
+	
+	state_category = town
+	
+	
+	
+	history={
+		owner = LIT
+	    add_core_of = LIT
+		victory_points = {
+			9438 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		
+	}
+
+	provinces={
+		9404 9357 9438 9374 9246 11226 
+	}
+}

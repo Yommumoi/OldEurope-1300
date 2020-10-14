@@ -1,0 +1,6 @@
+
+
+graphical_culture = westafr_gfx
+graphical_culture_2d = westafr_2d
+
+color = { 0  0  0 }

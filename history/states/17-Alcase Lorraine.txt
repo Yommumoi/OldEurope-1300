@@ -1,0 +1,41 @@
+
+state={
+	id=17
+	name="STATE_17" # Lorraine
+	manpower = 979375
+	
+	state_category = city
+	
+	resources={
+		steel=20
+	}
+
+	history={
+		owner = BUR
+	    add_core_of = BUR
+		victory_points = {
+			9642 3 
+		}
+		victory_points = {
+			11516 3 
+		}
+		victory_points = {
+			3652 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			3652 = {
+				bunker = 3
+			}
+			11516 = {
+				bunker = 1
+			}
+		}
+		
+	}
+
+	provinces={
+		521 698 3646 3666 6698 9642 9658 11488 11516 11642 817 3652 680 6531 9505 3533 6545 6668 3650
+	}
+}

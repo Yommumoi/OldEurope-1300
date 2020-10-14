@@ -1,0 +1,30 @@
+
+state={
+	id=930
+	name="STATE_930"
+	manpower = 145182
+	
+	state_category = town
+	
+	resources={
+		
+		tungsten = 20
+	}
+	
+	history={
+		owner = LIT
+	    add_core_of = LIT
+		victory_points = {
+			277 1
+		}
+		buildings = {
+			infrastructure = 4
+			
+		}
+		
+	}
+
+	provinces={
+		406 6340 277
+	}
+}

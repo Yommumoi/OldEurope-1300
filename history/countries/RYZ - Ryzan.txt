@@ -1,0 +1,39 @@
+﻿capital = 254
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 70 }
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_variable = { adm_limit = 2 }
+set_variable = { soslovia_dvor = 65 }
+set_variable = { soslovia_duh = 50 }
+set_variable = { soslovia_gor = 60 }
+set_variable = { soslovia_kre = 50 }
+set_variable = { soslovia_rem = 40 }
+add_ideas = {
+	Orthodox
+}
+set_convoys = 200
+set_oob = "RYZ_1936"
+add_ideas = techgroup2
+set_variable = { numnasled_value = 1 }
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 1
+	communism = 0
+	neutrality = 99
+	democratic = 0
+}	
+

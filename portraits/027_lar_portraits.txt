@@ -1,0 +1,74 @@
+
+continent = {
+	name = north_america
+	operative = {
+		male = {
+			"gfx/leaders/North America/North_am_1.dds"
+		}
+	}
+}
+
+continent = {
+	name = europe
+	operative = {
+		male = {
+			"gfx/leaders/oper_1.dds"
+			"gfx/leaders/oper_2.dds"
+			"gfx/leaders/oper_3.dds"
+			"gfx/leaders/oper_4.dds"
+			"gfx/leaders/oper_5.dds"
+			"gfx/leaders/oper_7.dds"
+		}
+	}
+}
+
+continent = {
+	name = africa
+	operative = {
+		
+		male = {
+			"gfx/leaders/oper_6.dds"
+		}
+	}
+}
+
+continent = {
+	name = middle_east
+	operative = {
+		
+		male = {
+			"gfx/leaders/oper_1.dds"
+		}
+	}
+}
+
+continent = {
+	name = asia
+	operative = {
+		
+		male = {
+			"gfx/leaders/oper_8.dds"
+		}
+	}
+}
+
+continent = {
+	name = south_america
+	operative = {
+		
+		male = {
+			"gfx/leaders/North America/North_am_1.dds"
+		}
+	}
+}
+
+continent = {
+	name = australia
+	operative = {
+		
+		male = {
+			"gfx/leaders/Australia/Australia_2.dds"
+			
+		}
+	}
+}

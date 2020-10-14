@@ -1,0 +1,108 @@
+add_namespace = bog
+
+country_event = {
+	id = bog.1
+	title = bog.1.t
+	desc = bog.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bog.1.a
+		CZE = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+	}
+	option = {
+		name = bog.1.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+
+country_event = {
+	id = bog.2
+	title = bog.2.t
+	desc = bog.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bog.2.a
+		CZE = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+	}
+	option = {
+		name = bog.2.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+
+country_event = {
+	id = bog.3
+	title = bog.3.t
+	desc = bog.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bog.3.a
+		
+	}
+	
+}
+country_event = {
+	id = bog.4
+	title = bog.4.t
+	desc = bog.4.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	
+	option = {
+		name = bog.4.a
+		
+	}
+	
+	
+}
+country_event = {
+	id = bog.5
+	title = bog.5.t
+	desc = bog.5.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = bog.5.a
+		ROOT = {
+			CZE = {
+				annex_country = {
+					target = ROOT 
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = bog.5.b
+		ROOT = {
+			CZE = {
+				end_puppet = ROOT
+			}
+		}
+		declare_war_on = {
+			target = CZE
+			type = annex_everything
+		}
+		add_political_power = 100
+	}
+	
+}

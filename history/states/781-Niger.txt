@@ -1,0 +1,26 @@
+
+state={
+	id=781
+	name="STATE_781" # Niger
+	manpower = 185954
+	
+	state_category = pastoral
+
+	history={
+		
+		owner = KAT
+	    add_core_of = KAT
+		victory_points = {
+			2056 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		1975 2056 12707
+	}
+}

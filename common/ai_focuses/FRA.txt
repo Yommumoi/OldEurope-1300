@@ -1,0 +1,20 @@
+ai_historical_focus_list_FRA = {
+	ai_national_focuses = {
+		FRA_1
+		FRA_2
+		FRA_23
+		FRA_50
+		FRA_45
+		FRA_51
+		FRA_60
+		FRA_61
+		FRA_47
+		FRA_41
+		FRA_59
+		FRA_66
+		FRA_67
+		FRA_68
+		FRA_69
+		
+	}
+}

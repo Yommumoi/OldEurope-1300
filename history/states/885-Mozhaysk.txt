@@ -1,0 +1,29 @@
+
+state={
+	id=885
+	name="STATE_885"
+	manpower = 66030
+	
+	state_category = town
+	
+	resources={
+		rubber=3
+	}
+
+	history={
+		owner = RYZ
+	    add_core_of = RYZ
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		
+		victory_points = {
+			11379 3
+		}
+	}
+
+	provinces={
+		283 11314 11379 11248 9330 9266 
+	}
+}

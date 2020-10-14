@@ -1,0 +1,32 @@
+
+state={
+	id=874
+	name="STATE_874"
+	manpower = 120236
+	
+	state_category = town
+	resources={
+		steel = 6
+	}
+
+	history={
+		owner = NOR
+	    add_core_of = NOR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			9296 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			9296 1
+		}
+		
+		
+	}
+
+	provinces={
+		9096 11176 9196 9296 3049 11367 6176 
+	}
+}

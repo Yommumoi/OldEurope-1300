@@ -1,0 +1,31 @@
+state={
+	id=97
+	name="STATE_97"
+	
+	resources={
+		rubber=5
+	}
+
+	history={
+		owner = POD
+	    add_core_of = POD
+		victory_points = {
+			11301 3
+		}
+		
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+
+		}
+		
+
+	}
+
+	provinces={
+		290 11247 11274 11301 11329 
+	}
+	manpower=189300
+	buildings_max_level_factor=2.000
+	state_category=rural
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=19
+	name="STATE_19"
+	manpower = 335100
+	
+	state_category = city
+
+	history={
+		owner = ENG
+	    add_core_of = FRA
+		victory_points = {
+			9737 20
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			dockyard = 1
+			9737 = {
+				naval_base = 3
+				torgnaval_base = 3
+				bunker = 3
+			}
+		}
+		
+	}
+
+	provinces={
+		743 6621 6762 6777 9710 9737 11565 9717 11720 6792
+	}
+}

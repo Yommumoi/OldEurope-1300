@@ -1,0 +1,35 @@
+
+state={
+	id=14
+	name="STATE_14"
+	manpower = 399150
+	
+	state_category = city
+
+	history={
+	
+		owner = AKV
+	    add_core_of = AKV
+	    add_core_of = FRA
+		
+		victory_points = {
+			3552 20
+		}
+		buildings = {
+			infrastructure = 6
+			dockyard = 3
+			industrial_complex = 1
+			arms_factory = 2
+			3552 = {
+				naval_base = 10
+				torgnaval_base = 5
+				bunker = 3
+			}
+		}
+		
+	}
+
+	provinces={
+		542 3758 6572 3552 
+	}
+}

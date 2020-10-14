@@ -1,0 +1,31 @@
+state=
+{
+	id=766
+	name="STATE_766"
+	manpower = 181650
+	
+	state_category = rural
+	
+	history= {
+		victory_points = {
+			3704 20
+		}
+		owner = NOG
+	    add_core_of = NOG
+		add_core_of = MOL
+		add_claim_by = KAZ
+		buildings = {
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 9
+			3704 = {
+				bunker = 3
+			}
+			
+		}
+		
+	}
+	provinces=
+	{
+3701 3704 6743	}
+}

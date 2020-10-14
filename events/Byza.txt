@@ -1,0 +1,69 @@
+add_namespace = byz
+
+country_event = {
+	id = byz.1
+	title = byz.1.t
+	desc = byz.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = byz.1.a
+		GRE = {
+			country_event = byz.2
+		}
+		ai_chance = { factor = 40 }
+		
+	}
+	option = {
+		name = byz.1.b
+		GRE = {
+			country_event = byz.3
+		}
+		ai_chance = { factor = 60 }
+		
+	}
+	
+}
+country_event = {
+	id = byz.2
+	title = byz.2.t
+	desc = byz.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = byz.2.a
+		transfer_state = 680
+		transfer_state = 677
+		transfer_state = 350
+		transfer_state = 352
+		transfer_state = 353
+		transfer_state = 349
+
+		
+	}
+	
+}
+country_event = {
+	id = byz.3
+	title = byz.3.t
+	desc = byz.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = byz.3.a
+		create_wargoal = {
+			type = take_state_focus
+			target = HUL
+			generator = { 349 }
+		}
+
+		
+	}
+	
+}

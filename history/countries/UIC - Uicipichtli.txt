@@ -1,0 +1,78 @@
+capital = 865
+set_technology = {
+	infantry_weapons = 1
+}
+set_convoys = 10
+add_political_power = 300
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 1.0
+set_oob = "UIC_1936"
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_variable = { adm_limit = 1 }
+set_popularities = {
+	fascism = 0
+	communism = 0
+	democratic = 0
+	neutrality = 100
+}
+set_variable = { soslovia_dvor = 100 }
+set_variable = { soslovia_duh = 100 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 55 }
+set_variable = { soslovia_rem = 40 }
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 20 }
+give_guarantee = AZT
+add_ideas = tip3
+create_country_leader = {
+	name = "Ilhumantitutek"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = 	stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Ilhumantitutek"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Ilhumantitutek"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Ilhumantitutek"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+

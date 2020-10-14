@@ -1,0 +1,33 @@
+
+state={
+	id=788
+	name="STATE_788"
+	manpower = 865744
+	
+	state_category = metropolis
+	resources={
+	}
+
+	history={
+		owner = GEN
+	    add_core_of = GEN
+		victory_points = {
+			6788 20 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 3
+			6788 = {
+				naval_base = 10
+				torgnaval_base = 5
+				bunker = 3
+			}
+		}
+	}
+
+	provinces={
+		6788 3772
+	}
+}

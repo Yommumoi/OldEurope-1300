@@ -1,0 +1,1750 @@
+missions_category = {
+	###China
+	CHH_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = CHH
+			torgnaval_base > 100
+			
+		}
+		
+
+		visible = {
+			tag = CHH
+		}
+
+		complete_effect = {
+			add_political_power = 1000
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	CHH_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = CHH
+			library > 20
+			
+		}
+		
+
+		visible = {
+			tag = CHH
+		}
+
+		complete_effect = {
+			add_political_power = 500
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###England
+	ENG_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = ENG
+			owns_state = 14
+			NOT = {
+				AKV = {
+					exists = yes
+				}
+			}
+		}
+		
+
+		visible = {
+			tag = ENG
+		}
+
+		complete_effect = {
+			14 = {
+				add_core_of = ENG
+			}
+			add_political_power = 100
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	ENG_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = ENG
+			has_cosmetic_tag = UKK
+		}
+		
+
+		visible = {
+			tag = ENG
+		}
+
+		complete_effect = {
+			add_political_power = 200
+			add_war_support = 0.2
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	ENG_mis3 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = ENG
+			USS = {
+				exists = yes
+				is_puppet_of = ENG
+			}
+			
+			
+		}
+		
+
+		visible = {
+			tag = ENG
+		}
+
+		complete_effect = {
+			add_political_power = 300
+			add_war_support = 0.05
+			add_stability = 0.1
+			add_manpower = 100000
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	ENG_mis4 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = ENG
+			NOT = {
+				NOR = {
+					exists = yes
+				}
+				SWE = {
+					exists = yes
+				}
+				DEN = {
+					exists = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_norway_required_states_tt
+				controls_state = 110
+				controls_state = 142
+				controls_state = 143
+				controls_state = 144
+			}
+			# Sweden
+			custom_trigger_tooltip = {
+				tooltip = form_country_sweden_required_states_tt
+				controls_state = 124
+				controls_state = 138
+				controls_state = 139
+				controls_state = 140
+				controls_state = 141
+				controls_state = 38
+				controls_state = 666
+			}
+			# Denmark
+			custom_trigger_tooltip = {
+				tooltip = form_country_denmark_required_states_tt
+				controls_state = 37
+				controls_state = 99
+				controls_state = 100
+				controls_state = 101
+				controls_state = 337
+			}
+		}
+		
+
+		visible = {
+			tag = ENG
+		}
+
+		complete_effect = {
+			add_political_power = 300
+			add_state_core = 99
+			add_state_core = 37
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 140
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	ENG_mis5 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = ENG
+			controls_state = 422
+			controls_state = 423
+			controls_state = 320
+			controls_state = 425
+			controls_state = 424
+			controls_state = 321
+			controls_state = 427
+			controls_state = 429
+			controls_state = 426
+			controls_state = 436
+			controls_state = 428
+			controls_state = 437
+			controls_state = 443
+			controls_state = 445
+			controls_state = 440
+			controls_state = 442
+			controls_state = 441
+			controls_state = 787
+			controls_state = 439
+			controls_state = 438
+			controls_state = 323
+			controls_state = 435
+			controls_state = 431
+			controls_state = 430
+			controls_state = 432
+			controls_state = 288
+			controls_state = 640
+			controls_state = 444
+			controls_state = 433
+
+			
+			
+		}
+		
+
+		visible = {
+			tag = ENG
+		}
+
+		complete_effect = {
+			add_political_power = 1000
+			add_war_support = 0.2
+			DEL = {
+				transfer_state = 422
+				set_cosmetic_tag = IND_UNI
+				transfer_state = 423
+				transfer_state = 320
+				transfer_state = 425
+				transfer_state = 424
+				transfer_state = 321
+				transfer_state = 427
+				transfer_state = 429
+				transfer_state = 426
+				transfer_state = 436
+				transfer_state = 428
+				transfer_state = 437
+				transfer_state = 443
+				transfer_state = 445
+				transfer_state = 440
+				transfer_state = 442
+				transfer_state = 441
+				transfer_state = 787
+				transfer_state = 439
+				transfer_state = 438
+				transfer_state = 323
+				transfer_state = 435
+				transfer_state = 431
+				transfer_state = 430
+				transfer_state = 432
+				transfer_state = 288
+				transfer_state = 640
+				transfer_state = 444
+				transfer_state = 433
+			}
+			puppet = DEL
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Mali
+	MLE_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = MLE
+			has_political_power > 2000
+		}
+		
+
+		visible = {
+			tag = MLE
+		}
+
+		complete_effect = {
+			add_political_power = 500
+			add_research_slot = 1
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Scotland
+	SCO_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = SCO
+			has_manpower < 100
+		}
+		
+
+		visible = {
+			tag = SCO
+		}
+
+		complete_effect = {
+			add_political_power = 150
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	SCO_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = SCO
+			USS = {
+				is_puppet_of = SCO
+			}
+		}
+		
+
+		visible = {
+			tag = SCO
+		}
+
+		complete_effect = {
+			add_political_power = 150
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Portugal
+	POR_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = POR
+			controls_state = 701
+			controls_state = 296
+			controls_state = 877
+			controls_state = 779
+			controls_state = 540
+			controls_state = 544
+			controls_state = 321
+		}
+		
+
+		visible = {
+			tag = POR
+		}
+
+		complete_effect = {
+			add_political_power = 500
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Zimbabwe
+	ZIM_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = ZIM
+			controls_state = 545
+			545 = {
+				arms_factory > 4
+				industrial_complex > 4
+				infrastructure > 9
+			}
+		}
+		
+
+		visible = {
+			tag = ZIM
+		}
+
+		complete_effect = {
+			add_political_power = 200
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Arborea
+	ARB_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = ARB
+			controls_state = 828
+			controls_state = 827
+			controls_state = 114
+		}
+		
+
+		visible = {
+			tag = ARB
+		}
+
+		complete_effect = {
+			add_state_core = 827
+			add_state_core = 114
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Maduray
+	MDU_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = MDU
+			controls_state = 439
+			NOT = {
+				country_exists = DEL
+			}
+
+		}
+		
+
+		visible = {
+			tag = MDU
+		}
+
+		complete_effect = {
+			add_state_core = 439
+			add_political_power = 450
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	##Japan
+	JOP_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = JOP
+			CHH = {
+				is_puppet_of = JOP
+			}
+			
+
+		}
+		
+
+		visible = {
+			tag = JOP
+		}
+
+		complete_effect = {
+			add_political_power = 1000
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Litva (Lietuva sucks)
+	LIT_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = LIT
+			controls_state = 189
+			controls_state = 192
+			controls_state = 197
+			controls_state = 196
+		}
+		
+
+		visible = {
+			tag = LIT
+		}
+
+		complete_effect = {
+			add_state_core = 189
+			add_state_core = 192
+			add_state_core = 197
+			add_state_core = 196
+			add_political_power = 150
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	LIT_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = LIT
+			POL = {
+				is_puppet_of = LIT
+			}
+		}
+		
+
+		visible = {
+			tag = LIT
+		}
+
+		complete_effect = {
+
+			add_political_power = 450
+			add_war_support = 0.2
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	LIT_mis3 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = LIT
+			AND = {
+				TVT = {
+					OR = {
+						exists = no
+						is_puppet_of = LIT
+					}
+				}
+				
+				LAT = {
+					OR = {
+						exists = no
+						is_puppet_of = LIT
+					}
+				}
+			}
+		}
+		
+
+		visible = {
+			tag = LIT
+		}
+
+		complete_effect = {
+
+			add_political_power = 350
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Moskow
+	MSK_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = MSK
+			controls_state = 247
+			NOT = {
+				TVE = {
+					exists = yes
+				}
+			}
+		}
+		
+
+		visible = {
+			tag = MSK
+		}
+
+		complete_effect = {
+			add_state_core = 247
+			add_political_power = 50
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Tver
+	TVE_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = TVE
+			controls_state = 219
+			NOT = {
+				MSK = {
+					exists = yes
+				}
+			}
+		}
+		
+
+		visible = {
+			tag = TVE
+		}
+
+		complete_effect = {
+			add_state_core = 219
+			add_political_power = 50
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###France
+	FRA_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = FRA
+			controls_state = 19
+			controls_state = 31
+		}
+		
+
+		visible = {
+			tag = FRA
+		}
+
+		complete_effect = {
+			add_political_power = 50
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	FRA_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = FRA
+			LUI = {
+				is_puppet_of = FRA
+			}
+		}
+		
+
+		visible = {
+			tag = FRA
+		}
+
+		complete_effect = {
+			add_political_power = 500
+			add_stability = 0.05
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Georgia
+	GEO_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = GEO
+			controls_state = 830
+			controls_state = 231
+			controls_state = 230
+		}
+		
+
+		visible = {
+			tag = GEO
+		}
+
+		complete_effect = {
+			add_political_power = 200
+			add_stability = 0.1
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Abissinia
+	ABY_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = ABY
+			controls_state = 271
+			controls_state = 855
+			controls_state = 856
+			controls_state = 268
+			controls_state = 269
+			controls_state = 550
+			controls_state = 880
+			controls_state = 549
+			controls_state = 551
+			controls_state = 767
+		}
+		
+
+		visible = {
+			tag = ABY
+		}
+
+		complete_effect = {
+			add_political_power = 500
+			add_stability = 0.1
+			add_state_core = 880
+			add_state_core = 549
+			add_state_core = 551
+			add_state_core = 767
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Denmark
+	DEN_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = DEN
+			MAO = {
+				is_puppet_of = DEN
+			}
+		}
+		
+
+		visible = {
+			tag = DEN
+		}
+
+		complete_effect = {
+			add_political_power = 500
+			add_stability = 0.05
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	DEN_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = DEN
+			controls_state = 58
+			controls_state = 791
+			controls_state = 61
+			controls_state = 821
+			controls_state = 799
+		}
+		
+
+		visible = {
+			tag = DEN
+		}
+
+		complete_effect = {
+			add_political_power = 500
+			add_stability = 0.05
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Poland
+	POL_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = POL
+			has_cosmetic_tag = POL_RECH
+		}
+		
+
+		visible = {
+			tag = POL
+		}
+
+		complete_effect = {
+			add_political_power = 600
+			add_stability = 0.05
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Venecia
+	VEN_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = VEN
+			controls_state = 115
+			controls_state = 827
+			controls_state = 828
+			controls_state = 114
+			controls_state = 1
+			controls_state = 177
+			controls_state = 116
+			controls_state = 182 
+			controls_state = 183
+			controls_state = 164
+			controls_state = 187
+
+		}
+		
+
+		visible = {
+			tag = VEN
+		}
+
+		complete_effect = {
+			add_political_power = 600
+			add_stability = 0.05
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Osman
+	TUR_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = TUR
+			controls_state = 347
+			controls_state = 341
+
+		}
+		
+
+		visible = {
+			tag = TUR
+		}
+
+		complete_effect = {
+			add_political_power = 600
+			add_stability = 0.05
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Trapezund
+	TPZ_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = TPZ
+			controls_state = 341
+
+		}
+		
+
+		visible = {
+			tag = TPZ
+		}
+
+		complete_effect = {
+			add_political_power = 200
+			add_stability = 0.01
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Bogemia
+	CZE_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = CZE
+			OR = {
+				has_idea = HRE_imperor
+				has_idea = titul4
+			}
+
+		}
+		
+
+		visible = {
+			tag = CZE
+		}
+
+		complete_effect = {
+			add_political_power = 300
+			add_stability = 0.01
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	###Sweden
+	SWE_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = SWE
+			controls_state = 138
+		}
+		
+
+		visible = {
+			tag = SWE
+		}
+
+		complete_effect = {
+			add_political_power = 150
+			add_stability = 0.01
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Austria
+	AUS_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = AUS
+			AVS = {
+				is_puppet_of = AUS
+			}
+		}
+		
+
+		visible = {
+			tag = AUS
+		}
+
+		complete_effect = {
+			add_political_power = 650
+			add_stability = 0.03
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Livonia
+	LAT_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = LAT
+			WID = {
+				is_puppet_of = LAT
+			}
+		}
+		
+
+		visible = {
+			tag = LAT
+		}
+
+		complete_effect = {
+			add_political_power = 650
+			add_stability = 0.03
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Lubek
+	LUB_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			num_faction_members > 15
+			is_faction_leader = yes
+		}
+		
+
+		visible = {
+			tag = LUB
+		}
+
+		complete_effect = {
+			add_political_power = 850
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	LUB_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			all_country = {
+				has_government = democratic
+			}
+			
+		}
+		
+
+		visible = {
+			tag = LUB
+		}
+
+		complete_effect = {
+			add_political_power = 5000
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Holland
+	HOL_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = HOL
+			controls_state = 358
+		}
+		
+
+		visible = {
+			tag = HOL
+		}
+
+		complete_effect = {
+			add_political_power = 350
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	HOL_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = HOL
+			JOP = {
+				is_puppet_of = HOL
+			}
+		}
+		
+
+		visible = {
+			tag = HOL
+			JOP = {
+				is_puppet_of = HOL
+			}
+		}
+
+		complete_effect = {
+			add_political_power = 700
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###Greemland
+	GRI_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			tag = GRI
+			controls_state = 100
+			controls_state = 110
+			controls_state = 874
+			controls_state = 875
+			controls_state = 142
+			controls_state = 143
+			controls_state = 337
+		}
+		
+
+		visible = {
+			tag = GRI
+		}
+
+		complete_effect = {
+			add_state_core = 100
+			add_state_core = 110
+			add_state_core = 874
+			add_state_core = 875
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 337
+			add_political_power = 50
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	###generic
+	gen_mis1 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			has_army_manpower = {
+				size > 200000
+			}
+		}
+		
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_political_power = 300
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	gen_mis2 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			num_of_civilian_factories > 50
+		}
+		
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_stability = 0.2
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	gen_mis3 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			num_of_military_factories > 50
+		}
+		
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_war_support = 0.15
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	gen_mis4 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			political_power_growth > 20
+		}
+		
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_political_power = 300
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	gen_mis6 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			is_puppet = no
+			OR = {
+				tag = ALK
+				tag = SNT
+				tag = TMP
+				tag = IOA
+				tag = AVI
+				tag = KAL
+			}
+			controls_state = 454
+			controls_state = 553
+			has_idea = Catholic
+			has_idea = tip3
+		}
+		
+
+		visible = {
+			OR = {
+				tag = ALK
+				tag = SNT
+				tag = TMP
+				tag = IOA
+				tag = AVI
+				tag = KAL
+			}
+		}
+
+		complete_effect = {
+			add_political_power = 1000
+			add_war_support = 0.05
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	gen_mis7 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			controls_state = 2
+			has_idea = HRE_imperor
+		}
+		
+
+		visible = {
+			has_idea = HRE_imperor
+		}
+
+		complete_effect = {
+			add_political_power = 1000
+			add_war_support = 0.05
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	gen_mis8 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			check_variable = {nedovol_valuess = 100}
+		}
+		
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_political_power = 100
+			add_stability = 0.01
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	gen_mis9 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			OR = {
+				tag = MSK
+				tag = GRE
+				tag = ARG
+				tag = TUR
+			}
+			controls_state = 2
+			controls_state = 341
+			controls_state = 219
+		}
+		
+
+		visible = {
+			OR = {
+				tag = MSK
+				tag = GRE
+				tag = ARG
+				tag = TUR
+			}
+		}
+
+		complete_effect = {
+			add_political_power = 250
+			add_stability = 0.05
+			add_state_core = 2
+			add_state_core = 341
+			add_state_core = 219
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	gen_mis10 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			has_political_power < 0
+		}
+		
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_political_power = 5
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	gen_mis11 = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 0 
+
+		available = {
+			check_variable = {index_eco > 7500}
+		}
+		
+
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			add_political_power = 1000
+			add_stability = 0.2
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

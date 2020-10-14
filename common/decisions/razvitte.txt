@@ -1,0 +1,5595 @@
+razvit_category = {
+	razvit_1 = {
+
+		icon = generic_form_nation        
+		fixed_random_seed = no        
+		cost = 120    ###Стоймость политки
+		days_remove = 90        
+
+		available = {
+
+			has_idea = tip20                           
+
+		}
+
+
+		visible = {
+
+			has_idea = tip20                             
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					random_owned_state = {              
+						add_resource = {
+							type = chromium
+							amount = 2
+							state = THIS
+						}
+					}
+				}
+				10 = {
+					random_owned_state = {
+						add_resource = {
+							type = chromium
+							amount = 1
+							state = THIS
+						}
+					}
+				}
+				40 = {}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes     
+			}
+		}
+	}
+	razvit_2 = {
+
+		icon = generic_form_nation
+		cost = 120 
+		days_remove = 90
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip20
+		}
+
+
+		visible = {
+			has_idea = tip20
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					random_owned_state = {
+						add_resource = {
+							type = rubber
+							amount = 2
+							state = THIS
+						}
+					}
+				}
+				10 = {
+					random_owned_state = {
+						add_resource = {
+							type = rubber
+							amount = 1
+							state = THIS
+						}
+					}
+				}
+				40 = {}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_3 = {
+
+		icon = generic_form_nation
+		cost = 120 
+		days_remove = 90
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip20
+
+		}
+
+
+		visible = {
+			has_idea = tip20
+		}
+
+		remove_effect = {
+			random_list = {
+				70 = {
+					custom_effect_tooltip = product_plus1
+					add_to_variable = {
+						product_masters_value = 20
+					}
+				}
+				1 = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				29 = {}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_4 = {
+
+		icon = generic_form_nation
+		cost = 120 
+		days_remove = 90
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip20
+
+		}
+
+
+		visible = {
+			has_idea = tip20
+		}
+
+		remove_effect = {
+			random_list = {
+				20 = {
+					random_owned_state = {
+						add_resource = {
+							type = steel
+							amount = 4
+							state = THIS
+						}
+					}
+				}
+				10 = {
+					random_owned_state = {
+						add_resource = {
+							type = steel
+							amount = 2
+							state = THIS
+						}
+					}
+				}
+				70 = {}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_5 = {
+
+		icon = generic_form_nation
+		cost = 120 
+		days_remove = 90
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip20
+
+		}
+
+
+		visible = {
+			has_idea = tip20
+		}
+
+		remove_effect = {
+			random_list = {
+				20 = {
+					random_owned_state = {
+						add_resource = {
+							type = tungsten
+							amount = 4
+							state = THIS
+						}
+					}
+				}
+				10 = {
+					random_owned_state = {
+						add_resource = {
+							type = tungsten
+							amount = 2
+							state = THIS
+						}
+					}
+				}
+				70 = {}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_6 = {
+
+		icon = generic_form_nation
+		cost = 120 
+		days_remove = 90
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip20
+
+		}
+
+
+		visible = {
+			has_idea = tip20
+		}
+
+		remove_effect = {
+			random_list = {
+				25 = {
+					random_owned_state = {
+						add_resource = {
+							type = aluminium
+							amount = 5
+							state = THIS
+						}
+					}
+				}
+				75 = {}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_7 = {
+
+		icon = generic_form_nation
+		cost = 900 
+		days_remove = 110
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip20
+			capital_scope = {
+				is_on_continent = europe
+			}
+
+		}
+
+
+		visible = {
+			has_idea = tip20
+			capital_scope = {
+				is_on_continent = europe
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				20 = {
+					557 = {
+						if = {
+							limit = {
+								557 = {
+									NOT = {has_state_flag = state_res_bought}
+								}
+							}
+							controller = {
+								country_event = {
+									id = torg.2
+								}
+							}
+							
+						}
+					}
+				}
+				20 = {
+					780 = {
+						if = {
+							limit = {
+								780 = {
+									NOT = {has_state_flag = state_res_bought}
+								}
+							}
+							controller = {
+								country_event = {
+									id = torg.1
+								}
+							}
+						}
+					}
+				}
+				20 = {
+					556 = {
+						if = {
+							limit = {
+								556 = {
+									NOT = {has_state_flag = state_res_bought}
+								}
+							}
+							controller = {
+								country_event = {
+									id = torg.3
+								}
+							}
+						}
+					}
+				}
+				20 = {
+					778 = {
+						if = {
+							limit = {
+								778 = {
+									NOT = {has_state_flag = state_res_bought}
+								}
+							}
+							controller = {
+								country_event = {
+									id = torg.4
+								}
+							}
+						}
+					}
+				}
+				20 = {}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+torgcompanies_category = {
+	razvit_8 = {
+
+		icon = generic_form_nation
+		cost = 3000 
+		days_remove = 120
+		fire_only_once = yes
+
+		available = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			has_game_rule = { 
+				rule = torgcompanies_rule
+				option = normal 
+			}
+
+		}
+
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			has_game_rule = { 
+				rule = torgcompanies_rule
+				option = normal 
+			}
+		}
+
+		remove_effect = {
+			set_variable = {torg_company = 1}
+			custom_effect_tooltip = torg_company_osnovan
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_9 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 387
+			state = 386
+			state = 385
+			state = 379
+			state = 378
+			state = 380
+			state = 377
+			state = 892
+			state = 484
+			state = 483
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 387
+				controls_state = 386
+				controls_state = 385
+				controls_state = 379
+				controls_state = 378
+				controls_state = 380
+				controls_state = 377
+				controls_state = 892
+				controls_state = 484
+				controls_state = 483
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_10 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 1
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+
+		highlight_states = {
+			OR = {
+			state = 135
+			state = 134
+			state = 113
+			state = 119
+			state = 120
+			state = 136
+			state = 121
+			state = 133
+			state = 131
+			state = 130
+			state = 132
+			state = 129
+			state = 128
+			state = 122
+			state = 125
+			state = 126
+			state = 338
+			state = 127
+			state = 123
+			state = 848
+			state = 337
+			}
+			is_owned_by = ROOT
+		}
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 135
+				controls_state = 134
+				controls_state = 113
+				controls_state = 119
+				controls_state = 120
+				controls_state = 136
+				controls_state = 121
+				controls_state = 133
+				controls_state = 131
+				controls_state = 130
+				controls_state = 132
+				controls_state = 129
+				controls_state = 128
+				controls_state = 122
+				controls_state = 125
+				controls_state = 126
+				controls_state = 338
+				controls_state = 127
+				controls_state = 123
+				controls_state = 848
+				controls_state = 337
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_11 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 1
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 165
+			state = 900
+			state = 166
+			state = 167
+			state = 168
+			state = 177
+			state = 172
+			state = 814
+			state = 815
+			state = 817
+			state = 850
+			state = 816
+			state = 173
+			state = 118
+			state = 179
+			state = 864
+			state = 901
+			state = 112
+			state = 181
+			state = 180
+			state = 865
+			state = 171
+			state = 898
+			state = 863
+			state = 897
+			state = 176
+			state = 899
+			state = 174
+			state = 902
+			state = 41
+			state = 895
+			state = 175
+			state = 170
+			state = 896
+			state = 169
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 165
+				controls_state = 900
+				controls_state = 166
+				controls_state = 167
+				controls_state = 168
+				controls_state = 177
+				controls_state = 172
+				controls_state = 814
+				controls_state = 815
+				controls_state = 817
+				controls_state = 850
+				controls_state = 816
+				controls_state = 173
+				controls_state = 118
+				controls_state = 179
+				controls_state = 864
+				controls_state = 901
+				controls_state = 112
+				controls_state = 181
+				controls_state = 180
+				controls_state = 865
+				controls_state = 171
+				controls_state = 898
+				controls_state = 863
+				controls_state = 897
+				controls_state = 176
+				controls_state = 899
+				controls_state = 174
+				controls_state = 902
+				controls_state = 41
+				controls_state = 895
+				controls_state = 175
+				controls_state = 170
+				controls_state = 896
+				controls_state = 169
+				
+			}
+			
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_12 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 1
+		fire_only_once = yes
+
+		available = {
+			
+		}
+		highlight_states = {
+			OR = {
+			state = 557
+			state = 702
+			state = 272
+			state = 701
+			state = 876
+			state = 556
+			state = 780
+			state = 296
+			state = 700
+			state = 877
+			state = 298
+			state = 843
+			state = 779
+			state = 778
+			state = 841
+			state = 842
+			state = 274
+			state = 781
+			state = 776
+			state = 777
+			state = 823
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 557
+				controls_state = 702
+				controls_state = 272
+				controls_state = 701
+				controls_state = 876
+				controls_state = 556
+				controls_state = 780
+				controls_state = 296
+				controls_state = 700
+				controls_state = 877
+				controls_state = 298
+				controls_state = 843
+				controls_state = 779
+				controls_state = 778
+				controls_state = 841
+				controls_state = 842
+				controls_state = 274
+				controls_state = 781
+				controls_state = 776
+				controls_state = 777
+				controls_state = 823
+				
+			}
+			
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_13 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+		}
+		highlight_states = {
+			OR = {
+			state = 699
+			state = 783
+			state = 462
+			state = 461
+			state = 290
+			state = 782
+			state = 513
+			state = 460
+			state = 459
+			state = 458
+			state = 665
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 699
+				controls_state = 783
+				controls_state = 462
+				controls_state = 461
+				controls_state = 290
+				controls_state = 782
+				controls_state = 513
+				controls_state = 460
+				controls_state = 459
+				controls_state = 458
+				controls_state = 665
+
+				
+			}
+			
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_14 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+		}
+		highlight_states = {
+			OR = {
+			state = 116
+			state = 115
+			state = 828
+			state = 827
+			state = 114
+			state = 1
+			state = 156
+			state = 117
+			state = 847
+			state = 813
+			state = 2
+			state = 157
+			state = 829
+			state = 852
+			state = 832
+			state = 162
+			state = 826
+			state = 831
+			state = 788
+			state = 158
+			state = 161
+			state = 159
+			state = 160
+			state = 39
+			state = 736
+			state = 834
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 116
+				controls_state = 115
+				controls_state = 828
+				controls_state = 827
+				controls_state = 114
+				controls_state = 1
+				controls_state = 156
+				controls_state = 117
+				controls_state = 847
+				controls_state = 813
+				controls_state = 2
+				controls_state = 157
+				controls_state = 829
+				controls_state = 852
+				controls_state = 832
+				controls_state = 162
+				controls_state = 826
+				controls_state = 831
+				controls_state = 788
+				controls_state = 158
+				controls_state = 161
+				controls_state = 159
+				controls_state = 160
+				controls_state = 39
+				controls_state = 736
+				controls_state = 834
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_15 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+		}
+		highlight_states = {
+			OR = {
+			state = 85
+			state = 833
+			state = 5
+			state = 763
+			state = 188
+			state = 189
+			state = 190
+			state = 822
+			state = 12
+			state = 191
+			state = 13
+			state = 820
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 85
+				controls_state = 833
+				controls_state = 5
+				controls_state = 763
+				controls_state = 188
+				controls_state = 189
+				controls_state = 190
+				controls_state = 822
+				controls_state = 12
+				controls_state = 191
+				controls_state = 13
+				controls_state = 820
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_16 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+
+		fire_only_once = yes
+		available = {
+			
+		}
+		highlight_states = {
+			OR = {
+			state = 99
+			state = 867
+			state = 37
+			state = 138
+			state = 124
+			state = 139
+			state = 140
+			state = 141
+			state = 38
+			state = 145
+			state = 111
+			state = 878
+			state = 879
+			state = 869
+			state = 150
+			state = 149
+			state = 844
+			state = 148
+			state = 147
+			state = 722
+			state = 213
+			state = 144
+			state = 100
+			
+			state = 874
+			state = 110
+			state = 875
+			state = 142
+			state = 143
+			state = 666
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 99
+				controls_state = 867
+				controls_state = 37
+				controls_state = 138
+				controls_state = 124
+				controls_state = 139
+				controls_state = 140
+				controls_state = 141
+				controls_state = 38
+				controls_state = 145
+				controls_state = 111
+				controls_state = 878
+				controls_state = 879
+				controls_state = 869
+				controls_state = 150
+				controls_state = 149
+				controls_state = 844
+				controls_state = 148
+				controls_state = 147
+				controls_state = 722
+				controls_state = 213
+				controls_state = 144
+				controls_state = 100
+				
+				controls_state = 874
+				controls_state = 110
+				controls_state = 875
+				controls_state = 142
+				controls_state = 143
+				controls_state = 666
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_17 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+		}
+		highlight_states = {
+			OR = {
+			state = 789
+			state = 888
+			state = 137
+			state = 196
+			state = 200
+			state = 226
+			state = 197
+			state = 192
+			state = 203
+			state = 259
+			state = 234
+			state = 218
+			state = 227
+			state = 228
+			state = 221
+			
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 789
+				controls_state = 888
+				controls_state = 137
+				controls_state = 196
+				controls_state = 200
+				controls_state = 226
+				controls_state = 197
+				controls_state = 192
+				controls_state = 203
+				controls_state = 259
+				controls_state = 234
+				controls_state = 218
+				controls_state = 227
+				controls_state = 228
+				controls_state = 221
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_18 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 183
+			state = 182
+			state = 164
+			state = 187
+			state = 886
+			state = 824
+			state = 186
+			state = 825
+			state = 185
+			state = 47
+			state = 731
+			state = 106
+			state = 44
+			state = 184
+			state = 341
+			state = 347
+			state = 340
+			state = 49
+			state = 343
+			state = 339
+			state = 342
+			state = 356
+			state = 355
+			state = 346
+			state = 348
+			state = 345
+			state = 344
+			state = 349
+			state = 354
+			state = 353
+			state = 350
+			state = 352
+			state = 830
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 183
+				controls_state = 182
+				controls_state = 164
+				controls_state = 187
+				controls_state = 886
+				controls_state = 824
+				controls_state = 186
+				controls_state = 825
+				controls_state = 790
+				controls_state = 185
+				controls_state = 47
+				controls_state = 731
+				controls_state = 106
+				controls_state = 44
+				controls_state = 184
+				controls_state = 341
+				controls_state = 347
+				controls_state = 340
+				controls_state = 49
+				controls_state = 343
+				controls_state = 339
+				controls_state = 342
+				controls_state = 356
+				controls_state = 355
+				controls_state = 346
+				controls_state = 348
+				controls_state = 345
+				controls_state = 344
+				controls_state = 349
+				controls_state = 354
+				controls_state = 353
+				controls_state = 350
+				controls_state = 352
+				controls_state = 830
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_19 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+		}
+		highlight_states = {
+			OR = {
+			state = 281
+			state = 422
+			state = 423
+			state = 320
+			state = 425
+			state = 424
+			state = 321
+			state = 427
+			state = 429
+			state = 426
+			state = 436
+			state = 428
+			state = 432
+			state = 430
+			state = 431
+			state = 435
+			state = 323
+			state = 438
+			state = 439
+			state = 437
+			state = 433
+			state = 443
+			state = 440
+			state = 445
+			state = 442
+			state = 441
+			state = 787
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 281
+				controls_state = 422
+				controls_state = 423
+				controls_state = 320
+				controls_state = 425
+				controls_state = 424
+				controls_state = 321
+				controls_state = 427
+				controls_state = 429
+				controls_state = 426
+				controls_state = 436
+				controls_state = 428
+				controls_state = 432
+				controls_state = 430
+				controls_state = 431
+				controls_state = 435
+				controls_state = 323
+				controls_state = 438
+				controls_state = 439
+				controls_state = 437
+				controls_state = 433
+				controls_state = 443
+				controls_state = 440
+				controls_state = 445
+				controls_state = 442
+				controls_state = 441
+				controls_state = 787
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_20 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+		}
+		
+		highlight_states = {
+			OR = {
+				state = 19
+				state = 31
+				state = 881
+				state = 866
+				state = 14
+				state = 846
+				state = 851
+				state = 845
+				state = 853
+				state = 22
+				state = 25
+				state = 25
+				state = 20
+				state = 23
+				state = 33
+				state = 27
+				state = 24
+				state = 30
+				state = 15
+				state = 16
+				state = 18
+				state = 785
+				state = 29
+				state = 21
+				state = 887
+				state = 735
+				state = 32
+				state = 17
+				state = 838
+				state = 28
+			}
+			is_owned_by = ROOT
+			
+		}
+		
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 19
+				controls_state = 31
+				controls_state = 881
+				controls_state = 866
+				controls_state = 14
+				controls_state = 846
+				controls_state = 851
+				controls_state = 845
+				controls_state = 853
+				controls_state = 22
+				controls_state = 25
+				controls_state = 25
+				controls_state = 20
+				controls_state = 23
+				controls_state = 33
+				controls_state = 27
+				controls_state = 24
+				controls_state = 30
+				controls_state = 15
+				controls_state = 16
+				controls_state = 18
+				controls_state = 785
+				controls_state = 29
+				controls_state = 21
+				controls_state = 887
+				controls_state = 735
+				controls_state = 32
+				controls_state = 17
+				controls_state = 838
+				controls_state = 28
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_21 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+		}
+		highlight_states = {
+			OR = {
+			state = 58
+			state = 821
+			state = 61
+			state = 791
+			state = 799
+			state = 798
+			state = 792
+			state = 801
+			state = 36
+			state = 7
+			state = 35
+			state = 6
+			state = 34
+			state = 805
+			state = 56
+			state = 802
+			state = 51
+			state = 806
+			state = 803
+			state = 807
+			state = 57
+			state = 796
+			state = 797
+			state = 800
+			state = 59
+			state = 64
+			state = 68
+			state = 62
+			state = 63
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 58
+				controls_state = 821
+				controls_state = 61
+				controls_state = 791
+				controls_state = 799
+				controls_state = 798
+				controls_state = 792
+				controls_state = 801
+				controls_state = 36
+				controls_state = 7
+				controls_state = 35
+				controls_state = 6
+				controls_state = 34
+				controls_state = 805
+				controls_state = 56
+				controls_state = 802
+				controls_state = 51
+				controls_state = 806
+				controls_state = 803
+				controls_state = 807
+				controls_state = 57
+				controls_state = 796
+				controls_state = 797
+				controls_state = 800
+				controls_state = 59
+				controls_state = 64
+				controls_state = 68
+				controls_state = 62
+				controls_state = 63
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_22 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 8
+			state = 42
+			state = 804
+			state = 795
+			state = 55
+			state = 60
+			state = 65
+			state = 54
+			state = 794
+			state = 836
+			state = 50
+			state = 793
+			state = 837
+			state = 839
+			state = 52
+			state = 53
+			state = 3
+			state = 151
+			state = 153
+			state = 835
+			state = 152
+			state = 4
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 8
+				controls_state = 42
+				controls_state = 804
+				controls_state = 795
+				controls_state = 55
+				controls_state = 60
+				controls_state = 65
+				controls_state = 54
+				controls_state = 794
+				controls_state = 836
+				controls_state = 50
+				controls_state = 793
+				controls_state = 837
+				controls_state = 839
+				controls_state = 52
+				controls_state = 53
+				controls_state = 3
+				controls_state = 151
+				controls_state = 153
+				controls_state = 835
+				controls_state = 152
+				controls_state = 4
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_23 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 102
+			state = 103
+			state = 45
+			state = 109
+			state = 163
+			state = 104
+			state = 764
+			state = 82
+			state = 83
+			state = 154
+			state = 155
+			state = 43
+			state = 76
+			state = 84
+			state = 79
+			state = 854
+			state = 78
+			state = 766
+			state = 889
+			state = 81
+			state = 46
+			state = 862
+			state = 77
+			state = 211
+			state = 212
+			state = 48
+			state = 108
+			state = 107
+			state = 105
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 102
+				controls_state = 103
+				controls_state = 45
+				controls_state = 109
+				controls_state = 163
+				controls_state = 104
+				controls_state = 764
+				controls_state = 82
+				controls_state = 83
+				controls_state = 154
+				controls_state = 155
+				controls_state = 43
+				controls_state = 76
+				controls_state = 84
+				controls_state = 79
+				controls_state = 854
+				controls_state = 78
+				controls_state = 766
+				controls_state = 889
+				controls_state = 81
+				controls_state = 46
+				controls_state = 862
+				controls_state = 77
+				controls_state = 211
+				controls_state = 212
+				controls_state = 48
+				controls_state = 108
+				controls_state = 107
+				controls_state = 105
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_24 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 69
+			state = 9
+			state = 75
+			state = 74
+			state = 72
+			state = 67
+			state = 66
+			state = 88
+			state = 762
+			state = 90
+			state = 87
+			state = 10
+			state = 86
+			state = 98
+			state = 97
+			state = 868
+			state = 94
+			state = 870
+			state = 872
+			state = 95
+			state = 784
+			state = 96
+			state = 11
+			state = 819
+			state = 92
+			state = 93
+			state = 812
+			state = 199
+			state = 91
+			state = 89
+			state = 80
+			state = 198
+			state = 201
+			
+			state = 70
+			state = 71
+			state = 664
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 69
+				controls_state = 9
+				controls_state = 75
+				controls_state = 74
+				controls_state = 72
+				controls_state = 67
+				controls_state = 66
+				controls_state = 88
+				controls_state = 762
+				controls_state = 90
+				controls_state = 87
+				controls_state = 10
+				controls_state = 86
+				controls_state = 98
+				controls_state = 97
+				controls_state = 868
+				controls_state = 94
+				controls_state = 870
+				controls_state = 872
+				controls_state = 95
+				controls_state = 784
+				controls_state = 96
+				controls_state = 11
+				controls_state = 819
+				controls_state = 92
+				controls_state = 93
+				controls_state = 812
+				controls_state = 199
+				controls_state = 91
+				controls_state = 89
+				controls_state = 80
+				controls_state = 198
+				controls_state = 201
+				controls_state = 70
+				controls_state = 71
+				controls_state = 664
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_25 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 194
+			state = 202
+			state = 193
+			state = 225
+			state = 220
+			state = 240
+			state = 222
+			state = 224
+			state = 204
+			state = 873
+			state = 206
+			state = 207
+			state = 871
+			state = 241
+			state = 243
+			state = 242
+			state = 883
+			state = 205
+			state = 223
+			state = 219
+			state = 885
+			state = 254
+			state = 246
+			state = 247
+			state = 882
+			state = 253
+			state = 248
+			state = 252
+			state = 210
+			state = 209
+			state = 263
+			state = 208
+			state = 244
+			state = 195
+			state = 264
+			state = 146
+			state = 216
+			state = 215
+			state = 214
+			state = 351
+			state = 397
+			state = 262
+			state = 811
+			state = 810
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 194
+				controls_state = 202
+				controls_state = 193
+				controls_state = 225
+				controls_state = 220
+				controls_state = 240
+				controls_state = 222
+				controls_state = 224
+				controls_state = 204
+				controls_state = 873
+				controls_state = 206
+				controls_state = 207
+				controls_state = 871
+				controls_state = 241
+				controls_state = 243
+				controls_state = 242
+				controls_state = 883
+				controls_state = 205
+				controls_state = 223
+				controls_state = 219
+				controls_state = 885
+				controls_state = 254
+				controls_state = 246
+				controls_state = 247
+				controls_state = 882
+				controls_state = 253
+				controls_state = 248
+				controls_state = 252
+				controls_state = 210
+				controls_state = 209
+				controls_state = 263
+				controls_state = 208
+				controls_state = 244
+				controls_state = 195
+				controls_state = 264
+				controls_state = 146
+				controls_state = 216
+				controls_state = 215
+				controls_state = 214
+				controls_state = 351
+				controls_state = 397
+				controls_state = 262
+				controls_state = 811
+				controls_state = 810
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_26 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 233
+			state = 232
+			state = 235
+			state = 245
+			state = 265
+			state = 260
+			state = 258
+			state = 257
+			state = 239
+			state = 255
+			state = 884
+			state = 250
+			state = 256
+			state = 400
+			state = 398
+			state = 399
+			state = 249
+			state = 651
+			state = 652
+			state = 251
+			state = 401
+			state = 407
+			state = 406
+			state = 581
+			state = 573
+			state = 653
+			state = 580
+			state = 579
+			state = 403
+			state = 587
+			state = 585
+			state = 402
+			state = 404
+			state = 583
+			state = 590
+			state = 582
+			state = 572
+			state = 236
+			state = 237
+			state = 238
+			state = 217
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 233
+				controls_state = 232
+				controls_state = 235
+				controls_state = 245
+				controls_state = 265
+				controls_state = 260
+				controls_state = 258
+				controls_state = 257
+				controls_state = 239
+				controls_state = 255
+				controls_state = 884
+				controls_state = 250
+				controls_state = 256
+				controls_state = 400
+				controls_state = 398
+				controls_state = 399
+				controls_state = 249
+				controls_state = 651
+				controls_state = 652
+				controls_state = 251
+				controls_state = 401
+				controls_state = 407
+				controls_state = 406
+				controls_state = 581
+				controls_state = 573
+				controls_state = 653
+				controls_state = 580
+				controls_state = 579
+				controls_state = 403
+				controls_state = 587
+				controls_state = 585
+				controls_state = 402
+				controls_state = 404
+				controls_state = 583
+				controls_state = 590
+				controls_state = 582
+				controls_state = 572
+				controls_state = 236
+				controls_state = 237
+				controls_state = 238
+				controls_state = 217
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_27 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 637
+			state = 818
+			state = 562
+			state = 644
+			state = 574
+			state = 561
+			state = 657
+			state = 560
+			state = 409
+			state = 408
+			state = 655
+			state = 537
+			state = 536
+			state = 555
+			state = 650
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 637
+				controls_state = 818
+				controls_state = 562
+				controls_state = 644
+				controls_state = 574
+				controls_state = 561
+				controls_state = 657
+				controls_state = 560
+				controls_state = 409
+				controls_state = 408
+				controls_state = 655
+				controls_state = 537
+				controls_state = 536
+				controls_state = 555
+				controls_state = 650
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_28 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 288
+			state = 733
+			state = 640
+			state = 840
+			state = 747
+			state = 325
+			state = 670
+			state = 741
+			state = 671
+			state = 286
+			state = 289
+			state = 724
+			state = 336
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 288
+				controls_state = 733
+				controls_state = 640
+				controls_state = 840
+				controls_state = 747
+				controls_state = 325
+				controls_state = 670
+				controls_state = 741
+				controls_state = 671
+				controls_state = 286
+				controls_state = 289
+				controls_state = 724
+				controls_state = 336
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_29 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 758
+			state = 757
+			state = 322
+			state = 601
+			state = 604
+			state = 324
+			state = 434
+			state = 405
+			state = 742
+			state = 732
+			state = 586
+			state = 619
+			state = 287
+			state = 617
+			state = 589
+			state = 618
+			state = 588
+			state = 654
+			state = 40
+			state = 571
+			state = 570
+			state = 578
+			state = 577
+			state = 516
+			state = 576
+			state = 569
+			state = 568
+			state = 567
+			state = 566
+			state = 565
+			state = 575
+			state = 857
+			state = 525
+			state = 527
+			state = 526
+			state = 645
+			state = 860
+			state = 528
+			state = 861
+			state = 530
+			state = 529
+			state = 531
+			state = 532
+			state = 535
+			state = 829
+			state = 282
+			state = 534
+			state = 533
+			state = 858
+			state = 524
+			state = 591
+			state = 728
+			state = 594
+			state = 592
+			state = 729
+			state = 326
+			state = 593
+			state = 599
+			state = 595
+			state = 600
+			state = 602
+			state = 603
+			state = 751
+			state = 752
+			state = 748
+			state = 750
+			state = 605
+			state = 753
+			state = 620
+			state = 606
+			state = 749
+			state = 596
+			state = 754
+			state = 755
+			state = 759
+			state = 756
+			state = 760
+			state = 330
+			state = 329
+			state = 564
+			state = 563
+			state = 761
+			state = 714
+			state = 715
+			state = 717
+			state = 328
+			state = 716
+			state = 610
+			state = 612
+			state = 611
+			state = 609
+			state = 608
+			state = 621
+			state = 745
+			state = 746
+			state = 616
+			state = 283
+			state = 622
+			state = 615
+			state = 614
+			state = 597
+			state = 743
+			state = 607
+			state = 598
+			state = 613
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 758
+				controls_state = 757
+				controls_state = 322
+				controls_state = 601
+				controls_state = 604
+				controls_state = 324
+				controls_state = 434
+				controls_state = 405
+				controls_state = 742
+				controls_state = 732
+				controls_state = 586
+				controls_state = 619
+				controls_state = 287
+				controls_state = 617
+				controls_state = 589
+				controls_state = 618
+				controls_state = 588
+				controls_state = 654
+				controls_state = 40
+				controls_state = 571
+				controls_state = 570
+				controls_state = 578
+				controls_state = 577
+				controls_state = 516
+				controls_state = 576
+				controls_state = 569
+				controls_state = 568
+				controls_state = 567
+				controls_state = 566
+				controls_state = 565
+				controls_state = 575
+				controls_state = 857
+				controls_state = 525
+				controls_state = 527
+				controls_state = 526
+				controls_state = 645
+				controls_state = 860
+				controls_state = 528
+				controls_state = 861
+				controls_state = 530
+				controls_state = 529
+				controls_state = 531
+				controls_state = 532
+				controls_state = 535
+				controls_state = 829
+				controls_state = 282
+				controls_state = 534
+				controls_state = 533
+				controls_state = 858
+				controls_state = 524
+				controls_state = 591
+				controls_state = 728
+				controls_state = 594
+				controls_state = 592
+				controls_state = 729
+				controls_state = 326
+				controls_state = 593
+				controls_state = 599
+				controls_state = 595
+				controls_state = 600
+				controls_state = 602
+				controls_state = 603
+				controls_state = 751
+				controls_state = 752
+				controls_state = 748
+				controls_state = 750
+				controls_state = 605
+				controls_state = 753
+				controls_state = 620
+				controls_state = 606
+				controls_state = 749
+				controls_state = 596
+				controls_state = 754
+				controls_state = 755
+				controls_state = 759
+				controls_state = 756
+				controls_state = 760
+				controls_state = 330
+				controls_state = 329
+				controls_state = 564
+				controls_state = 563
+				controls_state = 761
+				controls_state = 714
+				controls_state = 715
+				controls_state = 717
+				controls_state = 328
+				controls_state = 716
+				controls_state = 610
+				controls_state = 612
+				controls_state = 611
+				controls_state = 609
+				controls_state = 608
+				controls_state = 621
+				controls_state = 745
+				controls_state = 746
+				controls_state = 616
+				controls_state = 283
+				controls_state = 622
+				controls_state = 615
+				controls_state = 614
+				controls_state = 597
+				controls_state = 743
+				controls_state = 607
+				controls_state = 598
+				controls_state = 613
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_30 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 672
+			state = 335
+			state = 711
+			state = 667
+			state = 334
+			state = 333
+			state = 673
+			state = 721
+			state = 668
+			state = 738
+			state = 669
+			state = 523
+			state = 737
+			state = 626
+			state = 627
+			state = 628
+			state = 625
+			state = 624
+			state = 327
+			state = 623
+			state = 522
+			state = 674
+			state = 519
+			state = 520
+			state = 521
+			state = 285
+			state = 517
+			state = 518
+			state = 723
+			state = 284
+			state = 712
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 672
+				controls_state = 335
+				controls_state = 711
+				controls_state = 667
+				controls_state = 334
+				controls_state = 333
+				controls_state = 673
+				controls_state = 721
+				controls_state = 668
+				controls_state = 738
+				controls_state = 669
+				controls_state = 523
+				controls_state = 737
+				controls_state = 626
+				controls_state = 627
+				controls_state = 628
+				controls_state = 625
+				controls_state = 624
+				controls_state = 327
+				controls_state = 623
+				controls_state = 522
+				controls_state = 674
+				controls_state = 519
+				controls_state = 520
+				controls_state = 521
+				controls_state = 285
+				controls_state = 517
+				controls_state = 518
+				controls_state = 723
+				controls_state = 284
+				controls_state = 712
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_31 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 453
+			state = 454
+			state = 455
+			state = 554
+			state = 553
+			state = 680
+			state = 677
+			state = 675
+			state = 676
+			state = 291
+			state = 656
+			state = 679
+			state = 292
+			state = 678
+			state = 765
+			state = 658
+			state = 294
+			state = 659
+			state = 293
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 453
+				controls_state = 454
+				controls_state = 455
+				controls_state = 554
+				controls_state = 553
+				controls_state = 680
+				controls_state = 677
+				controls_state = 675
+				controls_state = 676
+				controls_state = 291
+				controls_state = 656
+				controls_state = 679
+				controls_state = 292
+				controls_state = 678
+				controls_state = 765
+				controls_state = 658
+				controls_state = 294
+				controls_state = 659
+				controls_state = 293
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_32 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 515
+			state = 448
+			state = 661
+			state = 449
+			state = 662
+			state = 450
+			state = 663
+			state = 451
+			state = 452
+			state = 447
+			state = 447
+			state = 456
+			state = 457
+			state = 552
+			state = 551
+			state = 767
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 515
+				controls_state = 448
+				controls_state = 661
+				controls_state = 449
+				controls_state = 662
+				controls_state = 450
+				controls_state = 663
+				controls_state = 451
+				controls_state = 452
+				controls_state = 447
+				controls_state = 447
+				controls_state = 456
+				controls_state = 457
+				controls_state = 552
+				controls_state = 551
+				controls_state = 767
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_33 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 558
+			state = 773
+			state = 774
+			state = 660
+			state = 549
+			state = 271
+			state = 855
+			state = 856
+			state = 550
+			state = 268
+			state = 269
+			state = 880
+			state = 559
+			state = 297
+			state = 705
+			state = 539
+			state = 772
+			state = 538
+			state = 295
+			state = 718
+			state = 903
+			state = 540
+			state = 771
+			state = 546
+			state = 769
+			state = 768
+			state = 547
+			state = 548
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 558
+				controls_state = 773
+				controls_state = 774
+				controls_state = 660
+				controls_state = 549
+				controls_state = 271
+				controls_state = 855
+				controls_state = 856
+				controls_state = 550
+				controls_state = 268
+				controls_state = 269
+				controls_state = 880
+				controls_state = 559
+				controls_state = 297
+				controls_state = 705
+				controls_state = 539
+				controls_state = 772
+				controls_state = 538
+				controls_state = 295
+				controls_state = 718
+				controls_state = 903
+				controls_state = 540
+				controls_state = 771
+				controls_state = 546
+				controls_state = 769
+				controls_state = 768
+				controls_state = 547
+				controls_state = 548
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_34 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 706
+			state = 707
+			state = 543
+			state = 708
+			state = 544
+			state = 770
+			state = 545
+			state = 542
+			state = 275
+			state = 719
+			state = 681
+			state = 541
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 706
+				controls_state = 707
+				controls_state = 543
+				controls_state = 708
+				controls_state = 544
+				controls_state = 770
+				controls_state = 545
+				controls_state = 542
+				controls_state = 275
+				controls_state = 719
+				controls_state = 681
+				controls_state = 541
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_35 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 503
+			state = 501
+			state = 504
+			state = 500
+			state = 496
+			state = 505
+			state = 499
+			state = 498
+			state = 497
+			state = 280
+			state = 495
+			state = 687
+			state = 309
+			state = 310
+			state = 487
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 503
+				controls_state = 501
+				controls_state = 504
+				controls_state = 500
+				controls_state = 496
+				controls_state = 505
+				controls_state = 499
+				controls_state = 498
+				controls_state = 497
+				controls_state = 280
+				controls_state = 495
+				controls_state = 687
+				controls_state = 309
+				controls_state = 310
+				controls_state = 487
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_36 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 299
+			state = 507
+			state = 512
+			state = 279
+			state = 511
+			state = 278
+			state = 510
+			state = 300
+			state = 502
+			state = 301
+			state = 509
+			state = 508
+			state = 506
+			state = 688
+			state = 302
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 299
+				controls_state = 507
+				controls_state = 512
+				controls_state = 279
+				controls_state = 511
+				controls_state = 278
+				controls_state = 510
+				controls_state = 300
+				controls_state = 502
+				controls_state = 301
+				controls_state = 509
+				controls_state = 508
+				controls_state = 506
+				controls_state = 688
+				controls_state = 302
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_37 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 492
+			state = 494
+			state = 303
+			state = 491
+			state = 490
+			state = 305
+			state = 649
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 492
+				controls_state = 494
+				controls_state = 303
+				controls_state = 491
+				controls_state = 490
+				controls_state = 305
+				controls_state = 649
+				
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_38 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 486
+			state = 306
+			state = 488
+			state = 493
+			state = 489
+			state = 307
+			state = 691
+			state = 695
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 486
+				controls_state = 306
+				controls_state = 488
+				controls_state = 493
+				controls_state = 489
+				controls_state = 307
+				controls_state = 691
+				controls_state = 695
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_39 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 692
+			state = 694
+			state = 308
+			state = 686
+			state = 319
+			state = 318
+			state = 689
+			state = 315
+			state = 693
+			state = 690
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 692
+				controls_state = 694
+				controls_state = 308
+				controls_state = 686
+				controls_state = 319
+				controls_state = 318
+				controls_state = 689
+				controls_state = 315
+				controls_state = 693
+				controls_state = 690
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_40 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 304
+			state = 685
+			state = 316
+			state = 317
+			state = 312
+			state = 314
+			state = 313
+			state = 311
+			state = 474
+			state = 475
+			state = 476
+			state = 477
+			state = 485
+			state = 277
+			state = 478
+			state = 479
+			state = 481
+			state = 480
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 304
+				controls_state = 685
+				controls_state = 316
+				controls_state = 317
+				controls_state = 312
+				controls_state = 314
+				controls_state = 313
+				controls_state = 311
+				controls_state = 474
+				controls_state = 475
+				controls_state = 476
+				controls_state = 477
+				controls_state = 485
+				controls_state = 277
+				controls_state = 478
+				controls_state = 479
+				controls_state = 481
+				controls_state = 480
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_41 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 101
+			state = 809
+			state = 808
+			state = 331
+			state = 332
+			state = 890
+			state = 466
+			state = 468
+			state = 730
+			state = 682
+			state = 683
+			state = 467
+			state = 276
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 101
+				controls_state = 809
+				controls_state = 808
+				controls_state = 331
+				controls_state = 332
+				controls_state = 890
+				controls_state = 466
+				controls_state = 468
+				controls_state = 730
+				controls_state = 682
+				controls_state = 683
+				controls_state = 467
+				controls_state = 276
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_42 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 464
+			state = 465
+			state = 357
+			state = 358
+			state = 360
+			state = 359
+			state = 361
+			state = 362
+			state = 363
+			state = 364
+			state = 365
+			state = 367
+			state = 366
+			state = 891
+			state = 370
+			state = 368
+			state = 369
+			state = 261
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 464
+				controls_state = 465
+				controls_state = 357
+				controls_state = 358
+				controls_state = 360
+				controls_state = 359
+				controls_state = 361
+				controls_state = 362
+				controls_state = 363
+				controls_state = 364
+				controls_state = 365
+				controls_state = 367
+				controls_state = 366
+				controls_state = 891
+				controls_state = 370
+				controls_state = 368
+				controls_state = 369
+				controls_state = 261
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_43 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 469
+			state = 894
+			state = 792
+			state = 470
+			state = 471
+			state = 463
+			state = 739
+			state = 740
+			state = 473
+			state = 388
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 469
+				controls_state = 894
+				controls_state = 792
+				controls_state = 470
+				controls_state = 471
+				controls_state = 463
+				controls_state = 739
+				controls_state = 740
+				controls_state = 473
+				controls_state = 388
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_44 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 375
+			state = 371
+			state = 372
+			state = 374
+			state = 376
+			state = 373
+			state = 383
+			state = 382
+			state = 384
+			state = 893
+			state = 392
+			state = 381
+			state = 390
+			state = 389
+			state = 391
+			state = 394
+			state = 393
+			state = 395
+			state = 396
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 375
+				controls_state = 371
+				controls_state = 372
+				controls_state = 374
+				controls_state = 376
+				controls_state = 373
+				controls_state = 383
+				controls_state = 382
+				controls_state = 384
+				controls_state = 893
+				controls_state = 392
+				controls_state = 381
+				controls_state = 390
+				controls_state = 389
+				controls_state = 391
+				controls_state = 394
+				controls_state = 393
+				controls_state = 395
+				controls_state = 396
+
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_45 = {
+
+		icon = generic_form_nation
+		cost = 1500 
+		days_remove = 100
+		fire_only_once = yes
+
+		available = {
+			
+
+		}
+		highlight_states = {
+			OR = {
+			state = 231
+			state = 229
+			state = 230
+			state = 419
+			state = 420
+			state = 421
+			state = 417
+			state = 413
+			state = 266
+			state = 411
+			state = 418
+			state = 412
+			state = 416
+			state = 414
+			state = 410
+			state = 584
+			state = 444
+			state = 415
+			state = 267
+			}
+			is_owned_by = ROOT
+		}
+
+		visible = {
+			OR = {
+				has_idea = tip20
+				has_idea = tip1
+			}
+			OR = {
+				controls_state = 231
+				controls_state = 229
+				controls_state = 230
+				controls_state = 419
+				controls_state = 420
+				controls_state = 421
+				controls_state = 417
+				controls_state = 413
+				controls_state = 266
+				controls_state = 411
+				controls_state = 418
+				controls_state = 412
+				controls_state = 416
+				controls_state = 414
+				controls_state = 410
+				controls_state = 584
+				controls_state = 444
+				controls_state = 415
+				controls_state = 267
+				
+			}
+			check_variable = {torg_company = 1}
+		}
+
+		remove_effect = {
+			add_to_variable = {torg_company_size = 1}
+			custom_effect_tooltip = torg_company_vnedren
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	#####Aristocrat
+	razvit_arist_1 = {
+
+		icon = generic_form_nation
+		cost = 300 
+		days_remove = 150
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip1
+		}
+
+
+		visible = {
+			has_idea = tip1
+			
+		}
+
+		remove_effect = {
+
+
+			
+			add_to_variable = {adm_limit = 5}
+			custom_effect_tooltip = adm_limit5
+			
+			custom_effect_tooltip = sos_dvor_50
+			add_to_variable = {
+				soslovia_dvor = -50
+			}
+			clamp_variable = {
+				var = soslovia_dvor
+				min = 0
+				max = 100
+			}
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_arist_2 = {
+
+		icon = generic_form_nation
+		cost = 30 
+		days_remove = 120
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip1
+		}
+
+
+		visible = {
+			has_idea = tip1
+			
+		}
+
+		remove_effect = {
+
+			add_political_power = 360
+			
+			custom_effect_tooltip = sos_duh_30
+			add_to_variable = {
+				soslovia_duh = -30
+			}
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			
+			custom_effect_tooltip = sos_kre20
+			add_to_variable = {
+				soslovia_kre = 20
+			}
+			clamp_variable = {
+				var = soslovia_kre
+				min = 0
+				max = 100
+			}
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_arist_3 = {
+
+		icon = generic_form_nation
+		cost = 50 
+		days_remove = 120
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip1
+		}
+
+
+		visible = {
+			has_idea = tip1
+			
+		}
+
+		remove_effect = {
+
+			
+			
+			custom_effect_tooltip = sos_dvor_30
+			add_to_variable = {
+				soslovia_dvor = -30
+			}
+			clamp_variable = {
+				var = soslovia_dvor
+				min = 0
+				max = 100
+			}
+			
+			add_manpower = 6000
+			add_war_support = -0.07
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6000
+				producer = ROOT
+			}
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	###ikta
+	razvit_ikta_1 = {
+
+		icon = generic_form_nation
+		cost = 75
+		days_remove = 50
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip5
+		}
+
+
+		visible = {
+			has_idea = tip5
+			
+		}
+
+		remove_effect = {
+
+			
+			
+			custom_effect_tooltip = sos_dvor_10
+			add_to_variable = {
+				soslovia_dvor = -10
+			}
+			clamp_variable = {
+				var = soslovia_dvor
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = sos_kre_10
+			add_to_variable = {
+				soslovia_kre = -10
+			}
+			clamp_variable = {
+				var = soslovia_kre
+				min = 0
+				max = 100
+			}
+			
+			add_manpower = 7500
+			add_war_support = -0.03
+			
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	razvit_ikta_2 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 15
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip5
+		}
+
+
+		visible = {
+			has_idea = tip5
+			
+		}
+
+		remove_effect = {
+
+			
+			
+			custom_effect_tooltip = sos_duh5
+			add_to_variable = {
+				soslovia_duh = 5
+			}
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			
+			
+			add_stability = 0.03
+			
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_ikta_3 = { ### хуй знает как фиксится баг с текстом, если ты это читаешь то посмотри третье решение Икты в игре
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 120
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip5
+		}
+
+
+		visible = {
+			has_idea = tip5
+			
+		}
+
+		remove_effect = {
+
+			random_list = {
+				66 = {
+
+					custom_effect_tooltip = sos_dvor_5
+					add_to_variable = {
+						soslovia_dvor = -5
+					}
+					clamp_variable = {
+						var = soslovia_dvor
+						min = 0
+						max = 100
+					}
+
+
+					custom_effect_tooltip = sos_kre_5
+					add_to_variable = {
+						soslovia_kre = -5
+					}
+					clamp_variable = {
+						var = soslovia_kre
+						min = 0
+						max = 100
+					}
+
+					custom_effect_tooltip = sos_duh_5
+					add_to_variable = {
+						soslovia_duh = -5
+					}
+					clamp_variable = {
+						var = soslovia_duh
+						min = 0
+						max = 100
+					}
+
+				}
+
+				33 = {
+					custom_effect_tooltip = sos_kre5
+					add_to_variable = {
+						soslovia_kre = 5
+					}
+					clamp_variable = {
+						var = soslovia_kre
+						min = 0
+						max = 100
+					}
+
+					custom_effect_tooltip = sos_duh5
+					add_to_variable = {
+						soslovia_duh = 5
+					}
+					clamp_variable = {
+						var = soslovia_duh
+						min = 0
+						max = 100
+					}
+
+					random_neighbor_country = {
+						limit = {
+							NOT = {
+								tag = XXX
+							}
+						}
+						FROM = {
+							create_wargoal = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+					}
+
+				}
+
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	###Konung
+	razvit_konung_1 = {
+
+		icon = generic_form_nation
+		cost = 200
+		days_remove = 150
+		fixed_random_seed = no
+		fire_only_once = yes
+		
+		available = {
+			has_idea = tip7
+		}
+
+
+		visible = {
+			has_idea = tip7
+			
+		}
+
+		remove_effect = {
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 7000
+				producer = ROOT
+			}
+			add_equipment_to_stockpile = {
+				type = spear_equipment
+				amount = 3000
+				producer = ROOT
+			}
+			add_manpower = 10000
+			random_neighbor_country = {
+				limit = {
+					NOT = {
+						tag = XXX
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
+			add_war_support = 0.05
+			
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_konung_2 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip7
+		}
+
+
+		visible = {
+			has_idea = tip7
+			
+		}
+
+		remove_effect = {
+
+			
+			add_stability = 0.1
+			custom_effect_tooltip = sos_kre10
+			add_to_variable = {
+				soslovia_kre = 10
+			}
+			clamp_variable = {
+				var = soslovia_kre
+				min = 0
+				max = 100
+			}
+			
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_konung_3 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip7
+		}
+
+
+		visible = {
+			has_idea = tip7
+			
+		}
+
+		remove_effect = {
+
+			
+			add_war_support = 0.1
+			custom_effect_tooltip = sos_duh15
+			add_to_variable = {
+				soslovia_duh = 15
+			}
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_konung_4 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 60
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip7
+			NOT = { has_idea = laydang }
+		}
+
+
+		visible = {
+			has_idea = tip7
+			NOT = { has_idea = laydang }
+		}
+
+		remove_effect = {
+			
+			add_ideas = laydang
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	### Монастырское управление
+	razvit_monastr_1 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 75
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip9
+		}
+
+
+		visible = {
+			has_idea = tip9
+		}
+
+		remove_effect = {
+			
+			add_political_power = -250
+			add_stability = 0.1
+			custom_effect_tooltip = sos_duh15
+			add_to_variable = {
+				soslovia_duh = 15
+			}
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_monastr_2 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 90
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip9
+		}
+
+
+		visible = {
+			has_idea = tip9
+		}
+
+		remove_effect = {
+			
+			add_manpower = -250
+			custom_effect_tooltip = Buff_monastr3
+			add_to_variable = { product_masters_value = 15 }
+
+			random_list = {
+				25 = {
+					random_owned_state = {              
+						add_resource = {
+							type = chromium
+							amount = 6
+							state = THIS
+						}
+					}
+				}
+				25 = {
+					random_owned_state = {
+						add_resource = {
+							type = aluminium
+							amount = 4
+							state = THIS
+						}
+					}
+				}
+				25 = {
+					random_owned_state = {
+						add_resource = {
+							type = rubber
+							amount = 8
+							state = THIS
+						}
+					}
+				}
+				25 = {}
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_monastr_3 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 60
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip9
+		}
+
+
+		visible = {
+			has_idea = tip9
+		}
+
+		remove_effect = {
+			
+			add_manpower = -250
+			add_timed_idea = {
+				idea = niggapeasant
+				days = 180
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_monastr_4 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 20
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip9
+		}
+
+
+		visible = {
+			has_idea = tip9
+		}
+
+		remove_effect = {
+			
+			add_political_power = -100
+			custom_effect_tooltip = Buff_monastr4
+			custom_effect_tooltip = Buff_monastr5
+			add_to_variable = { warust_value = -30 }
+			clamp_variable = {
+				var = warust_value
+				min = 0
+				max = 100
+			}
+			add_to_variable = { nedovol_valuess = -30 }
+			clamp_variable = {
+				var = nedovol_valuess
+				min = 0
+				max = 100
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	###Veche
+	razvit_veche_1 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip11
+		}
+
+
+		visible = {
+			has_idea = tip11
+			
+		}
+
+		remove_effect = {
+
+			
+			random_list = {
+				60 = {
+					add_stability = 0.1
+					custom_effect_tooltip = sos_kre15
+					add_to_variable = {
+						soslovia_kre = 15
+					}
+					clamp_variable = {
+						var = soslovia_kre
+						min = 0
+						max = 100
+					}
+				}
+				40 = {
+				
+				}
+				
+			}
+			
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_veche_2 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip11
+		}
+
+
+		visible = {
+			has_idea = tip11
+			
+		}
+
+		remove_effect = {
+
+			
+			random_list = {
+				20 = {
+					custom_effect_tooltip = product20
+					add_to_variable = {product_masters_value = 20}
+				}
+				20 = {
+					add_political_power = 100
+				}
+				20 = {
+					random_owned_state = {
+						add_resource = {
+							type = rubber
+							amount = 10
+						}
+					}
+				}
+				20 = {
+					random_owned_state = {
+						add_resource = {
+							type = steel
+							amount = 5
+						}
+					}
+				}
+				20 = {
+					add_stability = -0.1
+				}
+				
+			}
+			
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_veche_4 = { # я хуй знает почему, но под цифрой 3 локализация не работает лол
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 20
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip11
+		}
+
+
+		visible = {
+			has_idea = tip11
+		}
+
+		remove_effect = {
+			
+			random_list = {
+				25 = {
+					add_manpower = 5000
+				}
+				25 = {
+					add_political_power = 250
+				}
+				25 = {
+					custom_effect_tooltip = Buff_veche2
+					custom_effect_tooltip = Buff_veche3
+					add_to_variable = { warust_value = -30 }
+					clamp_variable = {
+						var = warust_value
+						min = 0
+						max = 100
+					}
+					add_to_variable = { nedovol_valuess = -30 }
+					clamp_variable = {
+						var = nedovol_valuess
+						min = 0
+						max = 100
+					}
+				}
+				25 = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 3000
+						producer = ROOT
+					}
+				}
+				
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	##Обьединенные провинции
+
+	#я такое не умею делать
+	#вот что оно должно было делать:
+
+	#Установление кондониума над новыми землями (для того чтобы не ссорить несколько провинций между собой можно просто разрешить им совместное владение над новыми землями)
+	#в идеале было бы создать марионетку Кандониум которая бы передавал 50% своих фабрик и ресурсов метрополии
+	#в реальности ну в реальности это можно было бы реализовать нац духом на -3 еденицы автономии в день для марионеток
+
+	#razvit_provincii_1 = {
+	#
+	#	icon = generic_form_nation
+	#	cost = 50
+	#	days_remove = 20
+	#	fixed_random_seed = no
+	#	
+	#	available = {
+	#		has_idea = tip12
+	#	}
+
+
+	#	visible = {
+	#		has_idea = tip12
+	#	}
+
+	#	remove_effect = {
+			
+			
+			
+	#	}
+
+	#	ai_will_do = {
+	#		factor = 1
+	#		modifier = {
+	#			factor = 1
+	#			is_historical_focus_on = yes
+	#		}
+	#	}
+	#}
+
+	razvit_provincii_2 = {
+
+		icon = generic_form_nation
+		cost = 50
+		days_remove = 20
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip12
+		}
+
+
+		visible = {
+			has_idea = tip12
+			NOT = { has_idea = centr0}
+		}
+
+		remove_effect = {
+			
+			add_ideas = centr0
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_provincii_3 = {
+
+		icon = generic_form_nation
+		cost = 100
+		days_remove = 120
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip12
+		}
+
+
+		visible = {
+			has_idea = tip12
+		}
+
+		remove_effect = {
+			
+			add_manpower = 8500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 8500
+				producer = ROOT
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_provincii_4 = {
+
+		icon = generic_form_nation
+		cost = 100
+		days_remove = 120
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip12
+		}
+
+
+		visible = {
+			has_idea = tip12
+		}
+
+		remove_effect = {
+			
+			random_list = {
+				50 = {
+					custom_effect_tooltip = Buff_monastr3
+					add_to_variable = { product_masters_value = 100 }
+				}
+				50 = {
+					random_owned_state = {
+						add_resource = {
+							type = aluminium
+							amount = 4
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 1000
+							producer = ROOT
+						}
+					}
+				}
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	### Воен. Монаш. орден
+
+	razvit_vmorden_1 = {
+
+		icon = generic_form_nation
+		cost = 10
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip3
+		}
+
+
+		visible = {
+			has_idea = tip3
+		}
+
+		remove_effect = {
+			
+			add_manpower = 8500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 8500
+				producer = ROOT
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_vmorden_2 = {
+
+		icon = generic_form_nation
+		cost = 10
+		days_remove = 60
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip3
+		}
+
+
+		visible = {
+			has_idea = tip3
+		}
+
+		remove_effect = {
+
+			custom_effect_tooltip = sos_duh_15
+			add_political_power = 180
+			add_to_variable = { soslovia_duh = -15 }
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_vmorden_3 = {
+
+		icon = generic_form_nation
+		cost = 10
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip3
+		}
+
+
+		visible = {
+			has_idea = tip3
+		}
+
+		remove_effect = {
+
+			add_manpower = -750	
+			add_timed_idea = {
+				idea =  purificatioperlaborem
+				days = 45
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_vmorden_4 = {
+
+		icon = generic_form_nation
+		cost = 750
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip3
+			check_variable = { razvit_vmorden_4_buff = 0 }
+		}
+
+
+		visible = {
+			has_idea = tip3
+			check_variable = { razvit_vmorden_4_buff = 0 }
+		}
+
+		remove_effect = {
+			
+			add_stability = 0.15
+			add_manpower = 20000
+			custom_effect_tooltip = sos_duh10
+			add_to_variable = { soslovia_duh = 10 }
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			custom_effect_tooltip = sos_kre10
+			add_to_variable = { soslovia_duh = 10 }
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+
+			set_variable = { razvit_vmorden_4_buff = 1 }
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	#### халиф
+
+	razvit_khalif_1 = {
+
+		icon = generic_form_nation
+		cost = 100
+		days_remove = 90
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip22
+		}
+
+
+		visible = {
+			has_idea = tip22
+		}
+
+		remove_effect = {
+
+			random_neighbor_country = {
+				limit = {
+					NOT = {
+						tag = XXX
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
+			add_war_support = 0.1
+			custom_effect_tooltip = sos_duh10
+			add_to_variable = {
+				soslovia_duh = 10
+			}
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_khalif_2 = {
+
+		icon = generic_form_nation
+		cost = 100
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip22
+		}
+
+
+		visible = {
+			has_idea = tip22
+		}
+
+		remove_effect = {
+
+			add_manpower = 10000
+			add_stability = 0.1
+
+			custom_effect_tooltip = Buff_khalifat2
+			add_to_variable = {
+				soslovia_duh = 5
+			}
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				soslovia_kre = 5
+			}
+			clamp_variable = {
+				var = soslovia_kre
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				soslovia_dvor = 5
+			}
+			clamp_variable = {
+				var = soslovia_dvor
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				soslovia_gor = 5
+			}
+			clamp_variable = {
+				var = soslovia_gor
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				soslovia_rem = 5
+			}
+			clamp_variable = {
+				var = soslovia_rem
+				min = 0
+				max = 100
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_khalif_3 = {
+
+		icon = generic_form_nation
+		cost = 100
+		days_remove = 150
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip22
+			check_variable = { razvit_khalif_3_buff = 0 }
+		}
+
+
+		visible = {
+			has_idea = tip22
+			check_variable = { razvit_khalif_3_buff = 0 }
+		}
+
+		remove_effect = {
+
+			add_manpower = 50000
+			set_variable = { razvit_khalif_3_buff = 1 } 
+
+			# Н-Е-Е-Е-Е-Е-Е-Е-Т! ТЫ НЕ МОЖЕШЬ ПРОСТО ПОЛУЧИТЬ 50К СОЛДАТ НА СТАРТЕ!
+			# Ха-ха, Конийский Султанат делает клик-клик
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+
+	### Османская Кратодемия
+
+	razvit_ottoman_1 = {
+
+		icon = generic_form_nation
+		cost = 180
+		days_remove = 150
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip13
+		}
+
+
+		visible = {
+			has_idea = tip13
+		}
+
+		remove_effect = {
+
+			add_manpower = 5000
+			army_experience = 25
+			custom_effect_tooltip = Buff_ottoman2
+			set_variable = { razvit_ottoman_1_buff = 1 }
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_ottoman_2 = {
+
+		icon = generic_form_nation
+		cost = 800
+		days_remove = 150
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip13
+		}
+
+
+		visible = {
+			has_idea = tip13
+		}
+
+		remove_effect = {
+
+			add_ideas = { ottoman_avtonomia }
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_ottoman_3 = {
+
+		icon = generic_form_nation
+		cost = 100
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip13
+		}
+
+
+		visible = {
+			has_idea = tip13
+		}
+
+		remove_effect = {
+
+			add_ideas = { ottoman_devshirme }
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	razvit_ottoman_4 = {
+
+		icon = generic_form_nation
+		cost = 100
+		days_remove = 100
+		fixed_random_seed = no
+		
+		available = {
+			has_idea = tip13
+		}
+
+
+		visible = {
+			has_idea = tip13
+		}
+
+		remove_effect = {
+
+			add_manpower = -1500
+			random_list = {
+				20 = {
+					random_owned_state = {              
+						add_resource = {
+							type = chromium
+							amount = 4
+							state = THIS
+						}
+					}
+				}
+				20 = {
+					random_owned_state = {
+						add_resource = {
+							type = aluminium
+							amount = 4
+							state = THIS
+						}
+					}
+				}
+				20 = {
+					random_owned_state = {
+						add_resource = {
+							type = oil
+							amount = 4
+							state = THIS
+						}
+					}
+				}
+				20 = {
+					custom_effect_tooltip = Buff_monastr3
+					add_to_variable = { product_masters_value = 100 }
+				}
+				20 = {
+					add_stability = 0.05
+				}
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	
+	#####Pirate
+	
+	
+	razvit_pirate_1 = {
+
+		icon = generic_form_nation
+		cost = 50 
+		days_remove = 5
+		fixed_random_seed = no
+
+		available = {
+			has_idea = tip14
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+
+
+		visible = {
+			has_idea = tip14
+			
+		}
+
+		remove_effect = {
+
+
+			random_neighbor_country = {
+				country_event = {
+					id = torg.5
+				}
+			}
+			add_political_power = 115
+				
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	#####Plema
+	
+	
+	razvit_plema_1 = {
+
+		icon = generic_form_nation
+		cost = 1 
+		days_remove = 50
+		fixed_random_seed = no
+
+		available = {
+			OR = {
+				has_idea = tip4
+				has_idea = tip15
+			}
+			has_stability > 0.2
+		}
+
+
+		visible = {
+			OR = {
+				has_idea = tip4
+				has_idea = tip15
+			}
+			
+		}
+
+		remove_effect = {
+			add_manpower = 6000
+			add_stability = -0.2
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_plema_2 = {
+
+		icon = generic_form_nation
+		cost = 1 
+		days_remove = 50
+		fixed_random_seed = no
+
+		available = {
+			OR = {
+				has_idea = tip4
+				has_idea = tip15
+			}
+			has_war_support > 0.2
+		}
+
+
+		visible = {
+			OR = {
+				has_idea = tip4
+				has_idea = tip15
+			}
+			
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				producer = ROOT
+			}
+			add_war_support = -0.2
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	#####Guard
+	razvit_voenn_1 = {
+
+		icon = generic_form_nation
+		cost = 1250 
+		days_remove = 5
+		fire_only_once = yes
+
+		available = {
+			has_tech = porox_tech
+			has_tech = arke_tech
+
+		}
+
+
+		visible = {
+			has_tech = porox_tech
+			has_tech = arke_tech
+			
+		}
+
+		remove_effect = {
+			load_oob = "Guard"
+			ROOT = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Guard\" division_template = \"Guard\" start_experience_factor = 1.0" 
+						owner = PREV
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+expedition_category = {
+	razvit_exped_1 = {
+
+		icon = generic_form_nation
+		cost = 1000
+		days_remove = 150
+		fixed_random_seed = no
+
+		available = {
+			
+		}
+
+
+		visible = {
+			any_owned_state = {
+				OR = {
+					region = 41
+					region = 19
+					region = 2
+					region = 192
+					region = 37
+					region = 6
+					region = 7
+					region = 23
+					region = 24
+					region = 38
+					region = 25
+					region = 182
+				}
+				is_coastal = yes
+				
+			}
+			has_game_rule = { 
+				rule = expeditions_rule
+				option = normal 
+			}
+			NOT = {
+				has_idea = tupost
+				has_government = communism
+			}
+			check_variable = {global.AmericaOtkrita = 0}
+			
+		}
+		complete_effect = {
+			set_variable = {exped = 1000}
+			country_event = {
+				id = col.1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = noviy_svet
+			hidden_effect = {
+				random_list = {
+					50 = {
+						country_event = {
+							id = col.6
+						}
+						set_variable = {global.AmericaOtkrita = 1}
+					}
+					50 = {}
+					
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	razvit_exped_2 = {
+
+		icon = generic_form_nation
+		cost = 300 
+		days_remove = 150
+		fixed_random_seed = no
+
+		available = {
+			
+		}
+
+
+		visible = {
+			any_owned_state = {
+				OR = {
+					region = 41
+					region = 19
+					region = 2
+					region = 192
+					region = 37
+					region = 6
+					region = 7
+					region = 23
+					region = 24
+					region = 38
+					region = 25
+					region = 182
+				}
+				is_coastal = yes
+				
+			}
+			has_game_rule = { 
+				rule = expeditions_rule
+				option = normal 
+			}
+			NOT = {
+				has_idea = tupost
+				has_government = communism
+			}
+			check_variable = {global.AmericaOtkrita = 1}
+			
+		}
+		complete_effect = {
+			set_variable = {exped = 300}
+			country_event = {
+				id = col.1
+			}
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = noviy_svet
+			hidden_effect = {
+				random_list = {
+					uspeh_chance = {
+						country_event = {
+							id = col.6
+						}
+						
+					}
+					ne_uspeh_chance = {
+						country_event = {
+							id = col.7
+						}
+					}
+					
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 3
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}	
+	
+

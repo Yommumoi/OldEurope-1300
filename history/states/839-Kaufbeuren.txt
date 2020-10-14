@@ -1,0 +1,25 @@
+
+state={
+	id=839
+	name="STATE_839"
+	manpower = 129853
+	
+	state_category = city
+
+	history={
+		owner = KFB
+	    add_core_of = KFB
+		victory_points = { 9666 1 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		
+
+	}
+
+	provinces={
+		9666
+	}
+}

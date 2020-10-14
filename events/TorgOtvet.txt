@@ -1,0 +1,134 @@
+add_namespace = torgOtv
+
+country_event = {
+	id = torgOtv.1
+	title = torgOtv.1.t
+	desc = torgOtv.1.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torgOtv.1.a
+		FROM = {
+			give_resource_rights = { receiver = ROOT state = 780 }
+		}
+		
+		780 = {
+			set_state_flag = state_res_bought
+		}
+	}
+}
+country_event = {
+	id = torgOtv.2
+	title = torgOtv.2.t
+	desc = torgOtv.2.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torgOtv.1.a
+		transfer_state = 877
+		add_political_power = -300
+	}
+}
+country_event = {
+	id = torgOtv.3
+	title = torgOtv.3.t
+	desc = torgOtv.3.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torgOtv.1.a
+		
+	}
+}
+country_event = {
+	id = torgOtv.4
+	title = torgOtv.4.t
+	desc = torgOtv.4.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torgOtv.1.a
+		FROM = {
+			give_resource_rights = { receiver = ROOT state = 557 }
+		}
+		
+		557 = {
+			set_state_flag = state_res_bought
+		}
+	}
+}
+country_event = {
+	id = torgOtv.5
+	title = torgOtv.5.t
+	desc = torgOtv.5.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torgOtv.1.a
+		FROM = {
+			give_resource_rights = { receiver = ROOT state = 556 }
+		}
+		
+		
+		556 = {
+			set_state_flag = state_res_bought
+		}
+	}
+}
+country_event = {
+	id = torgOtv.6
+	title = torgOtv.6.t
+	desc = torgOtv.6.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torgOtv.1.a
+		transfer_state = 876
+		add_political_power = -300
+	}
+}
+country_event = {
+	id = torgOtv.7
+	title = torgOtv.7.t
+	desc = torgOtv.7.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torgOtv.1.a
+		FROM = {
+			give_resource_rights = { receiver = ROOT state = 778 }
+		}
+		778 = {
+			set_state_flag = state_res_bought
+		}
+		
+	}
+}
+country_event = {
+	id = torgOtv.8
+	title = torgOtv.8.t
+	desc = torgOtv.8.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torgOtv.1.a
+		transfer_state = 701
+		add_political_power = -300
+	}
+}

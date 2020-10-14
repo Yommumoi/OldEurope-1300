@@ -1,0 +1,470 @@
+scripted_gui = {
+	scripted_gui_soslovia_button = {
+
+		context_type = player_context
+
+		parent_window_token = politics_tab
+
+		window_name = "soslovia"
+		effects = {
+			open_soslovia_click = {
+				set_variable = { current_soslovia_main = 1 }
+				
+			}
+			
+			
+		}
+	}
+	scripted_gui_podsk = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "nedovolstvo"
+	}
+	
+	scripted_gui_podsk = {
+
+		context_type = player_context
+
+		parent_window_token = top_bar
+
+		window_name = "podsk2"
+		visible = {
+			check_variable = {podsk_var2 = 1}
+		}
+		
+	}
+	
+	scripted_gui_soslovia = {
+
+		context_type = player_context
+
+		parent_window_token = politics_tab
+	    window_name = "soslovia_main"
+		visible = {
+			check_variable = { current_soslovia_main = 1 }
+		}
+		triggers = {
+            Knopka1_1_click_enabled = {
+                NOT = {
+					has_idea = sozvan_sovet
+				}
+				check_variable = { soslovia_dvor < 100 }
+            }
+			Knopka1_2_click_enabled = {
+                check_variable = { soslovia_dvor > 30 }
+            }
+			Knopka1_3_click_enabled = {
+                check_variable = { soslovia_dvor > 30 }
+            }
+			Knopka12_1_click_enabled = {
+                check_variable = { soslovia_kre < 100 }
+				
+				has_political_power > 300
+            }
+			Knopka12_2_click_enabled = {
+                check_variable = { soslovia_kre > 30 }
+            }
+			Knopka12_3_click_enabled = {
+                check_variable = { soslovia_kre > 30 }
+            }
+			Knopka2_1_click_enabled = {
+                check_variable = { soslovia_duh < 100 }
+				has_political_power > 250
+            }
+			Knopka2_2_click_enabled = {
+                check_variable = { soslovia_duh > 30 }
+            }
+			Knopka2_3_click_enabled = {
+                has_political_power > 10000
+				check_variable = { soslovia_duh > 30 }
+            }
+			Knopka23_1_click_enabled = {
+                check_variable = { soslovia_rem < 100 }
+				has_political_power > 300
+            }
+			Knopka23_2_click_enabled = {
+                check_variable = { soslovia_rem > 30 }
+            }
+			Knopka23_3_click_enabled = {
+                check_variable = { soslovia_rem > 30 }
+            }
+			Knopka3_1_click_enabled = {
+                check_variable = { soslovia_gor < 100 }
+				check_variable = { soslovia_dvor > 30 }
+				has_political_power > 100
+				NOT = {
+					has_idea = gorod_uprav
+				}
+            }
+			Knopka3_2_click_enabled = {
+                check_variable = { soslovia_gor > 30 }
+            }
+			Knopka3_3_click_enabled = {
+                check_variable = { soslovia_gor > 30 }
+            }
+		}
+		ai_enabled = {
+			always = yes
+		}
+		ai_max_weight_taken_per_test = 1
+		ai_weights = {
+			Knopka1_1_click = {
+                ai_will_do = {
+                    factor = 0
+					modifier = {
+						factor = 3
+					    check_variable = { soslovia_dvor < 41 }
+					}
+					
+                }
+			}
+			Knopka1_2_click = {
+                ai_will_do = {
+                    factor = 0
+					
+					
+                }
+				
+			}
+			Knopka1_3_click = {
+                ai_will_do = {
+                    factor = 0
+					
+					
+                }
+			}
+			Knopka12_1_click = {
+                ai_will_do = {
+					factor = 0
+					modifier = {
+						factor = 3
+						check_variable = { soslovia_kre < 41 }
+					}
+					
+                }
+			}
+			Knopka12_2_click = {
+                ai_will_do = {
+                    factor = 0
+
+					
+                }
+			}
+			Knopka12_3_click = {
+                ai_will_do = {
+                    factor = 0
+
+					
+                }
+			}
+			Knopka2_1_click = {
+                ai_will_do = {
+					factor = 0
+					modifier = {
+						factor = 3
+						check_variable = { soslovia_duh < 61 }
+					}
+					
+                }
+			}
+			Knopka2_2_click = {
+                ai_will_do = {
+
+                    factor = 0
+					
+                }
+			}
+			Knopka2_3_click = {
+                ai_will_do = {
+
+                    factor = 0
+
+					
+                }
+			}
+			Knopka23_1_click = {
+                ai_will_do = {
+					factor = 0
+					modifier = {
+						factor = 3
+						check_variable = { soslovia_rem < 46 }
+					}
+					
+                }
+			}
+			Knopka23_2_click = {
+                ai_will_do = {
+
+                    factor = 0
+
+					
+                }
+			}
+			Knopka23_3_click = {
+                ai_will_do = {
+
+                    factor = 0
+
+					
+                }
+			}
+			Knopka3_1_click = {
+                ai_will_do = {
+					factor = 0
+					modifier = {
+						factor = 3
+						check_variable = { soslovia_gor < 61 }
+					}
+					
+                }
+			}
+			Knopka3_2_click = {
+                ai_will_do = {
+
+                    factor = 0
+
+					
+                }
+			}
+			Knopka3_3_click = {
+                ai_will_do = {
+
+                    factor = 0
+
+					
+                }
+			}
+			
+		}
+		effects = {
+			close_button2_click = {
+				set_variable = { current_soslovia_main = 0 }
+				
+			}
+			podskazka_button2_click = {
+				if = {
+					limit = {
+						check_variable = {podsk_var2 = 1}
+					}
+					set_variable = {podsk_var2 = 0}
+				}
+				else_if = {
+					limit = {
+						check_variable = {podsk_var2 = 0}
+					}
+					set_variable = {podsk_var2 = 1}
+				}
+			}
+			Esc_click = {
+				set_variable = { current_soslovia_main = 0 }
+				set_variable = {podsk_var2 = 0}
+				set_variable = {podsk_var = 0}
+				
+			}
+			Knopka1_1_click = {
+				add_to_variable = { soslovia_dvor = 25 }
+				clamp_variable = {
+					var = soslovia_dvor
+					min = 0
+					max = 100
+				}
+				add_timed_idea = {
+					idea = sozvan_sovet
+					days = 300
+				}
+			}
+			Knopka1_2_click = {
+				add_to_variable = { soslovia_dvor = -10 }
+				clamp_variable = {
+					var = soslovia_dvor
+					min = 0
+					max = 100
+				}
+				add_political_power = coin_dvor
+				
+			}
+			Knopka1_3_click = {
+				add_to_variable = { soslovia_dvor = -10 }
+				clamp_variable = {
+					var = soslovia_dvor
+					min = 0
+					max = 100
+				}
+				add_manpower = recrut_dvor     
+				
+			}
+			Knopka12_1_click = {
+				add_to_variable = { soslovia_kre = 30 }
+				clamp_variable = {
+					var = soslovia_kre
+					min = 0
+					max = 100
+				}
+				add_political_power = -300
+				
+			}
+			Knopka12_2_click = {
+				add_to_variable = { soslovia_kre = -10 }
+				clamp_variable = {
+					var = soslovia_kre
+					min = 0
+					max = 100
+				}
+				add_manpower = recrut_dvor     #250 * num_of_states
+				
+			}
+			Knopka12_3_click = {
+				add_to_variable = { soslovia_kre = -10 }
+				clamp_variable = {
+					var = soslovia_kre
+					min = 0
+					max = 100
+				}
+				add_war_support = 0.03
+			}
+			Knopka2_1_click = {
+				add_to_variable = { soslovia_duh = 20 }
+				clamp_variable = {
+					var = soslovia_duh
+					min = 0
+					max = 100
+				}
+				add_political_power = -250
+				
+			}
+			Knopka2_2_click = {
+				add_to_variable = { soslovia_duh = -10 }
+				clamp_variable = {
+					var = soslovia_duh
+					min = 0
+					max = 100
+				}
+				add_political_power = 100
+				
+			}
+			Knopka2_3_click = {
+				add_research_slot = 1
+				add_political_power = -10000
+				add_to_variable = { soslovia_duh = -30 }
+				clamp_variable = {
+					var = soslovia_duh
+					min = 0
+					max = 100
+				}
+			}
+			Knopka23_1_click = {
+				add_to_variable = { soslovia_rem = 30 }
+				clamp_variable = {
+					var = soslovia_rem
+					min = 0
+					max = 100
+				}
+				add_political_power = -300
+				add_to_variable = { product_masters_value = 10 }
+			}
+			Knopka23_2_click = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1500
+					producer = FROM
+				}
+				add_to_variable = { soslovia_rem = -15 }
+				clamp_variable = {
+					var = soslovia_rem
+					min = 0
+					max = 100
+				}
+			}
+			Knopka23_3_click = {
+				add_to_variable = { soslovia_rem = -10 }
+				clamp_variable = {
+					var = soslovia_rem
+					min = 0
+					max = 100
+				}
+				random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = infrastructure
+								size > 0
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			Knopka3_1_click = {
+				add_timed_idea = {
+					idea = gorod_uprav
+					days = 300
+				}
+				add_to_variable = { soslovia_gor = 30 }
+				clamp_variable = {
+					var = soslovia_gor
+					min = 0
+					max = 100
+				}
+				add_to_variable = { soslovia_dvor = -5 }
+				clamp_variable = {
+					var = soslovia_dvor
+					min = 0
+					max = 100
+				}
+				add_political_power = -100
+				
+			}
+			Knopka3_2_click = {
+				add_to_variable = { soslovia_gor = -30 }
+				clamp_variable = {
+					var = soslovia_gor
+					min = 0
+					max = 100
+				}
+				add_political_power = 200
+			}
+			Knopka3_3_click = {
+				add_to_variable = { bank_money = 50 }
+				add_to_variable = { soslovia_gor = -20 }
+				clamp_variable = {
+					var = soslovia_gor
+					min = 0
+					max = 100
+				}
+			}
+		}
+		properties = {
+            soslovia_progress1 = {
+				frame = soslovia_dvor
+			}
+			soslovia_progress2 = {
+				frame = soslovia_duh
+			}
+			soslovia_progress3 = {
+				frame = soslovia_gor
+			}
+			soslovia_progress4 = {
+				frame = soslovia_kre
+			}
+			soslovia_progress5 = {
+				frame = soslovia_rem
+			}
+        }
+	}
+}

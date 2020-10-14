@@ -1,0 +1,2514 @@
+focus_tree = {
+	id = Bogemia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CZE
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y =1300 }
+	focus = {
+		id = CZE_1
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 16
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = CZE_3
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10
+		prerequisite = {
+			focus = CZE_1
+		}
+		mutually_exclusive = {
+			focus = CZE_2
+		}
+		x = 12
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = CZE_58
+		icon = GFX_goal_generic_CAS
+		cost = 10
+		prerequisite = {
+			focus = CZE_3
+		}
+		x = 10
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = CZE_59
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = CZE_58
+		}
+		x = 10
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					65 = {
+							add_claim_by = CZE
+						}
+					68 = {
+							add_claim_by = CZE
+						}
+					63 = {
+							add_claim_by = CZE
+						}
+					ETH = {
+							country_event = {
+								id = hre.400
+							}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_60
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_59
+		}
+		x = 8
+		y = 5
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = ETH
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = ETH
+								}
+							has_war_with = ETH
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = ETH
+							generator = { 65 }
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_62
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_59
+		}
+		x = 10
+		y = 6
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = VRT
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = VRT
+								}
+							has_war_with = VRT
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = VRT
+							generator = { 794 }
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_22
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10
+		prerequisite = {
+			focus = CZE_3
+		}
+		x = 12
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = CZE_23
+		icon = GFX_goal_continuous_increase_nu
+		cost = 10
+		prerequisite = {
+			focus = CZE_22
+		}
+		x = 12
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					create_faction = Antiven
+					add_to_faction = CZE
+				}
+
+	}
+	focus = {
+		id = CZE_25
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = CZE_23
+		}
+		x = 11
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					SER = {
+							country_event = {
+									id = bog.1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_26
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = CZE_23
+		}
+		x = 13
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					ROM = {
+							country_event = {
+									id = bog.2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_27
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_26
+		}
+		prerequisite = {
+			focus = CZE_25
+		}
+		mutually_exclusive = {
+			focus = CZE_70
+		}
+		x = 12
+		y = 7
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = HUN
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = HUN
+								}
+							has_war_with = HUN
+						}
+				}
+			
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 5
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = HUN
+							generator = { 70 }
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_24
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10
+		prerequisite = {
+			focus = CZE_64
+		}
+		x = 5
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					CRO = {
+							transfer_state = 109
+							transfer_state = 103
+							give_guarantee = CZE
+							hidden_effect = {
+							load_oob = "CRO_1936"
+							}
+						}
+					CZE = {
+							
+							give_guarantee = CRO
+						}
+					HUN = {
+							country_event = {
+									id = bog.3
+								}
+								create_wargoal = {
+									type = puppet_wargoal_focus
+									target = CRO
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_28
+		icon = GFX_goal_generic_attack_allies
+		cost = 10
+		prerequisite = {
+			focus = CZE_64
+		}
+		x = 7
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					BOS = {
+							transfer_state = 104
+							give_guarantee = CZE
+							hidden_effect = {
+							load_oob = "BOS_1936"
+							}
+						}
+					CZE = {
+							
+							give_guarantee = BOS
+						}
+					HUN = {
+							country_event = {
+									id = bog.3
+								}
+								create_wargoal = {
+									type = puppet_wargoal_focus
+									target = BOS
+								}
+						}
+						
+				}
+
+	}
+	focus = {
+		id = CZE_45
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 10
+		prerequisite = {
+			focus = CZE_65
+		}
+		
+		x = 4
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					70 = {
+							add_core_of = CZE
+						}
+					71 = {
+							add_core_of = CZE
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_2
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = CZE_1
+		}
+		mutually_exclusive = {
+			focus = CZE_3
+		}
+		x = 16
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = CZE_19
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_2
+		}
+		x = 14
+		y = 3
+			available_if_capitulated = no
+			completion_reward = {
+					add_manpower = 90000
+				}
+
+	}
+	focus = {
+		id = CZE_4
+		icon = GFX_goal_anschluss
+		cost = 10
+		prerequisite = {
+			focus = CZE_2
+		}
+		x = 16
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					CZE = {
+							country_event = {
+									id = hre.1
+								}
+						}
+					AUS = {
+							country_event = {
+									id = hre.2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_5
+		icon = GFX_focus_usa_union_representation_act
+		cost = 10
+		prerequisite = {
+			focus = CZE_4
+		}
+		x = 16
+		y = 4
+		available_if_capitulated = no
+		completion_reward = {
+			every_country = {
+				if = {
+					limit = {
+						NOT = {
+							OR = {
+								tag = AUS
+								tag = CZE
+							}
+						}
+						OR = {
+							has_idea = HRE_holy
+							has_idea = HRE_kurfurst
+						}
+					}
+					country_event = {
+						id = hre.5
+							
+					}
+				}
+			}
+			news_event = news.1042
+					
+		}
+
+	}
+	focus = {
+		id = CZE_6
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_5
+		}
+		x = 16
+		y = 5
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = AUS
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = AUS
+								}
+							has_war_with = AUS
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = AUS
+							generator = { 4 }
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_20
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10
+		prerequisite = {
+			focus = CZE_2
+		}
+		x = 18
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 300
+				}
+
+	}
+	focus = {
+		id = CZE_21
+		icon = GFX_focus_ger_revive_kaiserreich
+		cost = 10
+		prerequisite = {
+			focus = CZE_6
+		}
+		x = 16
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = HRE_imperor
+					if = {
+						limit = {
+							AUS = {
+								is_in_faction = yes
+								is_faction_leader = yes
+							}
+							CZE = {
+								is_in_faction = yes
+								is_faction_leader = yes
+							}
+						}
+						AUS = {
+							add_ideas = HRE_holy
+							dismantle_faction = yes
+						}
+						CZE = {
+							dismantle_faction = yes
+						}
+					}
+				}
+			available = {
+				OR = {
+					AUS = {
+						has_capitulated = yes
+					}
+					NOT = {
+						country_exists = AUS
+					}
+					AUS = {
+						is_puppet = yes
+					}
+				}
+			}
+
+	}
+	focus = {
+		id = CZE_40
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		prerequisite = {
+			focus = CZE_27
+			focus = CZE_21
+			focus = CZE_70
+		}
+		x = 16
+		y = 8
+			completion_reward = {
+					add_timed_idea = {
+							idea = nationalism
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_52
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = CZE_40
+		}
+		x = 10
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_53
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = CZE_40
+		}
+		x = 12
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_56
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = CZE_53
+		}
+		prerequisite = {
+			focus = CZE_52
+		}
+		x = 11
+		y = 10
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_41
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_40
+		}
+		x = 16
+		y = 9
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = PMR
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = PMR
+								}
+							has_war_with = PMR
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = PMR
+							generator = { 63 }
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_42
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = CZE_41
+		}
+		x = 14
+		y = 10
+			available_if_capitulated = yes
+			available = {
+					any_state = {
+							is_coastal = yes
+							is_controlled_by = ROOT
+						}
+				}
+			complete_tooltip = {
+					navy_experience = 25
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									any_owned_state = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											dockyard > 0
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											has_country_flag = naval_effort_built
+										}
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_state = {
+									limit = {
+											controller = {
+													tag = ROOT
+												}
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 3
+									add_building_construction = {
+											type = dockyard
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_43
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = CZE_41
+		}
+		x = 16
+		y = 10
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_44
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = {
+			focus = CZE_41
+		}
+		x = 18
+		y = 10
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							all_owned_state = {
+									OR = {
+											is_coastal = no
+											dockyard < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_47
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		cost = 10
+		prerequisite = {
+			focus = CZE_43
+		}
+		prerequisite = {
+			focus = CZE_44
+		}
+		prerequisite = {
+			focus = CZE_42
+		}
+		x = 16
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = CZE_50
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = {
+			focus = CZE_47
+		}
+		x = 13
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { HRE_naem }
+				}
+
+	}
+	focus = {
+		id = CZE_48
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		prerequisite = {
+			focus = CZE_47
+		}
+		x = 15
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { HRE_fac }
+				}
+
+	}
+	focus = {
+		id = CZE_49
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = CZE_47
+		}
+		x = 17
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { HRE_arm }
+				}
+
+	}
+	focus = {
+		id = CZE_51
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10
+		prerequisite = {
+			focus = CZE_47
+		}
+		x = 19
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { HRE_mon }
+				}
+
+	}
+	focus = {
+		id = CZE_7
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = CZE_1
+		}
+		x = 22
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 2.0
+							uses = 1
+							category = industry
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_14
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = CZE_7
+		}
+		x = 20
+		y = 3
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_15
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = CZE_14
+		}
+		x = 20
+		y = 4
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_16
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = CZE_15
+		}
+		x = 20
+		y = 5
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_18
+		icon = GFX_focus_generic_tungsten
+		cost = 10
+		prerequisite = {
+			focus = CZE_16
+		}
+		x = 20
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_full_control_of_state = 9
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					9 = {
+							add_resource = {
+									type = tungsten
+									amount = 10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_39
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = CZE_18
+		}
+		x = 20
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = CZE_29
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = CZE_21
+			focus = CZE_27
+			focus = CZE_70
+		}
+		x = 22
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_30
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = CZE_29
+		}
+		x = 22
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_31
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = CZE_30
+		}
+		x = 22
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_46
+		icon = GFX_goal_generic_military_deal
+		cost = 10
+		prerequisite = {
+			focus = CZE_31
+		}
+		x = 22
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = { LIT_war }
+				}
+
+	}
+	focus = {
+		id = CZE_8
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = CZE_7
+		}
+		x = 24
+		y = 3
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_9
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = CZE_8
+		}
+		x = 24
+		y = 4
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_10
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = CZE_9
+		}
+		x = 24
+		y = 5
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_32
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_21
+			focus = CZE_27
+			focus = CZE_70
+		}
+		x = 24
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_33
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_32
+		}
+		x = 24
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_34
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_33
+		}
+		x = 24
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_11
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = CZE_7
+		}
+		x = 26
+		y = 3
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_12
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = CZE_11
+		}
+		x = 26
+		y = 4
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_13
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = CZE_12
+		}
+		x = 26
+		y = 5
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_17
+		icon = GFX_focus_generic_steel
+		cost = 10
+		prerequisite = {
+			focus = CZE_10
+		}
+		prerequisite = {
+			focus = CZE_13
+		}
+		x = 25
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_full_control_of_state = 9
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					9 = {
+							add_resource = {
+									type = steel
+									amount = 20
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_35
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		prerequisite = {
+			focus = CZE_21
+			focus = CZE_27
+			focus = CZE_70
+		}
+		x = 26
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.2
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_37
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		prerequisite = {
+			focus = CZE_36
+		}
+		x = 26
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.2
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_36
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		prerequisite = {
+			focus = CZE_35
+		}
+		x = 26
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.2
+							uses = 1
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_38
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = CZE_31
+		}
+		prerequisite = {
+			focus = CZE_34
+		}
+		prerequisite = {
+			focus = CZE_37
+		}
+		x = 24
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = CZE_54
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = CZE_40
+		}
+		x = 8
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_57
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = CZE_50
+		}
+		prerequisite = {
+			focus = CZE_48
+		}
+		prerequisite = {
+			focus = CZE_49
+		}
+		prerequisite = {
+			focus = CZE_51
+		}
+		x = 16
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = CZE_55
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = CZE_54
+		}
+		prerequisite = {
+			focus = CZE_52
+		}
+		x = 9
+		y = 10
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CZE_61
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_60
+		}
+		x = 8
+		y = 8
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = BRN
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = BRN
+								}
+							has_war_with = BRN
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_named_threat = {
+							threat = 1
+						}
+					create_wargoal = {
+							type = take_state_focus
+							target = BRN
+							generator = { 68 }
+						}
+				}
+
+	}
+	
+	
+	
+	focus = {
+		id = CZE_63
+		icon = GFX_goal_bogshield
+		cost = 10
+		prerequisite = {
+			focus = CZE_1
+		}
+		x = 5
+		y = 2
+		bypass = {
+			NOT = {
+				country_exists = HUN
+			}				
+
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_stability = 0.1
+			
+		}
+
+	}
+	focus = {
+		id = CZE_64
+		icon = GFX_goal_paleczakon2
+		cost = 10
+		prerequisite = {
+			focus = CZE_69
+		}
+		x = 6
+		y = 4
+		
+		completion_reward = {
+			add_political_power = 165
+			
+		}
+
+	}
+	focus = {
+		id = CZE_65
+		icon = GFX_goal_Knight2
+		cost = 10
+		prerequisite = {
+			focus = CZE_69
+		}
+		x = 4
+		y = 4
+		
+
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = HUN
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = HUN
+								}
+							has_war_with = HUN
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					
+					create_wargoal = {
+						type = take_state_focus
+						target = HUN
+						generator = { 70 }
+					}
+					add_political_power = -100
+				}
+			
+		
+
+	}
+	focus = {
+		id = CZE_66
+		icon = GFX_goal_nozhbumaga
+		cost = 10
+		prerequisite = {
+			focus = CZE_63
+		}
+		x = 0
+		y = 3
+		
+		completion_reward = {
+			
+			add_political_power = 120
+		}
+
+	}
+	focus = {
+		id = CZE_67
+		icon = GFX_goal_WingedHussars
+		cost = 10
+		prerequisite = {
+			focus = CZE_66
+		}
+		x = 0
+		y = 4
+		
+		completion_reward = {
+			POL = {
+				country_event = {
+					id = bog.5
+				}
+			}
+			
+		}
+
+	}
+	focus = {
+		id = CZE_68
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_66
+		}
+		x = 2
+		y = 4
+		
+		completion_reward = {
+			SIL = {
+				country_event = {
+					id = bog.5
+				}
+			}
+			
+		}
+
+	}
+	focus = {
+		id = CZE_69
+		icon = GFX_goal_zakons
+		cost = 10
+		prerequisite = {
+			focus = CZE_63
+		}
+		x = 5
+		y = 3
+		
+		completion_reward = {
+			
+			add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = CZE_70
+		icon = GFX_goal_rozamech
+		cost = 10
+		prerequisite = {
+			focus = CZE_28
+			focus = CZE_24
+		}
+		mutually_exclusive = {
+			focus = CZE_27
+		}
+		x = 6
+		y = 7
+		
+		available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = HUN
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = HUN
+								}
+							has_war_with = HUN
+						}
+				}
+			historical_ai = {
+					NOT = {
+							any_neighbor_country = {
+									has_war_with = ROOT
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					
+					create_wargoal = {
+						type = take_state_focus
+						target = HUN
+						generator = { 70 }
+					}
+					BOS = {
+						declare_war_on = {
+							target = HUN
+							type = annex_everything
+						}
+					}
+					CRO = {
+						declare_war_on = {
+							target = HUN
+							type = annex_everything
+						}
+					}
+				}
+
+	}
+	focus = {
+		id = CZE_71
+		icon = GFX_goal_Krepost
+		cost = 10
+		prerequisite = {
+			focus = CZE_45
+			
+		}
+		
+		x = 4
+		y = 8
+		
+		available = {
+			controls_state = 71
+			controls_state = 73
+			controls_state = 76
+		}
+		completion_reward = {
+			71 = {
+				add_building_construction = {
+					type = bunker
+					province = 3550
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 3581
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6604
+					level = 1
+					instant_build = yes
+				}
+			}
+			73 = {
+				add_building_construction = {
+					type = bunker
+					province = 11536
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 9563
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6571
+					level = 1
+					instant_build = yes
+				}
+			}
+			76 = {
+				add_building_construction = {
+					type = bunker
+					province = 9704
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 727
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+
+	}
+	focus = {
+		id = CZE_72
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = CZE_45
+
+		}
+		
+		x = 3
+		y = 6
+		
+		available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = AUS
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = AUS
+								}
+							has_war_with = AUS
+						}
+				}
+			
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					
+					create_wargoal = {
+						type = take_state_focus
+						target = AUS
+						generator = { 70 }
+					}
+					
+				}
+
+	}
+	
+}
+

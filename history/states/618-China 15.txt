@@ -1,0 +1,25 @@
+
+state={
+	id=618
+	name="STATE_618" # Dzungaria
+	manpower = 17700
+
+	state_category = pastoral
+
+	history={
+		
+		
+		owner = KAI
+	    add_core_of = KAI
+		
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1708 1783 1844 7693 7866 12590 12737 
+	}
+}

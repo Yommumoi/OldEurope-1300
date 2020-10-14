@@ -1,0 +1,33 @@
+
+state={
+	id=792
+	name="STATE_792"
+	manpower = 238286
+	
+	state_category = large_city
+
+	history={
+		owner = BRE
+	    add_core_of = BRE
+		victory_points = {
+			3326 1 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			3326 = {
+				naval_base = 2
+				torgnaval_base = 3
+			}
+
+		}
+		
+
+	}
+
+	provinces={
+		3326 
+	}
+}

@@ -1,0 +1,174 @@
+reform_cat = {
+
+	reform_1 = {
+	
+		cost = 300
+		available = {
+			always = yes
+		}
+		days_remove = 100
+		fixed_random_seed = no
+		visible = {
+			check_variable = {reform_value > 1}
+		}
+		remove_effect = {
+			random_list = {
+				40 = {
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+				40 = {
+					add_offsite_building = { type = industrial_complex level = 1 }
+				}
+				20 = {}
+			}
+
+		}
+		complete_effect = {
+
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reform_2 = {
+	
+		cost = 350
+		available = {
+			always = yes
+		}
+		days_remove = 75
+		visible = {
+			check_variable = {reform_value > 2}
+		}
+		remove_effect = {
+			add_to_variable = {product_masters_value = 70}
+			custom_effect_tooltip = product70
+
+		}
+		complete_effect = {
+
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reform_4 = {
+	
+		cost = 450
+		available = {
+			always = yes
+		}
+		days_remove = 100
+		visible = {
+			check_variable = {reform_value > 3}
+		}
+		remove_effect = {
+			
+
+		}
+		complete_effect = {
+
+			modify_building_resources = {
+				building = wood_cut
+				resource = rubber
+				amount = 1
+			}
+			modify_building_resources = {
+				building = cloth_master
+				resource = chromium
+				amount = 1
+			}
+			modify_building_resources = {
+				building = plavil
+				resource = steel
+				amount = 1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reform_3 = {
+	
+		cost = 400
+		available = {
+			has_war = yes
+			
+		}
+		fire_only_once = yes
+		days_remove = 10
+		visible = {
+
+			check_variable = {reform_value > 0}
+		}
+		remove_effect = {
+			
+			set_technology = {
+				spear_weapons = 1
+			}
+			load_oob = "POMOSH"
+			
+			
+			
+			ROOT = {
+				
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Town militia\" division_template = \"Town_militia\" start_experience_factor = 0.2" 
+						owner = PREV
+					}
+				}
+			}
+		}
+		complete_effect = {
+
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reform_5 = {
+	
+		cost = 750
+		available = {
+			always = yes
+		}
+		days_remove = 50
+		visible = {
+			check_variable = {reform_value > 4}
+		}
+		remove_effect = {
+			add_war_support = 0.05
+			every_neighbor_country = {
+				limit = {
+					NOT = {
+						tag = XXX
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = PREV
+					}
+				}
+			}
+
+		}
+		complete_effect = {
+
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

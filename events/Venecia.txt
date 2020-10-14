@@ -1,0 +1,351 @@
+add_namespace = ven
+
+country_event = {
+	id = ven.1
+	title = ven.1.t
+	desc = ven.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.1.a
+		VEN = {
+			country_event = { id = ven.2 }
+		}
+		add_political_power = 150
+	}
+	option = {
+		name = ven.1.b
+		VEN = {
+			country_event = { id = ven.3 }
+		}
+	}
+
+
+}
+
+country_event = {
+	id = ven.2
+	title = ven.2.t
+	desc = ven.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.2.a
+		VEN = {
+			transfer_state = 116
+		}
+		116 = {
+			add_core_of = VEN
+			remove_core_of = ARA
+		}
+	}
+
+
+}
+
+country_event = {
+	id = ven.3
+	title = ven.3.t
+	desc = ven.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.3.a
+		add_political_power = 150
+	}
+
+}
+
+country_event = {
+	id = ven.4
+	title = ven.1.t
+	desc = ven.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.1.a
+		VEN = {
+			country_event = { id = ven.6 }
+		}
+		add_political_power = 300
+	}
+	option = {
+		name = ven.1.b
+		VEN = {
+			country_event = { id = ven.11 }
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.5
+	title = ven.2.t
+	desc = ven.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.2.a
+		VEN = {
+			transfer_state = 115
+		}
+		115 = {
+			add_core_of = VEN
+			remove_core_of = ARA
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.6
+	title = ven.2.t
+	desc = ven.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.2.a
+		VEN = {
+			transfer_state = 114
+		}
+		114 = {
+			add_core_of = VEN
+			remove_core_of = ARA
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.7
+	title = ven.2.t
+	desc = ven.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.2.a
+		VEN = {
+			transfer_state = 177
+		}
+		177 = {
+			add_core_of = VEN
+			remove_core_of = ARA
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.8
+	title = ven.2.t
+	desc = ven.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.2.a
+		VEN = {
+			transfer_state = 164
+		}
+		164 = {
+			add_core_of = VEN
+			remove_core_of = GRE
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.9
+	title = ven.2.t
+	desc = ven.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.2.a
+		VEN = {
+			transfer_state = 187
+		}
+		187 = {
+			add_core_of = VEN
+			remove_core_of = GRE
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.10
+	title = ven.2.t
+	desc = ven.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.2.a
+		VEN = {
+			transfer_state = 183
+		}
+		183 = {
+			add_core_of = VEN
+			remove_core_of = TUR
+		}
+	}
+
+
+}
+
+country_event = {
+	id = ven.11
+	title = ven.3.t
+	desc = ven.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.3.a
+		add_political_power = 300
+	}
+
+}
+
+country_event = {
+	id = ven.12
+	title = ven.1.t
+	desc = ven.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.1.a
+		VEN = {
+			country_event = { id = ven.5 }
+		}
+		add_political_power = 300
+	}
+	option = {
+		name = ven.1.b
+		VEN = {
+			country_event = { id = ven.11 }
+		}
+	}
+
+
+}
+
+country_event = {
+	id = ven.13
+	title = ven.1.t
+	desc = ven.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.1.a
+		VEN = {
+			country_event = { id = ven.7 }
+		}
+		add_political_power = 150
+	}
+	option = {
+		name = ven.1.b
+		VEN = {
+			country_event = { id = ven.3 }
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.14
+	title = ven.1.t
+	desc = ven.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.1.a
+		VEN = {
+			country_event = { id = ven.8 }
+		}
+		add_political_power = 150
+	}
+	option = {
+		name = ven.1.b
+		VEN = {
+			country_event = { id = ven.3 }
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.15
+	title = ven.1.t
+	desc = ven.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.1.a
+		VEN = {
+			country_event = { id = ven.9 }
+		}
+		add_political_power = 150
+	}
+	option = {
+		name = ven.1.b
+		VEN = {
+			country_event = { id = ven.3 }
+		}
+	}
+
+
+}
+country_event = {
+	id = ven.16
+	title = ven.1.t
+	desc = ven.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ven.1.a
+		VEN = {
+			country_event = { id = ven.10 }
+		}
+		add_political_power = 150
+	}
+	option = {
+		name = ven.1.b
+		VEN = {
+			country_event = { id = ven.3 }
+		}
+	}
+
+
+}

@@ -1,0 +1,19 @@
+state=
+{
+	id=767
+	name="STATE_767" # North Darfur
+	manpower = 1560
+	
+	state_category = wasteland
+	
+	history= {
+		owner = EGY
+	    add_core_of = EGY
+		buildings = {
+			infrastructure = 0
+		}
+	}
+	provinces={
+		7987 8103 10900
+	}
+}

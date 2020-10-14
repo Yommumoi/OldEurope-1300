@@ -1,0 +1,82 @@
+﻿capital = 12
+
+oob = "LAT_1936"
+set_variable = { adm_limit = 7 }
+add_ideas = {
+	limited_conscription
+}
+add_ideas = techgroup1
+set_variable = { soslovia_dvor = 70 }
+set_variable = { soslovia_duh = 100 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 40 }
+set_variable = { soslovia_rem = 40 }
+set_technology = {
+	infantry_weapons = 1
+	early_ship_hull_submarine = 1 
+    basic_ship_hull_submarine = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1 
+    basic_ship_hull_light = 1
+}
+add_ideas = tip3
+
+set_research_slots = 3
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 66
+	communism = 1
+	neutrality = 23
+}
+
+create_country_leader = {
+	name = "Gottfried von Rogge"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = 	stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Gottfried von Rogge"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Gottfried von Rogge"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+create_corps_commander = {
+	name = "Gottfried von Rogge"
+	portrait_path = "1.dds"
+	traits = {  }
+	skill = 4
+
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}

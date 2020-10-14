@@ -1,0 +1,30 @@
+
+state={
+	id=804
+	name="STATE_804"
+	manpower = 209876
+
+	state_category = large_city
+
+	history={
+		owner = PFA
+	    add_core_of = PFA
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			11560 = {
+				bunker = 2
+			}
+		}
+		victory_points = {
+			11560 3
+		}
+		
+
+	}
+
+	provinces={
+		11560 589 3574 
+	}
+}

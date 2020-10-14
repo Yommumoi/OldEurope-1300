@@ -1,0 +1,1061 @@
+scripted_gui = {
+	scripted_gui_vysow_okno_factorii_button = {
+
+		context_type = selected_state_context
+
+		parent_window_token = selected_state_view
+
+		window_name = "vysow_okno_factorii"
+		visible = {
+			check_variable = {vysow_okno = 1}
+		}
+		effects = {
+			
+			
+			
+			
+		}
+		triggers = {
+			
+			
+			
+			factoria_remove_button_click_enabled = {
+				THIS = {
+					has_state_flag = factoria_tut
+				}
+			}
+			factoria_mesto_visible = {
+				THIS = {
+					has_state_flag = factoria_tut
+				}
+			}
+		}
+		ai_enabled = {
+			has_government = democratic
+		}
+		ai_max_weight_taken_per_test = 3
+		ai_weights = {
+			factoria_build_button_click = {
+                ai_will_do = {
+					factor = 3
+                }
+			}
+			
+		}
+	}
+	scripted_gui_regionbuy_button = {
+
+		context_type = selected_state_context
+
+		parent_window_token = selected_state_view
+
+		window_name = "regionbuy1"
+		effects = {
+			invest_button_click = {
+				ROOT = {
+					add_political_power = -200
+					add_to_variable = { product_masters_value = 15 }
+				}
+				THIS = {
+					random_list = {
+						6 = {
+							random_list = {
+								50 = {
+									add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+									add_extra_state_shared_building_slots = 1
+								}
+								50 = {
+									add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+									add_extra_state_shared_building_slots = 1
+								}
+							}
+						}
+						94 = {}
+					}
+					random_list = {
+						4 = {
+							add_resource = {
+								type = steel
+								amount = 2
+							}
+						}
+						4 = {
+							add_resource = {
+								type = rubber
+								amount = 2
+							}
+						}
+						4 = {
+							add_resource = {
+								type = oil
+								amount = 2
+							}
+						}
+						4 = {
+							add_resource = {
+								type = aluminium
+								amount = 2
+							}
+						}
+						4 = {
+							add_resource = {
+								type = tungsten
+								amount = 2
+							}
+						}
+						4 = {
+							add_resource = {
+								type = chromium
+								amount = 2
+							}
+						}
+						76 = {}
+					}
+					
+				}
+			
+			}
+			factoria_build_button_click = {
+				ROOT = {
+					add_to_variable = { povt_timer_fac = 10}
+					add_to_variable = { factoria_value = 1}
+					add_to_variable = { product_masters_value = -25}
+					add_political_power = factoria_cost_MINUS
+					
+					if = {
+						limit = {
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = factoria_dynamic_modifier
+								}
+							}
+						}
+						add_dynamic_modifier = {
+							modifier = factoria_dynamic_modifier
+						}
+					}
+				}
+				THIS = {
+					set_state_flag = factoria_tut
+					owner = {
+						if = {
+							limit = {
+								NOT = {
+									tag = ROOT
+								}
+							}
+							add_to_variable = { product_masters_value = 25}
+						}
+					}
+				}
+				
+				
+				
+			}
+			vysowbutton2_click = {
+				
+				if = {
+					limit = {
+						check_variable = {vysow_okno = 0}
+					}
+					set_variable = {vysow_okno = 1}
+				}
+				else_if = {
+					limit = {
+						check_variable = {vysow_okno = 1}
+					}
+					set_variable = {vysow_okno = 0}
+				}
+				
+				
+			}
+			regionbuybutton_click = {
+				THIS = {
+					ROOT = {
+						transfer_state = PREV
+						add_political_power = -2000
+						add_to_variable = {buy_timer = 200}
+					}
+				}
+			}
+			capitalbutton_click = {
+				THIS = {
+					ROOT = {
+						set_capital = PREV
+						add_political_power = -100
+						add_to_variable = {nedovol_valuess = 5}
+						clamp_variable = {
+							var = nedovol_valuess
+							min = 0
+							max = 100
+						}
+					}
+				}
+			}
+			genacidbutton_click = {
+				
+				ROOT = {
+					add_to_variable = { KD_gena = 5 }
+					if = {
+						limit = {
+							ROOT = {is_ai = no}
+							NOT = {
+								any_country = {
+									NOT = {tag = ROOT}
+									is_ai = no
+								}
+							}
+						}
+						sound_effect = harsh_harsh_sound
+						sound_effect = burn_state_sound
+					}
+					
+				}
+				if = {
+					limit = {
+						THIS = {
+							is_owned_by = ROOT
+						}
+					}
+					random_list = {
+						20 = {
+							if = {limit = {THIS = {is_core_of = RON}ROOT = {NOT = {tag = RON}}}remove_core_of = RON}
+							else_if = {limit = {THIS = {is_core_of = TMP}ROOT = {NOT = {tag = TMP}}}remove_core_of = TMP}
+							else_if = {limit = {THIS = {is_core_of = PUA}ROOT = {NOT = {tag = PUA}}}remove_core_of = PUA}
+							else_if = {limit = {THIS = {is_core_of = KIE}ROOT = {NOT = {tag = KIE}}}remove_core_of = KIE}
+							else_if = {limit = {THIS = {is_core_of = ARG}ROOT = {NOT = {tag = ARG}}}remove_core_of = ARG}
+							else_if = {limit = {THIS = {is_core_of = GRE}ROOT = {NOT = {tag = GRE}}}remove_core_of = GRE}
+							else_if = {limit = {THIS = {is_core_of = OYO}ROOT = {NOT = {tag = OYO}}}remove_core_of = OYO}
+							else_if = {limit = {THIS = {is_core_of = KAT}ROOT = {NOT = {tag = KAT}}}remove_core_of = KAT}
+							else_if = {limit = {THIS = {is_core_of = YAU}ROOT = {NOT = {tag = YAU}}}remove_core_of = YAU}
+							else_if = {limit = {THIS = {is_core_of = MOS}ROOT = {NOT = {tag = MOS}}}remove_core_of = MOS}
+							else_if = {limit = {THIS = {is_core_of = GVY}ROOT = {NOT = {tag = GVY}}}remove_core_of = GVY}
+							else_if = {limit = {THIS = {is_core_of = SON}ROOT = {NOT = {tag = SON}}}remove_core_of = SON}
+							else_if = {limit = {THIS = {is_core_of = DAG}ROOT = {NOT = {tag = DAG}}}remove_core_of = DAG}
+							else_if = {limit = {THIS = {is_core_of = AKK}ROOT = {NOT = {tag = AKK}}}remove_core_of = AKK}
+							else_if = {limit = {THIS = {is_core_of = BON}ROOT = {NOT = {tag = BON}}}remove_core_of = BON}
+							else_if = {limit = {THIS = {is_core_of = UAT}ROOT = {NOT = {tag = UAT}}}remove_core_of = UAT}
+							else_if = {limit = {THIS = {is_core_of = AZT}ROOT = {NOT = {tag = AZT}}}remove_core_of = AZT}
+							else_if = {limit = {THIS = {is_core_of = KAR}ROOT = {NOT = {tag = KAR}}}remove_core_of = KAR}
+							else_if = {limit = {THIS = {is_core_of = SHT}ROOT = {NOT = {tag = SHT}}}remove_core_of = SHT}
+							else_if = {limit = {THIS = {is_core_of = VUS}ROOT = {NOT = {tag = VUS}}}remove_core_of = VUS}
+							else_if = {limit = {THIS = {is_core_of = RIG}ROOT = {NOT = {tag = RIG}}}remove_core_of = RIG}
+							else_if = {limit = {THIS = {is_core_of = TUP}ROOT = {NOT = {tag = TUP}}}remove_core_of = TUP}
+							else_if = {limit = {THIS = {is_core_of = HOI}ROOT = {NOT = {tag = HOI}}}remove_core_of = HOI}
+							else_if = {limit = {THIS = {is_core_of = MAJ}ROOT = {NOT = {tag = MAJ}}}remove_core_of = MAJ}
+							else_if = {limit = {THIS = {is_core_of = GUR}ROOT = {NOT = {tag = GUR}}}remove_core_of = GUR}
+							else_if = {limit = {THIS = {is_core_of = ATA}ROOT = {NOT = {tag = ATA}}}remove_core_of = ATA}
+							else_if = {limit = {THIS = {is_core_of = IOA}ROOT = {NOT = {tag = IOA}}}remove_core_of = IOA}
+							else_if = {limit = {THIS = {is_core_of = PSK}ROOT = {NOT = {tag = PSK}}}remove_core_of = PSK}
+							else_if = {limit = {THIS = {is_core_of = TVE}ROOT = {NOT = {tag = TVE}}}remove_core_of = TVE}
+							else_if = {limit = {THIS = {is_core_of = KAL}ROOT = {NOT = {tag = KAL}}}remove_core_of = KAL}
+							else_if = {limit = {THIS = {is_core_of = KLP}ROOT = {NOT = {tag = KLP}}}remove_core_of = KLP}
+							else_if = {limit = {THIS = {is_core_of = MIN}ROOT = {NOT = {tag = MIN}}}remove_core_of = MIN}
+							else_if = {limit = {THIS = {is_core_of = EPI}ROOT = {NOT = {tag = EPI}}}remove_core_of = EPI}
+							else_if = {limit = {THIS = {is_core_of = KKR}ROOT = {NOT = {tag = KKR}}}remove_core_of = KKR}
+							else_if = {limit = {THIS = {is_core_of = PIS}ROOT = {NOT = {tag = PIS}}}remove_core_of = PIS}
+							else_if = {limit = {THIS = {is_core_of = ARB}ROOT = {NOT = {tag = ARB}}}remove_core_of = ARB}
+							else_if = {limit = {THIS = {is_core_of = GRM}ROOT = {NOT = {tag = GRM}}}remove_core_of = GRM}
+							else_if = {limit = {THIS = {is_core_of = KAS}ROOT = {NOT = {tag = KAS}}}remove_core_of = KAS}
+							else_if = {limit = {THIS = {is_core_of = CIL}ROOT = {NOT = {tag = CIL}}}remove_core_of = CIL}
+							else_if = {limit = {THIS = {is_core_of = SEB}ROOT = {NOT = {tag = SEB}}}remove_core_of = SEB}
+							else_if = {limit = {THIS = {is_core_of = MDG}ROOT = {NOT = {tag = MDG}}}remove_core_of = MDG}
+							else_if = {limit = {THIS = {is_core_of = AMA}ROOT = {NOT = {tag = AMA}}}remove_core_of = AMA}
+							else_if = {limit = {THIS = {is_core_of = BOR}ROOT = {NOT = {tag = BOR}}}remove_core_of = BOR}
+							else_if = {limit = {THIS = {is_core_of = AVI}ROOT = {NOT = {tag = AVI}}}remove_core_of = AVI}
+							else_if = {limit = {THIS = {is_core_of = KEC}ROOT = {NOT = {tag = KEC}}}remove_core_of = KEC}
+							else_if = {limit = {THIS = {is_core_of = MOC}ROOT = {NOT = {tag = MOC}}}remove_core_of = MOC}
+							else_if = {limit = {THIS = {is_core_of = OJI}ROOT = {NOT = {tag = OJI}}}remove_core_of = OJI}
+							else_if = {limit = {THIS = {is_core_of = WAK}ROOT = {NOT = {tag = WAK}}}remove_core_of = WAK}
+							else_if = {limit = {THIS = {is_core_of = ARK}ROOT = {NOT = {tag = ARK}}}remove_core_of = ARK}
+							else_if = {limit = {THIS = {is_core_of = ALK}ROOT = {NOT = {tag = ALK}}}remove_core_of = ALK}
+							else_if = {limit = {THIS = {is_core_of = CRN}ROOT = {NOT = {tag = CRN}}}remove_core_of = CRN}
+							else_if = {limit = {THIS = {is_core_of = TUL}ROOT = {NOT = {tag = TUL}}}remove_core_of = TUL}
+							else_if = {limit = {THIS = {is_core_of = SIU}ROOT = {NOT = {tag = SIU}}}remove_core_of = SIU}
+							else_if = {limit = {THIS = {is_core_of = SEM}ROOT = {NOT = {tag = SEM}}}remove_core_of = SEM}
+							else_if = {limit = {THIS = {is_core_of = SNT}ROOT = {NOT = {tag = SNT}}}remove_core_of = SNT}
+							else_if = {limit = {THIS = {is_core_of = BNT}ROOT = {NOT = {tag = BNT}}}remove_core_of = BNT}
+							else_if = {limit = {THIS = {is_core_of = JUB}ROOT = {NOT = {tag = JUB}}}remove_core_of = JUB}
+							else_if = {limit = {THIS = {is_core_of = IRO}ROOT = {NOT = {tag = IRO}}}remove_core_of = IRO}
+							else_if = {limit = {THIS = {is_core_of = ESK}ROOT = {NOT = {tag = ESK}}}remove_core_of = ESK}
+							else_if = {limit = {THIS = {is_core_of = CIR}ROOT = {NOT = {tag = CIR}}}remove_core_of = CIR}
+							else_if = {limit = {THIS = {is_core_of = DLW}ROOT = {NOT = {tag = DLW}}}remove_core_of = DLW}
+							else_if = {limit = {THIS = {is_core_of = SIN}ROOT = {NOT = {tag = SIN}}}remove_core_of = SIN}
+							else_if = {limit = {THIS = {is_core_of = SNN}ROOT = {NOT = {tag = SNN}}}remove_core_of = SNN}
+							else_if = {limit = {THIS = {is_core_of = DAN}ROOT = {NOT = {tag = DAN}}}remove_core_of = DAN}
+							else_if = {limit = {THIS = {is_core_of = KRI}ROOT = {NOT = {tag = KRI}}}remove_core_of = KRI}
+							else_if = {limit = {THIS = {is_core_of = CRI}ROOT = {NOT = {tag = CRI}}}remove_core_of = CRI}
+							else_if = {limit = {THIS = {is_core_of = SEV}ROOT = {NOT = {tag = SEV}}}remove_core_of = SEV}
+							else_if = {limit = {THIS = {is_core_of = SVR}ROOT = {NOT = {tag = SVR}}}remove_core_of = SVR}
+							else_if = {limit = {THIS = {is_core_of = MIC}ROOT = {NOT = {tag = MIC}}}remove_core_of = MIC}
+							else_if = {limit = {THIS = {is_core_of = MIS}ROOT = {NOT = {tag = MIS}}}remove_core_of = MIS}
+							else_if = {limit = {THIS = {is_core_of = CAL}ROOT = {NOT = {tag = CAL}}}remove_core_of = CAL}
+							else_if = {limit = {THIS = {is_core_of = BAY}ROOT = {NOT = {tag = BAY}}}remove_core_of = BAY}
+							else_if = {limit = {THIS = {is_core_of = GVI}ROOT = {NOT = {tag = GVI}}}remove_core_of = GVI}
+							else_if = {limit = {THIS = {is_core_of = PAT}ROOT = {NOT = {tag = PAT}}}remove_core_of = PAT}
+							else_if = {limit = {THIS = {is_core_of = PAM}ROOT = {NOT = {tag = PAM}}}remove_core_of = PAM}
+							else_if = {limit = {THIS = {is_core_of = AMS}ROOT = {NOT = {tag = AMS}}}remove_core_of = AMS}
+							else_if = {limit = {THIS = {is_core_of = SUL}ROOT = {NOT = {tag = SUL}}}remove_core_of = SUL}
+							else_if = {limit = {THIS = {is_core_of = EKV}ROOT = {NOT = {tag = EKV}}}remove_core_of = EKV}
+							else_if = {limit = {THIS = {is_core_of = ARE}ROOT = {NOT = {tag = ARE}}}remove_core_of = ARE}
+							else_if = {limit = {THIS = {is_core_of = UAA}ROOT = {NOT = {tag = UAA}}}remove_core_of = UAA}
+							else_if = {limit = {THIS = {is_core_of = EAS}ROOT = {NOT = {tag = EAS}}}remove_core_of = EAS}
+							else_if = {limit = {THIS = {is_core_of = WOS}ROOT = {NOT = {tag = WOS}}}remove_core_of = WOS}
+							else_if = {limit = {THIS = {is_core_of = SMD}ROOT = {NOT = {tag = SMD}}}remove_core_of = SMD}
+							else_if = {limit = {THIS = {is_core_of = DAU}ROOT = {NOT = {tag = DAU}}}remove_core_of = DAU}
+							else_if = {limit = {THIS = {is_core_of = LAM}ROOT = {NOT = {tag = LAM}}}remove_core_of = LAM}
+							else_if = {limit = {THIS = {is_core_of = YAK}ROOT = {NOT = {tag = YAK}}}remove_core_of = YAK}
+							else_if = {limit = {THIS = {is_core_of = CUC}ROOT = {NOT = {tag = CUC}}}remove_core_of = CUC}
+							else_if = {limit = {THIS = {is_core_of = DIE}ROOT = {NOT = {tag = DIE}}}remove_core_of = DIE}
+							else_if = {limit = {THIS = {is_core_of = TVT}ROOT = {NOT = {tag = TVT}}}remove_core_of = TVT}
+							else_if = {limit = {THIS = {is_core_of = RUK}ROOT = {NOT = {tag = RUK}}}remove_core_of = RUK}
+							else_if = {limit = {THIS = {is_core_of = TON}ROOT = {NOT = {tag = TON}}}remove_core_of = TON}
+							else_if = {limit = {THIS = {is_core_of = LUS}ROOT = {NOT = {tag = LUS}}}remove_core_of = LUS}
+							else_if = {limit = {THIS = {is_core_of = YEG}ROOT = {NOT = {tag = YEG}}}remove_core_of = YEG}
+							else_if = {limit = {THIS = {is_core_of = GUJ}ROOT = {NOT = {tag = GUJ}}}remove_core_of = GUJ}
+							else_if = {limit = {THIS = {is_core_of = MDU}ROOT = {NOT = {tag = MDU}}}remove_core_of = MDU}
+							else_if = {limit = {THIS = {is_core_of = MUI}ROOT = {NOT = {tag = MUI}}}remove_core_of = MUI}
+							else_if = {limit = {THIS = {is_core_of = MND}ROOT = {NOT = {tag = MND}}}remove_core_of = MND}
+							else_if = {limit = {THIS = {is_core_of = KAN}ROOT = {NOT = {tag = KAN}}}remove_core_of = KAN}
+							else_if = {limit = {THIS = {is_core_of = SAM}ROOT = {NOT = {tag = SAM}}}remove_core_of = SAM}
+							else_if = {limit = {THIS = {is_core_of = MLE}ROOT = {NOT = {tag = MLE}}}remove_core_of = MLE}
+							else_if = {limit = {THIS = {is_core_of = DEL}ROOT = {NOT = {tag = DEL}}}remove_core_of = DEL}
+							else_if = {limit = {THIS = {is_core_of = BOM}ROOT = {NOT = {tag = BOM}}}remove_core_of = BOM}
+							else_if = {limit = {THIS = {is_core_of = MIX}ROOT = {NOT = {tag = MIX}}}remove_core_of = MIX}
+							else_if = {limit = {THIS = {is_core_of = SAN}ROOT = {NOT = {tag = SAN}}}remove_core_of = SAN}
+							else_if = {limit = {THIS = {is_core_of = AIN}ROOT = {NOT = {tag = AIN}}}remove_core_of = AIN}
+							else_if = {limit = {THIS = {is_core_of = KIL}ROOT = {NOT = {tag = KIL}}}remove_core_of = KIL}
+							else_if = {limit = {THIS = {is_core_of = CMP}ROOT = {NOT = {tag = CMP}}}remove_core_of = CMP}
+							else_if = {limit = {THIS = {is_core_of = KHM}ROOT = {NOT = {tag = KHM}}}remove_core_of = KHM}
+							else_if = {limit = {THIS = {is_core_of = JOL}ROOT = {NOT = {tag = JOL}}}remove_core_of = JOL}
+							else_if = {limit = {THIS = {is_core_of = CHH}ROOT = {NOT = {tag = CHH}}}remove_core_of = CHH}
+							else_if = {limit = {THIS = {is_core_of = KRR}ROOT = {NOT = {tag = KRR}}}remove_core_of = KRR}
+							else_if = {limit = {THIS = {is_core_of = KAI}ROOT = {NOT = {tag = KAI}}}remove_core_of = KAI}
+							else_if = {limit = {THIS = {is_core_of = HAU}ROOT = {NOT = {tag = HAU}}}remove_core_of = HAU}
+							else_if = {limit = {THIS = {is_core_of = ABY}ROOT = {NOT = {tag = ABY}}}remove_core_of = ABY}
+							else_if = {limit = {THIS = {is_core_of = VIE}ROOT = {NOT = {tag = VIE}}}remove_core_of = VIE}
+							else_if = {limit = {THIS = {is_core_of = HUL}ROOT = {NOT = {tag = HUL}}}remove_core_of = HUL}
+							else_if = {limit = {THIS = {is_core_of = NJJ}ROOT = {NOT = {tag = NJJ}}}remove_core_of = NJJ}
+							else_if = {limit = {THIS = {is_core_of = TLA}ROOT = {NOT = {tag = TLA}}}remove_core_of = TLA}
+							else_if = {limit = {THIS = {is_core_of = MAY}ROOT = {NOT = {tag = MAY}}}remove_core_of = MAY}
+							else_if = {limit = {THIS = {is_core_of = TAM}ROOT = {NOT = {tag = TAM}}}remove_core_of = TAM}
+							else_if = {limit = {THIS = {is_core_of = XXX}ROOT = {NOT = {tag = XXX}}}remove_core_of = XXX}
+							else_if = {limit = {THIS = {is_core_of = SOS}ROOT = {NOT = {tag = SOS}}}remove_core_of = SOS}
+							else_if = {limit = {THIS = {is_core_of = APA}ROOT = {NOT = {tag = APA}}}remove_core_of = APA}
+							else_if = {limit = {THIS = {is_core_of = OAH}ROOT = {NOT = {tag = OAH}}}remove_core_of = OAH}
+							else_if = {limit = {THIS = {is_core_of = MSK}ROOT = {NOT = {tag = MSK}}}remove_core_of = MSK}
+							else_if = {limit = {THIS = {is_core_of = ENG}ROOT = {NOT = {tag = ENG}}}remove_core_of = ENG}
+							else_if = {limit = {THIS = {is_core_of = TRA}ROOT = {NOT = {tag = TRA}}}remove_core_of = TRA}
+							else_if = {limit = {THIS = {is_core_of = GEN}ROOT = {NOT = {tag = GEN}}}remove_core_of = GEN}
+							else_if = {limit = {THIS = {is_core_of = AKV}ROOT = {NOT = {tag = AKV}}}remove_core_of = AKV}
+							else_if = {limit = {THIS = {is_core_of = TPZ}ROOT = {NOT = {tag = TPZ}}}remove_core_of = TPZ}
+							else_if = {limit = {THIS = {is_core_of = POD}ROOT = {NOT = {tag = POD}}}remove_core_of = POD}
+							else_if = {limit = {THIS = {is_core_of = NEA}ROOT = {NOT = {tag = NEA}}}remove_core_of = NEA}
+							else_if = {limit = {THIS = {is_core_of = PMR}ROOT = {NOT = {tag = PMR}}}remove_core_of = PMR}
+							else_if = {limit = {THIS = {is_core_of = RYZ}ROOT = {NOT = {tag = RYZ}}}remove_core_of = RYZ}
+							else_if = {limit = {THIS = {is_core_of = MUR}ROOT = {NOT = {tag = MUR}}}remove_core_of = MUR}
+							else_if = {limit = {THIS = {is_core_of = TSK}ROOT = {NOT = {tag = TSK}}}remove_core_of = TSK}
+							else_if = {limit = {THIS = {is_core_of = LOM}ROOT = {NOT = {tag = LOM}}}remove_core_of = LOM}
+							else_if = {limit = {THIS = {is_core_of = MAI}ROOT = {NOT = {tag = MAI}}}remove_core_of = MAI}
+							else_if = {limit = {THIS = {is_core_of = NUR}ROOT = {NOT = {tag = NUR}}}remove_core_of = NUR}
+							else_if = {limit = {THIS = {is_core_of = SUZ}ROOT = {NOT = {tag = SUZ}}}remove_core_of = SUZ}
+							else_if = {limit = {THIS = {is_core_of = YAR}ROOT = {NOT = {tag = YAR}}}remove_core_of = YAR}
+							else_if = {limit = {THIS = {is_core_of = BAV}ROOT = {NOT = {tag = BAV}}}remove_core_of = BAV}
+							else_if = {limit = {THIS = {is_core_of = BRN}ROOT = {NOT = {tag = BRN}}}remove_core_of = BRN}
+							else_if = {limit = {THIS = {is_core_of = TIR}ROOT = {NOT = {tag = TIR}}}remove_core_of = TIR}
+							else_if = {limit = {THIS = {is_core_of = FRI}ROOT = {NOT = {tag = FRI}}}remove_core_of = FRI}
+							else_if = {limit = {THIS = {is_core_of = LUN}ROOT = {NOT = {tag = LUN}}}remove_core_of = LUN}
+							else_if = {limit = {THIS = {is_core_of = ZAL}ROOT = {NOT = {tag = ZAL}}}remove_core_of = ZAL}
+							else_if = {limit = {THIS = {is_core_of = GRA}ROOT = {NOT = {tag = GRA}}}remove_core_of = GRA}
+							else_if = {limit = {THIS = {is_core_of = LOT}ROOT = {NOT = {tag = LOT}}}remove_core_of = LOT}
+							else_if = {limit = {THIS = {is_core_of = PFA}ROOT = {NOT = {tag = PFA}}}remove_core_of = PFA}
+							else_if = {limit = {THIS = {is_core_of = LEG}ROOT = {NOT = {tag = LEG}}}remove_core_of = LEG}
+							else_if = {limit = {THIS = {is_core_of = AHE}ROOT = {NOT = {tag = AHE}}}remove_core_of = AHE}
+							else_if = {limit = {THIS = {is_core_of = VLN}ROOT = {NOT = {tag = VLN}}}remove_core_of = VLN}
+							else_if = {limit = {THIS = {is_core_of = BRS}ROOT = {NOT = {tag = BRS}}}remove_core_of = BRS}
+							else_if = {limit = {THIS = {is_core_of = VUR}ROOT = {NOT = {tag = VUR}}}remove_core_of = VUR}
+							else_if = {limit = {THIS = {is_core_of = VRT}ROOT = {NOT = {tag = VRT}}}remove_core_of = VRT}
+							else_if = {limit = {THIS = {is_core_of = MEK}ROOT = {NOT = {tag = MEK}}}remove_core_of = MEK}
+							else_if = {limit = {THIS = {is_core_of = LUB}ROOT = {NOT = {tag = LUB}}}remove_core_of = LUB}
+							else_if = {limit = {THIS = {is_core_of = BRE}ROOT = {NOT = {tag = BRE}}}remove_core_of = BRE}
+							else_if = {limit = {THIS = {is_core_of = FRN}ROOT = {NOT = {tag = FRN}}}remove_core_of = FRN}
+							else_if = {limit = {THIS = {is_core_of = ANT}ROOT = {NOT = {tag = ANT}}}remove_core_of = ANT}
+							else_if = {limit = {THIS = {is_core_of = MAG}ROOT = {NOT = {tag = MAG}}}remove_core_of = MAG}
+							else_if = {limit = {THIS = {is_core_of = GMB}ROOT = {NOT = {tag = GMB}}}remove_core_of = GMB}
+							else_if = {limit = {THIS = {is_core_of = OLD}ROOT = {NOT = {tag = OLD}}}remove_core_of = OLD}
+							else_if = {limit = {THIS = {is_core_of = MUN}ROOT = {NOT = {tag = MUN}}}remove_core_of = MUN}
+							else_if = {limit = {THIS = {is_core_of = BUR}ROOT = {NOT = {tag = BUR}}}remove_core_of = BUR}
+							else_if = {limit = {THIS = {is_core_of = KLE}ROOT = {NOT = {tag = KLE}}}remove_core_of = KLE}
+							else_if = {limit = {THIS = {is_core_of = FER}ROOT = {NOT = {tag = FER}}}remove_core_of = FER}
+							else_if = {limit = {THIS = {is_core_of = NAS}ROOT = {NOT = {tag = NAS}}}remove_core_of = NAS}
+							else_if = {limit = {THIS = {is_core_of = KLN}ROOT = {NOT = {tag = KLN}}}remove_core_of = KLN}
+							else_if = {limit = {THIS = {is_core_of = SAV}ROOT = {NOT = {tag = SAV}}}remove_core_of = SAV}
+							else_if = {limit = {THIS = {is_core_of = SIL}ROOT = {NOT = {tag = SIL}}}remove_core_of = SIL}
+							else_if = {limit = {THIS = {is_core_of = TRR}ROOT = {NOT = {tag = TRR}}}remove_core_of = TRR}
+							else_if = {limit = {THIS = {is_core_of = GEL}ROOT = {NOT = {tag = GEL}}}remove_core_of = GEL}
+							else_if = {limit = {THIS = {is_core_of = GES}ROOT = {NOT = {tag = GES}}}remove_core_of = GES}
+							else_if = {limit = {THIS = {is_core_of = SHZ}ROOT = {NOT = {tag = SHZ}}}remove_core_of = SHZ}
+							else_if = {limit = {THIS = {is_core_of = PIN}ROOT = {NOT = {tag = PIN}}}remove_core_of = PIN}
+							else_if = {limit = {THIS = {is_core_of = STA}ROOT = {NOT = {tag = STA}}}remove_core_of = STA}
+							else_if = {limit = {THIS = {is_core_of = VOL}ROOT = {NOT = {tag = VOL}}}remove_core_of = VOL}
+							else_if = {limit = {THIS = {is_core_of = ARA}ROOT = {NOT = {tag = ARA}}}remove_core_of = ARA}
+							else_if = {limit = {THIS = {is_core_of = SWE}ROOT = {NOT = {tag = SWE}}}remove_core_of = SWE}
+							else_if = {limit = {THIS = {is_core_of = FRA}ROOT = {NOT = {tag = FRA}}}remove_core_of = FRA}
+							else_if = {limit = {THIS = {is_core_of = LUX}ROOT = {NOT = {tag = LUX}}}remove_core_of = LUX}
+							else_if = {limit = {THIS = {is_core_of = BEL}ROOT = {NOT = {tag = BEL}}}remove_core_of = BEL}
+							else_if = {limit = {THIS = {is_core_of = HOL}ROOT = {NOT = {tag = HOL}}}remove_core_of = HOL}
+							else_if = {limit = {THIS = {is_core_of = CZE}ROOT = {NOT = {tag = CZE}}}remove_core_of = CZE}
+							else_if = {limit = {THIS = {is_core_of = POL}ROOT = {NOT = {tag = POL}}}remove_core_of = POL}
+							else_if = {limit = {THIS = {is_core_of = AUS}ROOT = {NOT = {tag = AUS}}}remove_core_of = AUS}
+							else_if = {limit = {THIS = {is_core_of = LIT}ROOT = {NOT = {tag = LIT}}}remove_core_of = LIT}
+							else_if = {limit = {THIS = {is_core_of = LAT}ROOT = {NOT = {tag = LAT}}}remove_core_of = LAT}
+							else_if = {limit = {THIS = {is_core_of = SPR}ROOT = {NOT = {tag = SPR}}}remove_core_of = SPR}
+							else_if = {limit = {THIS = {is_core_of = ROM}ROOT = {NOT = {tag = ROM}}}remove_core_of = ROM}
+							else_if = {limit = {THIS = {is_core_of = SER}ROOT = {NOT = {tag = SER}}}remove_core_of = SER}
+							else_if = {limit = {THIS = {is_core_of = SWI}ROOT = {NOT = {tag = SWI}}}remove_core_of = SWI}
+							else_if = {limit = {THIS = {is_core_of = TUR}ROOT = {NOT = {tag = TUR}}}remove_core_of = TUR}
+							else_if = {limit = {THIS = {is_core_of = NOR}ROOT = {NOT = {tag = NOR}}}remove_core_of = NOR}
+							else_if = {limit = {THIS = {is_core_of = DEN}ROOT = {NOT = {tag = DEN}}}remove_core_of = DEN}
+							else_if = {limit = {THIS = {is_core_of = BUL}ROOT = {NOT = {tag = BUL}}}remove_core_of = BUL}
+							else_if = {limit = {THIS = {is_core_of = POR}ROOT = {NOT = {tag = POR}}}remove_core_of = POR}
+							else_if = {limit = {THIS = {is_core_of = IRE}ROOT = {NOT = {tag = IRE}}}remove_core_of = IRE}
+							else_if = {limit = {THIS = {is_core_of = HUN}ROOT = {NOT = {tag = HUN}}}remove_core_of = HUN}
+							else_if = {limit = {THIS = {is_core_of = BHT}ROOT = {NOT = {tag = BHT}}}remove_core_of = BHT}
+							else_if = {limit = {THIS = {is_core_of = ORI}ROOT = {NOT = {tag = ORI}}}remove_core_of = ORI}
+							else_if = {limit = {THIS = {is_core_of = JAB}ROOT = {NOT = {tag = JAB}}}remove_core_of = JAB}
+							else_if = {limit = {THIS = {is_core_of = ASA}ROOT = {NOT = {tag = ASA}}}remove_core_of = ASA}
+							else_if = {limit = {THIS = {is_core_of = WHO}ROOT = {NOT = {tag = WHO}}}remove_core_of = WHO}
+							else_if = {limit = {THIS = {is_core_of = JOP}ROOT = {NOT = {tag = JOP}}}remove_core_of = JOP}
+							else_if = {limit = {THIS = {is_core_of = ETH}ROOT = {NOT = {tag = ETH}}}remove_core_of = ETH}
+							else_if = {limit = {THIS = {is_core_of = NEP}ROOT = {NOT = {tag = NEP}}}remove_core_of = NEP}
+							else_if = {limit = {THIS = {is_core_of = PNM}ROOT = {NOT = {tag = PNM}}}remove_core_of = PNM}
+							else_if = {limit = {THIS = {is_core_of = KWE}ROOT = {NOT = {tag = KWE}}}remove_core_of = KWE}
+							else_if = {limit = {THIS = {is_core_of = ALA}ROOT = {NOT = {tag = ALA}}}remove_core_of = ALA}
+							else_if = {limit = {THIS = {is_core_of = USS}ROOT = {NOT = {tag = USS}}}remove_core_of = USS}
+							else_if = {limit = {THIS = {is_core_of = SAU}ROOT = {NOT = {tag = SAU}}}remove_core_of = SAU}
+							else_if = {limit = {THIS = {is_core_of = SIA}ROOT = {NOT = {tag = SIA}}}remove_core_of = SIA}
+							else_if = {limit = {THIS = {is_core_of = TIB}ROOT = {NOT = {tag = TIB}}}remove_core_of = TIB}
+							else_if = {limit = {THIS = {is_core_of = VEN}ROOT = {NOT = {tag = VEN}}}remove_core_of = VEN}
+							else_if = {limit = {THIS = {is_core_of = MNG}ROOT = {NOT = {tag = MNG}}}remove_core_of = MNG}
+							else_if = {limit = {THIS = {is_core_of = HAN}ROOT = {NOT = {tag = HAN}}}remove_core_of = HAN}
+							else_if = {limit = {THIS = {is_core_of = TNN}ROOT = {NOT = {tag = TNN}}}remove_core_of = TNN}
+							else_if = {limit = {THIS = {is_core_of = YEM}ROOT = {NOT = {tag = YEM}}}remove_core_of = YEM}
+							else_if = {limit = {THIS = {is_core_of = CRO}ROOT = {NOT = {tag = CRO}}}remove_core_of = CRO}
+							else_if = {limit = {THIS = {is_core_of = EGY}ROOT = {NOT = {tag = EGY}}}remove_core_of = EGY}
+							else_if = {limit = {THIS = {is_core_of = LBA}ROOT = {NOT = {tag = LBA}}}remove_core_of = LBA}
+							else_if = {limit = {THIS = {is_core_of = KON}ROOT = {NOT = {tag = KON}}}remove_core_of = KON}
+							else_if = {limit = {THIS = {is_core_of = CEN}ROOT = {NOT = {tag = CEN}}}remove_core_of = CEN}
+							else_if = {limit = {THIS = {is_core_of = KNG}ROOT = {NOT = {tag = KNG}}}remove_core_of = KNG}
+							else_if = {limit = {THIS = {is_core_of = VIN}ROOT = {NOT = {tag = VIN}}}remove_core_of = VIN}
+							else_if = {limit = {THIS = {is_core_of = WID}ROOT = {NOT = {tag = WID}}}remove_core_of = WID}
+							else_if = {limit = {THIS = {is_core_of = LUI}ROOT = {NOT = {tag = LUI}}}remove_core_of = LUI}
+							else_if = {limit = {THIS = {is_core_of = TEX}ROOT = {NOT = {tag = TEX}}}remove_core_of = TEX}
+							else_if = {limit = {THIS = {is_core_of = KLF}ROOT = {NOT = {tag = KLF}}}remove_core_of = KLF}
+							else_if = {limit = {THIS = {is_core_of = CAM}ROOT = {NOT = {tag = CAM}}}remove_core_of = CAM}
+							else_if = {limit = {THIS = {is_core_of = MAL}ROOT = {NOT = {tag = MAL}}}remove_core_of = MAL}
+							else_if = {limit = {THIS = {is_core_of = AVS}ROOT = {NOT = {tag = AVS}}}remove_core_of = AVS}
+							else_if = {limit = {THIS = {is_core_of = LAO}ROOT = {NOT = {tag = LAO}}}remove_core_of = LAO}
+							else_if = {limit = {THIS = {is_core_of = MNS}ROOT = {NOT = {tag = MNS}}}remove_core_of = MNS}
+							else_if = {limit = {THIS = {is_core_of = AYD}ROOT = {NOT = {tag = AYD}}}remove_core_of = AYD}
+							else_if = {limit = {THIS = {is_core_of = PRO}ROOT = {NOT = {tag = PRO}}}remove_core_of = PRO}
+							else_if = {limit = {THIS = {is_core_of = LUK}ROOT = {NOT = {tag = LUK}}}remove_core_of = LUK}
+							else_if = {limit = {THIS = {is_core_of = SME}ROOT = {NOT = {tag = SME}}}remove_core_of = SME}
+							else_if = {limit = {THIS = {is_core_of = BAD}ROOT = {NOT = {tag = BAD}}}remove_core_of = BAD}
+							else_if = {limit = {THIS = {is_core_of = AUG}ROOT = {NOT = {tag = AUG}}}remove_core_of = AUG}
+							else_if = {limit = {THIS = {is_core_of = LTR}ROOT = {NOT = {tag = LTR}}}remove_core_of = LTR}
+							else_if = {limit = {THIS = {is_core_of = ALS}ROOT = {NOT = {tag = ALS}}}remove_core_of = ALS}
+							else_if = {limit = {THIS = {is_core_of = GEO}ROOT = {NOT = {tag = GEO}}}remove_core_of = GEO}
+							else_if = {limit = {THIS = {is_core_of = KAZ}ROOT = {NOT = {tag = KAZ}}}remove_core_of = KAZ}
+							else_if = {limit = {THIS = {is_core_of = BLR}ROOT = {NOT = {tag = BLR}}}remove_core_of = BLR}
+							else_if = {limit = {THIS = {is_core_of = ZIM}ROOT = {NOT = {tag = ZIM}}}remove_core_of = ZIM}
+							else_if = {limit = {THIS = {is_core_of = COG}ROOT = {NOT = {tag = COG}}}remove_core_of = COG}
+							else_if = {limit = {THIS = {is_core_of = KEN}ROOT = {NOT = {tag = KEN}}}remove_core_of = KEN}
+							else_if = {limit = {THIS = {is_core_of = TAI}ROOT = {NOT = {tag = TAI}}}remove_core_of = TAI}
+							else_if = {limit = {THIS = {is_core_of = MOL}ROOT = {NOT = {tag = MOL}}}remove_core_of = MOL}
+							else_if = {limit = {THIS = {is_core_of = SCO}ROOT = {NOT = {tag = SCO}}}remove_core_of = SCO}
+							else_if = {limit = {THIS = {is_core_of = SRL}ROOT = {NOT = {tag = SRL}}}remove_core_of = SRL}
+							else_if = {limit = {THIS = {is_core_of = ALG}ROOT = {NOT = {tag = ALG}}}remove_core_of = ALG}
+							else_if = {limit = {THIS = {is_core_of = MOR}ROOT = {NOT = {tag = MOR}}}remove_core_of = MOR}
+							else_if = {limit = {THIS = {is_core_of = TUN}ROOT = {NOT = {tag = TUN}}}remove_core_of = TUN}
+							else_if = {limit = {THIS = {is_core_of = TNG}ROOT = {NOT = {tag = TNG}}}remove_core_of = TNG}
+							else_if = {limit = {THIS = {is_core_of = PAP}ROOT = {NOT = {tag = PAP}}}remove_core_of = PAP}
+							else_if = {limit = {THIS = {is_core_of = MAO}ROOT = {NOT = {tag = MAO}}}remove_core_of = MAO}
+							else_if = {limit = {THIS = {is_core_of = ABR}ROOT = {NOT = {tag = ABR}}}remove_core_of = ABR}
+							else_if = {limit = {THIS = {is_core_of = KMC}ROOT = {NOT = {tag = KMC}}}remove_core_of = KMC}
+							else_if = {limit = {THIS = {is_core_of = SOM}ROOT = {NOT = {tag = SOM}}}remove_core_of = SOM}
+							else_if = {limit = {THIS = {is_core_of = MLW}ROOT = {NOT = {tag = MLW}}}remove_core_of = MLW}
+							else_if = {limit = {THIS = {is_core_of = GBN}ROOT = {NOT = {tag = GBN}}}remove_core_of = GBN}
+							else_if = {limit = {THIS = {is_core_of = CAF}ROOT = {NOT = {tag = CAF}}}remove_core_of = CAF}
+							else_if = {limit = {THIS = {is_core_of = ZHE}ROOT = {NOT = {tag = ZHE}}}remove_core_of = ZHE}
+							else_if = {limit = {THIS = {is_core_of = KFB}ROOT = {NOT = {tag = KFB}}}remove_core_of = KFB}
+							else_if = {limit = {THIS = {is_core_of = CHA}ROOT = {NOT = {tag = CHA}}}remove_core_of = CHA}
+							else_if = {limit = {THIS = {is_core_of = LEN}ROOT = {NOT = {tag = LEN}}}remove_core_of = LEN}
+							else_if = {limit = {THIS = {is_core_of = BEN}ROOT = {NOT = {tag = BEN}}}remove_core_of = BEN}
+							else_if = {limit = {THIS = {is_core_of = GRI}ROOT = {NOT = {tag = GRI}}}remove_core_of = GRI}
+							else_if = {limit = {THIS = {is_core_of = NOV}ROOT = {NOT = {tag = NOV}}}remove_core_of = NOV}
+							else_if = {limit = {THIS = {is_core_of = A01}ROOT = {NOT = {tag = A01}}}remove_core_of = A01}
+							else_if = {limit = {THIS = {is_core_of = A02}ROOT = {NOT = {tag = A02}}}remove_core_of = A02}
+							else_if = {limit = {THIS = {is_core_of = A03}ROOT = {NOT = {tag = A03}}}remove_core_of = A03}
+							else_if = {limit = {THIS = {is_core_of = A04}ROOT = {NOT = {tag = A04}}}remove_core_of = A04}
+							else_if = {limit = {THIS = {is_core_of = A05}ROOT = {NOT = {tag = A05}}}remove_core_of = A05}
+							else_if = {limit = {THIS = {is_core_of = A06}ROOT = {NOT = {tag = A06}}}remove_core_of = A06}
+							else_if = {limit = {THIS = {is_core_of = A07}ROOT = {NOT = {tag = A07}}}remove_core_of = A07}
+							else_if = {limit = {THIS = {is_core_of = A08}ROOT = {NOT = {tag = A08}}}remove_core_of = A08}
+							else_if = {limit = {THIS = {is_core_of = UIC}ROOT = {NOT = {tag = UIC}}}remove_core_of = UIC}
+							else_if = {limit = {THIS = {is_core_of = TUA}ROOT = {NOT = {tag = TUA}}}remove_core_of = TUA}
+							else_if = {limit = {THIS = {is_core_of = BER}ROOT = {NOT = {tag = BER}}}remove_core_of = BER}
+							else_if = {limit = {THIS = {is_core_of = TO1}ROOT = {NOT = {tag = TO1}}}remove_core_of = TO1}
+							else_if = {limit = {THIS = {is_core_of = DHR}ROOT = {NOT = {tag = DHR}}}remove_core_of = DHR}
+							else_if = {limit = {THIS = {is_core_of = NOG}ROOT = {NOT = {tag = NOG}}}remove_core_of = NOG}
+							else_if = {limit = {THIS = {is_core_of = KOM}ROOT = {NOT = {tag = KOM}}}remove_core_of = KOM}
+							else_if = {limit = {THIS = {is_core_of = BJA}ROOT = {NOT = {tag = BJA}}}remove_core_of = BJA}
+							else_if = {limit = {THIS = {is_core_of = KRL}ROOT = {NOT = {tag = KRL}}}remove_core_of = KRL}
+							else_if = {limit = {THIS = {is_core_of = ATH}ROOT = {NOT = {tag = ATH}}}remove_core_of = ATH}
+							else_if = {limit = {THIS = {is_core_of = PPS}ROOT = {NOT = {tag = PPS}}}remove_core_of = PPS}
+							else_if = {limit = {THIS = {is_core_of = EPR}ROOT = {NOT = {tag = EPR}}}remove_core_of = EPR}
+							else_if = {limit = {THIS = {is_core_of = FFS}ROOT = {NOT = {tag = FFS}}}remove_core_of = FFS}
+							else_if = {limit = {THIS = {is_core_of = FSL}ROOT = {NOT = {tag = FSL}}}remove_core_of = FSL}
+							else_if = {limit = {THIS = {is_core_of = ABL}ROOT = {NOT = {tag = ABL}}}remove_core_of = ABL}
+							else_if = {limit = {THIS = {is_core_of = MAK}ROOT = {NOT = {tag = MAK}}}remove_core_of = MAK}
+							else_if = {limit = {THIS = {is_core_of = FRK}ROOT = {NOT = {tag = FRK}}}remove_core_of = FRK}
+							else_if = {limit = {THIS = {is_core_of = NIK}ROOT = {NOT = {tag = NIK}}}remove_core_of = NIK}
+							else_if = {limit = {THIS = {is_core_of = HLK}ROOT = {NOT = {tag = HLK}}}remove_core_of = HLK}
+
+						}
+						80 = {}
+					}
+					random_list = {
+						4 = {
+							remove_building = {
+								type = industrial_complex
+								level = 1
+							}
+						}
+						3 = {
+							remove_building = {
+								type = arms_factory
+								level = 1
+							}
+						}
+						3 = {
+							remove_building = {
+								type = dockyard
+								level = 1
+							}
+						}
+						90 = {}
+					}
+				}
+				
+
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+				ROOT = {
+					if = { # если не халифат
+						limit = {
+							NOT = { has_idea = tip22 }
+						}
+						add_stability = -0.03
+						add_manpower = -2000
+					}
+
+					if = { # если халифат
+						limit = {
+							NOT = { has_idea = tip22 }
+						}
+						add_manpower = -2000
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							NOT = {
+								is_core_of = ROOT
+							}
+						}
+					}
+					ROOT = {
+						add_to_variable = {nedovol_valuess = 10}
+						clamp_variable = {
+							var = nedovol_valuess
+							min = 0
+							max = 100
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							is_core_of = ROOT
+						}
+					}
+					ROOT = {
+						add_to_variable = {nedovol_valuess = 15}
+						clamp_variable = {
+							var = nedovol_valuess
+							min = 0
+							max = 100
+						}
+					}
+				}
+				THIS = {
+					add_manpower = -96563
+					if = {
+						limit = {
+							
+							state_population > 65000
+							state_population < 100000
+						}
+						ROOT = {
+							add_political_power = 22
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 100000
+							state_population < 150000
+						}
+						ROOT = {
+							add_political_power = 57
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 150000
+							state_population < 200000
+						}
+						ROOT = {
+							add_political_power = 90
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 200000
+							state_population < 250000
+						}
+						ROOT = {
+							add_political_power = 111
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 250000
+							state_population < 350000
+						}
+						ROOT = {
+							add_political_power = 140
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 350000
+							state_population < 500000
+						}
+						ROOT = {
+							add_political_power = 167
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 500000
+							state_population < 680000
+						}
+						ROOT = {
+							add_political_power = 200
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 680000
+							state_population < 850000
+						}
+						ROOT = {
+							add_political_power = 240
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 850000
+							state_population < 1000000
+						}
+						ROOT = {
+							add_political_power = 261
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 1000000
+							state_population < 1300000
+						}
+						ROOT = {
+							add_political_power = 299
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 1300000
+							state_population < 1600000
+						}
+						ROOT = {
+							add_political_power = 320
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 1600000
+							state_population < 2000000
+						}
+						ROOT = {
+							add_political_power = 365
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 2000000
+							state_population < 3000000
+						}
+						ROOT = {
+							add_political_power = 405
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 3000000
+							state_population < 5000000
+						}
+						ROOT = {
+							add_political_power = 450
+						}
+					}
+					else_if = {
+						limit = {
+							state_population > 5000000
+						}
+						ROOT = {
+							add_political_power = 488
+						}
+					}
+				}
+			}
+			
+			
+			
+		}
+		
+		triggers = {
+			
+			invest_button_click_enabled = {
+				ROOT = {
+					has_political_power > 200
+				}
+				THIS = {
+					is_owned_by = ROOT
+				}
+			}
+			factoria_build_button_click_enabled = {
+				THIS = {
+					owner = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+					ROOT = {
+						AND = {
+							OR = {
+								AND = {
+									any_owned_state = {
+										is_on_continent = europe
+									}
+									PREV = {
+										is_on_continent = europe
+									}
+								}
+								AND = {
+
+									any_owned_state = {
+										is_on_continent = asia
+									}						
+									PREV = {
+										is_on_continent = asia
+									}
+								}
+								AND = {
+									any_owned_state = {
+										is_on_continent = africa
+									}									
+									PREV = {
+										is_on_continent = africa
+									}
+								}
+								AND = {
+									any_owned_state = {
+										is_on_continent = middle_east
+									}									
+									PREV = {
+										is_on_continent = middle_east
+									}
+									
+								}
+								AND = {
+									any_owned_state = {
+										is_on_continent = south_america
+									}									
+									PREV = {
+										is_on_continent = south_america
+									}
+									
+								}
+								AND = {
+									any_owned_state = {
+										is_on_continent = north_america
+									}									
+									PREV = {
+										is_on_continent = north_america
+									}
+									
+								}
+								AND = {
+									any_owned_state = {
+										is_on_continent = australia
+									}									
+									PREV = {
+										is_on_continent = australia
+									}
+									
+								}
+							}
+						}
+					}
+				}
+				ROOT = {
+					date > 1300.01.03
+					check_variable = { povt_timer_fac < 1}
+					has_political_power > factoria_cost
+					check_variable = { product_masters_value > 25}
+					has_government = democratic
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				THIS = {
+					is_coastal = yes
+					
+				}
+			}
+			capitalbutton_click_enabled = {
+				THIS = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				THIS = {
+					ROOT = {
+						has_political_power > 100
+						
+						capital_scope = {
+							NOT = {
+								state = PREV.PREV
+							}
+						}
+					}
+				}
+			}
+			genacidbutton_click_enabled = {
+				THIS = {
+					is_controlled_by = ROOT
+					
+					
+				}
+				THIS = {
+					ROOT = {
+						check_variable = {KD_gena = 0} 
+						check_variable = {nedovol_valuess < 100} 
+						OR = {
+							AND = {
+								has_war = yes
+								PREV = {
+									state_population > 100000
+								}
+							}
+							has_war = no
+							
+						}
+					}
+				}
+				
+				has_game_rule = { 
+					rule = grabezh_rule
+					option = normal 
+				}
+				
+				
+				
+				
+				
+				
+
+			}
+			vysowbutton2_visible = {
+				check_variable = {vysow_okno = 0}
+			}
+            regionbuybutton_click_enabled = {
+				has_game_rule = { 
+					rule = pokupka_states_rule
+					option = normal 
+				}
+				THIS = {
+					AND = {
+						OR = {
+							
+							is_coastal = yes
+							ROOT = {
+								any_owned_state = {
+									any_neighbor_state = {
+										state = PREV.PREV.PREV 
+									}
+								}
+							}
+						}
+						ROOT = {
+							AND = {
+								OR = {
+									AND = {
+										capital_scope = {
+											is_on_continent = europe
+										}
+										PREV = {
+											is_on_continent = europe
+										}
+									}
+									AND = {
+
+										capital_scope = {
+											is_on_continent = asia
+										}						
+										PREV = {
+											is_on_continent = asia
+										}
+									}
+									AND = {
+										capital_scope = {
+											is_on_continent = africa
+										}									
+										PREV = {
+											is_on_continent = africa
+										}
+									}
+									AND = {
+										capital_scope = {
+											is_on_continent = middle_east
+										}									
+										PREV = {
+											is_on_continent = middle_east
+										}
+										
+									}
+									any_neighbor_country = {
+										AND = {
+											owns_state = PREV.PREV 
+											has_war = no
+										}
+									}								
+								}
+								any_country = {
+									AND = {
+										owns_state = PREV.PREV 
+										has_war = no
+										NOT = {
+											OR = {
+												tag = TMP
+												tag = DIE
+												tag = ALK
+												tag = SNT
+												tag = AVI
+												tag = KAL
+												tag = UIC
+											}
+											has_government = communism
+										}
+										OR = {
+											has_idea = torgregs1
+											AND = {
+												has_idea = torgregs2
+												OR = {
+													is_puppet_of = PREV
+													is_in_faction_with = PREV
+												}
+											}
+										}
+									
+									}
+								}
+								has_political_power > 2000
+								check_variable = {index_eco > 400}
+								check_variable = {buy_timer = 0}
+								NOT = {
+									OR = {
+										XXX = {owns_state = PREV.PREV}
+										owns_state = PREV
+										has_government = communism
+									}
+									PREV = {
+										OR = {
+											state = 2
+											state = 341
+											state = 454
+											state = 608
+											state = 439
+											state = 679
+											state = 277
+											state = 263
+											state = 291
+											state = 531
+											state = 439
+											state = 757
+											state = 219
+											state = 202
+											state = 230
+											state = 207
+										}
+									}
+								}
+								
+							}
+							
+						}
+					}
+				}
+				
+			}
+		}
+		ai_enabled = {
+			has_political_power > 2000
+		}
+		ai_max_weight_taken_per_test = 1
+		ai_weights = {
+			regionbuybutton_click = {
+                ai_will_do = {
+					factor = 0.01
+                }
+			}
+		}
+	}
+}

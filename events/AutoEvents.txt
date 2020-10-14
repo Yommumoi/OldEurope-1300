@@ -1,0 +1,93 @@
+add_namespace = dea
+
+country_event = {
+	id = dea.1
+	title = dea.1.t
+	desc = dea.1.desc
+	picture = GFX_report_deathEduard
+	fire_only_once = yes
+	trigger = {
+		date < 1307.03.03
+		date > 1307.01.03
+		NOT = {
+			has_government = democratic
+		}
+		tag = ENG
+	}
+
+	option = {
+		name = dea.1.a
+		add_stability = -0.15
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Eduard II"
+			desc = ""
+			picture = "1.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
+		create_country_leader = {
+			name = "Eduard II"
+			desc = ""
+			picture = "1.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+				
+			}
+		}
+		create_country_leader = {
+			name = "Eduard II"
+			desc = ""
+			picture = "1.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {
+				
+			}
+		}
+		news_event = {
+			id = news.1016
+			days = 1
+		}
+	}
+	
+
+
+}
+country_event = {
+	id = dea.2
+	title = dea.2.t
+	desc = dea.2.desc
+	picture = GFX_report_bitvashporBig
+	fire_only_once = yes
+	trigger = {
+		date > 1302.06.17
+		date < 1302.06.29
+		tag = FRA
+		controls_state = 6
+		BEL = {
+			exists = no
+		}
+	}
+
+	option = {
+		name = dea.2.a
+		add_stability = -0.05
+		BEL = {
+			transfer_state = 6
+			load_oob = "BEL_VOST"
+		}
+		add_manpower = -1000
+		news_event = {
+			id = news.1030
+			days = 1
+		}
+	}
+	
+
+
+}

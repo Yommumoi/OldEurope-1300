@@ -1,0 +1,74 @@
+add_namespace = hrd
+
+country_event = {
+	id = hrd.1
+	title = hrd.1.t
+	desc = hrd.1.desc
+	picture = GFX_report_nabeg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hrd.1.a
+		add_manpower = -1000
+		add_political_power = -120
+		random_owned_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			damage_building = {
+				type = library
+				damage = 1
+			}
+		}
+		random_owned_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			damage_building = {
+				type = library
+				damage = 1
+			}
+		}
+		random_owned_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			damage_building = {
+				type = library
+				damage = 1
+			}
+		}
+
+
+	}
+
+
+}

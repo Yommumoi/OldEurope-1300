@@ -1,0 +1,25 @@
+
+state={
+	id=352
+	name="STATE_352" # Van
+	manpower = 91372
+
+	state_category = rural
+
+	history={
+		owner = HUL
+	    add_core_of = HUL
+		add_core_of = GRE
+		victory_points = {
+			6935 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		
+	}
+
+	provinces={
+		864 1463 6935 7530 10497 12318 12476 
+	}
+}

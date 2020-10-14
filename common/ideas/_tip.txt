@@ -1,0 +1,93 @@
+ideas = { ### ТУТ ВСЕ КАРТИНКИ - ЗАТЫЧКИ!
+
+	country = {
+		laydang = {
+
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = idea_laydang
+				  
+			modifier = {
+				invasion_preparation = -0.5
+				industrial_capacity_dockyard = -0.5
+			}
+		}
+	}
+
+	country = {
+		niggapeasant = {
+
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = idea_laydang
+				  
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+	}
+
+	country = {
+		purificatioperlaborem = {
+
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = idea_laydang
+				  
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+	}
+
+	country = {
+		ottoman_avtonomia = {
+
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = idea_laydang
+				  
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				local_resources_factor = 0.25
+				conscription_factor = 0.10
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+	}
+
+	country = {
+		ottoman_devshirme = {
+
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = idea_laydang
+				  
+			modifier = {
+				conscription_factor = 0.25
+				political_power_factor = -1.25
+			}
+		}
+	}
+
+
+}

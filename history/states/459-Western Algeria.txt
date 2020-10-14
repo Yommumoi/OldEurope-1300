@@ -1,0 +1,40 @@
+
+state={
+	id=459
+	name="STATE_459" # Algiers
+	manpower = 772486
+	state_category = town
+	
+	resources={
+		steel=26 # was: 36
+	}
+
+	history={
+		
+		owner = ALG
+	    add_core_of = ALG
+
+		victory_points = {
+			1145 20 
+		}
+		victory_points = {
+			7132 5 
+		}
+		buildings = {
+			infrastructure = 4
+			1145 = {
+				naval_base = 2
+				bunker = 3
+			}
+			7132 = {
+				naval_base = 6
+			}
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+
+	provinces={
+		1013 1145 4116 4131 4146 7132 9964 11923 11939 12760 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=55
+	name="STATE_55"
+	manpower = 649558
+
+	state_category = large_city
+
+	history={
+		owner = GES
+	    add_core_of = GES
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			564 = {
+				bunker = 2
+			}
+		}
+		victory_points = {
+			564 3
+		}
+		
+
+	}
+
+	provinces={
+		564 3397 3524 6444 6549 9486 9524 9547 11445 11533 
+	}
+}

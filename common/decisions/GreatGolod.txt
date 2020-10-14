@@ -1,0 +1,49 @@
+golod_category = {
+	golod_1 = {                          
+        allowed = {
+			always = yes 
+		}                
+        available = {                           
+            always = no                   
+        }
+		
+        activation = {                          
+            date > 1315.01.01
+			date < 1317.01.01			
+        }
+		cancel_if_not_visible = yes
+
+        is_good = no                           
+        days_mission_timeout = 50              
+        timeout_effect = {                     
+			activate_mission = golod_1
+			country_event = {
+				id = golod.1
+			}
+        }
+        complete_effect = {                   
+            add_stability = 0.01             
+        }
+    }
+	golod_2 = {                          
+        allowed = {
+			always = yes 
+		}                
+        available = {                           
+            date > 1315.01.01
+			date < 1317.01.01	              
+        }
+        
+		icon = generic_form_nation
+		cost = 400           
+        complete_effect = { 
+			custom_effect_tooltip = otsrochka
+			hidden_effect = {
+				add_days_mission_timeout = {
+					mission = golod_1
+					days = 50
+				} 
+			}
+        }
+    }
+}

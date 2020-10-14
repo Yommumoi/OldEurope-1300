@@ -1,0 +1,6 @@
+GEN_trade = {
+
+	icon = generic_formable_nations
+
+
+}

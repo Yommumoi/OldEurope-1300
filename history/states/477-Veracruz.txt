@@ -1,0 +1,30 @@
+
+state={
+	id=477
+	name="STATE_477"
+	manpower = 487865
+	
+	state_category = town
+
+	history={
+		owner = TLA
+	    add_core_of = TLA
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			12810 = {
+				naval_base = 3
+			}
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			8089 10
+		}
+	}
+
+	provinces={
+		8079 8089 10732 12810 
+	}
+	
+}

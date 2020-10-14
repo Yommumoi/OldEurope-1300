@@ -1,0 +1,30 @@
+
+state={
+	id=192
+	name="STATE_192"
+	manpower = 27496
+	
+	state_category = city
+
+	history={
+		owner = NOG
+	    add_core_of = NOG
+		add_claim_by = KAZ
+		victory_points = {
+			11670 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			11670 ={
+				naval_base = 3
+			}
+		}
+		
+		
+	}
+
+	provinces={
+		741 754 3575 3738 3757 9698 9714 11670 11703 
+	}
+}

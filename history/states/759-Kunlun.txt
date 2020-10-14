@@ -1,0 +1,22 @@
+state={
+	id=759
+	name="STATE_759"
+	provinces={
+		1698 1943 2074 4947 5736 10315 12864
+	}
+	manpower=17500
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	history={
+		
+		
+		owner = CHH
+	    add_core_of = CHH
+		
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+}

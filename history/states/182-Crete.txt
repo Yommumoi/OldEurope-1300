@@ -1,0 +1,34 @@
+state=
+{
+	id=182
+	name="STATE_182"
+	manpower = 96975
+	
+	state_category = rural
+	history=
+	{
+		owner = VEN
+	    add_core_of = VEN
+		add_core_of = GRE
+		victory_points = {
+			9940 5
+		}
+		victory_points = {
+			12058 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			12058 = {
+				naval_base = 1
+			}
+			9940 = {
+				naval_base = 3
+			}
+		}
+		
+	}
+	provinces=
+	{
+1164 4170 9940 12058 	}
+}

@@ -1,0 +1,93 @@
+family_category = {
+	
+	family_des_1 = {
+
+		icon = generic_form_nation
+		cost = 10
+		days_remove = 25
+		fixed_random_seed = no
+
+		available = {
+			check_variable = {wife_var = 0}
+		}
+		
+
+		visible = {
+			check_variable = {wife_var = 0}
+		}
+
+		remove_effect = {
+			random_list = {
+				75 = {}
+				25 = {
+					custom_effect_tooltip = wife_naydena
+					set_variable = { wife_var = 1 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 15
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	family_des_2 = {
+
+		icon = generic_form_nation
+		cost = 5
+		days_remove = 5
+		fixed_random_seed = no
+
+		available = {
+			check_variable = {wife_var = 1}
+			check_variable = {beremenna = 0}
+		}
+		
+
+		visible = {
+			check_variable = {wife_var = 1}
+			check_variable = {beremenna = 0}
+		}
+
+		remove_effect = {
+			random_list = {
+				90 = {}
+				5 = {
+					custom_effect_tooltip = fam_syn
+					country_event = {
+						id = dinbrak.3
+						days = 280
+					}
+					country_event = {
+						id = dinbrak.5
+						days = 9
+					}
+					set_variable = {beremenna = 1}
+				}
+				5 = {
+					custom_effect_tooltip = fam_doc
+					country_event = {
+						id = dinbrak.4
+						days = 280
+					}
+					country_event = {
+						id = dinbrak.5
+						days = 9
+					}
+					set_variable = {beremenna = 1}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 15
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,102 @@
+﻿capital = 341
+set_major = yes
+oob = "GRE_1936"
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 1398 }
+add_ideas = techgroup2
+set_research_slots = 3
+set_variable = { soslovia_dvor = 100 }
+set_variable = { soslovia_duh = 100 }
+set_variable = { soslovia_gor = 80 }
+set_variable = { soslovia_kre = 70 }
+set_variable = { soslovia_rem = 80 }
+add_ideas = Orthodox 
+add_ideas = byz_VospominaniaoRime 
+add_ideas = byz_ekoproblems 
+create_faction = BYZal
+set_variable = { adm_limit = 25 }
+declare_war_on = {
+	target = VEN
+	type = annex_everything
+}
+add_dynamic_modifier = {
+	modifier = res_prod_test_dynamic_modifier
+}
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_ship_hull_submarine = 1 
+    basic_ship_hull_submarine = 1
+	basic_torpedo = 1
+	early_ship_hull_light = 1 
+    basic_ship_hull_light = 1
+	early_ship_hull_cruiser = 1 
+    basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	gwtank = 1
+}
+set_variable = { numnasled_value = 10 }
+
+set_convoys = 75
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 100
+	communism = 0
+	neutrality = 0
+	democratic = 0
+}
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Michael IX"
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Michael IX"
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Michael IX"
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Alexandros Kosmisis"
+	portrait_path = "1gen.dds"
+	traits = { hill_fighter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}

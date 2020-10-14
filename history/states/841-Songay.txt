@@ -1,0 +1,34 @@
+
+state={
+	id=841
+	name="STATE_841" # Mali (previously French West Africa)
+	manpower = 351895
+	
+	state_category = rural
+	
+	resources={
+		aluminium=30 
+		oil = 25
+	}
+
+	history={
+		
+		owner = SON
+	    add_core_of = SON
+		victory_points = {
+			7954 20
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 3
+			7954 = {
+				bunker = 2
+			}
+		}
+	}
+
+	provinces={
+		12838 2044 7930 10788 7954 5101
+	}
+}

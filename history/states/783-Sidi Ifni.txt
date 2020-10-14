@@ -1,0 +1,24 @@
+
+state = {
+	id=783
+	name="STATE_783" # Sidi Ifni
+	manpower = 3681
+	
+	state_category = wasteland
+
+	history = {
+		
+		owner = GEN
+	    add_core_of = MOR
+		add_core_of = GEN
+		
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		12857
+	}
+	
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=187
+	name="STATE_187"
+	manpower = 50650
+	
+	state_category = small_island
+	
+	resources={
+		chromium=3 # was: 10
+	}
+
+	history={
+		owner = GRE
+	    add_core_of = GRE
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			
+			6550 = {
+				naval_base = 1
+			}
+		}
+		
+	}
+
+	provinces={
+		3401 6550 
+	}
+}

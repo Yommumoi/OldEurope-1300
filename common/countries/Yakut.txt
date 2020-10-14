@@ -1,0 +1,6 @@
+
+
+graphical_culture = sibir_gfx
+graphical_culture_2d = sibir_2d	 
+
+color = { 0  0  0 }

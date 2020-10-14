@@ -1,0 +1,36 @@
+
+state={
+	id=807
+	name="STATE_807"
+	manpower = 269685
+	
+
+
+	state_category = metropolis
+	
+	history={
+		
+		owner = TRR
+	    add_core_of = TRR
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			529 3
+		}
+		
+
+	
+	
+	
+		
+	}
+
+	provinces={
+		529 3547 6570 9482 
+	}
+	
+}

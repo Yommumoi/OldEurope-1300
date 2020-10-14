@@ -1,0 +1,375 @@
+scripted_diplomatic_actions = {
+	scripted_diplomatic_dipbrak = { 
+	
+		allowed = {
+			
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = tip3
+						has_idea = tip9
+						has_idea = tip19
+						has_idea = tip24
+						has_government = democratic
+						has_government = communism
+					}
+				}
+				check_variable = {dipbrakcount_value < 5}
+				
+			}
+			THIS = {
+				NOT = {
+					OR = {
+						has_idea = tip3
+						has_idea = tip9
+						has_idea = tip19
+						has_idea = tip24
+						has_government = democratic
+						has_government = communism
+					}
+				
+					has_relation_modifier = {
+						target = ROOT
+						modifier = Dinbrak_modREL
+					}
+					ROOT = {
+						has_relation_modifier = {
+							target = PREV
+							modifier = Dinbrak_modREL
+						}
+					}
+				}
+				check_variable = {dipbrakcount_value < 5}
+			}
+			OR = {
+				AND = {
+					THIS = {capital_scope = {is_on_continent = europe}}
+					ROOT = {capital_scope = {is_on_continent = europe}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = south_america}}
+					ROOT = {capital_scope = {is_on_continent = south_america}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = north_america}}
+					ROOT = {capital_scope = {is_on_continent = north_america}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = australia}}
+					ROOT = {capital_scope = {is_on_continent = australia}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = asia}}
+					ROOT = {capital_scope = {is_on_continent = asia}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = africa}}
+					ROOT = {capital_scope = {is_on_continent = africa}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = middle_east}}
+					ROOT = {capital_scope = {is_on_continent = middle_east}}
+				}
+			}
+			has_game_rule = { 
+				rule = dipbrak_rule
+				option = normal 
+			}
+			
+		}
+		visible = {
+			has_game_rule = { 
+				rule = dipbrak_rule
+				option = normal 
+			}
+		}
+		selectable = {
+			
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = tip3
+						has_idea = tip9
+						has_idea = tip19
+						has_idea = tip24
+						has_government = democratic
+						has_government = communism
+					}
+					has_war_with = THIS
+				}
+				check_variable = {dipbrakcount_value < 5}
+			}
+			THIS = {
+				NOT = {
+					OR = {
+						has_idea = tip3
+						has_idea = tip9
+						has_idea = tip19
+						has_idea = tip24
+						has_government = democratic
+						has_government = communism
+					}
+					has_war_with = ROOT
+					has_relation_modifier = {
+						target = ROOT
+						modifier = Dinbrak_modREL
+					}
+					ROOT = {
+						has_relation_modifier = {
+							target = PREV
+							modifier = Dinbrak_modREL
+						}
+					}
+				}
+				check_variable = {dipbrakcount_value < 5}
+			}
+			OR = {
+				AND = {
+					THIS = {capital_scope = {is_on_continent = europe}}
+					ROOT = {capital_scope = {is_on_continent = europe}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = south_america}}
+					ROOT = {capital_scope = {is_on_continent = south_america}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = north_america}}
+					ROOT = {capital_scope = {is_on_continent = north_america}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = australia}}
+					ROOT = {capital_scope = {is_on_continent = australia}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = asia}}
+					ROOT = {capital_scope = {is_on_continent = asia}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = africa}}
+					ROOT = {capital_scope = {is_on_continent = africa}}
+				}
+				AND = {
+					THIS = {capital_scope = {is_on_continent = middle_east}}
+					ROOT = {capital_scope = {is_on_continent = middle_east}}
+				}
+			}
+			
+		}
+
+		requires_acceptance = yes
+
+		show_acceptance_on_action_button = yes
+
+		icon = 1
+		
+		complete_effect = {
+			THIS = {
+				ROOT = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = Dinbrak_modop
+					}
+					add_relation_modifier = {
+						target = PREV
+						modifier = Dinbrak_modREL
+					}
+				}
+			}
+			THIS = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = Dinbrak_modop
+				}
+				add_relation_modifier = {
+					target = ROOT
+					modifier = Dinbrak_modREL
+				}
+			}
+			ROOT = {
+				add_to_variable = {dipbrakcount_value = 1}
+				clamp_variable = {
+					var = dipbrakcount_value
+					min = 0
+					max = 5
+				}
+			}
+			THIS = {
+				add_to_variable = {dipbrakcount_value = 1}
+				clamp_variable = {
+					var = dipbrakcount_value
+					min = 0
+					max = 5
+				}
+			}
+		}
+		
+		on_sent_effect = {
+			
+		}
+		
+		reject_effect = {
+		
+		}
+
+		#send_scripted_gui = diplomacy_action_peace
+		#receive_scripted_gui = diplomacy_action_peace_res
+		
+		reset_send_effect = {
+			
+		}
+		
+		can_be_sent = {
+			always = yes
+		}
+		
+		#send_description = dip_mir_req
+
+
+		
+		can_be_accepted = {
+			always = yes
+		}
+		#request_description = din_req
+
+		
+		accept_title = din_accept_title
+		accept_description = din_accept_desc
+		reject_title = din_reject_title
+		reject_description = din_reject_desc
+		receive_description = din_mir_rec
+	
+		ai_acceptance = {
+			base_zhelanie = {
+				base = 10
+				modifier = {
+					always = yes
+					add = 10
+					
+				}
+				modifier = {
+					ROOT = {
+						tag = AUS
+					}
+					add = 100
+				}
+				modifier = {
+					ROOT = {
+						tag = XXX
+					}
+					add = -150
+				}
+				modifier = {
+					NOT = {
+						OR = {
+							AND = {
+								THIS = {has_idea = Islam}
+								ROOT = {has_idea = Islam}
+							}
+							AND = {
+								THIS = {has_idea = Zoro}
+								ROOT = {has_idea = Zoro}
+							}
+							AND = {
+								THIS = {has_idea = Slavic}
+								ROOT = {has_idea = Slavic}
+							}
+							AND = {
+								THIS = {has_idea = Animism}
+								ROOT = {has_idea = Animism}
+							}
+							AND = {
+								THIS = {has_idea = Induism}
+								ROOT = {has_idea = Induism}
+							}
+							AND = {
+								THIS = {has_idea = Iudaism}
+								ROOT = {has_idea = Iudaism}
+							}
+							AND = {
+								THIS = {has_idea = Konfucii}
+								ROOT = {has_idea = Konfucii}
+							}
+							AND = {
+								THIS = {has_idea = Daosism}
+								ROOT = {has_idea = Daosism}
+							}
+							AND = {
+								THIS = {has_idea = Romuva}
+								ROOT = {has_idea = Romuva}
+							}
+							AND = {
+								THIS = {has_idea = Nautl}
+								ROOT = {has_idea = Nautl}
+							}
+							AND = {
+								THIS = {has_idea = Tengri}
+								ROOT = {has_idea = Tengri}
+							}
+							AND = {
+								THIS = {has_idea = ReformPag}
+								ROOT = {has_idea = ReformPag}
+							}
+							AND = {
+								THIS = {has_idea = Totemism}
+								ROOT = {has_idea = Totemism}
+							}
+							AND = {
+								THIS = {has_idea = Finn}
+								ROOT = {has_idea = Finn}
+							}
+							AND = {
+								THIS = {has_idea = Gerpag}
+								ROOT = {has_idea = Gerpag}
+							}
+							AND = {
+								THIS = {has_idea = Sinto}
+								ROOT = {has_idea = Sinto}
+							}
+							AND = {
+								THIS = {has_idea = Buddism}
+								ROOT = {has_idea = Buddism}
+							}
+							AND = {
+								THIS = {
+									OR = {
+										has_idea = Miafizit
+										has_idea = Orthodox
+										has_idea = Catholic
+									}
+								}
+								ROOT = {
+									OR = {
+										has_idea = Miafizit
+										has_idea = Orthodox
+										has_idea = Catholic
+									}
+								}
+							}
+						}
+					}
+					add = 10
+				}
+			}
+			
+		} 
+		
+
+		ai_desire = {
+
+			base = 15
+			modifier = {
+				ROOT = {
+					tag = AUS
+				}
+				add = 20
+			}
+			modifier = {
+				ROOT = {
+					tag = XXX
+				}
+				add = -300
+			}
+			
+		}
+	}
+}

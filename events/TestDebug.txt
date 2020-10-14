@@ -1,0 +1,2549 @@
+add_namespace = testdebug
+
+country_event = {
+	id = testdebug.1
+	title = testdebug.1.t
+	desc = testdebug.1.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = testdebug.1.a
+		capital_scope = {
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+				owner = ROOT
+			}
+		}
+		
+	}
+}
+country_event = {
+	id = testdebug.2
+	title = testdebug.2.t
+	desc = testdebug.2.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = testdebug.2.a
+		every_country = {
+			limit = {
+				OR = {
+					tag = HUN
+					tag = VEN
+					tag = GEN
+					tag = EPI
+					tag = KKR
+					tag = KON
+					tag = TUR
+					tag = AYD
+					tag = GRM
+					tag = MNS
+					tag = IOA
+					tag = KAS
+					tag = MOL
+					tag = TRA
+					tag = ROM
+					tag = SER
+					tag = BUL
+					tag = STA
+					tag = PIN
+					tag = NOG
+				}
+			}
+			GRE = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
+		}
+		
+	}
+}
+country_event = {
+	id = testdebug.3
+	title = testdebug.3.t
+	desc = testdebug.3.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = testdebug.3.a
+		set_cosmetic_tag = DIN1
+		
+	}
+}
+country_event = {
+	id = testdebug.4
+	title = testdebug.4.t
+	desc = testdebug.4.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = testdebug.4.a
+		random_owned_state = {
+					limit = {
+						is_coastal = yes
+					}
+					random_list = {
+						100 = {
+							random_list = {
+								100 = {
+									random_list = {
+										4 = {
+											VT1 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													add_manpower = 25000
+													transfer_state = PREV
+													set_capital = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											VT2 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											VT3 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											VT4 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											VT5 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											VT6 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											VT7 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											VT8 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											VT9 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V10 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V11 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V12 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V13 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V14 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V15 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V16 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V17 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V18 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V19 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V20 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V21 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V22 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V23 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V24 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										4 = {
+											V25 = {
+												if = {
+													limit = {
+														NOT = {
+															country_exists = THIS
+														}
+													}
+													set_capital = PREV
+													transfer_state = PREV
+													declare_war_on = {
+														target = PREV.PREV
+														type = annex_everything
+													}
+													add_manpower = 25000
+													PREV = {
+														create_unit = {
+															division = "name = \"Guard\" division_template = \"Detachment\" start_experience_factor = 1.0" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+														create_unit = {
+															division = "name = \"Detachment\" division_template = \"Detachment\" start_experience_factor = 0.2" 
+															owner = PREV
+														}
+													}
+													random_list = {
+														2 = {set_cosmetic_tag = DIN1}
+														2 = {set_cosmetic_tag = DIN2}
+														2 = {set_cosmetic_tag = DIN3}
+														2 = {set_cosmetic_tag = DIN4}
+														2 = {set_cosmetic_tag = DIN5}
+														2 = {set_cosmetic_tag = DIN6}
+														2 = {set_cosmetic_tag = DIN7}
+														2 = {set_cosmetic_tag = DIN8}
+														2 = {set_cosmetic_tag = DIN9}
+														2 = {set_cosmetic_tag = DIN10}
+														2 = {set_cosmetic_tag = DIN11}
+														2 = {set_cosmetic_tag = DIN12}
+														2 = {set_cosmetic_tag = DIN13}
+														2 = {set_cosmetic_tag = DIN14}
+														2 = {set_cosmetic_tag = DIN15}
+														2 = {set_cosmetic_tag = DIN16}
+														2 = {set_cosmetic_tag = DIN17}
+														2 = {set_cosmetic_tag = DIN18}
+														2 = {set_cosmetic_tag = DIN19}
+														2 = {set_cosmetic_tag = DIN20}
+														2 = {set_cosmetic_tag = DIN21}
+														2 = {set_cosmetic_tag = DIN22}
+														2 = {set_cosmetic_tag = DIN23}
+														2 = {set_cosmetic_tag = DIN24}
+														2 = {set_cosmetic_tag = DIN25}
+														2 = {set_cosmetic_tag = DIN26}
+														2 = {set_cosmetic_tag = DIN27}
+														2 = {set_cosmetic_tag = DIN28}
+														2 = {set_cosmetic_tag = DIN29}
+														2 = {set_cosmetic_tag = DIN30}
+														2 = {set_cosmetic_tag = DIN31}
+														2 = {set_cosmetic_tag = DIN32}
+														2 = {set_cosmetic_tag = DIN33}
+														2 = {set_cosmetic_tag = DIN34}
+														2 = {set_cosmetic_tag = DIN35}
+														2 = {set_cosmetic_tag = DIN36}
+														2 = {set_cosmetic_tag = DIN37}
+														2 = {set_cosmetic_tag = DIN38}
+														2 = {set_cosmetic_tag = DIN39}
+														2 = {set_cosmetic_tag = DIN40}
+														2 = {set_cosmetic_tag = DIN41}
+														2 = {set_cosmetic_tag = DIN42}
+														2 = {set_cosmetic_tag = DIN43}
+														2 = {set_cosmetic_tag = DIN44}
+														2 = {set_cosmetic_tag = DIN45}
+														2 = {set_cosmetic_tag = DIN46}
+														2 = {set_cosmetic_tag = DIN47}
+														2 = {set_cosmetic_tag = DIN48}
+														2 = {set_cosmetic_tag = DIN49}
+														2 = {set_cosmetic_tag = DIN50}
+													}
+												}
+											}
+										}
+										
+									}
+								}
+								
+							}
+						}
+						
+					}
+				}
+			
+		
+	}
+}

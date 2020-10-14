@@ -1,0 +1,21 @@
+
+state={
+	id=418
+	name="STATE_418"
+	manpower = 83090
+	
+	state_category = wasteland
+
+	history={
+		owner = HUL
+	    add_core_of = HUL
+		buildings = {
+			infrastructure = 3
+		}
+		
+	}
+
+	provinces={
+		8009 8093 10873 11671 12704 12748 12818 
+	}
+}

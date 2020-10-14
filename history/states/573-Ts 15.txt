@@ -1,0 +1,29 @@
+
+state={
+	id=573
+	name="STATE_573" # Zlatoust
+	manpower = 9169
+	
+	state_category = pastoral
+	resources={
+		chromium=23 # was: 32
+	}
+
+	history={
+		owner = SMD
+	    add_core_of = SMD
+		victory_points = {
+			10329 1
+		}
+		
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+	}
+
+	provinces={
+		3280 4758 7320 11307 
+	}
+}

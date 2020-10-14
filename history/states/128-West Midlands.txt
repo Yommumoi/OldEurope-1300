@@ -1,0 +1,24 @@
+
+state={
+	id=128
+	name="STATE_128"
+	manpower = 921308
+	
+	state_category = metropolis
+
+	history={
+		owner = ENG
+	    add_core_of = ENG
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			9297 10
+		}
+		
+	}
+
+	provinces={
+		3241 3301 6270 6301 7239 9297 11345 
+	}
+}

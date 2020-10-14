@@ -1,0 +1,29 @@
+
+state={
+	id=883
+	name="STATE_883"
+	manpower = 80908
+	
+	state_category = large_town
+	
+	resources={
+		rubber=3
+	}
+
+	history={
+		owner = LAO
+	    add_core_of = LAO
+		victory_points = {
+			401 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		
+	}
+
+	provinces={
+		9399 6387 3279 9272 9382 9318 11254 335 11384 6303 401
+	}
+}

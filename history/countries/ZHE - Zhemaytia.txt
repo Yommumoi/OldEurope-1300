@@ -1,0 +1,69 @@
+﻿capital = 189
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 39 }
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_variable = { adm_limit = 1 }
+set_variable = { soslovia_dvor = 60 }
+set_variable = { soslovia_duh = 40 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 50 }
+set_variable = { soslovia_rem = 50 }
+add_ideas = {
+Romuva
+}
+set_oob = "ZHE_1936"
+add_ideas = techgroup2
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 0
+	communism = 0
+	neutrality = 100
+	democratic = 0
+}	
+create_country_leader = {
+	name = "Vilkas I"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vilkas I"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Vilkas I"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

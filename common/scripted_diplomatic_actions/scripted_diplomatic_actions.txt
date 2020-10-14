@@ -1,0 +1,1209 @@
+
+scripted_diplomatic_actions = { 
+
+		offer_peace_scripted_diplo = { 
+		
+			allowed = {
+				has_war_with = ROOT
+				THIS = {is_puppet = no}
+				ROOT = {
+					is_puppet = no
+					
+				}
+				
+			}
+			visible = {
+				has_war_with = ROOT
+			}
+			selectable = {
+				has_war_with = ROOT
+				THIS = {is_puppet = no}
+				ROOT = {
+					is_puppet = no
+					
+				}
+			}
+
+			requires_acceptance = yes
+			
+			show_acceptance_on_action_button = yes
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			complete_effect = {
+				if = {
+					limit = {
+						NOT = {
+							ROOT = {
+								check_variable = { demand_pol_power_var = 0 }
+							}
+						}
+					}
+					ROOT = {
+						add_political_power = var:demand_pol_power_var
+					}
+					set_temp_variable = { temp_pol_power_value = ROOT.demand_pol_power_var }
+					multiply_temp_variable = { temp_pol_power_value = -1 }
+					FROM = {
+						add_political_power = var:temp_pol_power_value
+					}
+				}
+				set_variable = {demand_pol_power_var = 0}
+				clear_variable = ROOT.demand_state_cost_var
+				if = {
+					limit = {
+						FROM = {
+							any_owned_state = {
+								has_state_flag = state_resource_offered_by_ROOT
+							}
+						}
+					}
+					ROOT = { country_event = { id = LDN_diplomatic_peace.1 } }
+				}
+				every_state = {
+					limit = {
+						has_state_flag = state_offered_by_ROOT
+					}
+					clr_state_flag = state_offered_by_ROOT
+					remove_from_array = { ROOT.peace_control_state = THIS.id }
+
+					ROOT = {
+						transfer_state = PREV
+					}
+				}
+				FROM = {
+					white_peace = {
+						tag = ROOT 
+						message = LDN_scripted_peace_message 
+					} 
+					set_truce = {
+						target = ROOT
+						days = 450
+					}
+					every_other_country = {
+						if = {
+							limit = {
+								is_puppet_of = FROM
+							}
+							white_peace = {
+								tag = ROOT 
+								message = LDN_scripted_peace_message 
+							} 
+							set_truce = {
+								target = ROOT
+								days = 450
+							}
+						}
+					}	
+					
+				}
+				clear_array = ROOT.trebue
+			}
+			
+			on_sent_effect = {
+				ROOT = {
+					add_to_variable = {kd_mir = 7}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_ai = yes
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = FROM
+							is_controlled_by = ROOT
+						}
+						set_state_flag = state_offered_by_ROOT
+					}
+				}
+				every_state = {
+					limit = {
+						has_state_flag = state_offered_by_ROOT
+						NOT = {
+							is_in_array = {
+								array = ROOT.trebue
+								value = THIS.id
+							}
+						}
+					}
+					add_to_array = { ROOT.trebue = THIS.id }
+					
+				}
+			}
+			
+		   reject_effect = {
+				clear_array = ROOT.trebue
+		   }
+
+			send_scripted_gui = diplomacy_action_peace
+			receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				every_state = {
+					if = {
+						limit = {
+							has_state_flag = state_offered_by_ROOT
+						}
+						clr_state_flag = state_offered_by_ROOT
+					}
+				}
+				clear_array = ROOT.trebue
+				LDN_diplo_peace_set_frame_effect = yes
+				set_variable = { global.mir_vkl = 1 }
+				set_variable = { global.mir_vklres = 1 }
+				LDN_set_peace_score = yes
+				clear_array = ROOT.LDN_peace_opinion_array
+				if = {
+					limit = {
+						NOT = { has_global_flag = diplo_peace_active }
+					}
+					set_global_flag = diplo_peace_active
+				}
+				ROOT = {
+					set_variable = { peace_diplo_sender_country = this.id }
+				}
+				FROM = {
+					save_global_event_target_as = peace_diplo_receiver_country
+					set_variable = { peace_diplo_receiver_country = this.id }
+				}
+				every_country = {
+					limit = {
+						NOT = {
+							OR = {
+								tag = ROOT
+								tag = FROM
+							}
+						}
+						OR = {
+							any_owned_state = {
+								any_neighbor_state = {
+									is_owned_by = ROOT
+									is_in_home_area = yes
+								}
+							}
+							any_owned_state = {
+								any_neighbor_state = {
+									is_owned_by = FROM
+									is_in_home_area = yes
+								}
+							}
+							has_war_together_with = FROM
+						}
+					}
+					add_to_array = { ROOT.LDN_peace_opinion_array = THIS.id }
+				}
+			}
+			
+			can_be_sent = {
+				has_war_with = ROOT
+				OR = {
+					check_variable = {ROOT.demand_pol_power_var < THIS.political_power}
+					check_variable = {THIS.political_power < 0}
+					check_variable = {THIS.political_power = 0}
+					
+				}
+			}
+			 
+			#send_description = dip_mir_req
+ 
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			can_be_accepted = {
+				has_war_with = ROOT
+			}
+			#request_description = dip_mir_req
+ 
+			
+			accept_title = peace_accept_title
+			accept_description = peace_accept_desc
+			reject_title = peace_reject_title
+			reject_description = peace_reject_desc
+			receive_description = dip_mir_req
+		
+			ai_acceptance = {
+					Warust_zhelanie = {
+						base = 0
+						modifier = {
+							add = warust_value
+						}
+					}
+					Procesvoins = {
+						modifier = {
+							add = 10
+							surrender_progress > 0.25
+						}
+						modifier = {
+							add = -20
+							has_offensive_war_with = FROM
+						}
+						modifier = {
+							add = -30
+							surrender_progress < 0.2
+						}
+						modifier = {
+							add = -20
+							FROM = {
+								surrender_progress > 0.05
+							}
+						}
+						modifier = {
+							add = -10
+						}
+						modifier = {
+							add = -100
+							tag = XXX
+						}
+					}
+					
+				
+			}
+
+			ai_desire = {
+
+				base = 0
+				modifier = {
+					add = warust_value
+				}
+				modifier = {
+					add = 20
+					surrender_progress > 0.25
+				}
+				modifier = {
+					add = -30
+					has_offensive_war_with = FROM
+				}
+				modifier = {
+					add = -175
+					surrender_progress < 0.2
+				}
+				modifier = {
+					add = -10
+					
+				}
+				modifier = {
+					add = -100
+					tag = XXX
+				}
+					
+				
+			}
+		}
+		
+		
+		send_money_diplo = { 
+		
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			selectable = {
+				ROOT = {
+					has_political_power > 50
+				
+				}
+				OR = {
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = europe}}
+						ROOT = {any_owned_state = {is_on_continent = europe}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = south_america}}
+						ROOT = {any_owned_state = {is_on_continent = south_america}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = north_america}}
+						ROOT = {any_owned_state = {is_on_continent = north_america}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = australia}}
+						ROOT = {any_owned_state = {is_on_continent = australia}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = asia}}
+						ROOT = {any_owned_state = {is_on_continent = asia}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = africa}}
+						ROOT = {any_owned_state = {is_on_continent = africa}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = middle_east}}
+						ROOT = {any_owned_state = {is_on_continent = middle_east}}
+					}
+				}
+			}
+
+			requires_acceptance = yes
+			
+			show_acceptance_on_action_button = yes
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			complete_effect = {
+				ROOT = {
+					add_political_power = -50
+				}
+				FROM = {
+					add_political_power = 50
+				}
+			}
+			
+			on_sent_effect = {
+				
+			}
+			
+		   reject_effect = {
+				
+		   }
+
+			#send_scripted_gui = diplomacy_action_peace
+			#receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				
+			}
+			
+			can_be_sent = {
+				always = yes
+			}
+			
+			#send_description = dip_mir_req
+
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			can_be_accepted = {
+				always = yes
+			}
+			#request_description = dip_mir_req
+
+			
+			accept_title = money_accept_title
+			accept_description = money_accept_desc
+			reject_title = money_reject_title
+			reject_description = money_reject_desc
+			receive_description = money_req
+		
+			ai_acceptance = {
+					Hochu = {
+						modifier = {
+							add = 20
+						}
+					}
+					
+				
+			}
+
+			ai_desire = {
+
+				base = 0		
+				
+			}
+		}
+		
+		
+		
+		econom_sostav_diplo = { 
+		
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			selectable = {
+				check_variable = {ROOT.index_eco > THIS.index_eco}
+				
+				THIS = {
+					all_neighbor_country = {
+						OR = {
+							AND = {
+								tag = ROOT
+							}
+							
+							AND = {
+								
+								is_puppet_of = ROOT
+								
+							}
+						}
+					}
+					all_owned_state = {
+						NOT = {
+							is_coastal = yes
+						}
+					}
+					NOT = {
+						is_puppet_of = ROOT
+					}
+					has_war = no
+				}
+				OR = {
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = europe}}
+						ROOT = {any_owned_state = {is_on_continent = europe}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = south_america}}
+						ROOT = {any_owned_state = {is_on_continent = south_america}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = north_america}}
+						ROOT = {any_owned_state = {is_on_continent = north_america}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = australia}}
+						ROOT = {any_owned_state = {is_on_continent = australia}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = asia}}
+						ROOT = {any_owned_state = {is_on_continent = asia}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = africa}}
+						ROOT = {any_owned_state = {is_on_continent = africa}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = middle_east}}
+						ROOT = {any_owned_state = {is_on_continent = middle_east}}
+					}
+				}
+			}
+			cost = 500
+			requires_acceptance = no
+			
+			show_acceptance_on_action_button = no
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			complete_effect = {
+				THIS = {
+					ROOT = {
+						puppet = PREV
+						set_autonomy = {
+							target = PREV
+							autonomous_state = autonomy_dominion
+							freedom_level = 0.1
+						}
+					}
+					
+				}
+				THIS = {
+					country_event = dip.1
+						
+					
+				}
+			}
+			
+			on_sent_effect = {
+				
+			}
+			
+		   reject_effect = {
+				
+		   }
+
+			#send_scripted_gui = diplomacy_action_peace
+			#receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				
+			}
+			
+			can_be_sent = {
+				always = yes
+			}
+			
+			#send_description = dip_mir_req
+
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			can_be_accepted = {
+				always = yes
+			}
+			#request_description = dip_mir_req
+
+			
+			accept_title = money_accept_title
+			accept_description = money_accept_desc
+			#reject_title = money_reject_title
+			#reject_description = money_reject_desc
+			#receive_description = money_req
+		
+			ai_desire = {
+				base = 0
+				modifier = {
+					ROOT = {
+						has_political_power > 500
+					}
+					add = 20
+				}
+			}
+		}
+		econom_davlenie_diplo = { 
+		
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			selectable = {
+				check_variable = {ROOT.index_eco > THIS.index_eco}
+				ROOT = {
+					check_variable = {davl_timer = 0}
+				}
+				
+				
+				OR = {
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = europe}}
+						ROOT = {any_owned_state = {is_on_continent = europe}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = south_america}}
+						ROOT = {any_owned_state = {is_on_continent = south_america}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = north_america}}
+						ROOT = {any_owned_state = {is_on_continent = north_america}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = australia}}
+						ROOT = {any_owned_state = {is_on_continent = australia}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = asia}}
+						ROOT = {any_owned_state = {is_on_continent = asia}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = africa}}
+						ROOT = {any_owned_state = {is_on_continent = africa}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = middle_east}}
+						ROOT = {any_owned_state = {is_on_continent = middle_east}}
+					}
+				}
+			}
+			cost = 50
+			requires_acceptance = no
+			
+			show_acceptance_on_action_button = no
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			complete_effect = {
+				THIS = {
+					country_event = dip.2
+						
+					
+				}
+				ROOT = {
+					add_to_variable = {davl_timer = 45}	
+				}
+				
+			}
+			
+			on_sent_effect = {
+				
+				
+			}
+			
+		   reject_effect = {
+				
+		   }
+
+			#send_scripted_gui = diplomacy_action_peace
+			#receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				
+			}
+			
+			can_be_sent = {
+				always = yes
+			}
+			
+			#send_description = dip_mir_req
+
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			can_be_accepted = {
+				always = yes
+			}
+			#request_description = dip_mir_req
+
+			
+			accept_title = davl_accept_title
+			accept_description = davl_accept_desc
+			reject_title = davl_reject_title
+			reject_description = davl_reject_desc
+			receive_description = davl_req
+			
+			ai_desire = {
+				base = 0
+				modifier = {
+					ROOT = {
+						has_political_power > 50
+					}
+					add = 30
+				}
+				modifier = {
+					ROOT = {
+						has_opinion = {
+							target = THIS
+							value < -80
+						}
+					}
+					add = 25
+				}
+				modifier = {
+					ROOT = {
+						has_opinion = {
+							target = THIS
+							value > 70
+						}
+					}
+					add = -35
+				}
+			}
+		
+		}
+		
+		vtorzh_diplo = { 
+		
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			selectable = {
+				AND = {
+					THIS = {capital_scope = {is_on_continent = europe}}
+					ROOT = {capital_scope = {is_on_continent = europe}}
+					THIS = {any_owned_state = {is_coastal = yes}}
+				}
+			}
+			show_acceptance_on_action_button = no
+			cost = 2500
+			requires_acceptance = no
+			
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			can_be_sent = {
+				always = yes
+			}
+			can_be_accepted = {
+				always = yes
+			}
+			complete_effect = {
+				THIS = {
+					country_event = {
+						id = arr.11
+						days = 90
+					}
+					add_stability = -0.01
+				}
+			}
+			
+		   
+
+			#send_scripted_gui = diplomacy_action_peace
+			#receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				
+			}
+			
+			
+			
+			#send_description = dip_mir_req
+
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			
+			#request_description = dip_mir_req
+
+			
+			#accept_title = money_accept_title
+			#accept_description = money_accept_desc
+			#reject_title = money_reject_title
+			#reject_description = money_reject_desc
+			receive_description = money_req
+			
+			ai_desire = {
+				base = 0
+				modifier = {
+					ROOT = {
+						has_political_power > 2500
+					}
+					add = 15
+				}
+			}
+			
+		}
+		
+		nezalezh_diplo = { 
+		
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			selectable = {
+				THIS = {
+					ROOT = {
+						is_puppet_of = PREV
+					}
+				}
+				
+			}
+			show_acceptance_on_action_button = no
+			cost = 1000
+			requires_acceptance = no
+			
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			can_be_sent = {
+				always = yes
+			}
+			can_be_accepted = {
+				always = yes
+			}
+			complete_effect = {
+				THIS = {
+					end_puppet = ROOT
+				}
+				THIS = {
+					ROOT = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+			
+		   
+
+			#send_scripted_gui = diplomacy_action_peace
+			#receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				
+			}
+			
+			
+			
+			#send_description = dip_mir_req
+
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			
+			#request_description = dip_mir_req
+
+			
+			#accept_title = money_accept_title
+			#accept_description = money_accept_desc
+			#reject_title = money_reject_title
+			#reject_description = money_reject_desc
+			receive_description = money_req
+			
+			
+			
+		}
+		embargo_vkl_diplo = { 
+		
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			selectable = {
+				check_variable = {emb = 1}
+				
+			}
+			show_acceptance_on_action_button = no
+			cost = 100
+			requires_acceptance = no
+			
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			can_be_sent = {
+				always = yes
+			}
+			can_be_accepted = {
+				always = yes
+			}
+			complete_effect = {
+				THIS = {
+					ROOT = {
+						add_opinion_modifier = {
+							target = PREV
+							modifier = embargooo
+						}
+					}
+				}
+			}
+			
+		   
+
+			#send_scripted_gui = diplomacy_action_peace
+			#receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				
+			}
+			
+			
+			
+			#send_description = dip_mir_req
+
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			
+			#request_description = dip_mir_req
+
+			
+			#accept_title = money_accept_title
+			#accept_description = money_accept_desc
+			#reject_title = money_reject_title
+			#reject_description = money_reject_desc
+			receive_description = money_req
+			
+			
+			
+		}
+		embargo_vykl_diplo = { 
+		
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			selectable = {
+				check_variable = {emb = 1}
+				
+			}
+			show_acceptance_on_action_button = no
+			cost = 20
+			requires_acceptance = no
+			
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			can_be_sent = {
+				always = yes
+			}
+			can_be_accepted = {
+				always = yes
+			}
+			complete_effect = {
+				THIS = {
+					ROOT = {
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = embargooo
+						}
+					}
+				}
+			}
+			
+		   
+
+			#send_scripted_gui = diplomacy_action_peace
+			#receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				
+			}
+			
+			
+			
+			#send_description = dip_mir_req
+
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			
+			#request_description = dip_mir_req
+
+			
+			#accept_title = money_accept_title
+			#accept_description = money_accept_desc
+			#reject_title = money_reject_title
+			#reject_description = money_reject_desc
+			receive_description = money_req
+			
+			
+			
+		}
+		sabotazh_diplo = { 
+		
+			allowed = {
+				always = yes
+			}
+			visible = {
+				always = yes
+			}
+			selectable = {
+				ROOT = {
+					check_variable = {sabotazh_timer < 1}
+				}
+				THIS = {
+					check_variable = {product_masters_value > 50}
+				}
+				OR = {
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = europe}}
+						ROOT = {any_owned_state = {is_on_continent = europe}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = south_america}}
+						ROOT = {any_owned_state = {is_on_continent = south_america}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = north_america}}
+						ROOT = {any_owned_state = {is_on_continent = north_america}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = australia}}
+						ROOT = {any_owned_state = {is_on_continent = australia}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = asia}}
+						ROOT = {any_owned_state = {is_on_continent = asia}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = africa}}
+						ROOT = {any_owned_state = {is_on_continent = africa}}
+					}
+					AND = {
+						THIS = {any_owned_state = {is_on_continent = middle_east}}
+						ROOT = {any_owned_state = {is_on_continent = middle_east}}
+					}
+				}
+			}
+			show_acceptance_on_action_button = no
+			cost = 250
+			requires_acceptance = no
+			
+
+			#cost_string = loc_key
+
+			icon = 1
+			
+			can_be_sent = {
+				always = yes
+			}
+			can_be_accepted = {
+				always = yes
+			}
+			complete_effect = {
+				THIS = {
+					add_to_variable = {product_masters_value = -50}
+				}
+				ROOT = {
+					add_to_variable = {sabotazh_timer = 30}
+				}
+			}
+			
+		   
+
+			#send_scripted_gui = diplomacy_action_peace
+			#receive_scripted_gui = diplomacy_action_peace_res
+			
+			reset_send_effect = {
+				
+			}
+			
+			
+			
+			#send_description = dip_mir_req
+
+
+			# RECEIVE POPUP CUSTOMIZATION
+			# use diplomatic_action as context in scripted gui
+			#reset_receive_effect = {
+			#	# clear action
+			#	if = {
+			#		limit = { 
+			#			from = {
+			#				is_ai = yes
+			#			}
+			#		}
+			#	}
+			#}
+			
+			#request_description = dip_mir_req
+
+			
+			accept_title = sab_accept_title
+			accept_description = sab_accept_desc
+			#reject_title = money_reject_title
+			#reject_description = money_reject_desc
+			receive_description = money_req
+			ai_desire = {
+				base = 0
+				modifier = {
+					THIS = {
+						check_variable = {index_eco > 2500}
+					}
+					add = 5
+				}
+				modifier = {
+					THIS = {
+						check_variable = {index_eco > 5000}
+					}
+					add = 5
+				}
+				modifier = {
+					THIS = {
+						check_variable = {index_eco > 7000}
+					}
+					add = 5
+				}
+				modifier = {
+					ROOT = {
+						has_political_power > 50
+					}
+					add = 5
+				}
+				modifier = {
+					ROOT = {
+						has_opinion = {
+							target = THIS
+							value < -100
+						}
+					}
+					add = 5
+				}
+				modifier = {
+					ROOT = {
+						has_opinion = {
+							target = THIS
+							value > 65
+						}
+					}
+					add = -4.8
+				}
+			}
+			
+			
+		}
+	
+}

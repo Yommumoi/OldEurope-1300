@@ -1,0 +1,30 @@
+
+state={
+	id=816
+	name="STATE_816"
+	manpower = 5002
+	
+	state_category = town
+
+	history={
+		owner = ALK
+	    add_core_of = ALK
+		add_core_of = SPR
+		victory_points = {
+			6955 1
+		}
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 2
+			infrastructure = 5
+			6955 = {
+				bunker = 2
+			}
+		}
+		
+	}
+
+	provinces={
+		6955 
+	}
+}

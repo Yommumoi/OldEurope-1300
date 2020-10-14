@@ -1,0 +1,20 @@
+
+state={
+	id=678
+	name="STATE_678"
+	manpower=1578
+	state_category = wasteland
+
+	history={
+		owner = NJJ
+	    add_core_of = NJJ
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+
+	provinces={
+		4932 5081 8118 10870 12740 12768 
+	}
+}

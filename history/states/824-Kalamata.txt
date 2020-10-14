@@ -1,0 +1,32 @@
+
+state={
+	id=824
+	name="STATE_824"
+	manpower=56250
+	
+	state_category = town
+
+	history={
+		owner = GRE
+	    add_core_of = GRE
+		victory_points = {
+			11965 3
+		}
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			11965 = {
+				naval_base = 1
+				bunker = 2
+			}
+
+		}
+		
+
+	}
+
+	provinces={
+		4178 11965 
+	}
+}

@@ -1,0 +1,260 @@
+﻿division_template = {
+	name = "Detachment"		# Only had a force of reservists, which were later disbanded altogether in 1948
+	division_names_group = AFG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {	# "1st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 117 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "2st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9098 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "3st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11202 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "4st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9055 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "5st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 7898 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "6st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 11159 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "7st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 6225 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "8st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 11259 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "9st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 415 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "10st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 9131 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "12st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 11159 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "13st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 3140 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "14st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 9197 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "15st Detachment"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 3151 
+		division_template = "Detachment"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	fleet = {
+		name = "Ships #1"			
+		naval_base = 3151  
+		task_force = {
+			name = "Fleet"
+			location = 3151  
+			ship = { name = "Kogg1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg15" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg16" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg17" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg18" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg19" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg20" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg21" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg22" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg24" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg25" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg26" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg27" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg28" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg29" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg30" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg31" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg32" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg33" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg35" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg36" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg37" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg38" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg39" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg42" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg45" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg46" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg47" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg48" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg51" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg52" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg53" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg54" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg55" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg56" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NOV } } }
+			
+			ship = { name = "Kogg57" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg58" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg59" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg60" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg61" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg62" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg63" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg64" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg65" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg66" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg67" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg68" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg69" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg70" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg71" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg72" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg73" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg74" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg75" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg76" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg77" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg78" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg79" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg80" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg81" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+			ship = { name = "Kogg82" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOV } } }
+		}
+	}
+}

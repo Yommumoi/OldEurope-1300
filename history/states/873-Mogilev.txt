@@ -1,0 +1,30 @@
+
+state={
+	id=873
+	name="STATE_873"
+	manpower =  95790
+	
+	state_category = city
+	
+	resources={
+		rubber=1
+	}
+
+	history={
+		owner = BLR
+	    add_core_of = BLR
+		
+		victory_points = {
+			9289 5
+		}
+		buildings = {
+			infrastructure = 5
+		}
+		
+		
+	}
+
+	provinces={
+		342 6292 11322 9289 3378
+	}
+}

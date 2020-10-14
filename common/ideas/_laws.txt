@@ -1,0 +1,3745 @@
+ideas = {
+	laws = {
+		law = yes
+		law_money0 = {
+			level = 5
+			removal_cost = -1
+			picture = moneylaw0
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+		law_money1 = {
+			level = 4
+			removal_cost = -1
+			default = yes
+			picture = moneylaw1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				political_power_factor = 0.2
+			}
+		}
+	
+		law_money2 = {
+			level = 3
+			removal_cost = -1
+			
+			
+			picture = moneylaw2
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15
+				political_power_factor = 0.5
+			}
+		}
+		
+		law_money3 = {
+			level = 2
+			removal_cost = -1
+			
+			
+			picture = moneylaw3
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				production_speed_dockyard_factor = -0.3
+				political_power_factor = 1.0
+			}
+		}
+	
+		law_money4 = {
+			level = 1
+			removal_cost = -1
+			
+			
+			picture = moneylaw4
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.45
+				production_speed_arms_factory_factor = -0.45
+				production_speed_dockyard_factor = -0.45
+				stability_factor = -0.2
+				political_power_factor = 1.7
+			}
+		}
+	}
+	
+	trade_laws = {
+		law = yes
+		closed_economy = {
+			level = 4
+			removal_cost = -1
+			picture = moneylaw1
+			
+			modifier = {
+				political_power_factor = -0.25
+				production_factory_max_efficiency_factor = 0.03
+				conversion_cost_civ_to_mil_factor = 0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+	
+		limited_exports = {
+			level = 3
+			removal_cost = -1
+			default = yes
+			
+			picture = moneylaw2
+			
+			modifier = {
+			
+				trade_opinion_factor = 0.25
+				production_factory_max_efficiency_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.05
+				min_export = 0.40
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		export_focus = {
+			level = 2
+			removal_cost = -1
+			
+			
+			picture = moneylaw3
+			
+			modifier = {
+				trade_opinion_factor = 0.35
+
+				production_factory_max_efficiency_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.1
+				min_export = 0.6
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	
+		free_trade = {
+			level = 1
+			removal_cost = -1
+			
+			
+			picture = moneylaw4
+			
+			modifier = {
+				trade_opinion_factor = 0.5
+
+				production_factory_max_efficiency_factor = 0.3
+				conversion_cost_civ_to_mil_factor = -0.2
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				min_export = 0.9
+			}
+		}
+	}
+	
+	
+	religion = {
+		law = yes
+		Catholic = {
+			cost = 500
+			removal_cost = -1
+			default = yes
+			picture = catholic
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.08
+				production_speed_arms_factory_factor = 0.08
+				political_power_factor = -0.05
+			}
+			
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								is_on_continent = europe
+								is_on_continent = middle_east
+							}
+							any_neighbor_country = {
+								has_idea = Catholic
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Catholic
+				}
+			}
+		}
+		Zoro = {
+			cost = 500
+			removal_cost = -1
+			picture = zoro
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				political_power_factor = 0.2
+			}
+			
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = middle_east
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Zoro
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Zoro
+				}
+			}
+		}
+		
+		Slavic = {
+			cost = 500
+			removal_cost = -1
+			picture = slavic
+			
+			modifier = {
+				conscription = 0.005
+				army_defence_factor = 0.05
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								is_on_continent = europe
+							}
+							any_neighbor_country = {
+								has_idea = Slavic
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Slavic
+				}
+			}
+		}
+
+		
+		Orthodox = {
+			cost = 500
+			removal_cost = -1
+			picture = orthodox
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.12
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = europe
+									is_on_continent = middle_east
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Orthodox
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Orthodox
+				}
+			}
+		}
+		
+		Animism = {
+			cost = 500
+			removal_cost = -1
+			picture = animism
+			
+			modifier = {
+				stability_factor = 0.20
+				ai_get_ally_desire_factor = -100
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = africa
+									is_on_continent = australia
+									is_on_continent = north_america
+									is_on_continent = south_america
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Animism
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Animism
+				}
+				
+			}
+		}
+		
+		Induism = {
+			cost = 500
+			removal_cost = -1
+			picture = hinduism
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = australia
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Induism
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Induism
+				}
+			}
+		}
+		
+		Iudaism = {
+			cost = 500
+			removal_cost = -1
+			picture = iudaism
+			
+			modifier = {
+				political_power_factor = 0.3
+				research_speed_factor = 0.01
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = africa
+									is_on_continent = middle_east
+									is_on_continent = europe
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Iudaism
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Iudaism
+				}
+			}
+		}
+		
+		Miafizit = {
+			cost = 500
+			removal_cost = -1
+			picture = miafizit
+			
+			modifier = {
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+			}
+			
+			available = {	
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = africa
+									is_on_continent = middle_east
+									is_on_continent = europe
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Miafizit
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Miafizit
+				}
+			}
+		}
+		
+		Konfucii = {
+			cost = 500
+			removal_cost = -1
+			picture = confucii
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				research_speed_factor = 0.03
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = australia
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Konfucii
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Konfucii
+				}
+			}
+		}
+		
+		Daosism = {
+			cost = 500
+			removal_cost = -1
+			picture = daosism
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				stability_factor = 0.05
+				
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = australia
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Daosism
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Daosism
+				}
+			}
+		}
+		
+		Romuva = {
+			cost = 500
+			removal_cost = -1
+			picture = romuva
+			
+			modifier = {
+				army_attack_factor = 0.05
+				political_power_factor = 0.05
+			}
+			
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								is_on_continent = europe
+							}
+							any_neighbor_country = {
+								has_idea = Romuva
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Romuva
+				}
+			}
+		}
+		
+		Islam = {
+			cost = 500
+			removal_cost = -1
+			picture = islam
+			
+			modifier = {
+				army_attack_factor = 0.03
+				justify_war_goal_time = -0.08
+			}
+			available = {
+			
+				OR = {
+					any_owned_state = {
+						OR = {
+							is_on_continent = asia
+							is_on_continent = africa
+							is_on_continent = australia
+							is_on_continent = middle_east
+							is_on_continent = europe
+						}
+					}
+					any_neighbor_country = {
+						has_idea = Islam
+					}
+					has_idea = Islam
+				}
+			}
+			
+		}
+		
+		Nautl = {
+			cost = 500
+			removal_cost = -1
+			picture = maya
+			
+			modifier = {
+				army_attack_factor = 0.08
+				ai_get_ally_desire_factor = -100
+				
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = north_america
+									is_on_continent = south_america
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Nautl
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Nautl
+				}
+			}
+			
+		}
+		
+		Tengri = {
+			cost = 500
+			removal_cost = -1
+			picture = tengri
+			
+			modifier = {
+				max_planning = 0.09
+				planning_speed = 0.09
+				cavalry_attack_factor = 0.03
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								is_on_continent = asia
+								is_on_continent = middle_east
+							}
+							any_neighbor_country = {
+								has_idea = Tengri
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Tengri
+				}
+			}
+			
+		}
+		ReformPag = {
+			cost = 500
+			removal_cost = -1
+			picture = ReformPag
+			
+			modifier = {
+				max_planning = 0.05
+				planning_speed = 0.05
+				cavalry_attack_factor = 0.03
+				stability_factor = 0.03
+				political_power_factor = 0.15
+				acclimatization_cold_climate_gain_factor = 1.0
+				army_morale_factor = 0.01
+				army_defence_factor = 0.01
+				research_speed_factor = 0.02
+			}
+			available ={
+				OR = {
+					AND = {
+						check_variable = { Yaz = 1 }
+						OR = {
+							any_owned_state = {
+								is_on_continent = europe
+							}
+							any_neighbor_country = {
+								has_idea = ReformPag
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = ReformPag
+				}
+			}
+			
+		}
+		
+		Totemism = {
+			cost = 500
+			removal_cost = -1
+			picture = totemism
+			
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				ai_get_ally_desire_factor = -100
+				
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = north_america
+									is_on_continent = south_america
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Totemism
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Totemism
+				}
+			}
+		}
+		Finn = {
+			cost = 500
+			removal_cost = -1
+			picture = finn
+			
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 1.5
+				compliance_gain = 0.15
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								is_on_continent = europe
+							}
+							any_neighbor_country = {
+								has_idea = Finn
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Finn
+				}
+			}
+		}
+		Gerpag = {
+			cost = 500
+			removal_cost = -1
+			picture = gerpag
+			
+			modifier = {
+				training_time_factor = -0.15
+				army_attack_factor = 0.02
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								is_on_continent = europe
+							}
+							any_neighbor_country = {
+								has_idea = Gerpag
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Gerpag
+				}
+			}
+		}
+		Sinto = {
+			cost = 500
+			removal_cost = -1
+			picture = sinto
+			
+			modifier = {
+				army_morale_factor = 0.08
+				army_defence_factor = 0.04
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = australia
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Sinto
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Sinto
+				}
+			}
+		}
+		Buddism = {
+			cost = 500
+			removal_cost = -1
+			picture = buddism
+			
+			modifier = {
+				supply_consumption_factor = -0.20
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = australia
+								}
+							}
+							any_neighbor_country = {
+								has_idea = Buddism
+							}
+						}
+						NOT = {
+							has_idea = tip22
+						}
+					}
+					has_idea = Buddism
+				}
+			}
+		}
+		
+	
+	}
+	
+	titul_status = {
+		law = yes
+
+		titul1 = {
+			
+			removal_cost = -1
+			picture = titul1
+			cost = 0
+			default = yes
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				research_speed_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+				global_building_slots_factor = 0.1
+				planning_speed = 0.1
+				political_power_factor = 0.3
+				ai_get_ally_desire_factor = -130
+				ai_call_ally_desire_factor = -115
+				ai_join_ally_desire_factor = -115
+			}
+			
+			available = {
+				num_of_controlled_states < 2
+			}
+			
+			
+		}
+		
+		titul2 = {
+			default = yes
+			removal_cost = -1
+			picture = titul2
+			cost = 0
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.15
+				research_speed_factor = 0.03
+				global_building_slots_factor = 0.07
+				planning_speed = 0.05
+				political_power_factor = 0.2
+				ai_get_ally_desire_factor = -137
+				ai_call_ally_desire_factor = -122
+				ai_join_ally_desire_factor = -122
+			}
+			available ={
+				num_of_controlled_states > 1
+				num_of_controlled_states < 6
+			}
+			
+			
+		}
+		
+		titul3 = {
+			
+			removal_cost = -1
+			picture = titul3
+			cost = 0
+			default = yes
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.1
+				research_speed_factor = 0.02
+				global_building_slots_factor = 0.05
+				planning_speed = -0.05
+				political_power_factor = 0.1
+				ai_get_ally_desire_factor = -152
+				ai_call_ally_desire_factor = -137
+				ai_join_ally_desire_factor = -137
+			}
+			available ={
+				num_of_controlled_states > 5
+				num_of_controlled_states < 18
+			}
+			
+		}
+		
+		titul4 = {
+			
+			removal_cost = -1
+			picture = titul4
+			cost = 0
+			default = yes
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.05
+				research_speed_factor = 0.01
+				global_building_slots_factor = 0.03
+				planning_speed = -0.10
+				political_power_factor = -0.2
+				ai_get_ally_desire_factor = -176
+				ai_call_ally_desire_factor = -160
+				ai_join_ally_desire_factor = -160
+			}
+			available ={
+				num_of_controlled_states > 17
+			}
+			
+		}
+		
+	}
+	sie = {
+		law = yes
+		
+		sie1 = {
+			level = 3
+			default = yes
+			removal_cost = -1
+			picture = sie1
+			cost = 300
+
+			modifier = {
+				research_speed_factor = -0.05
+			}
+			
+		}
+		
+		sie2 = {
+			level = 2
+			removal_cost = -1
+			picture = sie2
+			cost = 300
+
+			modifier = {
+
+				research_speed_factor = 0.07
+				political_power_factor = -0.75
+
+			}
+			
+		}
+		
+		sie3 = {
+			level = 1
+			removal_cost = -1
+			picture = sie3
+			cost = 300
+
+			modifier = {
+				
+				research_speed_factor = 0.15
+				political_power_factor = -2.0
+			}
+			
+		}
+		
+		
+	}
+	izolation = {
+		law = yes
+		
+		izolation1 = {
+			level = 1
+			default = yes
+			removal_cost = -1
+			picture = izolation1
+			cost = 450
+
+			modifier = {
+				political_power_factor = 0.01
+			}
+			
+		}
+		
+		izolation2 = {
+			level = 2
+			removal_cost = -1
+			picture = izolation2
+			cost = 450
+
+			modifier = {
+				political_power_factor = -0.2
+				research_speed_factor = -0.1
+				lend_lease_tension = 0.9
+				justify_war_goal_time = 0.90
+				trade_opinion_factor = -0.4
+				guarantee_tension = 0.9
+				guarantee_cost = 1.0
+				subjects_autonomy_gain = 1
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+				production_factory_max_efficiency_factor = 0.5
+				production_factory_efficiency_gain_factor = 0.25
+				production_speed_bunker_factor = 0.3
+				production_speed_industrial_complex_factor = 1.0
+				production_speed_arms_factory_factor = 1.0
+				production_speed_torgnaval_base_factor = -1.0
+				production_speed_infrastructure_factor = 0.2
+				MONTHLY_POPULATION = 0.05
+
+
+			}
+			
+		}
+		
+		
+		
+	}
+	bankrotstvo = {
+		law = yes
+		
+		bankrotstvo_net = {
+			level = 1
+			default = yes
+			removal_cost = -1
+			picture = bankrotstvo_net
+			cost = 0
+
+			modifier = {
+				political_power_factor = 0.01
+			}
+			available = {
+				has_idea = bankrotstvo_net
+			}
+		}
+		
+		bankrot = {
+			level = 2
+			removal_cost = -1
+			picture = bankrot
+			cost = 0
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				conscription = -0.015
+				industrial_capacity_factory = -2.0
+				industrial_capacity_dockyard = -2.0
+				conversion_cost_civ_to_mil_factor = 5
+				production_factory_max_efficiency_factor = -1.5
+				production_speed_buildings_factor = -0.99
+			}
+			available = {
+				has_idea = bankrot
+			}
+		}
+		
+		
+		
+	}
+	relotn = {
+		law = yes
+		
+		relotn1 = {
+			level = 1
+
+			removal_cost = -1
+			picture = relotn1
+			cost = 450
+
+			modifier = {
+				supply_consumption_factor = 0.05
+				war_support_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+			
+		}
+		relotn2 = {
+			level = 2
+			default = yes
+			removal_cost = -1
+			picture = relotn2
+			cost = 450
+
+			modifier = {
+				political_power_factor = -0.1
+				supply_consumption_factor = -0.05
+				war_support_factor = 0.05
+			}
+			
+		}
+		relotn3 = {
+			level = 3
+			removal_cost = -1
+			picture = relotn3
+			cost = 450
+
+			modifier = {
+				justify_war_goal_time = -0.1
+				enemy_justify_war_goal_time = -0.05
+				army_org_factor = 0.01
+				army_core_attack_factor = 0.04
+				army_core_defence_factor = 0.04
+				political_power_factor = -1.0
+			}
+			
+		}
+		relotn4 = {
+			level = 4
+			removal_cost = -1
+			picture = relotn4
+			cost = 450
+
+			modifier = {
+				justify_war_goal_time = -0.25
+				enemy_justify_war_goal_time = -0.1
+				army_attack_factor = 0.03
+				political_power_factor = -1.25
+				
+			}
+			
+		}
+	}
+	dobicha = {
+		law = yes
+		
+		dobicha1 = {
+			level = 3
+			default = yes
+			removal_cost = -1
+			picture = dobicha1
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.3
+			}
+			
+		}
+		dobicha2 = {
+			level = 2
+
+			removal_cost = -1
+			picture = dobicha2
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.75
+				local_resources_factor = 0.1
+			}
+			
+		}
+		dobicha3 = {
+			level = 1
+
+			removal_cost = -1
+			picture = dobicha3
+			cost = 300
+
+			modifier = {
+				political_power_factor = -1.5
+				local_resources_factor = 0.2
+			}
+			
+		}
+	}
+	HRE_status = {
+		law = yes
+		
+		HRE_NO = {
+			level = 4
+			default = yes
+			removal_cost = -1
+			picture = HRE_NO
+			cost = 300
+
+			modifier = {
+				political_power_factor = 0.01
+			}
+			available = {
+				NOT = {has_idea = HRE_imperor}
+			}
+			
+		}
+		HRE_NO_war = {
+			level = 4
+			removal_cost = -1
+			picture = HRE_NO
+			cost = 300
+			
+			modifier = {
+				political_power_factor = 0.01
+			}
+			available = {
+				any_country = {
+					has_war_with = ROOT
+					OR = {
+						has_idea = HRE_holy
+						has_idea = HRE_kurfurst
+						has_idea = HRE_imperor
+					}
+				}
+				NOT = {has_idea = HRE_imperor}
+			}
+			
+		}
+		HRE_holy = {
+			level = 3
+			removal_cost = -1
+			picture = HRE_holy
+			cost = 300
+			cancel_if_invalid = no
+			modifier = {
+				political_power_factor = 0.1
+				conscription = -0.005
+			}
+			available = {
+				OR = {
+					tag = BUR
+					tag = SAV
+					tag = PRO
+					tag = GEN
+					tag = LOM
+					tag = LUK
+					tag = PIS
+					tag = TSK
+					tag = SIN
+					tag = SWI
+					tag = CRN
+					tag = TIR
+					tag = AUS
+					tag = ZAL
+					tag = BAV
+					tag = CZE
+					tag = KFB
+					tag = AUG
+					tag = NUR
+					tag = VRT
+					tag = VUR
+					tag = BAD
+					tag = ALS
+					tag = LTR
+					tag = LUX
+					tag = LOT
+					tag = PFA
+					tag = FRN
+					tag = GES
+					tag = MAI
+					tag = ETH
+					tag = TRR
+					tag = NAS
+					tag = LEG
+					tag = AHE
+					tag = GEL
+					tag = HOL
+					tag = BEL
+					tag = FRI
+					tag = OLD
+					tag = KLN
+					tag = KLE
+					tag = MUN
+					tag = BRE
+					tag = FER
+					tag = GMB
+					tag = BRS
+					tag = ANT
+					tag = MAG
+					tag = BRN
+					tag = PMR
+					tag = SHT
+					tag = SHZ
+					tag = MEK
+					tag = LUN
+					tag = LUB
+					tag = LUN
+
+					
+				}
+				NOT = {has_idea = HRE_imperor}
+			}
+			
+		}
+		
+		HRE_kurfurst = {
+			level = 2
+			removal_cost = -1
+			picture = HRE_kurfurst
+			cost = 600
+			cancel_if_invalid = no
+			modifier = {
+				conscription = -0.002
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.08
+				political_power_factor = 0.2
+			}
+			available = {
+
+				
+				OR = {
+					tag = BUR
+					tag = SAV
+					tag = PRO
+					tag = GEN
+					tag = LOM
+					tag = LUK
+					tag = PIS
+					tag = TSK
+					tag = SIN
+					tag = SWI
+					tag = CRN
+					tag = TIR
+					tag = AUS
+					tag = ZAL
+					tag = BAV
+					tag = CZE
+					tag = KFB
+					tag = AUG
+					tag = NUR
+					tag = VRT
+					tag = VUR
+					tag = BAD
+					tag = ALS
+					tag = LTR
+					tag = LUX
+					tag = LOT
+					tag = PFA
+					tag = FRN
+					tag = GES
+					tag = MAI
+					tag = ETH
+					tag = TRR
+					tag = NAS
+					tag = LEG
+					tag = AHE
+					tag = GEL
+					tag = HOL
+					tag = BEL
+					tag = FRI
+					tag = OLD
+					tag = KLN
+					tag = KLE
+					tag = MUN
+					tag = BRE
+					tag = FER
+					tag = GMB
+					tag = BRS
+					tag = ANT
+					tag = MAG
+					tag = BRN
+					tag = PMR
+					tag = SHT
+					tag = SHZ
+					tag = MEK
+					tag = LUN
+					tag = LUB
+					tag = LUN
+
+					
+				}
+				NOT = {has_idea = HRE_imperor}
+
+			}
+			
+		}
+		HRE_imperor = {
+			level = 1
+			removal_cost = -1
+			picture = HRE_imperor
+			cost = 300
+			cancel_if_invalid = no
+			modifier = {
+				conscription = 0.075
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				political_power_factor = 1.0
+			}
+			available = {
+				has_idea = HRE_imperor
+				OR = {
+					tag = BUR
+					tag = SAV
+					tag = PRO
+					tag = GEN
+					tag = LOM
+					tag = LUK
+					tag = PIS
+					tag = TSK
+					tag = SIN
+					tag = SWI
+					tag = CRN
+					tag = TIR
+					tag = AUS
+					tag = ZAL
+					tag = BAV
+					tag = CZE
+					tag = KFB
+					tag = AUG
+					tag = NUR
+					tag = VRT
+					tag = VUR
+					tag = BAD
+					tag = ALS
+					tag = LTR
+					tag = LUX
+					tag = LOT
+					tag = PFA
+					tag = FRN
+					tag = GES
+					tag = MAI
+					tag = ETH
+					tag = TRR
+					tag = NAS
+					tag = LEG
+					tag = AHE
+					tag = GEL
+					tag = HOL
+					tag = BEL
+					tag = FRI
+					tag = OLD
+					tag = KLN
+					tag = KLE
+					tag = MUN
+					tag = BRE
+					tag = FER
+					tag = GMB
+					tag = BRS
+					tag = ANT
+					tag = MAG
+					tag = BRN
+					tag = PMR
+					tag = SHT
+					tag = SHZ
+					tag = MEK
+					tag = LUN
+					tag = LUB
+					tag = LUN
+
+					
+				}
+			}
+			
+		}
+		
+	}
+	corruption = {
+		law = yes
+		
+		corruption_1 = {
+			level = 1
+			
+			removal_cost = -1
+			picture = corruption_1
+			cost = 300
+
+			modifier = {
+				political_power_factor = -2.8
+			}
+			available = {
+				has_idea = corruption_1
+			}
+			
+		}
+		corruption_2 = {
+			level = 1
+			
+			removal_cost = -1
+			picture = corruption_2
+			cost = 300
+
+			modifier = {
+				political_power_factor = -1.3
+			}
+			available = {
+				OR = {
+					has_idea = corruption_1
+					has_idea = corruption_2
+				}
+			}
+			
+		}
+		corruption_3 = {
+			level = 1
+			default = yes
+			removal_cost = -1
+			picture = corruption_3
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+			}
+			
+			
+		}
+		
+	}
+	
+	medic = {
+		law = yes
+		
+		medic1 = {
+			level = 1
+			
+			removal_cost = -1
+			picture = medic1
+			cost = 350
+
+			modifier = {
+				political_power_factor = -2.0
+				MONTHLY_POPULATION = 0.2
+			}
+			available = {
+				NOT = {
+					capital_scope = {
+						OR = {
+							is_on_continent = south_america
+							is_on_continent = north_america
+						}
+					}
+				}
+			}
+		}
+		medic2 = {
+			level = 2
+			
+			removal_cost = -1
+			picture = medic2
+			cost = 350
+
+			modifier = {
+				political_power_factor = -1.2
+				MONTHLY_POPULATION = 0.1
+			}
+			
+		}
+		medic3 = {
+			level = 3
+			
+			removal_cost = -1
+			picture = medic3
+			cost = 350
+
+			modifier = {
+				political_power_factor = -0.8
+				MONTHLY_POPULATION = 0.05
+			}
+			
+		}
+		medic4 = {
+			level = 4
+			default = yes
+			removal_cost = -1
+			picture = medic4
+			cost = 350
+
+			modifier = {
+				political_power_factor = -0.2
+			}
+			
+		}
+		
+		
+		
+		
+		
+	}
+	torgregs = {
+		law = yes
+		
+		torgregs1 = {
+			level = 1
+			removal_cost = -1
+			picture = torgregs1
+			cost = 250
+
+			modifier = {
+				political_power_factor = 1.0
+			}
+			ai_will_do = {
+   				factor = 10
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+		}
+		torgregs2 = {
+			level = 2
+			removal_cost = -1
+			picture = torgregs2
+			cost = 250
+			ai_will_do = {
+   				factor = 5
+			}
+			modifier = {
+				political_power_factor = 0.5
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+		}
+		torgregs3 = {
+			level = 3
+			removal_cost = -1
+			picture = torgregs3
+			cost = 250
+			default = yes
+
+			modifier = {
+				political_power_factor = 0.01
+			}
+			
+		}
+	}
+	sila = {
+		law = yes
+		
+		sila1 = {
+			level = 3
+			removal_cost = -1
+			picture = sila1
+			cost = 200
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				political_power_factor = -0.05
+			}
+			
+		}
+		
+		sila2 = {
+			level = 2
+			removal_cost = -1
+			picture = sila2
+			cost = 200
+			default = yes
+			modifier = {
+
+				industrial_capacity_factory = 0.05
+				army_attack_factor = -0.01
+				army_defence_factor = -0.01
+				political_power_factor = -0.1
+
+			}
+			
+		}
+		
+		sila3 = {
+			level = 1
+			removal_cost = -1
+			picture = sila3
+			cost = 200
+
+			modifier = {
+				
+				industrial_capacity_factory = -0.2
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				political_power_factor = -0.3
+			}
+			
+		}
+		
+		
+	}
+	poshliny = {
+		law = yes
+		
+		poshliny1 = {
+			level = 3
+			removal_cost = -1
+			picture = poshliny1
+			default = yes
+			cost = 300
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.15
+			}
+			
+		}
+		
+		poshliny2 = {
+			level = 2
+			removal_cost = -1
+			picture = poshliny2
+			cost = 300
+
+			modifier = {
+				stability_factor = -0.01
+				political_power_factor = 0.3
+			}
+			available = {
+				NOT = {
+					has_idea = closed_economy
+				}
+			}
+			ai_will_do = {
+   				factor = 1
+			}
+			
+			
+		}
+		
+		poshliny3 = {
+			level = 1
+			removal_cost = -1
+			picture = poshliny3
+			cost = 300
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = 0.45
+			}
+			available = {
+				NOT = {
+					has_idea = closed_economy
+				}
+			}
+			
+		}
+		
+		
+		
+		
+	}
+	tip = {
+		law = yes
+		
+		tip1 = {
+			level = 1
+			removal_cost = -1
+			picture = tip1
+			cost = 600
+
+			on_add = {
+				custom_effect_tooltip = Buff_dvor5
+				custom_effect_tooltip = Buff_adm5
+			}
+
+			modifier = {
+				political_power_factor = 1.0
+				###production_speed_library_factor = 0.05
+				consumer_goods_factor = 0.05
+				###industrial_capacity_dockyard = 0.25
+				production_factory_start_efficiency_factor = 0.1
+				###equipment_conversion_speed = 0.05
+				naval_strike_attack_factor = 0.02
+			}
+			available = {
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+				NOT = {has_idea = tupost}
+			}
+			
+		}
+		tip2 = {
+			level = 2
+			removal_cost = -1
+			picture = tip1
+			cost = 600
+
+			modifier = {
+				non_core_manpower = 0.05
+				training_time_factor = 0.03
+				consumer_goods_factor = 0.1
+				political_power_factor = 0.3
+				army_org_factor = 0.1
+				max_dig_in = 1
+				land_reinforce_rate = 0.1
+			}
+			available = {
+				NOT = {has_idea = tupost}
+				tag = GRE
+				has_completed_focus = GRE_93
+			}
+		}
+		tip3 = {
+			level = 1
+			removal_cost = -1
+			picture = tip3
+			cost = 600
+
+			on_add = {
+				custom_effect_tooltip = Buff_ottoman1
+			}
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 7
+				send_volunteers_tension = -0.99
+				weekly_manpower = 275
+			}
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+				OR = {
+					tag = DIE
+					tag = TMP
+					tag = ALK
+					tag = SNT
+					tag = AVI
+					tag = KAL
+					tag = IOA
+					tag = TVT
+					tag = LAT
+				}
+				NOT = {has_idea = tupost}
+			}
+		}
+		tip4 = {
+			level = 1
+			removal_cost = -1
+			picture = tip4
+			cost = 600
+
+			modifier = {
+				MONTHLY_POPULATION = 0.5
+				army_leader_start_attack_level= 1
+				acclimatization_cold_climate_gain_factor = 0.15
+				acclimatization_hot_climate_gain_factor = 0.15
+				army_speed_factor = 0.05
+				offence = 0.03
+			}
+			available = {
+				has_government = fascism
+				has_idea = tupost
+			}
+			
+		}
+		tip5 = {
+			level = 1
+			removal_cost = -1
+			picture = tip5
+			default = yes
+			cost = 600
+
+			on_add = {
+				custom_effect_tooltip = Buff_voenyst70
+			
+			}
+
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				###industrial_capacity_factory = 0.08
+				army_morale_factor = 0.25
+				conscription = 0.004
+				production_speed_bunker_factor = 0.2
+				army_artillery_defence_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.01
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+				NOT = {has_idea = tupost}
+				has_idea = Islam
+			}
+			
+		}
+		tip6 = {
+			level = 1
+			removal_cost = -1
+			picture = tip6
+			cost = 600
+
+			modifier = {
+				non_core_manpower = 0.05
+				training_time_factor = 0.03
+				industrial_capacity_factory = 0.09
+				consumer_goods_factor = 0.05
+				line_change_production_efficiency_factor = 0.2
+				research_speed_factor = 0.02
+			}
+			available = {
+				NOT = {has_idea = tupost}
+				OR = {
+					tag = CHH
+					tag = MNG
+					tag = TAI
+					tag = TIB
+					tag = HAN
+					tag = TNN
+					tag = SNN
+					tag = KRR
+				}
+			}
+			
+		}
+		tip7 = {
+			level = 1
+			removal_cost = -1
+			picture = tip7
+			cost = 600
+
+			on_add = {
+				custom_effect_tooltip = Buff_konung1
+				custom_effect_tooltip = Buff_konung2
+			}
+
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.5
+				minimum_training_level = -0.25
+				offence = 0.03
+			}
+			available = {
+				has_government = fascism
+				NOT = {has_idea = tupost}
+				has_idea = Gerpag
+			}
+			
+		}
+		tip8 = {
+			level = 1
+			removal_cost = -1
+			picture = tip8
+			cost = 600
+
+			modifier = {
+				non_core_manpower = 0.05
+				training_time_factor = 0.02
+				consumer_goods_factor = 0.04
+				political_power_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				industry_repair_factor = 0.25
+				no_supply_grace = 20
+			}
+			available = {
+				OR = {
+					tag = MAY
+					tag = AZT
+					tag = TAM
+					tag = TLA
+					tag = OAH
+					tag = MIX
+				}
+			}
+			
+		}
+		tip9 = {
+			level = 1
+			removal_cost = -1
+			picture = tip9
+			cost = 600
+
+			on_add = {
+				custom_effect_tooltip = Buff_monastr1
+				custom_effect_tooltip = Buff_monastr2
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_library_factor = 0.1
+				production_speed_money_town_factor = 0.1
+				terrain_penalty_reduction = 0.1
+				experience_loss_factor = -0.3
+			}
+			available = {
+				has_government = neutrality
+				NOT = {has_idea = tupost}production_factory_max_efficiency_factor = 0.2
+			}
+			
+		}
+		tip10 = {
+			level = 1
+			removal_cost = -1
+			picture = tip10
+			cost = 600
+
+			modifier = {
+				non_core_manpower = 0.05
+				training_time_factor = 0.04
+				conscription = 0.01
+				army_armor_speed_factor = 0.15
+				consumer_goods_factor = 0.03
+				industry_repair_factor = 0.4
+			}
+			available = {
+				NOT = {has_idea = tupost}
+				OR = {
+					tag = CHH
+					tag = TAI
+					tag = MNG
+					tag = KRR
+					tag = HAN
+					tag = SNN
+					tag = TNN
+					tag = JOP
+				}
+			}
+			
+		}
+		tip11 = {
+			level = 1
+			removal_cost = -1
+			picture = tip11
+			cost = 600
+
+			on_add = {
+				custom_effect_tooltip = Buff_veche1
+			}
+
+			modifier = {
+				political_power_factor = 0.5
+				stability_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				industry_repair_factor = 0.5
+			}
+			available = {
+				has_government = democratic
+				NOT = {has_idea = tupost}
+				any_owned_state = {
+					is_on_continent = europe
+				}
+			}
+			
+		}
+		tip12 = {
+			level = 1
+			removal_cost = -1
+			picture = tip12
+			cost = 600
+
+			on_add = {
+				custom_effect_tooltip = Buff_provincii1
+			}
+
+			modifier = {
+				conscription = 0.0025
+				political_power_factor = 1
+				global_building_slots_factor = 0.25
+				industrial_capacity_factory = 0.1
+				conversion_cost_civ_to_mil_factor = -0.15
+			}
+			available = {
+				has_government = democratic
+				NOT = {has_idea = tupost}
+				num_of_controlled_states < 11
+			}
+			
+		}
+		tip13 = {
+			level = 1
+			removal_cost = -1
+			picture = tip13
+			cost = 600
+
+			modifier = {
+				non_core_manpower = 0.05
+				training_time_factor = 0.03
+				industrial_capacity_factory = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+			}
+			available = {
+				NOT = {has_idea = tupost}
+				tag = TUR
+			}
+			
+		}
+		tip14 = {
+			level = 1
+			removal_cost = -1
+			picture = tip14
+			cost = 600
+
+			modifier = {
+				political_power_factor = 0.8
+				production_speed_naval_base_factor = 0.15
+				production_speed_dockyard_factor = 0.1
+				convoy_escort_efficiency = 0.2
+				naval_retreat_chance = 0.1
+				sortie_efficiency = 0.1
+				convoy_raiding_efficiency_factor = 0.5
+				trade_opinion_factor = -0.2
+			}
+			available = {
+				has_government = democratic
+				NOT = {has_idea = tupost}
+			}
+			
+		}
+		tip15 = {
+			level = 1
+			removal_cost = -1
+			picture = tip15
+			cost = 600
+
+			modifier = {
+				MONTHLY_POPULATION = 0.5
+				no_supply_grace = 24
+				conscription = 0.01
+				max_planning = 0.1
+				dig_in_speed_factor = 0.05
+			}
+			available = {
+				has_government = neutrality
+				has_idea = tupost
+			}
+			
+		}
+		tip16 = {
+			level = 1
+			removal_cost = -1
+			picture = tip16
+			cost = 600
+
+			modifier = {
+				non_core_manpower = 0.09
+				training_time_factor = 0.1
+				army_org_factor = 0.15
+				production_speed_barack_factor = 0.1
+				command_power_gain = 0.5
+				max_dig_in = 2
+				dig_in_speed_factor = 0.25
+			}
+			available = {
+				NOT = {has_idea = tupost}
+				NOT = {has_idea = centr1}
+				NOT = {has_idea = centr2}
+				NOT = {has_idea = tip19}
+				owns_state = 2
+			}
+			
+		}
+		tip17 = {
+			level = 1
+			removal_cost = -1
+			picture = tip17
+			cost = 600
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				global_building_slots_factor = 0.05
+				experience_loss_factor = -0.35
+				army_morale_factor = 0.15
+			}
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+				any_owned_state = {
+					is_on_continent = asia
+				}
+				NOT = {has_idea = tupost}
+				has_idea = Sinto
+			}
+			
+		}
+		tip18 = {
+			level = 1
+			removal_cost = -1
+			picture = tip18
+			cost = 600
+
+			modifier = {
+				political_power_factor = 0.35
+				global_building_slots_factor = 0.5
+				guarantee_tension = -0.5
+			}
+			available = {
+				has_government = democratic
+				NOT = {has_idea = tupost}
+				num_of_controlled_states < 4
+			}
+			
+		}
+		tip19 = {
+			level = 1
+			removal_cost = -1
+			picture = tip19
+			cost = 600
+
+			modifier = {
+				production_speed_library_factor = 0.2
+				production_speed_money_town_factor = 0.2
+				political_power_factor = 1.5
+				improve_relations_maintain_cost_factor = -0.75	
+				military_leader_cost_factor = 0.2
+				guarantee_cost = -0.5
+				opinion_gain_monthly_factor = 0.15
+			}
+			available = {
+
+				has_government = neutrality
+				
+				
+					OR = {
+						any_owned_state = {
+							state = 2
+						}
+						any_owned_state = {
+							state = 679
+						}
+						any_owned_state = {
+							state = 454
+						}
+						any_owned_state = {
+							state = 341
+						}
+					}
+				
+				NOT = {
+					has_idea = tupost
+					has_idea = Islam
+				}
+				
+			}
+			
+		}
+		tip20 = {
+			level = 1
+			removal_cost = -1
+			picture = tip20
+			cost = 600
+			default = yes
+			modifier = {
+				political_power_factor = 1.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_dockyard_factor = 0.2
+				experience_gain_navy = 0.01
+				trade_opinion_factor = 0.1
+			}
+			available = {
+				has_government = democratic
+				NOT = {has_idea = tupost}
+			}
+			
+		}
+		tip21 = {
+			level = 1
+			removal_cost = -1
+			picture = tip21
+			cost = 600
+			default = yes
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_bunker_factor = 0.3
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				military_leader_cost_factor = -0.3
+
+			}
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+				}
+				NOT = {has_idea = tupost}
+			}
+			
+		}
+		tip22 = {
+			level = 1
+			removal_cost = -1
+			picture = tip22
+			cost = 600
+
+			on_add = {
+				custom_effect_tooltip = Buff_khalifat
+			}
+
+			modifier = {
+				political_power_factor = 0.75
+				conscription = 0.015
+				army_leader_start_attack_level= 1
+				subjects_autonomy_gain = -0.3
+				guarantee_tension = -0.1
+				generate_wargoal_tension = -0.1
+				justify_war_goal_time = -0.1
+			}
+			available = {
+				OR = {
+					has_government = fascism
+				}
+				has_idea = Islam
+				NOT = {has_idea = tupost}
+			}
+			
+		}
+		tip23 = {
+			level = 1
+			removal_cost = -1
+			picture = tip23
+			cost = 600
+			default = yes
+			modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+			}
+			available = {
+				has_government = communism
+			}
+			
+		}
+		tip24 = {
+			level = 1
+			removal_cost = -1
+			picture = tip24
+			cost = 600
+
+			on_add = {
+				if={limit={has_idea=techgroup10}custom_effect_tooltip=4Len}
+			}
+
+			modifier = {
+				global_building_slots_factor = 0.25
+				production_speed_infrastructure_factor = 0.2
+				army_core_defence_factor = 0.03
+				political_power_factor = 0.07
+			}
+			available = {
+				has_government = neutrality
+				OR = {
+					any_owned_state = {
+						state = 114
+					}
+					any_owned_state = {
+						state = 828
+					}
+					any_owned_state = {
+						state = 827
+					}
+				}
+			}
+			
+		}
+		tip25 = {
+			level = 1
+			removal_cost = -1
+			picture = tip25
+			cost = 600
+
+			modifier = {
+				cavalry_attack_factor = 0.06
+				cavalry_defence_factor = 0.06
+				army_armor_attack_factor = 0.06
+				army_armor_defence_factor = 0.06
+				stability_factor = -0.1
+				justify_war_goal_time = -0.03
+			}
+			available = {
+				has_government = communism
+			}
+			
+		}
+		tip26 = {
+			level = 1
+			removal_cost = -1
+			picture = tip26
+			cost = 600
+			
+			modifier = {
+				political_power_factor = 0.2
+				cavalry_attack_factor = 0.03
+				cavalry_defence_factor = 0.03
+				army_armor_attack_factor = 0.04
+				army_armor_defence_factor = 0.04
+				army_armor_speed_factor = 0.1
+				justify_war_goal_time = -0.01
+				guarantee_cost = -0.3
+			}
+			available = {
+				has_government = communism
+				NOT = {has_idea = tupost}
+			}
+			
+		}
+		
+			
+		
+	}
+	monet = {
+		law = yes
+		
+		monet1 = {
+			level = 1
+			removal_cost = -1
+			picture = monet1
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.9
+				stability_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 3
+			}
+			
+		}
+		
+		monet2 = {
+			level = 2
+			removal_cost = -1
+			picture = monet2
+			cost = 300
+			default = yes
+			modifier = {
+
+				political_power_factor = 0.03
+				stability_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 3
+			}   
+		}
+		
+		monet3 = {
+			level = 3
+			removal_cost = -1
+			picture = monet3
+			cost = 300
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = 0.9
+			}
+			
+		}
+		
+		
+	}
+	political_advisor = {
+		law = yes
+		
+		political_advisor1 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor1
+			cost = 300
+
+			modifier = {
+				war_support_factor = 0.05
+				command_power_gain = 0.03
+				experience_gain_army = 0.1
+				political_power_factor = -0.2
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+			
+		}
+		
+		political_advisor2 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor2
+			cost = 300
+			modifier = {
+				MONTHLY_POPULATION = 1.5
+				political_power_factor = -0.2
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+			
+		}
+		
+		political_advisor3 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor3
+			cost = 300
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				political_power_factor = -0.2
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+			
+		}
+		political_advisor4 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor4
+			cost = 300
+
+			modifier = {
+				political_power_factor = 0.1
+				trade_opinion_factor = 0.25
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor5 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor5
+			cost = 300
+
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				political_power_factor = -0.2
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor6 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor6
+			cost = 300
+
+			modifier = {
+				political_power_factor = 0.75
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor7 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor7
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				supply_consumption_factor = -0.20
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor8 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor8
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				research_speed_factor = 0.03
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor9 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor9
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				army_infantry_attack_factor = 0.1
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor10 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor10
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = 0.1
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor11 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor11
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				justify_war_goal_time = -0.05
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor12 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor12
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				army_infantry_defence_factor = 0.1
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor13 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor13
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor14 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor14
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor15 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor15
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor16 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor16
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				invasion_preparation = -0.2
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		political_advisor17 = {
+			level = 1
+			removal_cost = -1
+			picture = political_advisor17
+			cost = 300
+
+			modifier = {
+				political_power_factor = -0.2
+				army_org_factor = 0.09
+			}
+			available = {
+				OR = {
+					has_idea = pop_laws3
+					has_idea = pop_laws4
+				}
+			}
+		}
+		
+		
+	}
+	techgroup = {
+		law = yes
+		
+		techgroup1 = {
+			level = 1
+			removal_cost = -1
+			picture = techgroup1
+			cost = 750
+
+			modifier = {
+				research_speed_factor = 0.25
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = europe
+									is_on_continent = africa
+									is_on_continent = middle_east
+								}
+								
+							}
+							any_neighbor_country = {
+								has_idea = techgroup1
+							}
+						}
+						NOT = {
+							has_idea = tupost
+						}
+					}
+					has_idea = techgroup1
+				}
+			}
+			
+		}
+		
+		techgroup2 = {
+			level = 2
+			removal_cost = -1
+			picture = techgroup2
+			cost = 750
+
+			modifier = {
+				research_speed_factor = 0.23
+			}
+			available = {
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = europe
+									is_on_continent = africa
+									is_on_continent = middle_east
+								}
+								
+							}
+							any_neighbor_country = {
+								has_idea = techgroup2
+							}
+						}
+						NOT = {
+							has_idea = tupost
+						}
+					}
+					has_idea = techgroup2
+				}
+			}
+			
+		}
+		techgroup3 = {
+			level = 3
+			removal_cost = -1
+			picture = techgroup3
+			cost = 750
+
+			modifier = {
+				research_speed_factor = 0.2
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = europe
+									is_on_continent = africa
+									is_on_continent = middle_east
+									is_on_continent = asia
+								}
+								
+							}
+							any_neighbor_country = {
+								has_idea = techgroup3
+							}
+						}
+						NOT = {
+							has_idea = tupost
+						}
+					}
+					has_idea = techgroup3
+				}
+			}
+			
+		}
+		techgroup4 = {
+			level = 4
+			removal_cost = -1
+			picture = techgroup4
+			cost = 750
+
+			modifier = {
+				research_speed_factor = 0.15
+			}
+			available ={
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = australia
+									is_on_continent = asia
+								}
+								
+							}
+							any_neighbor_country = {
+								has_idea = techgroup4
+							}
+						}
+						NOT = {
+							has_idea = tupost
+						}
+					}
+					has_idea = techgroup4
+				}
+			}
+		}
+		techgroup5 = {
+			level = 5
+			removal_cost = -1
+			default = yes
+			picture = techgroup5
+			cost = 750
+
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			available = { 
+				OR = {
+					AND = {
+						OR = {
+							any_owned_state = {
+								OR = {
+									is_on_continent = europe
+									is_on_continent = africa
+									is_on_continent = middle_east
+									is_on_continent = asia
+									is_on_continent = australia
+								}
+								
+							}
+							any_neighbor_country = {
+								has_idea = techgroup5
+							}
+						}
+						NOT = {
+							has_idea = tupost
+						}
+					}
+					has_idea = techgroup5
+				}
+				
+			}
+		}
+		techgroup6 = {
+			level = 6
+			removal_cost = -1
+			picture = techgroup6
+			cost = 750
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			available ={
+				OR = {
+					any_owned_state = {
+						OR = {
+							is_on_continent = africa
+							is_on_continent = middle_east
+						}
+						
+					}
+					any_neighbor_country = {
+						has_idea = techgroup6
+					}
+					has_idea = techgroup6
+				}
+			}
+		}
+		techgroup7 = {
+			level = 7
+			removal_cost = -1
+			picture = techgroup7
+			cost = 750
+
+			modifier = {
+				research_speed_factor = -0.15
+				ai_get_ally_desire_factor = -150
+			}
+			available ={
+				OR = {
+					any_owned_state = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+						}
+						
+					}
+					has_idea = techgroup7
+				}
+			}
+		}
+		techgroup8 = {
+			level = 8
+			removal_cost = -1
+			picture = techgroup8
+			cost = 750
+
+			modifier = {
+				research_speed_factor = -0.17
+				ai_get_ally_desire_factor = -150
+			}
+			available ={
+				OR = {
+					any_owned_state = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+						}
+						
+					}
+					has_idea = techgroup8
+				}
+			}
+		}
+		techgroup9 = {
+			level = 9
+			removal_cost = -1
+			picture = techgroup9
+			cost = 750
+
+			modifier = {
+				research_speed_factor = -0.2
+				ai_get_ally_desire_factor = -150
+			}
+			available ={
+				OR = {
+					any_owned_state = {
+						OR = {
+							is_on_continent = north_america
+							is_on_continent = south_america
+						}
+						
+					}
+					has_idea = techgroup9
+				}
+			}
+		}
+		techgroup10 = {
+			level = 10
+			removal_cost = -1
+			picture = techgroup10
+			cost = 750
+
+			modifier = {
+				research_speed_factor = -0.3
+				ai_get_ally_desire_factor = -150
+			}
+			available ={
+				OR = {
+					any_owned_state = {
+
+						is_on_continent = australia
+						
+					}
+					has_idea = techgroup10
+				}
+			}
+		}
+		
+		
+	}
+	bolezn = {
+		law = yes
+		
+		chuma = {
+			level = 3
+			removal_cost = -1
+			picture = chuma
+			cost = 0
+
+			modifier = {
+				research_speed_factor = -0.1
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				MONTHLY_POPULATION = -0.25
+				production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				weekly_manpower = -3000
+			}
+			available = {
+				has_idea = chuma
+				NOT = {tag = XXX}
+			}
+		}
+		
+		siptif = {
+			level = 2
+			removal_cost = -1
+			picture = siptif
+			cost = 0
+			modifier = {
+
+				research_speed_factor = -0.03
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				MONTHLY_POPULATION = -0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				weekly_manpower = -1000
+
+			}
+			available = {
+				has_idea = siptif
+				NOT = {tag = XXX}
+			}
+		}
+		
+		brutif = {
+			level = 1
+			removal_cost = -1
+			picture = brutif
+			cost = 0
+
+			modifier = {
+				
+				research_speed_factor = -0.03
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				MONTHLY_POPULATION = -0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				weekly_manpower = -1000
+			}
+			available = {
+				has_idea = brutif
+				NOT = {tag = XXX}
+			}
+		}
+		
+		zdorof = {
+			level = 4
+			removal_cost = -1
+			picture = zdorof
+			cost = 0
+			default = yes
+			modifier = {
+				
+				political_power_factor = 0.01
+			}
+			available = {
+				has_idea = zdorof
+			}
+		}
+		sifilis = {
+			level = 5
+			removal_cost = -1
+			picture = sifilis
+			cost = 0
+
+			modifier = {
+				
+				research_speed_factor = -0.03
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				MONTHLY_POPULATION = -0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				weekly_manpower = -1000
+			}
+			available = {
+				has_idea = sifilis
+				NOT = {tag = XXX}
+			}
+		}
+		ospa = {
+			level = 6
+			removal_cost = -1
+			picture = ospa
+			cost = 0
+
+			modifier = {
+				
+				research_speed_factor = -0.05
+				army_attack_factor = -0.06
+				army_defence_factor = -0.06
+				MONTHLY_POPULATION = -0.2
+				production_speed_buildings_factor = -0.20
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				weekly_manpower = -2000
+			}
+			available = {
+				has_idea = ospa
+				NOT = {tag = XXX}
+			}
+		}
+		
+		
+	}
+	
+	centr = {
+		law = yes
+
+		
+		
+		centr1 = {
+			level = 5
+			removal_cost = -1
+			picture = centr1
+			cost = 600
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				political_power_factor = 0.2
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				production_factory_max_efficiency_factor = -0.2
+				conversion_cost_civ_to_mil_factor= 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				MONTHLY_POPULATION = 0.5
+				research_speed_factor = 0.01
+				army_morale_factor = -0.1
+				army_attack_factor = 0.05
+				non_core_manpower = 0.02
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		
+		centr2 = {
+			level = 4
+			removal_cost = -1
+			picture = centr2
+			cost = 600
+			default = yes
+			modifier = {
+
+				consumer_goods_factor = 0.4
+				political_power_factor = 0.15
+				MONTHLY_POPULATION = 0.4
+				army_morale_factor = -0.1
+				army_attack_factor = 0.04
+				research_speed_factor = 0.02
+				
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_factory_max_efficiency_factor = -0.15
+				conversion_cost_civ_to_mil_factor= 0.4
+				conversion_cost_mil_to_civ_factor = 0.4
+				
+				
+			}
+			ai_will_do = {
+				factor = 5
+			}
+			
+		}
+		
+		centr3 = {
+			level = 3
+			removal_cost = -1
+			picture = centr3
+			cost = 600
+
+			modifier = {
+				
+				consumer_goods_factor = 0.25
+				political_power_factor = 0.10
+				MONTHLY_POPULATION = 0.25
+				army_morale_factor = -0.05
+				army_attack_factor = 0.03
+				research_speed_factor = 0.03
+				
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_mil_to_civ_factor = 0.3
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		centr4 = {
+			level = 2
+			removal_cost = -1
+			picture = centr4
+			cost = 600
+
+			modifier = {
+				
+				consumer_goods_factor = 0.1
+				political_power_factor = 0.05
+				MONTHLY_POPULATION = 0.1
+				army_morale_factor = 0.05
+				army_attack_factor = 0.02
+				research_speed_factor = 0.04
+				
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				conversion_cost_civ_to_mil_factor= 0.15
+				conversion_cost_mil_to_civ_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 8
+			}
+			
+		}
+		centr5 = {
+			level = 1
+			removal_cost = -1
+			picture = centr5
+			cost = 600
+
+			modifier = {
+				political_power_factor = -0.2
+				conscription = 0.015
+				army_morale_factor = 0.1
+				army_attack_factor = 0.01
+				invasion_preparation = -0.3
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				conversion_cost_civ_to_mil_factor= -0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		
+	}
+	zaems = {
+		law = yes
+		
+		money_dolg = {
+			level = 2
+			removal_cost = -1
+			picture = money_dolg
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+			available = {
+				OR = {
+					has_idea = zaem_2
+					has_idea = zaem_3
+					has_idea = zaem_4
+					has_idea = zaem_5
+					has_idea = zaem_6
+					has_idea = zaem_7
+					has_idea = zaem_8
+					has_idea = zaem_9
+					has_idea = zaem_10
+					has_idea = money_dolg
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_2 = {
+			level = 3
+			removal_cost = -1
+			picture = zaem_2
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+			available = {
+				OR = {
+					has_idea = zaem_2
+					has_idea = zaem_3
+					has_idea = zaem_4
+					has_idea = zaem_5
+					has_idea = zaem_6
+					has_idea = zaem_7
+					has_idea = zaem_8
+					has_idea = zaem_9
+					has_idea = zaem_10
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_3 = {
+			level = 4
+			removal_cost = -1
+			picture = zaem_3
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.15
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+			}
+			available = {
+				OR = {
+					has_idea = zaem_3
+					has_idea = zaem_4
+					has_idea = zaem_5
+					has_idea = zaem_6
+					has_idea = zaem_7
+					has_idea = zaem_8
+					has_idea = zaem_9
+					has_idea = zaem_10
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_4 = {
+			level = 5
+			removal_cost = -1
+			picture = zaem_4
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+			available = {
+				OR = {
+					has_idea = zaem_4
+					has_idea = zaem_5
+					has_idea = zaem_6
+					has_idea = zaem_7
+					has_idea = zaem_8
+					has_idea = zaem_9
+					has_idea = zaem_10
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_5 = {
+			level = 6
+			removal_cost = -1
+			picture = zaem_5
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				political_power_factor = -0.25
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+			}
+			available = {
+				OR = {
+					has_idea = zaem_5
+					has_idea = zaem_6
+					has_idea = zaem_7
+					has_idea = zaem_8
+					has_idea = zaem_9
+					has_idea = zaem_10
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_6 = {
+			level = 7
+			removal_cost = -1
+			picture = zaem_6
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				political_power_factor = -0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+			}
+			available = {
+				OR = {
+					has_idea = zaem_6
+					has_idea = zaem_7
+					has_idea = zaem_8
+					has_idea = zaem_9
+					has_idea = zaem_10
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_7 = {
+			level = 8
+			removal_cost = -1
+			picture = zaem_7
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.35
+				political_power_factor = -0.35
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = -0.35
+			}
+			available = {
+				OR = {
+					has_idea = zaem_7
+					has_idea = zaem_8
+					has_idea = zaem_9
+					has_idea = zaem_10
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_8 = {
+			level = 9
+			removal_cost = -1
+			picture = zaem_8
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				political_power_factor = -0.4
+				industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = -0.4
+			}
+			available = {
+				OR = {
+					has_idea = zaem_8
+					has_idea = zaem_9
+					has_idea = zaem_10
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_9 = {
+			level = 10
+			removal_cost = -1
+			picture = zaem_9
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.45
+				political_power_factor = -0.45
+				industrial_capacity_factory = -0.45
+				industrial_capacity_dockyard = -0.45
+			}
+			
+			available = {
+				OR = {
+					has_idea = zaem_9
+					has_idea = zaem_10
+				}
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_10 = {
+			level = 11
+			removal_cost = -1
+			picture = zaem_10
+			cost = 100
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				political_power_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+			}
+			available = {
+				has_idea = zaem_10
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		zaem_no = {
+			level = 1
+			removal_cost = -1
+			picture = zaem_no
+			default = yes
+			cost = 100
+
+			modifier = {
+				political_power_factor = 0.01
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+	}
+	ideol = {
+		law = yes
+		
+		ideol1 = {
+			level = 1
+			removal_cost = -1
+			picture = ideol1
+			cost = 150
+			default = yes
+			modifier = {
+				
+			}
+			
+			
+		}
+		ideol2 = {
+			level = 1
+			removal_cost = -1
+			picture = ideol2
+
+			cost = 150
+
+			modifier = {
+				fascism_drift = 0.15
+				political_power_factor = -0.05
+			}
+			
+		}
+		ideol3 = {
+			level = 1
+			removal_cost = -1
+			picture = ideol3
+
+			cost = 150
+
+			modifier = {
+				neutrality_drift = 0.15
+				political_power_factor = -0.05
+			}
+			
+		}
+		ideol4 = {
+			level = 1
+			removal_cost = -1
+			picture = ideol4
+
+			cost = 150
+
+			modifier = {
+				democratic_drift = 0.15
+				political_power_factor = -0.05
+			}
+			
+		}
+		ideol5 = {
+			level = 1
+			removal_cost = -1
+			picture = ideol5
+
+			cost = 150
+
+			modifier = {
+				communism_drift = 0.15
+				political_power_factor = -0.05
+			}
+			
+		}
+	}
+	pop_laws = {
+		law = yes
+		
+		pop_laws1 = {
+			level = 4
+			removal_cost = -1
+			picture = pop_laws1
+			cost = 450
+
+			modifier = {
+
+				political_power_factor = -0.1
+				production_speed_industrial_complex_factor = -0.07
+				production_speed_arms_factory_factor = -0.07
+				industrial_capacity_factory = -0.07
+				industrial_capacity_dockyard = -0.07
+				production_factory_max_efficiency_factor = -0.07
+				conversion_cost_civ_to_mil_factor= 0.07
+				conversion_cost_mil_to_civ_factor = 0.07
+				research_speed_factor = -0.01
+			}
+			
+		}
+		
+		pop_laws2 = {
+			level = 3
+			removal_cost = -1
+			picture = pop_laws2
+			cost = 450
+			default = yes
+			modifier = {
+
+
+				political_power_factor = 0.05
+
+				production_speed_industrial_complex_factor = -0.03
+				production_speed_arms_factory_factor = -0.03
+				industrial_capacity_factory = -0.03
+				industrial_capacity_dockyard = -0.03
+				production_factory_max_efficiency_factor = -0.03
+				conversion_cost_civ_to_mil_factor= 0.03
+				conversion_cost_mil_to_civ_factor = 0.03
+				
+				
+			}
+			
+		}
+		
+		pop_laws3 = {
+			level = 2
+			removal_cost = -1
+			picture = pop_laws3
+			cost = 450
+
+			modifier = {
+				
+				consumer_goods_factor = 0.05
+				political_power_factor = 0.2
+				research_speed_factor = 0.01
+				stability_factor = 0.05
+				production_speed_industrial_complex_factor = 0.01
+				production_speed_arms_factory_factor = 0.01
+				industrial_capacity_factory = 0.01
+				industrial_capacity_dockyard = 0.01
+				production_factory_max_efficiency_factor = 0.01
+				conversion_cost_civ_to_mil_factor= -0.01
+				conversion_cost_mil_to_civ_factor = -0.01
+			}
+			
+		}
+		pop_laws4 = {
+			level = 1
+			removal_cost = -1
+			picture = pop_laws4
+			cost = 900
+
+			modifier = {
+				
+				political_power_factor = 0.3
+				consumer_goods_factor = 0.1
+				research_speed_factor = 0.03
+				stability_factor = 0.1
+				stability_weekly = 0.001
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				conversion_cost_civ_to_mil_factor= -0.05
+				conversion_cost_mil_to_civ_factor = -0.05
+			}
+			
+		}
+		
+		
+	}
+	
+}

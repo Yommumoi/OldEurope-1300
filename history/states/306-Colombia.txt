@@ -1,0 +1,24 @@
+
+state={
+	id=306
+	name="STATE_306" # Cundinamarca
+	manpower = 1238262
+	
+	state_category = city
+	
+	history={
+		owner = KAR
+	    add_core_of = KAR
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			10747 10
+		}
+
+	}
+
+	provinces={
+		2079 7936 7991 7993 10747 10790 10846 
+	}
+}

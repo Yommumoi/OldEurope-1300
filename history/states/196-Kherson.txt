@@ -1,0 +1,30 @@
+
+state={
+	id=196
+	name="STATE_196"
+	manpower = 12090
+	
+	state_category = rural
+	
+	resources={
+		chromium=15 # was: 22
+	}
+
+	history={
+		victory_points = {
+			721 1
+		}
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		owner = NOG
+	    add_core_of = NOG
+		add_claim_by = KAZ
+	}
+
+	provinces={
+		568 721 737 767 3573 6771 9712 11715 
+	}
+}

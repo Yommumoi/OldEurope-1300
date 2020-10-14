@@ -1,0 +1,239 @@
+weapon_buy = {
+
+	weapon = {
+	
+		cost = 120
+		available = {
+			always = yes
+		}
+		days_remove = 75
+		visible = {
+			always = yes
+		}
+		
+		complete_effect = {
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = ROOT
+			}
+			
+			add_to_variable = { buy_cost = 10 }
+			clamp_variable = { 
+			var = buy_cost
+			min = 100
+			max = 3000
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	arkebuza_buy = {
+	
+		cost = 200
+		available = {
+			has_tech = arke_tech
+		}
+		days_remove = 75
+		visible = {
+			has_tech = arke_tech
+		}
+		
+		complete_effect = {
+
+			add_equipment_to_stockpile = {
+				type = arkebuza
+				amount = 250
+				producer = ROOT
+			}
+			
+			add_to_variable = { buy_cost_arke = 20 }
+			clamp_variable = { 
+			var = buy_cost_arke
+			min = 200
+			max = 3000
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	porox_buy = {
+	
+		cost = 200
+		available = {
+			has_tech = porox_tech
+		}
+		days_remove = 75
+		visible = {
+			has_tech = porox_tech
+		}
+		
+		complete_effect = {
+
+			add_equipment_to_stockpile = {
+				type = porox
+				amount = 300
+				producer = ROOT
+			}
+			
+			add_to_variable = { buy_cost_porox = 10 }
+			clamp_variable = { 
+			var = buy_cost_porox
+			min = 100
+			max = 3000
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	spear_buy = {
+	
+		cost = 120
+		available = {
+			has_tech = spear_weapons
+		}
+		days_remove = 75
+		visible = {
+			has_tech = spear_weapons
+		}
+		
+		complete_effect = {
+
+			add_equipment_to_stockpile = {
+				type = spear_equipment
+				amount = 1000
+				producer = ROOT
+			}
+			
+			add_to_variable = { buy_cost_spear = 10 }
+			clamp_variable = { 
+			var = buy_cost_spear
+			min = 100
+			max = 3000
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#	artillery_b = {
+#	
+#		cost = 300
+#		available = {
+#			always = yes
+#		}
+#
+#		visible = {
+#			always = yes
+#		}
+#
+#		complete_effect = {
+#			ROOT = {
+#				add_equipment_to_stockpile = {
+#					type = artillery_equipment
+#					amount = 100
+#					producer = ROOT
+#				}
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 30
+#			modifier = {
+#				factor = 1
+#				is_historical_focus_on = yes
+#			}
+#		}
+#	}
+	manpower = {
+		days_remove = 75
+		cost = 300
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+		
+		complete_effect = {
+			add_manpower = 8500
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+#weapon_sell = {
+#
+#	weapon_s = {
+#	
+#		cost = 0
+#		available = {
+#			has_equipment = {
+#				infantry_equipment > 3000
+#			}
+#		}
+#
+#		visible = {
+#			always = yes
+#		}
+#
+#		complete_effect = {
+#			add_equipment_to_stockpile = {
+#				type = infantry_equipment
+#				amount = -1000
+#				producer = ROOT
+#			}
+#			add_political_power = buy_cost
+#			
+#		}
+#
+#		ai_will_do = {
+#			factor = 0.5
+#		}
+#	}
+
+#	artillery_s = {
+#	
+#		cost = 0
+#		available = {
+#			has_equipment = {
+#				artillery_equipment > 99
+#			}
+#		}
+#
+#		visible = {
+#			always = yes
+#		}
+#
+#		complete_effect = {
+#			ROOT = {
+#				add_equipment_to_stockpile = {
+#					type = artillery_equipment
+#					amount = -100
+#					producer = ROOT
+#				}
+#				add_political_power = 300
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 30
+#			modifier = {
+#				factor = 1
+#				is_historical_focus_on = yes
+#			}
+#		}
+#	}
+#}

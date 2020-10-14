@@ -1,0 +1,18 @@
+﻿division_template = {
+	name = "Guard"		# Only had a force of reservists, which were later disbanded altogether in 1948
+	division_names_group = AFG_INF_01
+
+	regiments = {
+		arkebuzirs = { x = 0 y = 0 }
+		arkebuzirs = { x = 0 y = 1 }
+		arkebuzirs = { x = 0 y = 2 }
+		
+		arkebuzirs = { x = 1 y = 0 }
+		arkebuzirs = { x = 1 y = 1 }
+		arkebuzirs = { x = 1 y = 2 }
+		
+		arkebuzirs = { x = 2 y = 0 }
+		arkebuzirs = { x = 2 y = 1 }
+		arkebuzirs = { x = 2 y = 2 }
+	}
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=5
+	name="STATE_5"
+	manpower = 309527
+	state_category = town
+
+	history={
+		owner = TVT
+	    add_core_of = TVT
+		victory_points = {
+			6375 3
+		}
+		victory_points = {
+			3380 20
+		}
+		#victory_points = {
+		#	11386 1
+		#}
+		
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			3380 = {
+				naval_base = 2
+				bunker = 3
+				torgnaval_base = 1
+
+			}
+		}
+		
+	}
+
+	provinces={
+		266 3351 3380 6375 6402 9327 9346 9372 9398 11245 11386 
+	}
+}

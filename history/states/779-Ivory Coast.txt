@@ -1,0 +1,30 @@
+
+state={
+	id=779
+	name="STATE_779" # Ivory Coast
+	manpower = 332683
+	resources={
+		oil = 23
+	}
+	state_category = pastoral
+	history={
+		
+		owner = BON
+	    add_core_of = BON
+		victory_points = {
+			10803 1
+		}
+		buildings = {
+			infrastructure = 3
+			10803 = {
+				naval_base = 1
+			}
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		5013 8122 10762 10803
+	}
+}

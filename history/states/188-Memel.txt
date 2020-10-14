@@ -1,0 +1,30 @@
+state=
+{
+	id=188
+	name="STATE_188"
+	manpower = 37500
+	
+	
+	state_category = rural
+	
+	history = {
+		owner = TVT
+	    add_core_of = TVT
+		victory_points = {
+			3288 1
+		}
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			3288 = {
+				naval_base = 1
+			}
+		}
+		
+
+	}
+	provinces={
+		3288 	
+	}
+}

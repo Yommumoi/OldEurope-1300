@@ -1,0 +1,261 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_soslovia_progress"
+		texturefile = "gfx//interface//soslovia_progress.dds"
+	}
+	spriteType = { 
+		name = "GFX_big_button"
+		texturefile = "gfx//interface//big_button.dds"
+	}
+	spriteType = {
+		name = "GFX_Bjorn_bliat"
+		texturefile = "gfx//leaders//123.dds"
+	}
+	spriteType = { 
+		name = "GFX_icon_trade"
+		texturefile = "gfx//interface//icon_trade.dds"
+	}
+	spriteType = { 
+		name = "GFX_icon_shock" 
+		texturefile = "gfx//interface//icon_shock.dds"
+	}
+	
+	frameAnimatedSpriteType = { 
+		name = "GFX_DedAnim"
+		texturefile = "gfx//interface//DedAnim.dds"
+		noOfFrames = 15
+		animation_rate_fps = 60
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	spriteType = { 
+		name = "GFX_orda_prisiv" 
+		texturefile = "gfx//interface//orda_prisiv.dds"
+	}
+	 
+	
+	spriteType = { 
+		name = "GFX_artillery_land_1" 
+		texturefile = "gfx//interface//artillery_land_1.dds"
+	}
+	spriteType = { 
+		name = "GFX_balance_land_1" 
+		texturefile = "gfx//interface//balance_land_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_nedovol" 
+		texturefile = "gfx//nedovol_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_vysow"  
+		texturefile = "gfx//interface//toggle_messageinterface_bg.dds"
+	}
+	spriteType = { 
+		name = "GFX_placeholder_building_settlement"  
+		texturefile = "gfx//interface//placeholder_building_settlement.dds"
+	}
+	spriteType = { 
+		name = "GFX_icon_diplomacy_economy"   
+		texturefile = "gfx//interface//icon_diplomacy_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_building_loot"
+		textureFile = "gfx//interface/building_loot.dds"
+	}
+	spriteType = {
+		name = "GFX_dipcount"  
+		texturefile = "gfx//interface//icon_absolutism.dds"
+	}
+	spriteType = {
+		name = "GFX_numnaslednik" 
+		texturefile = "gfx//interface//monarch_heir_crown_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dia_1"
+		texturefile = "gfx//interface//dia_1.dds"
+	}
+	spriteType = {
+		name = "GFX_dia_2"
+		texturefile = "gfx//interface//dia_2.dds"
+	}
+	spriteType = {
+		name = "GFX_dia_3"
+		texturefile = "gfx//interface//dia_3.dds"
+	}
+	spriteType = {
+		name = "GFX_chelowek"
+		texturefile = "gfx//interface//chelowek.dds"
+	}
+	spriteType = {
+		name = "GFX_dia_vopr"
+		texturefile = "gfx//interface//dia_vopr.dds"
+	}
+	spriteType = { 
+		name = "GFX_icon_rebel_enforced_demands"
+		texturefile = "gfx//interface//icon_rebel_enforced_demands.dds"
+	}
+	
+	
+	######
+	IconsMini
+	spriteType = {
+		name = "GFX_wood_texticon"
+		texturefile = "gfx/texticons/wood_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_raby_texticon"
+		texturefile = "gfx/texticons/raby_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_goldore_texticon"
+		texturefile = "gfx/texticons/goldore_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_med_texticon"
+		texturefile = "gfx/texticons/med_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_tkan_texticon"
+		texturefile = "gfx/texticons/tkan_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_stal_texticon"
+		texturefile = "gfx/texticons/stal_icon.dds"
+		legacy_lazy_load = no
+	}
+	######
+	
+	spriteType = {
+		name = "GFX_sos_dvor"
+		texturefile = "gfx//interface//sos_dvor.dds"
+	}
+	spriteType = {
+		name = "GFX_RegBuy"
+		texturefile = "gfx//interface//RegBuy.dds"
+	}
+	spriteType = {
+		name = "GFX_sos_duh"
+		texturefile = "gfx//interface//sos_duh.dds"
+	}
+	spriteType = {
+		name = "GFX_sos_gor"
+		texturefile = "gfx//interface//sos_gor.dds"
+	}
+	spriteType = {
+		name = "GFX_sos_kre"
+		texturefile = "gfx//interface//sos_kre.dds"
+	}
+	spriteType = {
+		name = "GFX_sos_rem"
+		texturefile = "gfx//interface//sos_rem.dds"
+	}
+	spriteType = {
+		name = "GFX_bad"
+		texturefile = "gfx//interface//bad.dds"
+	}
+	spriteType = {
+		name = "GFX_medium"
+		texturefile = "gfx//interface//medium.dds"
+	}
+	spriteType = {
+		name = "GFX_good"
+		texturefile = "gfx//interface//good.dds"
+	}
+	spriteType = {
+		name = "GFX_bumaga"
+		texturefile = "gfx//interface//bumaga.dds"
+	}
+	
+	
+	###Knopki_soslovii
+	spriteType = {
+		name = "GFX_knopka1"
+		texturefile = "gfx//interface//knopka1.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka2"
+		texturefile = "gfx//interface//knopka2.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka3"
+		texturefile = "gfx//interface//knopka3.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka4"
+		texturefile = "gfx//interface//knopka4.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka5"
+		texturefile = "gfx//interface//knopka5.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka6"
+		texturefile = "gfx//interface//knopka6.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka7"
+		texturefile = "gfx//interface//knopka7.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka8"
+		texturefile = "gfx//interface//knopka8.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka9"
+		texturefile = "gfx//interface//knopka9.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka10"
+		texturefile = "gfx//interface//knopka10.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka11"
+		texturefile = "gfx//interface//knopka11.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka12"
+		texturefile = "gfx//interface//knopka12.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka13"
+		texturefile = "gfx//interface//knopka13.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka14"
+		texturefile = "gfx//interface//knopka14.dds"
+	}
+	spriteType = {
+		name = "GFX_knopka15"
+		texturefile = "gfx//interface//knopka15.dds"
+	}
+	spriteType = { 
+		name = "GFX_icon_casus_belli_small"
+		texturefile = "gfx//interface//icon_casus_belli_small.dds"
+	}
+	spriteType = {
+		name = "GFX_tkan_icon" 
+		texturefile = "gfx/texticons/tkan_icon.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	progressbartype = {
+		name = "GFX_soslovia_bad"
+		color = { 0 0.5 0.0 }
+		colortwo = { 1 0.0 0.0 }
+		textureFile1 = "gfx//interface//good.dds"
+		textureFile2 = "gfx//interface//0.dds"
+		size = { x = 52 y = 190 }
+		effectFile = "gfx//FX//progress_startend.lua"
+		horizontal = no
+	}
+}

@@ -1,0 +1,63 @@
+﻿capital = 134
+
+oob = "IRE_1936"
+
+set_research_slots = 2
+set_variable = { soslovia_dvor = 60 }
+set_variable = { soslovia_duh = 50 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 55 }
+set_variable = { soslovia_rem = 40 }
+set_technology = {
+	infantry_weapons = 1
+	early_ship_hull_submarine = 1 
+    basic_ship_hull_submarine = 1
+	basic_torpedo = 1
+}
+set_variable = { adm_limit = 6 }
+add_ideas = techgroup1
+set_convoys = 10
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.1.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 5
+	fascism = 95
+	communism = 0
+}
+set_variable = { numnasled_value = 2 }
+create_country_leader = {
+	name = "Richard de Burgh"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = 	stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Richard de Burgh"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Richard de Burgh"
+	desc = ""
+	picture = "1.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}

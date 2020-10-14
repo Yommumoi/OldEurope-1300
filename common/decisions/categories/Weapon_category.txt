@@ -1,0 +1,13 @@
+weapon_buy = {
+
+	icon = generic_propaganda
+
+
+}
+
+weapon_sell = {
+
+	icon = generic_propaganda
+
+
+}

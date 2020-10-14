@@ -1,0 +1,3862 @@
+focus_tree = {
+	id = Horde
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KAZ
+		}
+	}
+	default = no
+	focus = {
+		id = KAZ_1
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 11
+		y = 0
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = KAZ_21
+		icon = GFX_goal_imperor
+		cost = 10
+		mutually_exclusive = {
+			focus = KAZ_34
+		}
+		x = 23
+		y = 0
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = KAZ_34
+		icon = GFX_goal_vosstan
+		cost = 10
+		mutually_exclusive = {
+			focus = KAZ_21
+		}
+		x = 33
+		y = 0
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = ideol5
+				}
+
+	}
+	focus = {
+		id = KAZ_103
+		icon = GFX_goal_vosstan
+		cost = 10
+		prerequisite = {
+			focus = KAZ_34
+		}
+		x = 37
+		y = 1
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = NOG
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = NOG
+				}
+				has_war_with = NOG
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_named_threat = {
+				threat = 1
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = NOG
+				generator = { 766 }
+			}
+			news_event = {
+				id = news.1019
+			}
+		}
+
+	}
+	focus = {
+		id = KAZ_104
+		icon = GFX_goal_nozhbumaga
+		cost = 20
+		prerequisite = {
+			focus = KAZ_103
+		}
+		x = 37
+		y = 2
+		
+		completion_reward = {
+			add_state_core = 200
+			add_state_core = 226
+			add_state_core = 259
+			add_state_core = 196
+			add_state_core = 197
+			add_state_core = 203
+			add_state_core = 192
+			add_state_core = 198
+			add_state_core = 78
+			add_state_core = 766
+			add_state_core = 137
+		}
+
+	}
+	
+	focus = {
+		id = KAZ_2
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		prerequisite = {
+			focus = KAZ_1
+		}
+		mutually_exclusive = {
+			focus = KAZ_3
+		}
+		x = 9
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+					add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = KAZ_4
+		icon = GFX_goal_monmon
+		cost = 10
+		prerequisite = {
+			focus = KAZ_2
+		}
+		mutually_exclusive = {
+			focus = KAZ_6
+		}
+		x = 8
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = -100
+					HUL = {
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_6
+		icon = GFX_goal_blackwhite
+		cost = 10
+		prerequisite = {
+			focus = KAZ_2
+		}
+		mutually_exclusive = {
+			focus = KAZ_4
+		}
+		x = 10
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_manpower = -15000
+					HUL = {
+							add_manpower = 15000
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_32
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = KAZ_6
+			focus = KAZ_4
+		}
+		x = 9
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					create_faction = Orda
+					add_to_faction = KAZ
+					add_to_faction = HUL
+					set_rule = {
+							can_create_factions = yes
+						}
+					news_event = {
+							id = news.1011
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_3
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		prerequisite = {
+			focus = KAZ_1
+		}
+		mutually_exclusive = {
+			focus = KAZ_2
+		}
+		x = 13
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+					add_war_support = 0.1
+				}
+
+	}
+	focus = {
+		id = KAZ_7
+		icon = GFX_goal_blackwhite
+		cost = 10
+		prerequisite = {
+			focus = KAZ_3
+		}
+		mutually_exclusive = {
+			focus = KAZ_5
+		}
+		x = 12
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_manpower = -15000
+					EGY = {
+							add_manpower = 15000
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_5
+		icon = GFX_goal_monmon
+		cost = 10
+		prerequisite = {
+			focus = KAZ_3
+		}
+		mutually_exclusive = {
+			focus = KAZ_7
+		}
+		x = 14
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = -100
+					EGY = {
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_33
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = KAZ_5
+			focus = KAZ_7
+		}
+		x = 13
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					create_faction = Orda
+					add_to_faction = KAZ
+					add_to_faction = EGY
+					set_rule = {
+							can_create_factions = yes
+						}
+					news_event = {
+							id = news.1012
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_43
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = KAZ_32
+			focus = KAZ_33
+		}
+		x = 11
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_bonus
+							bonus = 1.2
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_8
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = KAZ_21
+		}
+		x = 17
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 2.0
+							uses = 2
+							category = industry
+						}
+				}
+			ai_will_do = {
+					factor = 3
+					modifier = {
+							factor = 0
+							date < 1939.1.1
+							OR = {
+									tag = GXC
+									tag = YUN
+									tag = SHX
+									tag = XSM
+									tag = BEL
+									tag = LUX
+									tag = HOL
+									tag = DEN
+									num_of_controlled_states < 2
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_16
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_8
+		}
+		x = 16
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_23
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_16
+		}
+		x = 16
+		y = 3
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_17
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_23
+		}
+		x = 15
+		y = 4
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_24
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_8
+		}
+		x = 18
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_15
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_24
+		}
+		x = 18
+		y = 3
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_30
+		icon = GFX_goal_quran
+		cost = 10
+		prerequisite = {
+			focus = KAZ_23
+			focus = KAZ_15
+		}
+		x = 17
+		y = 4
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = library
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = library
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = library
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = library
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = library
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_55
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_17
+			focus = KAZ_30
+		}
+		x = 16
+		y = 5
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_22
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_15
+		}
+		x = 19
+		y = 4
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_54
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_22
+			focus = KAZ_30
+		}
+		x = 18
+		y = 5
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_26
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_54
+		}
+		x = 18
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_18
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = KAZ_21
+		}
+		mutually_exclusive = {
+			focus = KAZ_20
+		}
+		x = 21
+		y = 1
+			completion_reward = {
+					add_timed_idea = {
+							idea = nationalism
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_38
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = KAZ_18
+		}
+		x = 21
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.8
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_83
+		icon = GFX_focus_rom_abdicate
+		cost = 10
+		prerequisite = {
+			focus = KAZ_18
+		}
+		x = 22
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = ideol2
+				}
+
+	}
+	focus = {
+		id = KAZ_20
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		prerequisite = {
+			focus = KAZ_21
+		}
+		mutually_exclusive = {
+			focus = KAZ_18
+		}
+		x = 25
+		y = 1
+			completion_reward = {
+					add_timed_idea = {
+							idea = neutrality_plus
+							days = 720
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_84
+		icon = GFX_focus_rom_abdicate
+		cost = 10
+		prerequisite = {
+			focus = KAZ_20
+		}
+		x = 24
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = ideol3
+				}
+
+	}
+	focus = {
+		id = KAZ_85
+		icon = GFX_focus_generic_self_management
+		cost = 5
+		prerequisite = {
+			focus = KAZ_83
+			focus = KAZ_84
+		}
+		x = 23
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+				}
+			available = {
+					OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_90
+		icon = GFX_goal_jorik
+		cost = 10
+		prerequisite = {
+			focus = KAZ_85
+		}
+		x = 22
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = sie2
+				}
+
+	}
+	focus = {
+		id = KAZ_91
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = KAZ_85
+		}
+		x = 24
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = pop_laws3
+				}
+
+	}
+	focus = {
+		id = KAZ_93
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = KAZ_20
+		}
+		x = 25
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.8
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_86
+		icon = GFX_goal_generic_CAS
+		cost = 10
+		prerequisite = {
+			focus = KAZ_21
+			focus = KAZ_34
+		}
+		x = 28
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 50
+					add_stability = 0.03
+				}
+
+	}
+	focus = {
+		id = KAZ_88
+		icon = GFX_goal_molitva
+		cost = 10
+		prerequisite = {
+			focus = KAZ_86
+		}
+		mutually_exclusive = {
+			focus = KAZ_87
+		}
+		x = 27
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = Tengri
+				}
+
+	}
+	focus = {
+		id = KAZ_87
+		icon = GFX_goal_islam2
+		cost = 10
+		prerequisite = {
+			focus = KAZ_86
+		}
+		mutually_exclusive = {
+			focus = KAZ_88
+		}
+		x = 29
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = Islam
+				}
+
+	}
+	focus = {
+		id = KAZ_9
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = KAZ_34
+		}
+		x = 31
+		y = 1
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_11
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = KAZ_9
+		}
+		x = 31
+		y = 2
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_13
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = KAZ_11
+		}
+		x = 31
+		y = 3
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_98
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = KAZ_13
+		}
+		x = 30
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.5
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_95
+		icon = GFX_focus_RAJ_indian_gurkhas
+		cost = 10
+		prerequisite = {
+			focus = KAZ_34
+		}
+		x = 33
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = disarmed_0
+				}
+
+	}
+	focus = {
+		id = KAZ_96
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = KAZ_95
+		}
+		x = 33
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 2.5
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_97
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10
+		prerequisite = {
+			focus = KAZ_96
+		}
+		x = 33
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 2.5
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_100
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_97
+		}
+		x = 33
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = tip25
+				}
+
+	}
+	focus = {
+		id = KAZ_31
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = KAZ_100
+		}
+		x = 33
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = KAZ_10
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = KAZ_34
+		}
+		x = 35
+		y = 1
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_12
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = KAZ_10
+		}
+		x = 35
+		y = 2
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_14
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = KAZ_12
+		}
+		x = 35
+		y = 3
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_99
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = KAZ_14
+		}
+		x = 36
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.5
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_70
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_57
+		}
+		x = 38
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					MUR = {
+							country_event = {
+									id = hor.14
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_19
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = KAZ_25
+			focus = KAZ_26
+		}
+		x = 17
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = KAZ_25
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_55
+		}
+		x = 16
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_27
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_56
+		}
+		x = 32
+		y = 13
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_28
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_74
+		}
+		x = 32
+		y = 11
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_56
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_28
+		}
+		x = 32
+		y = 12
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_29
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_43
+		}
+		x = 11
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 30
+				}
+
+	}
+	focus = {
+		id = KAZ_40
+		icon = GFX_goal_strely
+		cost = 10
+		prerequisite = {
+			focus = KAZ_74
+		}
+		x = 30
+		y = 11
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = barack
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = barack
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = barack
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = barack
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = barack
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_41
+		icon = GFX_goal_swords
+		cost = 10
+		prerequisite = {
+			focus = KAZ_40
+		}
+		x = 30
+		y = 12
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = barack
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = barack
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = barack
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = barack
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = barack
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_39
+		icon = GFX_goal_arabsword
+		cost = 10
+		prerequisite = {
+			focus = KAZ_41
+		}
+		x = 30
+		y = 13
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = barack
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = barack
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = barack
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = barack
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = barack
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_42
+		icon = GFX_goal_topor
+		cost = 10
+		prerequisite = {
+			focus = KAZ_48
+			focus = KAZ_49
+		}
+		x = 24
+		y = 12
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = barack
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = barack
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = barack
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = barack
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = barack
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_66
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_70
+		}
+		x = 38
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					TUL = {
+							country_event = {
+									id = hor.10
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_60
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_66
+		}
+		x = 38
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					STA = {
+							country_event = {
+									id = hor.4
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_35
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = KAZ_74
+		}
+		x = 28
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.5
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_36
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = KAZ_35
+		}
+		x = 28
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.5
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_37
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = KAZ_36
+		}
+		x = 28
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.5
+							uses = 1
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_44
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_94
+		}
+		x = 20
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = KAZ_46
+		icon = GFX_goal_tartar
+		cost = 10
+		prerequisite = {
+			focus = KAZ_44
+		}
+		mutually_exclusive = {
+			focus = KAZ_75
+			focus = KAZ_47
+		}
+		x = 20
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					set_cosmetic_tag = TAR_TAR
+
+							587 = {
+									add_core_of = KAZ
+								}
+							587 = {
+									add_core_of = KAZ
+								}
+							585 = {
+									add_core_of = KAZ
+								}
+							402 = {
+									add_core_of = KAZ
+								}
+							404 = {
+									add_core_of = KAZ
+								}
+							583 = {
+									add_core_of = KAZ
+								}
+							590 = {
+									add_core_of = KAZ
+								}
+							582 = {
+									add_core_of = KAZ
+								}
+							572 = {
+									add_core_of = KAZ
+								}
+							573 = {
+									add_core_of = KAZ
+								}
+							405 = {
+									add_core_of = KAZ
+								}
+							742 = {
+									add_core_of = KAZ
+								}
+							732 = {
+									add_core_of = KAZ
+								}
+							619 = {
+									add_core_of = KAZ
+								}
+							287 = {
+									add_core_of = KAZ
+								}
+							617 = {
+									add_core_of = KAZ
+								}
+							586 = {
+									add_core_of = KAZ
+								}
+							618 = {
+									add_core_of = KAZ
+								}
+							589 = {
+									add_core_of = KAZ
+								}
+							588 = {
+									add_core_of = KAZ
+								}
+							654 = {
+									add_core_of = KAZ
+								}
+							40 = {
+									add_core_of = KAZ
+								}
+							653 = {
+									add_core_of = KAZ
+								}
+							403 = {
+									add_core_of = KAZ
+								}
+							571 = {
+									add_core_of = KAZ
+								}
+							570 = {
+									add_core_of = KAZ
+								}
+							569 = {
+									add_core_of = KAZ
+								}
+						
+				}
+
+	}
+	focus = {
+		id = KAZ_45
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_75
+		}
+		x = 15
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = GEO
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = GEO
+								}
+							has_war_with = GEO
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = GEO
+							generator = { 231 }
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_47
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10
+		prerequisite = {
+			focus = KAZ_44
+		}
+		mutually_exclusive = {
+			focus = KAZ_46
+			focus = KAZ_75
+		}
+		x = 24
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = KAZ_51
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_46
+		}
+		x = 19
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = ROM
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = ROM
+								}
+							has_war_with = ROM
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = ROM
+							generator = { 231 }
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_50
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_46
+		}
+		x = 21
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = MOL
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = MOL
+								}
+							has_war_with = MOL
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = MOL
+							generator = { 79 }
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_57
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_72
+		}
+		mutually_exclusive = {
+			focus = KAZ_74
+		}
+		x = 38
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = KAZ_68
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_57
+		}
+		x = 34
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					RYZ = {
+							country_event = {
+									id = hor.12
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_65
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_57
+		}
+		x = 36
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					NOV = {
+							country_event = {
+									id = hor.9
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_61
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_57
+		}
+		x = 40
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					ZHY = {
+							country_event = {
+									id = hor.5
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_67
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_61
+		}
+		x = 40
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					MSK = {
+							country_event = {
+									id = hor.11
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_71
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_67
+		}
+		x = 40
+		y = 13
+			available_if_capitulated = yes
+			completion_reward = {
+					YAR = {
+							country_event = {
+									id = hor.15
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_62
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_57
+		}
+		x = 42
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					KIE = {
+							country_event = {
+									id = hor.6
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_58
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_62
+		}
+		x = 42
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					BLR = {
+							country_event = {
+									id = hor.1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_48
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_47
+		}
+		x = 23
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = WHO
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = WHO
+								}
+							has_war_with = WHO
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = WHO
+							generator = { 402 }
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_49
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_47
+		}
+		x = 25
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = KAI
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = KAI
+								}
+							has_war_with = KAI
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = KAI
+							generator = { 586 }
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_52
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_81
+		}
+		x = 20
+		y = 13
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = HUN
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = HUN
+								}
+							has_war_with = HUN
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = HUN
+							generator = { 76 }
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_59
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_65
+		}
+		x = 36
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					PIN = {
+							country_event = {
+									id = hor.3
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_69
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_63
+		}
+		x = 44
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					SUZ = {
+							country_event = {
+									id = hor.13
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_63
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_57
+		}
+		x = 44
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					CHA = {
+							country_event = {
+									id = hor.7
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_64
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_68
+		}
+		x = 34
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					LAO = {
+							country_event = {
+									id = hor.8
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_72
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = {
+			focus = KAZ_94
+		}
+		x = 34
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+					news_event = {
+						id = news.1026
+					}
+				}
+
+	}
+	focus = {
+		id = KAZ_73
+		icon = GFX_goal_nozhbumaga
+		cost = 10
+		prerequisite = {
+			focus = KAZ_37
+		}
+		prerequisite = {
+			focus = KAZ_39
+		}
+		prerequisite = {
+			focus = KAZ_27
+		}
+		x = 30
+		y = 14
+			available_if_capitulated = yes
+			completion_reward = {
+					if = {
+							limit = {
+									country_exists = MSK
+								}
+							declare_war_on = {
+									target = MSK
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = MUR
+								}
+							declare_war_on = {
+									target = MUR
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = RYZ
+								}
+							declare_war_on = {
+									target = RYZ
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = YAR
+								}
+							declare_war_on = {
+									target = YAR
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = NOV
+								}
+							declare_war_on = {
+									target = NOV
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = CHA
+								}
+							declare_war_on = {
+									target = CHA
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = KIE
+								}
+							declare_war_on = {
+									target = KIE
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = BLR
+								}
+							declare_war_on = {
+									target = BLR
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = PIN
+								}
+							declare_war_on = {
+									target = PIN
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = SUZ
+								}
+							declare_war_on = {
+									target = SUZ
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = TUL
+								}
+							declare_war_on = {
+									target = TUL
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = LAO
+								}
+							declare_war_on = {
+									target = LAO
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = TVE
+								}
+							declare_war_on = {
+									target = TVE
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = PSK
+								}
+							declare_war_on = {
+									target = PSK
+									type = annex_everything
+								}
+						}
+					if = {
+							limit = {
+									country_exists = STA
+								}
+							declare_war_on = {
+									target = STA
+									type = annex_everything
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_74
+		icon = GFX_goal_Knight1
+		cost = 10
+		prerequisite = {
+			focus = KAZ_72
+		}
+		mutually_exclusive = {
+			focus = KAZ_57
+		}
+		x = 30
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = KAZ_75
+		icon = GFX_goal_europa
+		cost = 20
+		prerequisite = {
+			focus = KAZ_44
+		}
+		mutually_exclusive = {
+			focus = KAZ_46
+			focus = KAZ_47
+		}
+		x = 16
+		y = 10
+			available_if_capitulated = yes
+			completion_reward = {
+					set_cosmetic_tag = MONGOL
+					add_state_core = 587
+					add_state_core = 585
+					add_state_core = 402
+					add_state_core = 404
+					add_state_core = 583
+					add_state_core = 590
+					add_state_core = 582
+					add_state_core = 572
+					add_state_core = 403
+					add_state_core = 653
+					add_state_core = 573
+					add_state_core = 830
+					add_state_core = 354
+					add_state_core = 231
+					add_state_core = 229
+					add_state_core = 230
+					add_state_core = 420
+					add_state_core = 419
+					add_state_core = 352
+					add_state_core = 353
+					add_state_core = 350
+					add_state_core = 349
+					add_state_core = 677
+					add_state_core = 680
+					add_state_core = 676
+					add_state_core = 675
+					add_state_core = 291
+					add_state_core = 421
+					add_state_core = 413
+					add_state_core = 417
+					add_state_core = 266
+					add_state_core = 411
+					add_state_core = 412
+					add_state_core = 418
+					add_state_core = 414
+					add_state_core = 410
+					add_state_core = 416
+					add_state_core = 444
+					add_state_core = 415
+					add_state_core = 267
+					add_state_core = 584
+				}
+
+	}
+	focus = {
+		id = KAZ_76
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_75
+		}
+		x = 17
+		y = 11
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = TPZ
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = TPZ
+								}
+							has_war_with = TPZ
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = TPZ
+							generator = { 354 }
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_77
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_45
+		}
+		x = 15
+		y = 12
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = HUL
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = HUL
+								}
+							has_war_with = HUL
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = HUL
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_78
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_76
+		}
+		x = 17
+		y = 12
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = WHO
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = WHO
+								}
+							has_war_with = WHO
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = WHO
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_79
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_77
+			focus = KAZ_78
+		}
+		x = 15
+		y = 13
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = DEL
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = DEL
+								}
+							has_war_with = DEL
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = DEL
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_80
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_77
+			focus = KAZ_78
+		}
+		x = 17
+		y = 13
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = KAI
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = KAI
+								}
+							has_war_with = KAI
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = KAI
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_81
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_46
+		}
+		x = 20
+		y = 12
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = BUL
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = BUL
+								}
+							has_war_with = BUL
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = BUL
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_82
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = KAZ_80
+		}
+		prerequisite = {
+			focus = KAZ_79
+		}
+		x = 16
+		y = 14
+			available = {
+					is_puppet = no
+					NOT = {
+							is_in_faction_with = CHH
+						}
+				}
+			bypass = {
+					OR = {
+							NOT = {
+									country_exists = CHH
+								}
+							has_war_with = CHH
+						}
+				}
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = CHH
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_89
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = KAZ_85
+		}
+		x = 23
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = centr3
+				}
+
+	}
+	focus = {
+		id = KAZ_94
+		icon = GFX_goal_swords
+		cost = 10
+		prerequisite = {
+			focus = KAZ_92
+			focus = KAZ_31
+		}
+		x = 28
+		y = 8
+		completion_reward = {
+			custom_effect_tooltip = sos_dvor5
+			add_to_variable = {
+				soslovia_dvor = 5
+			}
+			clamp_variable = {
+				var = soslovia_dvor
+				min = 0
+				max = 100
+			}
+			
+			custom_effect_tooltip = sos_duh5
+			add_to_variable = {
+				soslovia_duh = 5
+			}
+			clamp_variable = {
+				var = soslovia_duh
+				min = 0
+				max = 100
+			}
+			
+			custom_effect_tooltip = sos_rem5
+			add_to_variable = {
+				soslovia_rem = 5
+			}
+			clamp_variable = {
+				var = soslovia_rem
+				min = 0
+				max = 100
+			}
+			
+			custom_effect_tooltip = sos_gor5
+			add_to_variable = {
+				soslovia_gor = 5
+			}
+			clamp_variable = {
+				var = soslovia_gor
+				min = 0
+				max = 100
+			}
+			
+			custom_effect_tooltip = sos_kre5
+			add_to_variable = {
+				soslovia_kre = 5
+			}
+			clamp_variable = {
+				var = soslovia_kre
+				min = 0
+				max = 100
+			}
+		}
+
+	}
+	focus = {
+		id = KAZ_92
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = KAZ_89
+		}
+		x = 23
+		y = 6
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 3
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = arms_factory
+							level = 3
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 2
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 2
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = KAZ_101
+		icon = GFX_goal_europa
+		cost = 10
+		prerequisite = {
+			focus = KAZ_82
+		}
+		x = 16
+		y = 15
+			available_if_capitulated = yes
+			completion_reward = {
+					add_state_core = 405
+					add_state_core = 742
+					add_state_core = 732
+					add_state_core = 619
+					add_state_core = 586
+					add_state_core = 287
+					add_state_core = 617
+					add_state_core = 618
+					add_state_core = 589
+					add_state_core = 588
+					add_state_core = 654
+					add_state_core = 40
+				}
+
+	}
+	focus = {
+		id = KAZ_102
+		icon = GFX_goal_chiniec
+		cost = 10
+		prerequisite = {
+			focus = KAZ_101
+		}
+		x = 16
+		y = 16
+			available_if_capitulated = yes
+			completion_reward = {
+					add_state_core = 329
+					add_state_core = 330
+					add_state_core = 564
+					add_state_core = 563
+					add_state_core = 761
+					add_state_core = 714
+					add_state_core = 612
+					add_state_core = 715
+					add_state_core = 328
+					add_state_core = 717
+					add_state_core = 760
+					add_state_core = 759
+				}
+
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=533
+	name="STATE_533" # Tohoku
+	manpower = 543750
+	state_category = large_city
+	resources={
+		steel=10 
+	}
+
+	history={
+		
+		owner = JOP
+	    add_core_of = JOP
+		buildings = {
+		
+			
+			infrastructure = 3
+			
+		}
+		
+		
+		victory_points = {
+			7169 5
+		}
+
+	}
+
+	provinces={
+		1024 4067 4118 4122 4153 7169 
+	}
+}

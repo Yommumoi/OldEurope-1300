@@ -1,0 +1,27 @@
+state={
+	id=92
+	name="STATE_92"
+
+	history={
+		victory_points = {
+			11399 1 
+		}
+		owner = STA
+	    add_core_of = STA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		
+
+	}
+
+	provinces={
+		3521 3559 6484 6580 9452 9521 9544 11399 11466 
+	}
+	manpower=616150
+	buildings_max_level_factor=1.000
+	state_category=town
+}

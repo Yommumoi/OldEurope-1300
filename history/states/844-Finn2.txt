@@ -1,0 +1,28 @@
+
+state={
+	id=844
+	name="STATE_844" # Savo
+	manpower = 62775
+	
+	state_category = town
+	
+	resources={
+		steel=3 # was: 4
+	}
+	history={
+		owner = SAM
+		add_core_of = SAM
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			6156 3 
+		}
+		
+	}
+
+	provinces={
+		6078 11141 37 13111 3131 139 13108 13109 11199 9104 11076 13112 6156 3030 9181 9061 3068 6210 9169 13114 13115 3185 193 3125 9106 13118 9233 11079 3149 3115 3073 6134 11024 7 6146 6033
+	}
+}

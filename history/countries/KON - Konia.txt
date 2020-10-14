@@ -1,0 +1,43 @@
+﻿capital = 346
+set_variable = { buy_cost = 203 }
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_variable = { adm_limit = 5 }
+add_ideas = techgroup5
+set_variable = { soslovia_dvor = 50 }
+set_variable = { soslovia_duh = 60 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 55 }
+set_variable = { soslovia_rem = 45 }
+add_ideas = {
+Islam
+}
+set_convoys = 10
+set_oob = "KON_1936"
+set_variable = { numnasled_value = 2 }
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 100
+	communism = 0
+	neutrality = 0
+	democratic = 0
+}	
+
+create_country_leader = {
+	name = "Mohammed V"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

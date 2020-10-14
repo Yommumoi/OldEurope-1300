@@ -1,0 +1,23 @@
+state=
+{
+	id=311
+	name="STATE_311"
+	manpower = 156000
+	
+	state_category = pastoral
+	history=
+	{
+		owner = MAY
+	    add_core_of = MAY
+		victory_points = {
+			2077 1 
+		}
+		buildings = {
+			infrastructure = 5
+			2077 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces= { 2077 }
+}

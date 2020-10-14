@@ -1,0 +1,739 @@
+ideas = {
+	country = {
+		otkryt_1 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = otkryt_1
+			
+			modifier = {
+				
+				
+				local_resources_factor = 0.05
+				industry_repair_factor = 0.2
+				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = 0.2
+				conversion_cost_civ_to_mil_factor = -0.2
+				line_change_production_efficiency_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				
+				
+			}
+		}
+		otkryt_2 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = otkryt_2
+			
+			modifier = {
+				
+				research_speed_factor = 0.03
+				army_morale_factor = 0.2
+				political_power_factor = 0.5
+				land_reinforce_rate = 0.3
+				army_speed_factor = 0.05
+				
+				
+			}
+		}
+		otkryt_3 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = otkryt_3
+			
+			modifier = {
+				
+				
+				research_speed_factor = 0.15
+				attrition = -0.1
+				production_speed_buildings_factor = 0.1
+				no_supply_grace = 12
+				acclimatization_cold_climate_gain_factor = 0.1
+				acclimatization_hot_climate_gain_factor = 0.1
+				
+				
+			}
+		}
+		
+		reform3 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				
+				
+				local_resources_factor = 0.15
+				
+				
+			}
+		}
+		reform4 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				
+				
+				supply_consumption_factor = -0.20
+				industry_repair_factor = 0.5
+				global_building_slots_factor = 0.25
+				
+				
+			}
+		}
+		reform5 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				
+				
+				local_resources_factor = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				trade_opinion_factor = 0.3
+				compliance_gain = 0.4
+				
+				
+			}
+		}
+		debug = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				
+					production_speed_buildings_factor = 100.0
+
+				
+				
+			}
+		}
+		eco_chudo = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = chi_hyper_inflation3
+			
+			modifier = {
+				
+				army_org_factor = 0.1
+				production_factory_max_efficiency_factor = 0.25
+				local_building_slots_factor = 0.5
+				local_resources_factor = 0.5
+				industrial_capacity_factory = 1.0
+				industrial_capacity_dockyard = 1.0
+				line_change_production_efficiency_factor = 0.5
+				industry_repair_factor = 1.5
+				consumer_goods_factor = -0.01
+				conversion_cost_civ_to_mil_factor = -10.0
+				global_building_slots_factor = 1.0
+				research_speed_factor = 0.25
+				
+				
+			}
+		}
+	
+		mamluk_duh = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				
+			}
+		}
+	
+		kuznec1 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				army_attack_factor = 0.05
+				
+			}
+		}
+		kuznec2 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				army_armor_speed_factor = 0.1
+				
+			}
+		}
+		kuznec3 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				army_defence_factor = 0.03
+				
+			}
+		}
+	
+	
+	
+	
+		tupost = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = tupo
+			
+			modifier = {
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				research_speed_factor = -0.1
+				political_power_factor = -0.7
+			}
+		}
+		povstanec = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+		nezasel = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				army_attack_factor = -0.99
+				army_defence_factor = -0.99
+				industrial_capacity_factory = -0.99
+				industrial_capacity_dockyard = -0.99
+				research_speed_factor = -0.99
+				political_power_factor = -0.99
+				send_volunteer_divisions_required = 1.5
+				send_volunteer_size = 0
+				guarantee_cost = 10.0
+				enemy_justify_war_goal_time = 100.0
+			}
+		}
+	}
+	country = {
+		obrech = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = ink
+			
+			modifier = {
+				stability_factor = -0.65
+			}
+		}
+	}
+	country = {
+		gorod_uprav = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_central_management
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				research_speed_factor = -0.01
+				stability_factor = 0.03
+				political_power_factor = 0.3
+			}
+		}
+	}
+	country = {
+		sozvan_sovet = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.1
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				research_speed_factor = -0.02
+				political_power_factor = -0.1
+			}
+		}
+	}
+	
+	
+	country = {
+		china_isolation = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = isolationism
+			
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+			}
+		}
+	}
+	country = {
+		mongol = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+	}
+	country = {
+		Torg = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				trade_opinion_factor = 0.4
+			}
+		}
+	}
+	country = {
+		orden = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = orden
+			
+			modifier = {
+				weekly_manpower = 250
+			}
+		}
+	}
+	country = {
+		orden1 = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = orden1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 7
+				send_volunteers_tension = -0.99
+			}
+		}
+	}
+	country = {
+		svyt = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = svyt
+			
+			modifier = {
+				army_defence_factor = 0.03
+				conscription = 0.01
+			}
+		}
+	}
+	country = {
+		svytbalt = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = svyt
+			
+			modifier = {
+				army_defence_factor = 0.07
+				army_attack_factor = 0.07
+			}
+		}
+	}
+	
+	
+	#######generic######
+	country = {
+		democratic_plus = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				democratic_drift = 0.10
+			}
+		}
+	}
+	country = {
+		neutrality_plus = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				neutrality_drift = 0.10
+			}
+		}
+	}
+	
+	
+	country = {
+		vostok_org = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = vostok_org
+			
+			modifier = {
+				army_org_factor = 0.1
+				max_planning = 0.25
+				army_infantry_defence_factor = 0.03
+			}
+		}
+	}
+	country = {
+		rage = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = viking
+			
+			modifier = {
+				conscription = 0.01
+				offence = 0.04
+				winter_attrition_factor = -0.2
+			}
+		}
+	}
+	country = {
+		bog = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = chi_hyper_inflation3
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+	###sami###
+	country = {
+		manygods = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = mistic
+			
+			modifier = {
+				conscription = 0.035
+				political_power_factor = 0.30
+			}
+		}
+	}
+	country = {
+		shaman = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = mistic
+			
+			modifier = {
+				local_resources_factor = 0.15
+				industry_repair_factor = 0.5
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+	}
+	country = {
+		mystic = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = mistic
+			
+			modifier = {
+				army_attack_factor = 0.03
+				army_speed_factor = 0.1
+				army_morale_factor = 0.2
+				army_defence_factor = 0.03
+			}
+		}
+	}
+	country = {
+		juhad = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = juhad
+			
+			modifier = {
+				justify_war_goal_time = -0.15
+				army_attack_factor = 0.01
+				
+			}
+		}
+	}
+	country = {
+		hrist = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = catholic
+			
+			modifier = {
+				political_power_factor = 0.30
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+				
+				
+			}
+		}
+	}
+	###Death###
+	country = {
+		Death_army = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				conscription = 0.85
+				non_core_manpower = 0.95
+				weekly_manpower = -300000
+				army_org_factor = 2.2
+				training_time_factor = -0.999
+				army_defence_factor = 1.9
+				army_attack_factor = 1.9
+				army_morale_factor = 1.9
+				army_speed_factor = 0.4
+				supply_consumption_factor = -2.0
+				ai_focus_aggressive_factor = 7.5
+				ai_get_ally_desire_factor = -9999
+				political_power_factor = 30.0
+				ai_join_ally_desire_factor = -9999
+				
+				
+			}
+		}
+	}
+	###Tungustic###
+	country = {
+		Zemel_reform = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = zemelreform
+			
+			modifier = {
+				political_power_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industry_repair_factor = 0.1
+				
+				
+			}
+		}
+		
+	}
+	
+	country = {
+		Army_reform = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				training_time_factor = -0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				army_morale_factor = 0.09		
+			}
+		}
+		
+	}
+	
+	country = {
+		Army_reform_coch = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				training_time_factor = 0.25
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.15		
+			}
+		}
+		
+	}
+	
+}

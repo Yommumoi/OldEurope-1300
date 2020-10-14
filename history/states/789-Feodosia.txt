@@ -1,0 +1,34 @@
+
+state={
+	id=789
+	name="STATE_789"
+	manpower = 209800
+	
+	state_category = city
+
+	history={
+		owner = GEN
+	    add_core_of = GEN
+		victory_points = {
+			6704 3
+		}
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+			3686 ={
+				naval_base = 3
+				
+			}
+			6704 ={
+				naval_base = 2
+				torgnaval_base = 2
+				
+			}
+		}
+		
+	}
+
+	provinces={
+		3686 6704 
+	}
+}

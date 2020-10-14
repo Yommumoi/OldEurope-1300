@@ -1,0 +1,61 @@
+﻿capital = 657
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	basic_light_tank = 1
+	gwtank = 1
+}
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 10000
+    producer = DAU
+}
+add_equipment_to_stockpile = {
+    type = gw_tank_equipment
+    amount = 10000
+    producer = DAU
+}
+set_variable = { adm_limit = 6 }
+set_variable = { soslovia_dvor = 60 }
+set_variable = { soslovia_duh = 50 }
+set_variable = { soslovia_gor = 40 }
+set_variable = { soslovia_kre = 55 }
+set_variable = { soslovia_rem = 40 }
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 30 }
+add_ideas = {
+tupost
+Tengri
+}
+set_convoys = 10
+set_oob = "DAU_1936"
+add_ideas = techgroup5
+set_variable = { numnasled_value = 1 }
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 0
+	communism = 100
+	neutrality = 0
+	democratic = 0
+}	
+
+create_country_leader = {
+	name = "Mohammed V"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

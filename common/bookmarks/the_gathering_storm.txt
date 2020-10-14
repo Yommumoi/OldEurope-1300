@@ -1,0 +1,244 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1300.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "LIT"
+		default = yes
+		
+		"LIT"={
+			history = "LIT_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				LIT_1
+				LIT_2
+				LIT_3
+			}
+		}
+		"CZE"={
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				CZE_1
+				CZE_2
+				CZE_3
+			}
+		}
+		"CHH"={
+
+			history = "CHH_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				CHH_1
+				CHH_2
+				CHH_3
+			}
+		}
+		"FRA"={
+
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				FRA_1
+				FRA_2
+				FRA_3
+			}
+		}
+		"KAZ"={
+
+			history = "KAZ_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				KAZ_1
+				KAZ_2
+				KAZ_3
+			}
+		}
+		"GRE"={
+
+			history = "GRE_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				generic_1
+				generic_2
+				generic_3
+			}
+		}
+		"LUX"={
+
+			history = "LUX_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				generic_1
+				generic_2
+				generic_3
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		
+		"TNG"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				TNG_1
+				TNG_2
+				TNG_3
+			}
+		}
+		"BAV"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				BAV_1
+				BAV_2
+				BAV_3
+			}
+		}
+		"AZT"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				AZT_1
+				AZT_2
+				AZT_3
+			}
+		}
+		"SWE"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				SWE_1
+				SWE_2
+				SWE_3
+			}
+		}
+		"SAM"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				SAM_1
+				SAM_2
+				SAM_3
+			}
+		}
+		"ARG"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				ARG_1
+				ARG_2
+				ARG_3
+			}
+		}
+		"MSK"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				MSK_1
+				MSK_2
+				MSK_3
+			}
+		}
+		"TVT"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				TVT_1
+				TVT_2
+				TVT_3
+			}
+		}
+		"NOV"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				NOV_1
+				NOV_2
+				NOV_3
+			}
+		}
+		"TUR"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				TUR_1
+				TUR_2
+				TUR_3
+			}
+		}
+
+
+		
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

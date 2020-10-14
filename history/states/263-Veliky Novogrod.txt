@@ -1,0 +1,32 @@
+
+state={
+	id=263
+	name="STATE_263"
+	manpower = 773144
+	
+	state_category = town
+	resources={
+		steel = 4
+		aluminium = 6
+	}
+	history={
+		owner = NOV
+	    add_core_of = NOV
+		victory_points = {
+			117 20 
+		}
+		buildings = {
+			infrastructure = 7
+			money_town = 1
+			arms_factory = 2
+			industrial_complex = 3
+			117 = {
+				bunker = 3
+			}
+		}
+	}
+
+	provinces={
+		8 71 110 117 320 3089 6086 6154 6225 9212 9234 11072 11109 11191 
+	}
+}

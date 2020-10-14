@@ -1,0 +1,32 @@
+
+state={
+	id=851
+	name="STATE_851"
+	manpower = 4000
+	
+	state_category = metropolis
+	
+
+	history={
+		owner = TMP
+	    add_core_of = TMP
+		add_core_of = FRA
+		
+		victory_points = {
+			655 1
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			655 = {
+				bunker = 1
+
+			}
+		}
+		
+	}
+
+	provinces={
+		655 
+	}
+}

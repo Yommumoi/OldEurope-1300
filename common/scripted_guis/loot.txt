@@ -1,0 +1,20 @@
+#scripted_gui = {
+#
+#	loot = {
+#		context_type = player_context
+#		
+#		window_name = "province_building_entry"
+#		
+#		visible = {
+#            has_political_power = yes
+#		}
+#		
+#		effects = {
+#			loot_bg_click = {
+#				add_political_power = 100
+#				
+#			}
+#		}
+#	}
+#    
+#}

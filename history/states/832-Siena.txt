@@ -1,0 +1,28 @@
+
+state={
+	id=832
+	name="STATE_832"
+	manpower = 261233
+	
+	state_category = large_city
+
+	history={
+		owner = SIN
+	    add_core_of = SIN
+		victory_points = {
+			9750 3 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			
+		}
+		
+	}
+
+	provinces={
+		6875 9750 3885
+	}
+}

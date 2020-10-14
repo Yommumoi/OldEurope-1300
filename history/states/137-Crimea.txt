@@ -1,0 +1,22 @@
+
+state={
+	id=137
+	name="STATE_137"
+	manpower = 15401
+	
+	state_category = city
+
+	history={
+		owner = NOG
+	    add_core_of = NOG
+		add_claim_by = KAZ
+		buildings = {
+			infrastructure = 2
+		}
+		
+	}
+
+	provinces={
+		705 3722 6724 9677 9718 11649 
+	}
+}

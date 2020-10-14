@@ -1,0 +1,6 @@
+Hussar_cat = {
+
+	icon = generic_formable_nations
+
+
+}

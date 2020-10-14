@@ -1,0 +1,25 @@
+state={
+	id=894
+	name="STATE_894"
+	
+	state_category = wasteland
+
+	history={
+		owner = ESK
+	    add_core_of = ESK
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		
+
+	}
+
+	provinces={
+		1671 12682 
+	}
+	manpower=138405
+	buildings_max_level_factor=1.000
+}

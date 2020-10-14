@@ -1,0 +1,34 @@
+
+state={
+	id=887
+	name="STATE_887" # Provence
+	manpower = 115100
+
+	state_category = city
+
+	history={
+		owner = GEN
+	    add_core_of = FRA
+		add_core_of = PRO
+		add_core_of = GEN
+		victory_points = {
+			3928 1 
+		}
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			dockyard = 1
+			3928 = {
+				naval_base = 2
+				torgnaval_base = 2
+			}
+			
+		}
+		
+	}
+
+	provinces={
+		3928
+	}
+}

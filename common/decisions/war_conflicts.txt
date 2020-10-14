@@ -1,0 +1,78 @@
+war_conflicts_cat = {
+	war_conflicts_neapol = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 10 
+
+		available = {
+			has_war_with = NEA
+			tag = ARA
+			controls_state = 117
+		}
+		
+
+		visible = {
+			has_war_with = NEA
+			tag = ARA
+
+		}
+
+		complete_effect = {
+			white_peace = NEA
+			country_event = {
+				id = oth.7
+				days = 1
+			}
+			news_event = {
+				id = news.1018
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	war_conflicts_songay = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 10 
+
+		available = {
+			has_war = no
+			tag = MLE
+			country_exists = SON
+		}
+		
+
+		visible = {
+			
+			tag = MLE
+
+		}
+
+		complete_effect = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SON
+				generator = { 841 }
+			}
+			news_event = {
+				id = news.1020
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 50
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

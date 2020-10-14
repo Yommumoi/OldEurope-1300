@@ -1,0 +1,223 @@
+ideas = {
+	country = {
+		CHI_army_morale = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				conscription = 0.005
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+	
+	
+
+		CHI_industry_morale = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.2
+				industrial_capacity_factory = 0.2
+				industry_repair_factor = 0.3
+			}
+		}
+	
+	
+
+		CHI_money = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = denigi
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+	
+	
+
+		CHI_vliyanie = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = spokoy
+			
+			modifier = {
+				democratic_drift = 0.15
+			}
+		}
+	
+	
+
+		CHI_giant = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = dragon
+			
+			modifier = {
+				trade_opinion_factor = 0.75
+			}
+		}
+	
+	
+
+		CHI_control = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = dragon
+			
+			modifier = {
+					justify_war_goal_time = -0.05
+					trade_opinion_factor = -0.15
+					political_power_factor = 0.2
+					stability_factor = -0.10
+			}
+		}
+	
+
+		CHI_mincontrol = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = spokoy
+			
+			modifier = {
+					industrial_capacity_factory = 0.05
+					stability_factor = 0.10
+			}
+		}
+	
+
+		CHI_zaem_gorod = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = denigi
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+	
+
+		CHI_nalog = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = denigi
+			
+			modifier = {
+				political_power_factor = 0.50
+				stability_factor = 0.15
+			}
+		}
+	
+	
+
+		CHI_zemel_reform = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = zemelreform
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.10
+				industry_repair_factor = 0.25
+				consumer_goods_factor = 0.03
+			}
+		}
+	
+	
+
+		CHI_kazna = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = denigi
+			
+			modifier = {
+				political_power_factor = -2.50
+			}
+		}
+	
+
+		CHI_spokoy = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				stability_factor = 1.0
+				political_power_factor = 0.05
+			}
+		}
+	
+
+		CHI_vassal = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				political_power_factor = 0.15
+				non_core_manpower = 0.05
+				max_planning = 0.25
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.3
+			}
+		}
+	}
+}

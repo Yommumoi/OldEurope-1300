@@ -1,0 +1,33 @@
+state={
+	id=791
+	name="STATE_791"
+	manpower = 386353
+
+
+	state_category = town
+
+	history={
+		owner = LUB
+	    add_core_of = LUB
+		add_core_of = DEN
+		victory_points = {
+			11305 20
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 2
+			11305 = {
+				naval_base = 9
+				torgnaval_base = 5
+				bunker = 3
+			}
+		}
+		
+	}
+
+	provinces={
+		11305 
+	}
+}

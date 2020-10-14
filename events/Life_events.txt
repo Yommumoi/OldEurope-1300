@@ -1,0 +1,3665 @@
+add_namespace = lif
+
+country_event = { ###comet
+	id = lif.1
+	title = lif.1.t
+	desc = lif.1.desc
+	picture = GFX_report_comet
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.1.a
+		add_stability = -0.1
+	}
+	option = {
+		name = lif.1.b
+		add_stability = -0.1
+	}
+	option = {
+		name = lif.1.c
+		add_stability = -0.1
+	}
+	option = {
+		name = lif.1.d
+		add_stability = -0.1
+	}
+
+
+}
+country_event = {
+	id = lif.2
+	title = lif.2.t
+	desc = lif.2.desc
+	picture = GFX_report_fire_hata
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.2.a
+		add_political_power = -30
+		custom_effect_tooltip = product_plus1_0
+		add_to_variable = {
+			product_masters_value = 1
+		}
+	}
+	option = {
+		name = lif.2.b
+		add_stability = -0.01
+		custom_effect_tooltip = sos_rem_5
+		add_to_variable = {
+			soslovia_rem = -10
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.3
+	title = lif.3.t
+	desc = lif.3.desc
+	picture = GFX_report_krepost
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.3.a
+		custom_effect_tooltip = sos_duh_10
+		add_to_variable = {
+			soslovia_duh = -10
+		}
+		custom_effect_tooltip = sos_dvor10
+		add_to_variable = {
+			soslovia_dvor = 10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+		add_war_support = 0.03
+		add_manpower = 5000
+	}
+	option = {
+		name = lif.3.b
+		custom_effect_tooltip = sos_duh10
+		add_to_variable = {
+			soslovia_duh = 10
+		}
+		custom_effect_tooltip = sos_dvor_10
+		add_to_variable = {
+			soslovia_dvor = -10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = lif.4
+	title = lif.4.t
+	desc = lif.4.desc
+	picture = GFX_report_dengi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.4.a
+		custom_effect_tooltip = sos_rem10
+		add_to_variable = {
+			soslovia_rem = 10
+		}
+		custom_effect_tooltip = sos_duh10
+		add_to_variable = {
+			soslovia_duh = 10
+		}
+		custom_effect_tooltip = sos_dvor10
+		add_to_variable = {
+			soslovia_dvor = 10
+		}
+		custom_effect_tooltip = sos_gor10
+		add_to_variable = {
+			soslovia_gor = 10
+		}
+		custom_effect_tooltip = sos_kre10
+		add_to_variable = {
+			soslovia_kre = 10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+		add_political_power = 30
+	}
+	option = {
+		name = lif.4.b
+		custom_effect_tooltip = sos_rem_5
+		add_to_variable = {
+			soslovia_rem = -5
+		}
+		custom_effect_tooltip = sos_duh_5
+		add_to_variable = {
+			soslovia_duh = -5
+		}
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_dvor = -5
+		}
+		custom_effect_tooltip = sos_gor_5
+		add_to_variable = {
+			soslovia_gor = -5
+		}
+		custom_effect_tooltip = sos_kre_5
+		add_to_variable = {
+			soslovia_kre = -5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+		add_political_power = 300
+	}
+}
+country_event = {
+	id = lif.5
+	title = lif.5.t
+	desc = lif.5.desc
+	picture = GFX_report_vampir
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.5.a
+		custom_effect_tooltip = sos_kre10
+		add_to_variable = {
+			soslovia_kre = 10
+		}
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_kre = -5
+		}
+		add_stability = 0.03
+		add_manpower = -7500
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.5.b
+		custom_effect_tooltip = sos_kre_15
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			soslovia_kre = -15
+		}
+		
+		add_stability = -0.03
+	}
+}
+country_event = {
+	id = lif.6
+	title = lif.6.t
+	desc = lif.6.desc
+	picture = GFX_report_princess
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.6.a
+		add_political_power = 50
+		custom_effect_tooltip = sos_dvor10
+		add_to_variable = {
+			soslovia_dvor = 10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.6.b
+		add_stability = 0.02
+		custom_effect_tooltip = sos_duh10
+		add_to_variable = {
+			soslovia_duh = 10
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.6.c
+		add_stability = -0.01
+		add_political_power = -30
+		custom_effect_tooltip = sos_rem5
+		add_to_variable = {
+			soslovia_rem = 5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.7
+	title = lif.7.t
+	desc = lif.7.desc
+	picture = GFX_report_evrey
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.7.a
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		custom_effect_tooltip = sos_gor_10
+		add_to_variable = {
+			soslovia_gor = -10
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.7.b
+		custom_effect_tooltip = sos_gor_5
+		add_to_variable = {
+			soslovia_gor = -5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		add_political_power = 150
+	}
+	option = {
+		name = lif.7.c
+		custom_effect_tooltip = sos_gor10
+		add_to_variable = {
+			soslovia_gor = 10
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.8
+	title = lif.8.t
+	desc = lif.8.desc
+	picture = GFX_report_svin
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.8.a
+		custom_effect_tooltip = sos_kre10
+		add_to_variable = {
+			soslovia_kre = 10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = -40
+	}
+	option = {
+		name = lif.8.b
+		custom_effect_tooltip = sos_kre_20
+		add_to_variable = {
+			soslovia_kre = -20
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = lif.9
+	title = lif.9.t
+	desc = lif.9.desc
+	picture = GFX_report_banya
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.9.a
+		add_stability = -0.07
+	}
+}
+country_event = {
+	id = lif.10
+	title = lif.10.t
+	desc = lif.10.desc
+	picture = GFX_report_groza
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.10.a
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem5
+		add_to_variable = {
+			soslovia_rem = 5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		add_political_power = -40
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 1
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 1
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = lif.10.b
+		add_stability = -0.01
+		custom_effect_tooltip = sos_kre_10
+		add_to_variable = {
+			soslovia_kre = -10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem_10
+		add_to_variable = {
+			soslovia_rem = -10
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor_10
+		add_to_variable = {
+			soslovia_gor = -10
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.11
+	title = lif.11.t
+	desc = lif.11.desc
+	picture = GFX_report_army
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.11.a
+		add_manpower = 5000
+		add_political_power = -200
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = ROOT
+		}
+	}
+	option = {
+		name = lif.11.b
+		add_political_power = 10
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_dvor = -5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.12
+	title = lif.12.t
+	desc = lif.12.desc
+	picture = GFX_report_zhena
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.12.a
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = lif.13
+	title = lif.13.t
+	desc = lif.13.desc
+	picture = GFX_report_lodka
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.13.a
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_dvor = 5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.13.b
+		custom_effect_tooltip = sos_kre10
+		add_to_variable = {
+			soslovia_kre = 10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor_10
+		add_to_variable = {
+			soslovia_dvor = -10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.13.c
+		custom_effect_tooltip = sos_kre_10
+		add_to_variable = {
+			soslovia_kre = -10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor10
+		add_to_variable = {
+			soslovia_dvor = 10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.14
+	title = lif.14.t
+	desc = lif.14.desc
+	picture = GFX_report_turnir
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.14.a
+		add_political_power = -200
+		add_stability = 0.06
+		add_war_support = 0.05
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor5
+		add_to_variable = {
+			soslovia_dvor = 5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem5
+		add_to_variable = {
+			soslovia_rem = 5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_duh5
+		add_to_variable = {
+			soslovia_duh = 5
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.14.b
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_dvor = -5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.15
+	title = lif.15.t
+	desc = lif.15.desc
+	picture = GFX_report_husar
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.15.a
+		load_oob = "HUSAR"
+	}
+}
+country_event = {
+	id = lif.16
+	title = lif.16.t
+	desc = lif.16.desc
+	picture = GFX_report_sol
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.16.a
+		custom_effect_tooltip = sos_kre_20
+		add_to_variable = {
+			soslovia_kre = -20
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.16.b
+		custom_effect_tooltip = sos_kre15
+		add_to_variable = {
+			soslovia_kre = 15
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = -145
+	}
+}
+country_event = {
+	id = lif.18
+	title = lif.18.t
+	desc = lif.18.desc
+	picture = GFX_report_sosedohuel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.18.a
+		if = {
+			limit = {
+				NOT = {
+					tag = XXX
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					NOT = {
+						tag = XXX
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = FROM
+				}
+				country_event = {
+					id = lif.19
+				}
+				
+			}
+		}
+	}
+}
+country_event = {
+	id = lif.19
+	title = lif.19.t
+	desc = lif.19.desc
+	picture = GFX_report_sosedohuel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.19.a
+		custom_effect_tooltip = pretensia_na_soseda
+	}
+}
+country_event = {
+	id = lif.17
+	title = lif.17.t
+	desc = lif.17.desc
+	picture = GFX_report_oboz
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.17.a
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.17.b
+		custom_effect_tooltip = sos_gor_10
+		add_to_variable = {
+			soslovia_gor = -10
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem_5
+		add_to_variable = {
+			soslovia_rem = -5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		add_political_power = 185
+		country_event = {
+			id = lif.18
+		}
+	}
+}
+country_event = {
+	id = lif.20
+	title = lif.20.t
+	desc = lif.20.desc
+	picture = GFX_report_vlichel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.20.a
+		custom_effect_tooltip = sos_gor20
+		add_to_variable = {
+			soslovia_gor = 20
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		random_owned_state = {
+			TO1 = {
+				transfer_state = PREV
+				set_capital = PREV
+				set_cosmetic_tag = TOR_TOR
+				add_manpower = 5000
+			}
+			add_manpower = 1
+			add_core_of = TO1
+		}
+		puppet = TO1
+		add_political_power = 600
+	}
+	option = {
+		name = lif.20.b
+		custom_effect_tooltip = sos_gor_5
+		add_to_variable = {
+			soslovia_gor = -5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.21
+	title = lif.21.t
+	desc = lif.21.desc
+	picture = GFX_report_oruzhie
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.21.a
+		add_ideas = law_money0
+		add_political_power = -50
+	}
+	option = {
+		name = lif.21.b
+		custom_effect_tooltip = cost_equip_izm
+		add_to_variable = { buy_cost = 50 }
+	}
+}
+country_event = {
+	id = lif.22
+	title = lif.22.t
+	desc = lif.22.desc
+	picture = GFX_report_shahta
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.22.a
+		random_owned_state = {
+			add_manpower = -2500
+		}
+		add_manpower = -500
+		add_stability = -0.1
+		
+		custom_effect_tooltip = sos_kre_10
+		add_to_variable = {
+			soslovia_kre = -10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.22.b
+		random_owned_state = {
+			add_manpower = -2500
+		}
+		add_manpower = -500
+		add_stability = -0.05
+		
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = -175
+	}
+}
+country_event = {
+	id = lif.23
+	title = lif.23.t
+	desc = lif.23.desc
+	picture = GFX_report_shahta
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.23.a
+		random_owned_state = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+		
+		custom_effect_tooltip = sos_rem10
+		add_to_variable = {
+			soslovia_rem = 10
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		add_political_power = -200
+	}
+	option = {
+		name = lif.23.b
+		custom_effect_tooltip = sos_rem_10
+		add_to_variable = {
+			soslovia_rem = -10
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.24
+	title = lif.24.t
+	desc = lif.24.desc
+	picture = GFX_report_manufactura
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.24.a
+		capital_scope = {
+			add_resource = {
+				type = chromium
+				amount = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = lif.25
+	title = lif.25.t
+	desc = lif.25.desc
+	picture = GFX_report_goldruda
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.25.a
+		random_owned_state = {
+			add_resource = {
+				type = aluminium
+				amount = 30
+			}
+		}
+	}
+}
+country_event = {
+	id = lif.26
+	title = lif.26.t
+	desc = lif.26.desc
+	picture = GFX_report_krepost
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.26.a
+		capital_scope = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+
+				}
+			}
+			
+		}
+		add_political_power = -250
+		custom_effect_tooltip = sos_dvor5
+		add_to_variable = {
+			soslovia_dvor = 5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.26.b
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_dvor = -5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.27
+	title = lif.27.t
+	desc = lif.27.desc
+	picture = GFX_report_evrey
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.27.a
+		if = {
+			limit = {
+				has_idea = corruption_3
+			}
+			add_ideas = corruption_2
+			else_if = {
+				limit = {
+					has_idea = corruption_2
+				}
+				add_ideas = corruption_1
+			}
+			
+		}
+		
+	}
+	
+}
+country_event = {
+	id = lif.28
+	title = lif.28.t
+	desc = lif.28.desc
+	picture = GFX_report_pekar
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.28.a
+		custom_effect_tooltip = sos_gor_10
+		add_to_variable = {
+			soslovia_gor = -10
+		}
+		custom_effect_tooltip = sos_kre10
+		add_to_variable = {
+			soslovia_kre = 10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.28.b
+		custom_effect_tooltip = sos_gor10
+		add_to_variable = {
+			soslovia_gor = 10
+		}
+		custom_effect_tooltip = sos_kre_10
+		add_to_variable = {
+			soslovia_kre = -10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.29
+	title = lif.29.t
+	desc = lif.29.desc
+	picture = GFX_report_bankukrali
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.29.a
+		set_variable = { bank_money = 0 }
+		set_variable = {bank_grabiat = 0}
+		
+	}
+	
+}
+country_event = {
+	id = lif.30
+	title = lif.30.t
+	desc = lif.30.desc
+	picture = GFX_report_malchik
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.30.a
+		add_stability = 0.01
+		add_to_variable = { bank_money = 25 }
+		custom_effect_tooltip = bank_malchik
+		
+	}
+	option = {
+		name = lif.30.b
+		add_to_variable = { bank_money = 25 }
+		custom_effect_tooltip = bank_malchik
+		add_political_power = -50
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		
+	}
+	
+}
+country_event = {
+	id = lif.31
+	title = lif.31.t
+	desc = lif.31.desc
+	picture = GFX_report_persel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.31.a
+		random_owned_state = {
+			add_manpower = 10000
+		}
+		
+	}
+	
+}
+country_event = {
+	id = lif.32
+	title = lif.32.t
+	desc = lif.32.desc
+	picture = GFX_report_persel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.32.a
+		every_owned_state = {
+			add_manpower = 2500
+		}
+		
+	}
+	
+}
+country_event = {
+	id = lif.33
+	title = lif.33.t
+	desc = lif.33.desc
+	picture = GFX_report_persel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.33.a
+		load_oob = "POMOSH"
+		
+		ROOT = {
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Town militia\" division_template = \"Town_militia\" start_experience_factor = 0.2" 
+					owner = PREV
+				}
+			}
+		}
+		
+	}
+	
+}
+country_event = {
+	id = lif.34
+	title = lif.34.t
+	desc = lif.34.desc
+	picture = GFX_report_vinoman
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.34.a
+		add_to_variable = {povt_timer = 1}
+		add_to_variable = {adm_limit = 2}
+		custom_effect_tooltip = adm_limit2
+	}
+	
+}
+country_event = {
+	id = lif.35
+	title = lif.35.t
+	desc = lif.35.desc
+	picture = GFX_report_zhirniytorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.35.a
+		add_to_variable = {adm_limit = -1}
+		custom_effect_tooltip = adm_limit_1
+		clamp_variable = {
+			var = adm_limit
+			min = 1
+			max = 1000
+		}
+	}
+	
+}
+country_event = {
+	id = lif.36
+	title = lif.36.t
+	desc = lif.36.desc
+	picture = GFX_report_piyanyyhui
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.36.a
+		add_stability = -0.03
+		add_political_power = -150
+	}
+	option = {
+		name = lif.36.b
+		add_stability = -0.03
+		add_political_power = -150
+	}
+	option = {
+		name = lif.36.c
+		add_stability = -0.03
+		add_political_power = -150
+	}
+	option = {
+		name = lif.36.d
+		add_stability = -0.01
+		add_political_power = -175
+	}
+	
+}
+
+country_event = {
+	id = lif.37
+	title = lif.37.t
+	desc = lif.37.desc
+	picture = GFX_report_sokrov
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.37.a
+		add_political_power = 250
+	}
+	option = {
+		name = lif.37.a
+		add_political_power = 50
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_duh5
+		add_to_variable = {
+			soslovia_duh = 5
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor5
+		add_to_variable = {
+			soslovia_dvor = 5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem5
+		add_to_variable = {
+			soslovia_rem = 5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+	}
+	
+}
+country_event = {
+	id = lif.38
+	title = lif.38.t
+	desc = lif.38.desc
+	picture = GFX_report_persel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.38.a
+		random_owned_state = {
+			add_manpower = 2000
+		}
+		random_owned_state = {
+			add_manpower = 1000
+		}
+		random_owned_state = {
+			add_manpower = 666
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = lif.39
+	title = lif.39.t
+	desc = lif.39.desc
+	picture = GFX_report_sosedohuel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.39.a
+		add_to_variable = {adm_limit = -5}
+		custom_effect_tooltip = adm_limit_5
+		clamp_variable = {
+			var = adm_limit
+			min = 1
+			max = 1000
+		}
+		add_stability = -0.03
+		
+	}
+	
+}
+country_event = {
+	id = lif.40
+	title = lif.40.t
+	desc = lif.40.desc
+	picture = GFX_report_swepozv
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.40.a
+		add_command_power = 25
+		
+	}
+	option = {
+		name = lif.40.b
+		add_manpower = 1500
+		
+	}
+	
+}
+country_event = { 
+	id = lif.41
+	title = lif.41.t
+	desc = lif.41.desc
+	picture = GFX_report_feodal
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.41.a
+
+			create_corps_commander = {
+			
+				name = "Sir Leopold III"
+				picture = "gfx/leaders/123.dds"
+				
+				skill = 3
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 2
+				
+			}
+		
+		
+	}
+	
+	
+}
+country_event = {
+	id = lif.42
+	title = lif.42.t
+	desc = lif.42.desc
+	picture = GFX_report_sovetnik
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.42.a
+		add_to_variable = {adm_limit = -1}
+		custom_effect_tooltip = adm_limit_1
+		clamp_variable = {
+			var = adm_limit
+			min = 1
+			max = 1000
+		}
+		
+	}
+	
+}
+country_event = {
+	id = lif.43
+	title = lif.43.t
+	desc = lif.43.desc
+	picture = GFX_report_svin
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.43.a
+		add_political_power = 20
+		custom_effect_tooltip = sos_kre_5
+		add_to_variable = {
+			soslovia_kre = -5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.43.b
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		
+	}
+	
+}
+country_event = {
+	id = lif.44
+	title = lif.44.t
+	desc = lif.44.desc
+	picture = GFX_report_pozhar
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.44.a
+		capital_scope = {
+			damage_building = {
+				type = infrastructure
+				damage = 5
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 3
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 3
+			}
+		}
+	}
+	option = {
+		name = lif.44.b
+		add_political_power = -200
+	}
+	
+}
+country_event = {
+	id = lif.45
+	title = lif.45.t
+	desc = lif.45.desc
+	picture = GFX_report_navodn
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.45.a
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+		}
+		add_political_power = -50
+	}
+	
+	
+}
+country_event = {
+	id = lif.46
+	title = lif.46.t
+	desc = lif.46.desc
+	picture = GFX_report_cirk
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.46.a
+		
+		custom_effect_tooltip = sos_kre_5
+		add_to_variable = {
+			soslovia_kre = -5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.46.b
+		custom_effect_tooltip = sos_kre10
+		add_to_variable = {
+			soslovia_kre = 10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = -150
+	}
+}
+country_event = {
+	id = lif.47
+	title = lif.47.t
+	desc = lif.47.desc
+	picture = GFX_report_kuznec
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.47.a
+		random_list = {
+			10 = {country_event = {id = lif.1147 days = 15}}
+			15 = {country_event = {id = lif.1247 days = 15}}
+			25 = {country_event = {id = lif.1347 days = 15}}
+			50 = {}
+		}
+		add_political_power = -500
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = lif.47.b
+		ai_chance = { factor = 95 }
+		
+	}
+}
+country_event = {
+	id = lif.1147
+	title = lif.1147.t
+	desc = lif.1147.desc
+	picture = GFX_report_kuznec
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.1147.a
+		add_ideas = kuznec1
+	}
+}
+country_event = {
+	id = lif.1247
+	title = lif.1247.t
+	desc = lif.1247.desc
+	picture = GFX_report_kuznec
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.1247.a
+		add_ideas = kuznec2
+	}
+}
+country_event = {
+	id = lif.1347
+	title = lif.1347.t
+	desc = lif.1347.desc
+	picture = GFX_report_kuznec
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.1347.a
+		add_ideas = kuznec3
+	}
+}
+country_event = {
+	id = lif.48
+	title = lif.48.t
+	desc = lif.48.desc
+	picture = GFX_report_cirk
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.48.a
+		add_stability = 0.1
+		add_political_power = -100
+	}
+	
+	option = {
+		name = lif.48.b
+		add_stability = 0.05
+		custom_effect_tooltip = sos_dvor_15
+		add_to_variable = {
+			soslovia_dvor = -15
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		
+	}
+	option = {
+		name = lif.48.c
+		add_stability = -0.15
+		
+	}
+}
+
+country_event = {
+	id = lif.49
+	title = lif.49.t
+	desc = lif.49.desc
+	picture = GFX_report_pirshestvo
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.49.a
+		add_stability = -0.05
+		custom_effect_tooltip = sos_dvor10
+		add_to_variable = {
+			soslovia_dvor = 10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_kre_10
+		add_to_variable = {
+			soslovia_kre = -10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.49.b
+		add_stability = 0.05
+		custom_effect_tooltip = sos_dvor_10
+		add_to_variable = {
+			soslovia_dvor = -10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_kre10
+		add_to_variable = {
+			soslovia_kre = 10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = -120
+		
+	}
+}
+country_event = {
+	id = lif.50
+	title = lif.50.t
+	desc = lif.50.desc
+	picture = GFX_report_zelrud
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.50.a
+		add_political_power = 105
+		custom_effect_tooltip = sos_dvor15
+		add_to_variable = {
+			soslovia_dvor = 15
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		
+		custom_effect_tooltip = sos_rem_5
+		add_to_variable = {
+			soslovia_rem = -5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor_5
+		add_to_variable = {
+			soslovia_gor = -5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_kre_5
+		add_to_variable = {
+			soslovia_kre = -5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.50.b
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_dvor = -5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem5
+		add_to_variable = {
+			soslovia_rem = 5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = lif.51
+	title = lif.51.t
+	desc = lif.51.desc
+	picture = GFX_report_bok
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.51.a
+		add_political_power = 200
+		random_list = {
+			50 = {add_stability = -0.03}
+			50 = {add_political_power = 400}
+		}
+		
+	}
+	
+	option = {
+		name = lif.51.b
+		
+	}
+}
+country_event = {
+	id = lif.52
+	title = lif.52.t
+	desc = lif.52.desc
+	picture = GFX_report_konobych
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.52.a
+		add_political_power = -200
+		add_stability = 0.1
+		
+	}
+	
+	option = {
+		name = lif.52.b
+		add_political_power = -125
+		
+	}
+	option = {
+		name = lif.52.c
+		add_political_power = -50
+		add_stability = -0.04
+	}
+}
+country_event = {
+	id = lif.53
+	title = lif.53.t
+	desc = lif.53.desc
+	picture = GFX_report_remvkl
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.53.a
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = -200
+		add_stability = 0.01
+		random_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		
+	}
+	
+	option = {
+		name = lif.53.b
+		custom_effect_tooltip = sos_rem_15
+		add_to_variable = {
+			soslovia_rem = -15
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		
+	}
+}
+country_event = {
+	id = lif.54
+	title = lif.54.t
+	desc = lif.54.desc
+	picture = GFX_report_krestyvost
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.54.a
+		add_political_power = -100
+		custom_effect_tooltip = sos_kre20
+		add_to_variable = {
+			soslovia_kre = 20
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor_10
+		add_to_variable = {
+			soslovia_dvor = -10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.54.b
+		custom_effect_tooltip = sos_kre_30
+		add_to_variable = {
+			soslovia_kre = -30
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor15
+		add_to_variable = {
+			soslovia_dvor = 15
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.55
+	title = lif.55.t
+	desc = lif.55.desc
+	picture = GFX_report_domvgorode
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.55.a
+		custom_effect_tooltip = sos_dvor20
+		add_to_variable = {
+			soslovia_dvor = 20
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		add_political_power = 60
+	}
+	
+	option = {
+		name = lif.55.b
+		custom_effect_tooltip = sos_kre20
+		add_to_variable = {
+			soslovia_kre = 20
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = 20
+	}
+	option = {
+		name = lif.55.c
+		add_stability = 0.01
+	}
+}
+country_event = {
+	id = lif.56
+	title = lif.56.t
+	desc = lif.56.desc
+	picture = GFX_report_konobych
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.56.a
+		custom_effect_tooltip = sos_dvor_15
+		add_to_variable = {
+			soslovia_dvor = -15
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.56.b
+		custom_effect_tooltip = sos_dvor5
+		add_to_variable = {
+			soslovia_dvor = 5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		add_political_power = -120
+	}
+}
+country_event = {
+	id = lif.57
+	title = lif.57.t
+	desc = lif.57.desc
+	picture = GFX_report_gehoi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.57.a
+		add_manpower = 1
+		add_war_support = 0.2
+	}
+	
+	option = {
+		name = lif.57.b
+		add_stability = 0.1
+		add_war_support = 0.05
+		add_political_power = -20
+	}
+	option = {
+		name = lif.57.c
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = lif.58
+	title = lif.58.t
+	desc = lif.58.desc
+	picture = GFX_report_korovi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.58.a
+		custom_effect_tooltip = sos_kre20
+		add_to_variable = {
+			soslovia_kre = 20
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.58.b
+		add_political_power = 50
+		custom_effect_tooltip = sos_rem5
+		add_to_variable = {
+			soslovia_rem = 5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.58.c
+		add_political_power = 100
+	}
+}
+country_event = {
+	id = lif.59
+	title = lif.59.t
+	desc = lif.59.desc
+	picture = GFX_report_silk
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.59.a
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		add_political_power = -120
+		random_owned_state = {
+			add_resource = {
+				type = chromium
+				amount = 12
+			}
+		}
+	}
+	
+	option = {
+		name = lif.59.b
+		custom_effect_tooltip = sos_gor_5
+		add_to_variable = {
+			soslovia_gor = -5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.60
+	title = lif.60.t
+	desc = lif.60.desc
+	picture = GFX_report_golodholod
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.60.a
+		add_political_power = -150
+	}
+	
+	option = {
+		name = lif.60.b
+		custom_effect_tooltip = sos_gor_10
+		add_to_variable = {
+			soslovia_gor = -10
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_kre_10
+		add_to_variable = {
+			soslovia_kre = -10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem_10
+		add_to_variable = {
+			soslovia_rem = -10
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_duh_10
+		add_to_variable = {
+			soslovia_duh = -10
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor_10
+		add_to_variable = {
+			soslovia_dvor = -10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.61
+	title = lif.61.t
+	desc = lif.61.desc
+	picture = GFX_report_manufact2
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.61.a
+		custom_effect_tooltip = product_plus2
+		add_to_variable = { product_masters_value = 100 }
+	}
+	
+}
+country_event = {
+	id = lif.62
+	title = lif.62.t
+	desc = lif.62.desc
+	picture = GFX_report_manufact2
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.62.a
+		random_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	
+	
+}
+country_event = {
+	id = lif.63
+	title = lif.63.t
+	desc = lif.63.desc
+	picture = GFX_report_manufact2
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.63.a
+		random_owned_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	
+	
+}
+country_event = {
+	id = lif.64
+	title = lif.64.t
+	desc = lif.64.desc
+	picture = GFX_report_bornet
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.64.a
+		add_stability = -0.25
+		add_to_variable = {numnasled_value = 1}
+		custom_effect_tooltip = naslednik_tooltip_bastard
+	}
+	
+	option = {
+		name = lif.64.b
+		add_stability = -0.02
+	}
+}
+country_event = {
+	id = lif.65
+	title = lif.65.t
+	desc = lif.65.desc
+	picture = GFX_report_resenieslush
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.65.a
+		hidden_effect = {
+			random_list = {
+				50 = {
+				
+				}
+				49 = {
+					country_event = {
+						id = lif.64
+						days = 270
+					}
+				}
+				1 = {
+					country_event = {
+						id = lif.64
+						days = 1
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = sex_horosh
+		
+	}
+	
+	option = {
+		name = lif.65.b
+		add_stability = 0.01
+	}
+}
+country_event = {
+	id = lif.66
+	title = lif.66.t
+	desc = lif.66.desc
+	picture = GFX_report_kuznya
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.66.a
+		add_political_power = -300
+		random_owned_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	
+	option = {
+		name = lif.66.b
+		
+	}
+}
+country_event = {
+	id = lif.67
+	title = lif.67.t
+	desc = lif.67.desc
+	picture = GFX_report_sluhi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.67.a
+		add_stability = -0.15
+	}
+	
+}
+country_event = {
+	id = lif.68
+	title = lif.68.t
+	desc = lif.68.desc
+	picture = GFX_report_dwarycara
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.68.a
+		custom_effect_tooltip = sos_gor10
+		add_to_variable = {
+			soslovia_gor = 10
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.68.b
+		add_stability = 0.05
+	}
+	option = {
+		name = lif.68.c
+		add_stability = 0.13
+		add_political_power = 25
+		custom_effect_tooltip = sos_gor_10
+		add_to_variable = {
+			soslovia_gor = -10
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.69
+	title = lif.69.t
+	desc = lif.69.desc
+	picture = GFX_report_torgovlybla
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.69.a
+		add_political_power = 200
+	}
+	
+	option = {
+		name = lif.69.b
+		add_political_power = 50
+		add_stability = 0.1
+	}
+}
+country_event = {
+	id = lif.70
+	title = lif.70.t
+	desc = lif.70.desc
+	picture = GFX_report_torgovlybla
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.70.a
+		random_owned_state = {
+			if = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+}
+country_event = {
+	id = lif.71
+	title = lif.71.t
+	desc = lif.71.desc
+	picture = GFX_report_pretensia
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.71.a
+		random_owned_state = {
+			limit = {
+				any_neighbor_state = {
+					owner = {
+						NOT = {
+							OR = {
+								tag = XXX
+								tag = ROOT
+							}
+						}
+					}
+					NOT = {
+						is_claimed_by = ROOT
+					}
+				}
+			}
+			random_neighbor_state  = {
+				limit = {
+					owner = {
+						NOT = {
+							OR = {
+								tag = XXX
+								tag = ROOT
+							}
+						}
+					}
+					NOT = {
+						is_claimed_by = ROOT
+					}
+				}
+				add_claim_by = ROOT
+			
+			}
+		}
+		add_political_power = -50
+	}
+	
+	option = {
+		name = lif.71.b
+		
+	}
+}
+country_event = {
+	id = lif.72
+	title = lif.72.t
+	desc = lif.72.desc
+	picture = GFX_report_banditss
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.72.a
+		add_political_power = -50
+		add_manpower = -2500
+		
+	}
+	
+	option = {
+		name = lif.72.b
+		add_stability = -0.1
+	}
+}
+country_event = {
+	id = lif.73
+	title = lif.73.t
+	desc = lif.73.desc
+	picture = GFX_report_polkovodec
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.73.a
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1.0
+			uses = 1
+			category = land_doctrine
+		}
+		add_political_power = -120
+	}
+	
+	option = {
+		name = lif.73.b
+		
+	}
+}
+country_event = {
+	id = lif.74
+	title = lif.74.t
+	desc = lif.74.desc
+	picture = GFX_report_kulacboy
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.74.a
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor5
+		add_to_variable = {
+			soslovia_dvor = 5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		random_list = {
+			95 = {
+				add_stability = 0.05
+				add_political_power = 60
+			}
+			5 = {
+				add_stability = -0.05
+				add_political_power = -60
+				kill_country_leader = yes
+				hidden_effect = {
+					if = {
+						limit = {
+							has_government = fascism
+						}
+						set_country_flag = fascism_tut
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_country_flag = communism_tut
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_country_flag = neutrality_tut
+					}
+					if = {
+						limit = {
+							has_government = democratic
+						}
+						set_country_flag = democratic_tut
+					}
+					set_politics = {ruling_party = neutrality}
+					kill_country_leader = yes
+					set_politics = {ruling_party = fascism}
+					kill_country_leader = yes
+					set_politics = {ruling_party = communism}
+					kill_country_leader = yes
+					set_politics = {ruling_party = democratic}
+					kill_country_leader = yes
+					if = {
+						limit = {
+							has_country_flag = fascism_tut
+						}
+						set_politics = {ruling_party = fascism}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = communism_tut
+						}
+						set_politics = {ruling_party = communism}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = neutrality_tut
+						}
+						set_politics = {ruling_party = neutrality}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = democratic_tut
+						}
+						set_politics = {ruling_party = democratic}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {numnasled_value < 1}
+					}
+					country_event = {
+						id = dinbrak.1 
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {numnasled_value > 0}
+					}
+					add_to_variable = {numnasled_value = -1}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = lif.74.b
+		add_manpower = -500
+		add_stability = 0.1
+		custom_effect_tooltip = sos_kre_10
+		add_to_variable = {
+			soslovia_kre = -10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor_10
+		add_to_variable = {
+			soslovia_dvor = -10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.74.c
+		add_manpower = -1500
+		add_stability = -0.02
+	}
+}
+country_event = {
+	id = lif.75
+	title = lif.75.t
+	desc = lif.75.desc
+	picture = GFX_report_epos
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.75.a
+		add_stability = 0.1
+		add_political_power = -60
+	}
+	
+	option = {
+		name = lif.75.b
+		
+	}
+}
+country_event = {
+	id = lif.76
+	title = lif.76.t
+	desc = lif.76.desc
+	picture = GFX_report_napugdvor
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.76.a
+		add_manpower = -500
+		add_political_power = 50
+	}
+	
+	option = {
+		name = lif.76.b
+		add_stability = -0.02
+	}
+}
+country_event = {
+	id = lif.77
+	title = lif.77.t
+	desc = lif.77.desc
+	picture = GFX_report_podkup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.77.a
+		add_stability = -0.15
+	}
+	
+	option = {
+		name = lif.77.b
+		add_stability = -0.05
+		add_political_power = 75
+		custom_effect_tooltip = adm_limit_1
+		add_to_variable = {adm_limit = -1}
+		clamp_variable = {
+			var = adm_limit
+			min = 0
+			max = 100000
+		}
+	}
+}
+country_event = {
+	id = lif.78
+	title = lif.78.t
+	desc = lif.78.desc
+	picture = GFX_report_drugzagr
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.78.a
+		add_political_power = -70
+		random_neighbor_country = {
+			add_relation_modifier = {
+				modifier = Druzhba
+			}
+		}
+	}
+	
+	option = {
+		name = lif.78.b
+		add_stability = 0.01
+	}
+}
+country_event = {
+	id = lif.79
+	title = lif.79.t
+	desc = lif.79.desc
+	picture = GFX_report_voiny
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.79.a
+		add_war_support = -0.2
+	}
+	
+}
+country_event = {
+	id = lif.80
+	title = lif.80.t
+	desc = lif.80.desc
+	picture = GFX_report_voiny
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.80.a
+		add_war_support = 0.2
+	}
+	
+	
+}
+country_event = {
+	id = lif.81
+	title = lif.81.t
+	desc = lif.81.desc
+	picture = GFX_report_rabyi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.81.a
+		capital_scope = {
+			add_resource = {
+				type = oil
+				amount = 15
+			}
+		}
+		add_political_power = -115
+	}
+	
+	option = {
+		name = lif.81.b
+		
+	}
+}
+country_event = {
+	id = lif.82
+	title = lif.82.t
+	desc = lif.82.desc
+	picture = GFX_report_torgovlybla
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.82.a
+		add_political_power = -50
+		custom_effect_tooltip = product_15
+		add_to_variable = {
+			product_masters_value = -15
+		}
+		clamp_variable = {
+			var = product_masters_value
+			min = 0
+			max = 1000000
+		}
+	}
+	
+}
+country_event = {
+	id = lif.83
+	title = lif.83.t
+	desc = lif.83.desc
+	picture = GFX_report_podkup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.83.a
+		add_political_power = -75
+		custom_effect_tooltip = adm_limit1
+		add_to_variable = {adm_limit = 1}
+	}
+	
+	option = {
+		name = lif.83.b
+		
+	}
+}
+country_event = {
+	id = lif.84
+	title = lif.84.t
+	desc = lif.84.desc
+	picture = GFX_report_kostel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.84.a
+		add_political_power = 80
+		custom_effect_tooltip = sos_duh_15
+		add_to_variable = {
+			soslovia_duh = -15
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.84.b
+		custom_effect_tooltip = sos_duh5
+		add_to_variable = {
+			soslovia_duh = 5
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.85
+	title = lif.85.t
+	desc = lif.85.desc
+	picture = GFX_report_karta
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.85.a
+		add_political_power = -100
+		add_to_variable = {adm_limit = 1}
+		custom_effect_tooltip = adm_limit1
+	}
+	
+	option = {
+		name = lif.85.b
+		
+	}
+}
+country_event = {
+	id = lif.86
+	title = lif.86.t
+	desc = lif.86.desc
+	picture = GFX_report_podkup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.86.a
+		custom_effect_tooltip = sos_kre10
+		add_to_variable = {
+			soslovia_kre = 10
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.86.b
+		add_political_power = 80
+	}
+}
+country_event = {
+	id = lif.87
+	title = lif.87.t
+	desc = lif.87.desc
+	picture = GFX_report_oboroten
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.87.a
+		add_stability = 0.1
+		add_to_variable = {adm_limit = -1}
+		custom_effect_tooltip = adm_limit_1
+		clamp_variable = {
+			var = adm_limit
+			min = 0
+			max = 10000
+		}
+	}
+	
+	option = {
+		name = lif.87.b
+		add_political_power = 50
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = lif.88
+	title = lif.88.t
+	desc = lif.88.desc
+	picture = GFX_report_ulichpolitiki
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.88.a
+		add_political_power = 20
+		add_stability = -0.05
+		custom_effect_tooltip = sos_kre_5
+		add_to_variable = {
+			soslovia_kre = -5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_dvor = -5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_duh_5
+		add_to_variable = {
+			soslovia_duh = -5
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor_5
+		add_to_variable = {
+			soslovia_gor = -5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem_5
+		add_to_variable = {
+			soslovia_rem = -5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		
+	}
+	
+	
+}
+country_event = {
+	id = lif.89
+	title = lif.89.t
+	desc = lif.89.desc
+	picture = GFX_report_urozhai
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.89.a
+		custom_effect_tooltip = sos_kre15
+		add_to_variable = {
+			soslovia_kre = 15
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.89.b
+		add_political_power = 100
+	}
+	option = {
+		name = lif.89.c
+		custom_effect_tooltip = sos_dvor15
+		add_to_variable = {
+			soslovia_dvor = 15
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.90
+	title = lif.90.t
+	desc = lif.90.desc
+	picture = GFX_report_golodholod
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.90.a
+		add_stability = -0.05
+		every_owned_state = {
+			add_manpower = -3500
+		}
+		add_manpower = -1500
+	}
+	
+	option = {
+		name = lif.90.b
+		add_stability = 0.1
+		add_political_power = -2000
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.91
+	title = lif.91.t
+	desc = lif.91.desc
+	picture = GFX_report_remeslenniki
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.91.a
+		custom_effect_tooltip = sos_rem10
+		add_to_variable = {
+			soslovia_rem = 10
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.91.b
+		custom_effect_tooltip = sos_gor10
+		add_to_variable = {
+			soslovia_gor = 10
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.91.c
+		add_stability = -0.03
+		custom_effect_tooltip = sos_gor_5
+		add_to_variable = {
+			soslovia_gor = -5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem_5
+		add_to_variable = {
+			soslovia_rem = -5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+	}
+	option = {
+		name = lif.91.d
+		add_political_power = -150
+		custom_effect_tooltip = sos_rem15
+		add_to_variable = {
+			soslovia_rem = 15
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+		add_stability = 0.15
+	}
+}
+country_event = {
+	id = lif.92
+	title = lif.92.t
+	desc = lif.92.desc
+	picture = GFX_report_podsolnuh
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.92.a
+		add_stability = 0.1
+	}
+	
+	
+}
+country_event = {
+	id = lif.93
+	title = lif.93.t
+	desc = lif.93.desc
+	picture = GFX_report_pretensia
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.93.a
+		add_manpower = -3000
+	}
+	
+	option = {
+		name = lif.93.b
+		if = {
+			limit = {
+				NOT = {
+					tag = XXX
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					NOT = {
+						tag = XXX
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	option = {
+		name = lif.93.c
+		add_stability = -0.07
+	}
+}
+country_event = {
+	id = lif.94
+	title = lif.94.t
+	desc = lif.94.desc
+	picture = GFX_report_morsktorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.94.a
+		add_political_power = -120
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.94.b
+		
+	}
+}
+country_event = {
+	id = lif.95
+	title = lif.95.t
+	desc = lif.95.desc
+	picture = GFX_report_kostel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.95.a
+		add_political_power = -150
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_building_construction = {
+				type = money_town
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		custom_effect_tooltip = sos_duh10
+		add_to_variable = {
+			soslovia_duh = 10
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.95.b
+		
+	}
+}
+country_event = {
+	id = lif.96
+	title = lif.96.t
+	desc = lif.96.desc
+	picture = GFX_report_uragan
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.96.a
+		random_owned_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 4
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 2
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 3
+			}
+			damage_building = {
+				type = library
+				damage = 1
+			}
+			damage_building = {
+				type = money_town
+				damage = 1
+			}
+			
+		}
+	}
+	
+}
+country_event = {
+	id = lif.97
+	title = lif.97.t
+	desc = lif.97.desc
+	picture = GFX_report_goritizba
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.97.a
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_stability = 0.1
+		add_political_power = -100
+	}
+	
+	option = {
+		name = lif.97.b
+		custom_effect_tooltip = sos_kre_5
+		add_to_variable = {
+			soslovia_kre = -5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.98
+	title = lif.98.t
+	desc = lif.98.desc
+	picture = GFX_report_shut
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.98.a
+		custom_effect_tooltip = sos_kre_10
+		add_to_variable = {
+			soslovia_dvor = -10
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		add_political_power = 100
+	}
+	
+	option = {
+		name = lif.98.b
+		custom_effect_tooltip = sos_kre_5
+		add_to_variable = {
+			soslovia_kre = -5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		add_political_power = 50
+	}
+	option = {
+		name = lif.98.c
+		custom_effect_tooltip = sos_dvor5
+		add_to_variable = {
+			soslovia_dvor = 5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}
+country_event = {
+	id = lif.99
+	title = lif.99.t
+	desc = lif.99.desc
+	picture = GFX_report_arenaaa
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.99.a
+		add_political_power = -50
+		custom_effect_tooltip = sos_dvor5
+		add_to_variable = {
+			soslovia_dvor = 5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_kre5
+		add_to_variable = {
+			soslovia_kre = 5
+		}
+		clamp_variable = {
+			var = soslovia_kre
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_rem5
+		add_to_variable = {
+			soslovia_rem = 5
+		}
+		clamp_variable = {
+			var = soslovia_rem
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_duh5
+		add_to_variable = {
+			soslovia_duh = 5
+		}
+		clamp_variable = {
+			var = soslovia_duh
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = sos_gor5
+		add_to_variable = {
+			soslovia_gor = 5
+		}
+		clamp_variable = {
+			var = soslovia_gor
+			min = 0
+			max = 100
+		}
+	}
+	
+	option = {
+		name = lif.99.b
+		
+	}
+}
+country_event = {
+	id = lif.100
+	title = lif.100.t
+	desc = lif.100.desc
+	picture = GFX_report_uchduel
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lif.100.a
+		add_stability = 0.05
+		add_war_support = 0.1
+		army_experience = 30
+		add_political_power = -80
+	}
+	
+	option = {
+		name = lif.100.b
+		add_political_power = 10
+		custom_effect_tooltip = sos_dvor_5
+		add_to_variable = {
+			soslovia_dvor = -5
+		}
+		clamp_variable = {
+			var = soslovia_dvor
+			min = 0
+			max = 100
+		}
+	}
+}

@@ -1,0 +1,72 @@
+MSK_peace = {
+
+	MSK_peace_mozh = {
+	fire_only_once = yes
+	cost = 10
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = MSK
+			
+		}
+
+		available = {
+			has_war_with = RYZ
+			controls_state = 885
+			
+		}
+
+		visible = {
+			has_war_with = RYZ
+		}
+
+		complete_effect = {
+			white_peace = RYZ
+			transfer_state = 885
+
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	MSK_peace_vyz = {
+	fire_only_once = yes
+	cost = 10
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = MSK
+			
+		}
+
+		available = {
+			has_war_with = LAO
+			controls_state = 883
+			
+		}
+
+		visible = {
+			has_war_with = LAO
+		}
+
+		complete_effect = {
+			white_peace = LAO
+			transfer_state = 883
+
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

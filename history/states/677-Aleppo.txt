@@ -1,0 +1,29 @@
+
+state={
+	id=677
+	name="STATE_677"
+	manpower = 331398
+	
+	state_category = town
+	
+	history={
+		owner = HUL
+	    add_core_of = HUL
+		victory_points = {
+			12473 3
+		}
+		victory_points = {
+			1056 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+
+
+	}
+
+	
+	provinces={
+		1056 1072 1088 7140 7671 10087 12029 12473 
+	}
+}

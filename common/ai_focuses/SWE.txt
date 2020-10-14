@@ -1,0 +1,20 @@
+ai_historical_focus_list_SWE = {
+	ai_national_focuses = {
+		SWE_1
+		SWE_2
+		SWE_23
+		SWE_4
+		SWE_24
+		SWE_21
+		SWE_22
+		SWE_59
+		SWE_61
+		SWE_62
+		SWE_3
+		SWE_26
+		SWE_28
+
+
+		
+	}
+}

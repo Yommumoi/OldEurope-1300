@@ -1,0 +1,6 @@
+
+
+graphical_culture = muslim_gfx
+graphical_culture_2d = muslim_2d
+
+color = rgb { 130 118 100 }

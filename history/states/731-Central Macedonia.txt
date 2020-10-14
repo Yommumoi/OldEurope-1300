@@ -1,0 +1,37 @@
+state={
+	id=731
+	name="STATE_731"
+	manpower=288925
+	
+	state_category = town
+
+	history={
+		
+		victory_points = {
+			11818 20 
+		}
+		#victory_points = {
+		#	3844 1
+		#}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			11818 = {
+				naval_base = 3
+				bunker = 3
+				torgnaval_base = 2
+
+			}
+
+		}
+		
+		owner = GRE
+	    add_core_of = GRE
+
+	}
+	
+	provinces={
+		895 936 966 3526 3844 3936 10163 11818 
+	}
+}

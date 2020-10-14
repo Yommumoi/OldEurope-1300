@@ -1,0 +1,27 @@
+
+state={
+	id=197
+	name="STATE_197"
+	manpower = 24077
+	
+	state_category = rural
+
+	history={
+		owner = NOG
+	    add_core_of = NOG
+		add_claim_by = KAZ
+		victory_points = {
+			11683 3
+		}
+		
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+		}
+		
+	}
+
+	provinces={
+		409 574 3403 3755 6597 9573 11546 11683 
+	}
+}

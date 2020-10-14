@@ -1,0 +1,26 @@
+state={
+	id=268
+	name="STATE_268"
+	manpower = 21308
+
+
+	state_category = enclave
+
+	history={
+		owner = ABY
+	    add_core_of = ABY
+		victory_points = {
+			8124 1
+		}
+		buildings = {
+			infrastructure = 3
+			8124 = {
+				naval_base = 2
+			}
+		}
+
+	}
+	provinces={
+		4985 8124
+ 	}
+}

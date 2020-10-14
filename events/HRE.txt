@@ -1,0 +1,1368 @@
+add_namespace = hre
+
+country_event = {
+	id = hre.1
+	title = hre.1.t
+	desc = hre.1.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.1.a
+		create_faction = Bogem
+        add_to_faction = CZE
+	}
+
+
+}
+
+country_event = {
+	id = hre.2
+	title = hre.2.t
+	desc = hre.2.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.2.a
+		create_faction = Austr
+        add_to_faction = AUS
+	}
+
+}
+
+country_event = {
+	id = hre.3
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		declare_war_on = {
+		target = AUS
+		type = annex_everything
+		}
+	}
+
+}
+
+country_event = {
+	id = hre.4
+	title = hre.4.t
+	desc = hre.4.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.4.a
+		CZE = { add_to_faction = FROM }
+		
+	}
+	option = {
+		name = hre.4.b
+		AUS = { add_to_faction = FROM }
+		
+	}
+	
+}
+
+country_event = {
+	id = hre.5
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = ROOT }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = ROOT }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+
+country_event = {
+	id = hre.400
+	title = hre.400.t
+	desc = hre.400.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.400.a
+		create_faction = drezden
+		add_to_faction = ETH
+		ai_chance = { factor = 100 }
+		BRN = { country_event = { id = hre.300 } }
+		PMR = { country_event = { id = hre.302 } }
+		MEK = { country_event = { id = hre.303 } }
+		LUN = { country_event = { id = hre.305 } }
+		MAG = { country_event = { id = hre.306 } }
+		ANT = { country_event = { id = hre.307 } }
+		BRS = { country_event = { id = hre.308 } }
+		country_event = { hours = 6 id = hre.301 }
+		
+	}
+	option = {
+		name = hre.400.b
+		
+	}
+	
+}
+country_event = {
+	id = hre.300
+	title = hre.300.t
+	desc = hre.300.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.300.a
+		ETH = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+		
+	}
+	option = {
+		name = hre.300.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.302
+	title = hre.300.t
+	desc = hre.300.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.300.a
+		ETH = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+		
+	}
+	option = {
+		name = hre.300.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.303
+	title = hre.300.t
+	desc = hre.300.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.300.a
+		ETH = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+		
+	}
+	option = {
+		name = hre.300.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.304
+	title = hre.300.t
+	desc = hre.300.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.300.a
+		ETH = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+		
+	}
+	option = {
+		name = hre.300.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.305
+	title = hre.300.t
+	desc = hre.300.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.300.a
+		ETH = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+		
+	}
+	option = {
+		name = hre.300.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.306
+	title = hre.300.t
+	desc = hre.300.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.300.a
+		ETH = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+		
+	}
+	option = {
+		name = hre.300.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.307
+	title = hre.300.t
+	desc = hre.300.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.300.a
+		ETH = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+		
+	}
+	option = {
+		name = hre.300.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.308
+	title = hre.300.t
+	desc = hre.300.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = hre.300.a
+		ETH = { add_to_faction = FROM }
+		ai_chance = { factor = 90 }
+		
+		
+	}
+	option = {
+		name = hre.300.b
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+
+country_event = {
+	id = hre.301
+	title = hre.301.t
+	desc = hre.301.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	major = yes
+
+	option = {
+		name = hre.301.a
+		
+	}
+	
+}
+country_event = {
+	id = hre.6
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = BEL }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = BEL }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.7
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = FRI }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = FRI }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.8
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = LEG }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = LEG }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.9
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = GEL }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = GEL }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.10
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = KLE }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = KLE }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.11
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = MUN }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = MUN }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.12
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = OLD }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = OLD }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.13
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = BRE }
+		ai_chance = { factor = 2 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = BRE }
+		ai_chance = { factor = 3 }
+		
+	}
+	option = { 
+		name = hre.3.с
+		ai_chance = { factor = 95 }
+		
+	}
+	
+	
+}
+country_event = {
+	id = hre.14
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = FER }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = FER }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.15
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = GMB }
+		ai_chance = { factor = 2 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = GMB }
+		ai_chance = { factor = 3 }
+		
+	}
+	option = { 
+		name = hre.3.с
+		ai_chance = { factor = 95 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.16
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = SHZ }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = SHZ }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.17
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = LUB }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = LUB }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.18
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = MEK }
+		ai_chance = { factor = 2 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = MEK }
+		ai_chance = { factor = 3 }
+		
+	}
+	option = { 
+		name = hre.3.с
+		ai_chance = { factor = 95 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.19
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = LUN }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = LUN }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.20
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = BRS }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = BRS }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.21
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = KLN }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = KLN }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}country_event = {
+	id = hre.22
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = NAS }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = NAS }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.23
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = TRR }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = TRR }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.24
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = VLN }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = VLN }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.25
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = LUX }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = LUX }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.26
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = LOT }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = LOT }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.27
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = VUR }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = VUR }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.28
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = PFA }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = PFA }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.29
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = FRN }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = FRN }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}country_event = {
+	id = hre.30
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = GES }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = GES }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.31
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = MAG }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = MAG }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.32
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = ANT }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = ANT }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.33
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = BRN }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = BRN }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.34
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = PMR }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = PMR }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.35
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = ETH }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = ETH }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.36
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = VRT }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = VRT }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.37
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = NUR }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = NUR }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.38
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = MAI }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = MAI }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.39
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = BAV }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = BAV }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.40
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = SWI }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = SWI }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.41
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = LOM }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = LOM }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.42
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = SAV }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = SAV }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.43
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = TSK }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = TSK }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.44
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = AHE }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = AHE }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.45
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = MUN }
+		ai_chance = { factor = 45 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = MUN }
+		ai_chance = { factor = 55 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.46
+	title = hre.3.t
+	desc = hre.3.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.3.a
+		CZE = { add_to_faction = SHT }
+		ai_chance = { factor = 2 }
+		
+	}
+	option = { 
+		name = hre.3.b
+		AUS = { add_to_faction = SHT }
+		ai_chance = { factor = 3 }
+		
+	}
+	option = { 
+		name = hre.3.с
+		ai_chance = { factor = 95 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.elections
+	title = hre.elections.t
+	desc = hre.elections.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = MAI
+			tag = TRR
+			tag = KLN
+			tag = CZE
+			tag = PFA
+			tag = ETH
+			tag = BRN
+		}
+	}
+
+	option = {
+		name = hre.elections.a
+		add_to_variable = { LUX_vote = 1 } 
+		ai_chance = { factor = 50 }
+		
+	}
+	option = { 
+		name = hre.elections.b
+		add_to_variable = { ETH_vote = 1 } 
+		ai_chance = { factor = 10 }
+		
+	}
+	option = { 
+		name = hre.elections.c
+		add_to_variable = { AUS_vote = 1 } 
+		ai_chance = { factor = 20 }
+		
+	}
+	option = { 
+		name = hre.elections.d
+		add_to_variable = { CZE_vote = 1 } 
+		ai_chance = { factor = 20 }
+		
+	}
+	option = { 
+		name = hre.elections.e
+		add_to_variable = { BAV_vote = 1 } 
+		ai_chance = { factor = 10 }
+		
+	}
+	option = { 
+		name = hre.elections.f
+		add_to_variable = { SAV_vote = 1 } 
+		ai_chance = { factor = 10 }
+		
+	}
+	option = { 
+		name = hre.elections.g
+		add_to_variable = { BRN_vote = 1 } 
+		ai_chance = { factor = 8 }
+		
+	}
+	option = { 
+		name = hre.elections.h
+		add_to_variable = { LOM_vote = 1 } 
+		ai_chance = { factor = 8 }
+		
+	}
+	
+}
+country_event = {
+	id = hre.50
+	title = hre.50.t
+	desc = hre.50.desc
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hre.50.a
+
+			random_country = {
+				limit = {
+					has_idea = HRE_NO_war
+				}
+				save_event_target_as = vrag
+			}
+			random_country = {
+				limit = {
+					has_idea = HRE_imperor
+				}
+				save_event_target_as = drug
+			}
+			ROOT = {
+				event_target:vrag = {
+					event_target:drug = {
+						ROOT = {
+							add_to_war = {
+								targeted_alliance = PREV
+								enemy = PREV.PREV
+								hostility_reason = asked_to_join
+							}
+						}
+					}
+				}
+			}
+			#event_target
+			
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = hre.50.b
+		ai_chance = { factor = 30 }
+		
+	}
+
+
+}
+

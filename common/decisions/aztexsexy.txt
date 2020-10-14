@@ -1,0 +1,165 @@
+sex_cat = {
+
+	sex_477 = {
+	fire_only_once = yes
+	cost = 50
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = AZT
+		}
+
+		available = {
+			has_completed_focus = AZT_54
+			owns_state = 477
+			has_country_leader = {
+				name = "Syntheua"
+				ruling_only = yes
+			}
+		}
+
+		visible = {
+			has_completed_focus = AZT_54
+			has_country_leader = {
+				name = "Syntheua"
+				ruling_only = yes
+			}
+		}
+
+		complete_effect = {
+			AZT = { country_event = { id = azt.4 } }
+
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 30
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	sex_479 = {
+	fire_only_once = yes
+	cost = 50
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = AZT
+		}
+
+		available = {
+			has_completed_focus = AZT_54
+			owns_state = 479
+			has_country_leader = {
+				name = "Syntheua"
+				ruling_only = yes
+			}
+		}
+
+		visible = {
+			has_completed_focus = AZT_54
+			has_country_leader = {
+				name = "Syntheua"
+				ruling_only = yes
+			}
+		}
+
+		complete_effect = {
+			AZT = { country_event = { id = azt.4 } }
+
+			
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 30
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	sex_476 = {
+	fire_only_once = yes
+	cost = 50
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = AZT
+		}
+
+		available = {
+			has_completed_focus = AZT_54
+			owns_state = 476
+			has_country_leader = {
+				name = "Syntheua"
+				ruling_only = yes
+			}
+		}
+
+		visible = {
+			has_completed_focus = AZT_54
+			has_country_leader = {
+				name = "Syntheua"
+				ruling_only = yes
+			}
+		}
+
+		complete_effect = {
+			AZT = { country_event = { id = azt.4 } }
+
+			
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 30
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	sex_485 = {
+	fire_only_once = yes
+	cost = 50
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = AZT
+		}
+
+		available = {
+			has_completed_focus = AZT_54
+			owns_state = 485
+			has_country_leader = {
+				name = "Syntheua"
+				ruling_only = yes
+			}
+		}
+
+		visible = {
+			has_completed_focus = AZT_54
+			has_country_leader = {
+				name = "Syntheua"
+				ruling_only = yes
+			}
+		}
+
+		complete_effect = {
+			AZT = { country_event = { id = azt.4 } }
+
+			
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 30
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

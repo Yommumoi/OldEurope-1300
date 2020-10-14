@@ -1,0 +1,34 @@
+
+state={
+	id=806
+	name="STATE_806"
+	manpower = 324743
+	
+
+
+	state_category = metropolis
+	
+	history={
+		owner = AHE
+	    add_core_of = AHE
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			6469 5
+		}
+		
+	
+	
+	
+		
+	}
+
+	provinces={
+		6469 
+	}
+	
+}

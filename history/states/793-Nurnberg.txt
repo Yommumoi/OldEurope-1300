@@ -1,0 +1,26 @@
+
+state={
+	id=793
+	name="STATE_793"
+	manpower = 308159
+
+	state_category = city
+
+	history={
+		owner = NUR
+	    add_core_of = NUR
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			11544 10 
+		}
+		
+	}
+
+	provinces={
+		561 11529 11544
+	}
+}

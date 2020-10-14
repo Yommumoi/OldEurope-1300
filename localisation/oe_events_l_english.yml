@@ -1,0 +1,38 @@
+﻿l_english:
+ LDN_diplomatic_peace.1.t: "Resource right"
+ LDN_diplomatic_peace.1.d: "[peace_diplo_receiver_country.GetName] agreed to grant us rights to resources in the desired regions. \nThese natural resources are now considered internal natural resources."
+ LDN_diplomatic_peace.1.a: "Great."
+ 
+ Budget:0 "Budget management"
+ 
+ otkryt_1:0 "Blast furnaces (opening)"
+ otkryt_2:0 "Distillation apparatus (opening)"
+ otkryt_3:0 "Chemical production (opening)"
+ 
+ otkrytte.1.t:0 "§CBlast furnaces!§!"
+ otkrytte.1.d:0 "The discovery of a new type of furnaces improved the quality of the metals produced. Also, in such furnaces, cast iron can be produced in large volumes. This technology originated in the state [FROM.GetName] and will gradually spread to neighboring states. \n (In addition to bonuses, smelters began to produce 4 more.)"
+ otkrytte.1.a:0 "Technologies!"
+ 
+ otkrytte.2.t:0 "§CDistillation apparatus!§!"
+ otkrytte.2.d:0 "Distillation, as well as fermentation, were the favorite pastimes of medieval alchemists trying to find the philosopher's stone. So, over time, more advanced distillation apparatuses appeared. This technology originated in the state [FROM.GetName] and will gradually spread to neighboring states."
+ otkrytte.2.a:0 "Technologies!"
+ 
+ otkrytte.3.t:0 "§CChemical production!§!"
+ otkrytte.3.d:0 "The experiments with chemicals from the laboratories of the alchemists were transferred to the laboratories of chemists - scientists who realized the futility of trying to turn one substance into another and drew attention to the needs of the times. This technology originated in the state [FROM.GetName] and will gradually spread to neighboring states."
+ otkrytte.3.a:0 "Technologies!"
+ 
+ 
+ otkrytte.11.t:0 "§CBlast furnaces!§!"
+ otkrytte.11.d:0 "The discovery spread to the lands of the state [FROM.GetName]."
+ otkrytte.11.a:0 "..."
+ 
+ otkrytte.21.t:0 "§CDistillation apparatus!§!"
+ otkrytte.21.d:0 "The discovery spread to the lands of the state [FROM.GetName]."
+ otkrytte.21.a:0 "..."
+ 
+ otkrytte.31.t:0 "§CChemical production!§!"
+ otkrytte.31.d:0 "The discovery spread to the lands of the state [FROM.GetName]."
+ otkrytte.31.a:0 "..."
+ 
+ plavil:0 "Smelters"
+ plavil_desc:0 "Smelters increase the quality of the metal produced."

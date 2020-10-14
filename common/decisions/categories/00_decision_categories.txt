@@ -1,0 +1,532 @@
+
+golod_category = {
+	icon = generic_political_actions
+
+	visible = {
+		NOT = {
+			OR = {
+				tag = XXX
+				tag = GKR
+			}
+		}
+		date > 1315.01.01
+		date < 1317.01.01	
+		any_owned_state = {
+				OR = {
+					state = 134
+					state = 135
+					state = 113
+					state = 119
+					state = 123
+					state = 127
+					state = 338
+					state = 126
+					state = 125
+					state = 129
+					state = 128
+					state = 122
+					state = 132
+					state = 130
+					state = 131
+					state = 121
+					state = 133
+					state = 136
+					state = 120
+					state = 881
+					state = 19
+					state = 31
+					state = 172
+					state = 166
+					state = 900
+					state = 165
+					state = 866
+					state = 14
+					state = 6
+					state = 29
+					state = 785
+					state = 18
+					state = 16
+					state = 15
+					state = 30
+					state = 24
+					state = 27
+					state = 23
+					state = 33
+					state = 26
+					state = 20
+					state = 25
+					state = 22
+					state = 17
+					state = 21
+					state = 887
+					state = 788
+					state = 32
+					state = 735
+					state = 158
+					state = 161
+					state = 159
+					state = 3
+					state = 151
+					state = 160
+					state = 834
+					state = 163
+					state = 736
+					state = 102
+					state = 39
+					state = 153
+					state = 4
+					state = 152
+					state = 835
+					state = 28
+					state = 838
+					state = 836
+					state = 50
+					state = 52
+					state = 53
+					state = 839
+					state = 837
+					state = 793
+					state = 794
+					state = 34
+					state = 8
+					state = 42
+					state = 807
+					state = 805
+					state = 35
+					state = 7
+					state = 36
+					state = 51
+					state = 801
+					state = 806
+					state = 803
+					state = 57
+					state = 802
+					state = 56
+					state = 55
+					state = 795
+					state = 804
+					state = 54
+					state = 796
+					state = 800
+					state = 797
+					state = 792
+					state = 798
+					state = 799
+					state = 60
+					state = 65
+					state = 64
+					state = 68
+					state = 59
+					state = 58
+					state = 61
+					state = 791
+					state = 821
+					state = 62
+					state = 63
+					state = 833
+					state = 66
+					state = 67
+					state = 69
+					state = 9
+					state = 75
+					state = 74
+					state = 72
+					state = 124
+					state = 99
+					state = 867
+					state = 37
+					state = 138
+					state = 820
+					state = 85
+					state = 86
+					state = 87
+					state = 98
+					state = 10
+					state = 90
+					state = 88
+					state = 762
+					state = 94
+					state = 870
+					state = 97
+					state = 868
+					state = 5
+					state = 763
+					state = 188
+					state = 189
+					state = 822
+					state = 190
+					state = 12
+					state = 191
+					state = 13
+					state = 872
+					state = 95
+					state = 96
+					state = 784
+					state = 11
+					state = 819
+					state = 812
+					state = 92
+					state = 93
+					state = 91
+					state = 89
+					state = 199
+					state = 80
+					state = 139
+					state = 140
+					state = 141
+					state = 38
+					state = 111
+					state = 145
+					state = 878
+					state = 869
+					state = 879
+					state = 150
+					state = 149
+					state = 874
+					state = 110
+					state = 875
+					state = 142
+					state = 143
+					state = 79
+					state = 854
+					state = 84
+					state = 46
+					state = 81
+					state = 107
+					state = 108
+					state = 105
+					state = 48
+					state = 212
+					state = 211
+					state = 77
+					state = 862
+					state = 103
+					state = 104
+					state = 109
+					state = 45
+					state = 764
+					state = 82
+					state = 83
+					state = 76
+					state = 154
+					state = 155
+					state = 43
+					state = 73
+					state = 664
+					state = 70
+					state = 71
+				}
+		}
+	}
+}
+propaganda_efforts = {
+	icon = generic_propaganda
+
+	visible = {
+
+	}
+}
+titul_cat = {
+	icon = generic_propaganda
+
+	visible = {
+		always = yes
+	}
+}
+reform_cat = {
+	icon = generic_political_actions
+
+	visible = {
+		always = yes
+	}
+}
+puppet_integrate_category = {
+	icon = generic_propaganda
+
+	visible = {
+		any_country = {
+			is_puppet_of = FROM
+		}
+	}
+}
+
+national_region_category = {
+	icon = generic_propaganda
+
+	visible = {
+		always = yes
+	}
+}
+torgcompanies_category = {
+	icon = generic_propaganda
+
+	visible = {
+		always = yes
+	}
+}
+expedition_category = {
+	icon = generic_political_actions
+
+	visible = {
+		always = yes
+	}
+}
+nalog_category = {
+	icon = generic_political_actions
+
+	visible = {
+		has_idea = titul4
+		is_ai = no
+		NOT = {
+			has_government = communism
+		}
+	}
+}
+
+family_category = {
+	icon = generic_propaganda
+
+	visible = {
+		NOT = {
+			OR = {
+				has_idea = tip3
+				has_idea = tip9
+				has_idea = tip19
+				has_idea = tip24
+				has_government = democratic
+			}
+		}
+		
+	}
+}
+
+apoca_category = {
+	icon = generic_propaganda
+
+	visible = {
+		always = yes
+	}
+}
+
+razvit_category = {
+	icon = generic_propaganda
+
+	visible = {
+		always = yes
+	}
+}
+
+missions_category = {
+	icon = generic_political_actions
+
+	visible = {
+		always = yes
+	}
+}
+nabeg_category = {
+	icon = generic_political_actions
+
+	visible = {
+		always = yes
+	}
+}
+perevorot_category = {
+	icon = generic_political_actions
+    picture = GFX_decision_perevorot_category
+	visible = {
+		always = yes
+	}
+}
+war_conflicts_cat = {
+	icon = generic_political_actions
+
+	visible = {
+		always = yes
+	}
+}
+
+puppet_integrate_category = {
+	icon = generic_propaganda
+
+	visible = {
+		any_country = {
+			is_puppet_of = FROM
+		}
+	}
+}
+
+MTG_naval_treaties = {
+	picture = GFX_decision_cat_picture_naval_treaties
+	allowed = {
+		has_dlc = "Man the Guns"
+	}
+	visible = {
+		OR = {
+			has_naval_treaty_trigger = yes
+			is_major = yes
+		}
+		any_owned_state = {
+			is_coastal = yes
+		}
+	}
+}
+SAF_anti_colonialist_crusade = {
+	allowed = {
+		original_tag = SAF
+	}
+}
+
+war_measures = {
+	icon = generic_propaganda
+
+	visible = {
+		has_war = yes
+	}
+}
+operations = {
+	icon = GFX_decision_category_military_operation
+
+}
+
+foreign_support = {
+	icon = generic_political_actions
+	
+}
+
+prestigious_projects = {
+	
+}
+
+foreign_politics = {
+	icon = generic_political_actions
+}
+
+political_actions = {
+	icon = generic_political_actions
+
+	allowed = {
+		always = yes
+	}
+}
+
+foreign_influence = {
+	icon = generic_political_actions
+}
+
+fascism_on_the_rise = {
+	icon = generic_fascism
+
+	allowed = {
+		NOT = {
+			AND = {
+				has_dlc = "Man the Guns"
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = ENG
+				}
+			}
+		}
+	}
+	
+	#visible = {
+	#	NOT = { has_government = fascism }
+	#	has_idea_with_trait = fascist_demagogue
+	#}
+}
+
+democratic_on_the_rise = {
+	icon = generic_democracy
+
+	allowed = {
+		always = yes
+	}
+	
+	#visible = {
+	#	NOT = { has_government = democratic }
+	#	has_idea_with_trait = democratic_reformer
+	#}
+}
+
+communism_on_the_rise = {
+	icon = generic_communism
+
+	allowed = {
+		NOT = {
+			AND = {
+				has_dlc = "Man the Guns"
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = ENG
+				}
+			}
+		}
+	}
+	
+	#visible = {
+	#	NOT = { has_government = communism }
+	#	has_idea_with_trait = communist_revolutionary
+	#}
+}
+
+crisis = {
+	icon = generic_crisis
+	priority = 100
+
+	visible = {
+		OR = {
+			has_country_flag = crisis_in_progress
+			has_civil_war = yes
+		}
+	}
+}
+
+demobilization = {
+	icon = generic_crisis
+	priority = 100
+	
+	visible = {
+		has_war = no
+	}
+}
+
+economy_decisions = {
+	icon = generic_economy
+
+}
+
+prospect_for_resources = {
+	icon = generic_prospect_for_resources
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+}
+
+special_projects = {
+	
+	icon = generic_prospect_for_resources
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+}
+
+governments_in_exile = {
+	
+	icon = generic_formable_nations
+	picture = GFX_decision_cat_picture_government_in_exile
+	allowed = {
+		has_dlc = "Man the Guns"
+	}
+}
+
+category_exile_forces = {
+	
+	icon = infiltration
+	picture = GFX_decision_cat_picture_government_in_exile
+	allowed = {
+		has_dlc = "Man the Guns"
+	}
+}

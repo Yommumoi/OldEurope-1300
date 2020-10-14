@@ -1,0 +1,29 @@
+state={
+	id=96
+	name="STATE_96"
+	manpower = 80500
+	
+	state_category = rural
+	
+	resources={
+		rubber = 15
+		
+	}
+	
+	history={
+		victory_points = {
+			233 1
+		}
+		
+		buildings = {
+			infrastructure = 4
+		}
+		
+		owner = LIT
+	    add_core_of = LIT
+	}
+
+	provinces={
+		233 358 9341 
+	}
+}

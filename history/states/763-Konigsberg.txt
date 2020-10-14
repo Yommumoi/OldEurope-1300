@@ -1,0 +1,33 @@
+
+state={
+	id=763
+	name="STATE_763"
+	manpower = 535058
+	state_category = city
+
+	history={
+		
+		owner = TVT
+	    add_core_of = TVT
+		victory_points = {
+			6332 20 
+		}
+
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
+			6332 = {
+				naval_base = 5
+				bunker = 3
+				torgnaval_base = 2
+
+			}
+		}
+		
+	}
+
+	provinces={
+		281 348 395 3384 6332 11265
+	}
+}

@@ -1,0 +1,133 @@
+﻿capital = 4
+oob = "AUS_1936"
+set_research_slots = 3
+set_variable = { buy_cost = 100 }
+set_variable = { nedovol_value = 0 }
+set_variable = { buy_cost_arke = 200 }
+set_variable = { buy_cost_porox = 200 }
+set_variable = { buy_cost_spear = 200 }
+set_variable = { product_masters_value = 890 }
+set_variable = { soslovia_dvor = 100 }
+set_variable = { soslovia_duh = 80 }
+set_variable = { soslovia_gor = 80 }
+set_variable = { soslovia_kre = 40 }
+set_variable = { soslovia_rem = 80 }
+add_ideas = techgroup1
+add_ideas = {
+HRE_holy
+HRE_imperor
+}
+set_variable = { adm_limit = 7 }
+set_variable = { numnasled_value = 11 }
+set_major = yes
+give_guarantee = CZE
+give_guarantee = TSK
+give_guarantee = SAV
+give_guarantee = LOM
+give_guarantee = SWI
+give_guarantee = VUR
+give_guarantee = BAV
+give_guarantee = NUR
+give_guarantee = VRT
+give_guarantee = MAI
+give_guarantee = PFA
+give_guarantee = LOT
+give_guarantee = FRN
+give_guarantee = LUX
+give_guarantee = VLN
+give_guarantee = ETH
+give_guarantee = BRN
+give_guarantee = GES
+give_guarantee = TRR
+give_guarantee = KLN
+give_guarantee = LEG
+give_guarantee = AHE
+give_guarantee = NAS
+give_guarantee = GEL
+give_guarantee = KLE
+give_guarantee = ANT
+give_guarantee = MAG
+give_guarantee = MUN
+give_guarantee = FRI
+give_guarantee = HOL
+give_guarantee = OLD
+give_guarantee = BRE
+give_guarantee = FER
+give_guarantee = GMB
+give_guarantee = BRS
+give_guarantee = LUN
+give_guarantee = SHZ
+give_guarantee = LUB
+give_guarantee = MEK
+give_guarantee = SHT
+give_guarantee = PMR
+give_guarantee = SIN
+give_guarantee = PIS
+give_guarantee = LUK
+give_guarantee = PRO
+give_guarantee = TIR
+give_guarantee = ZAL
+give_guarantee = CRN
+give_guarantee = AUG
+give_guarantee = BAD
+give_guarantee = ALS
+give_guarantee = LTR
+give_guarantee = BUR
+give_guarantee = KFB
+
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	spear_weapons = 1
+}
+
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 95
+	communism = 0
+	neutrality = 5
+}
+
+set_stability = 0.50
+
+create_country_leader = {
+	name = "Albrecht I"
+	desc = ""
+	picture = "gfx/characters/Albrecht I.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Albrecht I"
+	desc = ""
+	picture = "gfx/characters/Albrecht I.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Albrecht I"
+	desc = ""
+	picture = "gfx/characters/Albrecht I.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

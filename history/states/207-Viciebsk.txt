@@ -1,0 +1,35 @@
+
+state={
+	id=207
+	name="STATE_207"
+	manpower =  209960
+	
+	state_category = town
+	
+	resources={
+		rubber=5
+	}
+
+	history={
+		owner = BLR
+	    add_core_of = BLR
+		
+		victory_points = {
+			6220 20
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+			6220 = {
+				bunker = 2
+			}
+		}
+		
+		
+	}
+
+	provinces={
+		3219 6220 6249 6326 6371 
+	}
+}

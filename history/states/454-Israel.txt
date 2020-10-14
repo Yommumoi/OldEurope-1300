@@ -1,0 +1,32 @@
+
+state={
+	id=454
+	name="STATE_454" #Palestine
+	manpower = 233285
+	
+	state_category = rural
+
+	history={
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+			4206 = {
+				naval_base = 3
+			}
+			1086 = {
+				bunker = 3
+			}
+		}
+		victory_points = {
+			1086 30 
+		}
+		owner = EGY
+	    add_core_of = EGY
+	}
+
+	provinces={
+		1015 1065 1086 1201 4088 4206 7107 7176 11970 1
+	}
+}

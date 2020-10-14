@@ -1,0 +1,91 @@
+units = {
+fleet = {
+		name = "Ships"			
+		naval_base = 12810  
+		task_force = {
+			name = "GodShip"
+			location = 12810  
+			# 1. Unterseebootsflottille
+			ship = { name = "GodShip1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip15" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip16" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip17" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip18" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip19" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip20" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip21" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip22" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip23" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip24" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip25" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip26" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip27" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip28" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip29" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip30" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip31" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip32" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip33" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip35" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip36" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip37" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip38" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip39" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip42" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip45" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip46" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip47" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip48" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip51" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip52" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip53" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip54" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip55" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip56" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip57" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip58" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip59" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip60" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip61" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip62" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip63" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip64" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip65" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip66" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip67" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip68" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip69" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip70" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip71" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip72" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip73" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip74" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip75" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip76" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip77" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip78" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip79" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+			ship = { name = "GodShip80" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = AZT } } }
+		}
+	}
+}

@@ -1,0 +1,196 @@
+add_namespace = torg
+
+country_event = {
+	id = torg.1
+	title = torg.1.t
+	desc = torg.1.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torg.1.a
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.1
+			}
+		}
+	}
+	option = {
+		name = torg.1.b
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.2
+			}
+		}
+	}
+	option = {
+		name = torg.1.c
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.3
+			}
+		}
+	}
+
+
+}
+country_event = {
+	id = torg.2
+	title = torg.1.t
+	desc = torg.1.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torg.2.a
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.4
+			}
+		}
+	}
+	option = {
+		name = torg.2.b
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.3
+			}
+		}
+	}
+
+
+}
+country_event = {
+	id = torg.3
+	title = torg.1.t
+	desc = torg.1.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torg.3.a
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.5
+			}
+		}
+	}
+	option = {
+		name = torg.3.b
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.6
+			}
+		}
+	}
+	option = {
+		name = torg.3.c
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.3
+			}
+		}
+	}
+
+
+}
+country_event = {
+	id = torg.4
+	title = torg.1.t
+	desc = torg.1.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torg.4.a
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.7
+			}
+		}
+	}
+	option = {
+		name = torg.4.b
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.8
+			}
+		}
+	}
+	option = {
+		name = torg.4.c
+		FROM.FROM = {
+			country_event = {
+				id = torgOtv.3
+			}
+		}
+	}
+
+
+}
+###pirate
+country_event = {
+	id = torg.5
+	title = torg.5.t
+	desc = torg.5.desc
+	picture = GFX_report_pirates
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torg.5.a
+		add_manpower = -1500
+		add_political_power = -100
+	}
+
+
+}
+
+country_event = {
+	id = torg.6
+	title = torg.6.t
+	desc = torg.6.desc
+	picture = GFX_report_pirates
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torg.6.a
+		add_manpower = -2500
+		ROOT = {
+			random_owned_state = {
+				if = {
+					limit = {
+						is_coastal = yes
+					}
+					save_event_target_as = beregstate
+				}
+			}
+		}
+		FROM = {
+			transfer_state = event_target:beregstate
+		}
+	}
+
+
+}
+country_event = {
+	id = torg.7
+	title = torg.7.t
+	desc = torg.7.desc
+	picture = GFX_report_africtorg
+	
+	is_triggered_only = yes
+
+	option = {
+		name = torg.7.a
+		add_political_power = torg_company_income
+		set_variable = {torg_company_income = 0}
+	}
+
+
+}

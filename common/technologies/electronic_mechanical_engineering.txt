@@ -1,0 +1,1792 @@
+technologies = {
+	electronic_mechanical_engineering = {
+
+		# small boost to research speed
+		research_speed_factor = 0.02
+		
+		path = {
+			leads_to_tech = radio 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mechanical_computing 
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_0
+		}
+		
+		research_cost = 1
+		start_year = 1300
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	
+	radio = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.05
+		
+		path = {
+			leads_to_tech = radio_detection 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 11 y = 9 } # x = 12 y = 0
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 6
+				has_war = yes
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				factor = 5
+				date > "1303.8.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	radio_detection = {
+
+		# 
+		enable_building = {
+			building = radar_station
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = decimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	decimetric_radar = {
+
+		# can build radars/radar boost in air/sea combat depends on radar level
+
+		path = {
+			leads_to_tech = improved_decimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1302
+		enable_equipment_modules = { 
+			ship_radar_1
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				date < "1302.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 2
+		}
+	}
+	
+	improved_decimetric_radar = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 3
+		}
+		
+		enable_equipment_modules = { 
+			ship_radar_2
+		}
+
+		path = {
+			leads_to_tech = centimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1303
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				date < "1303.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	centimetric_radar = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 4
+		}
+
+		enable_equipment_modules = { 
+			ship_radar_3
+		}
+
+		static_anti_air_hit_chance_factor = 0.2
+		
+		path = {
+			leads_to_tech = improved_centimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1304
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				date < "1304.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	improved_centimetric_radar = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 5
+		}
+
+		
+
+		static_anti_air_hit_chance_factor = 0.2
+		
+		path = {
+			leads_to_tech = advanced_centimetric_radar 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1305
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				date < "1305.1.1"
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	advanced_centimetric_radar = {
+
+		# radar boost in air/sea combat depends on radar level
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+
+		enable_equipment_modules = { 
+			ship_radar_4
+		}
+		
+		static_anti_air_hit_chance_factor = 0.2
+		
+		research_cost = 2.5
+		start_year = 1306
+		
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+		
+		categories = {
+			electronics
+			radar_tech
+		}
+	}
+	
+	mechanical_computing = {
+
+		# small boost to research speed
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = computing_machine 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+		}
+	}
+	
+	computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.03
+		
+		path = {
+			leads_to_tech = improved_computing_machine 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_decryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_fire_control_system
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1302
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			
+			modifier = {
+				factor = 3
+				date > "1302.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1303.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	improved_computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = advanced_computing_machine 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_decryption 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = advanced_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1304
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1304.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1305.1.1"
+			}
+
+			
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	advanced_computing_machine = {
+
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = advanced_encryption 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_decryption 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1306
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1306.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1307.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+	
+	basic_encryption = {
+
+		# encryption 1
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1302
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	improved_encryption = {
+
+		# encryption 2
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1304
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	advanced_encryption = {
+
+		# encryption 3
+		encryption = 1
+		
+		research_cost = 1
+		start_year = 1306
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	basic_decryption = {
+
+		# decryption 1
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1302
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	improved_decryption = {
+
+		# decryption 2
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1304
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	advanced_decryption = {
+
+		# decryption 3
+		decryption = 1
+		
+		research_cost = 1.5
+		start_year = 1306
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				num_of_military_factories < 50
+				factor = 1.5 # not a major
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+
+	basic_fire_control_system = {
+
+		allow_branch = {
+			always = no
+		}
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_1
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			
+			modifier = {
+				OR = {
+					can_research = improved_fire_control_system
+					has_tech = improved_fire_control_system
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	improved_fire_control_system = {
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_2
+		}
+		
+		research_cost = 1
+		allow_branch = {
+			always = no
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			
+			modifier = {
+				OR = {
+					can_research = advanced_fire_control_system
+					has_tech = advanced_fire_control_system
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	advanced_fire_control_system = {
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_3
+		}
+		allow_branch = {
+			always = no
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+	####################################
+	spy_0 = {
+
+		encryption = 1
+		decryption = 1
+		
+		path = {
+			leads_to_tech = spy_de_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = spy_en_1 
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 1
+		start_year = 1300
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	spy_de_1 = {
+
+		decryption = 2
+		
+		path = {
+			leads_to_tech = spy_de_2 
+			research_cost_coeff = 1
+		}
+		
+
+		
+		research_cost = 2
+		start_year = 1301
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	spy_en_1 = {
+
+		encryption = 2
+		
+		path = {
+			leads_to_tech = spy_en_2 
+			research_cost_coeff = 1
+		}
+		
+
+		
+		research_cost = 2
+		start_year = 1301
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	spy_de_2 = {
+
+		decryption = 2
+		
+		path = {
+			leads_to_tech = spy_de_3 
+			research_cost_coeff = 1
+		}
+		
+
+		
+		research_cost = 2
+		start_year = 1303
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	spy_en_2 = {
+
+		encryption = 2
+		
+		path = {
+			leads_to_tech = spy_en_3 
+			research_cost_coeff = 1
+		}
+		
+
+		
+		research_cost = 2
+		start_year = 1303
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	spy_de_3 = {
+
+		decryption = 2
+		
+		path = {
+			leads_to_tech = spy_de_4 
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2
+		start_year = 1305
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	spy_en_3 = {
+
+		encryption = 2
+		
+		path = {
+			leads_to_tech = spy_en_4 
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2
+		start_year = 1305
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	spy_de_4 = {
+
+		decryption = 2
+		
+		#path = {
+		#	leads_to_tech = spy_de_1 
+		#	research_cost_coeff = 1
+		#}
+		#path = {
+		#	leads_to_tech = spy_en_1 
+		#	research_cost_coeff = 1
+		#}
+
+		
+		research_cost = 2
+		start_year = 1307
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	spy_en_4 = {
+
+		encryption = 2
+		
+		#path = {
+		#	leads_to_tech = spy_de_1 
+		#	research_cost_coeff = 1
+		#}
+		#path = {
+		#	leads_to_tech = spy_en_1 
+		#	research_cost_coeff = 1
+		#}
+
+		
+		research_cost = 2
+		start_year = 1307
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			
+			modifier = {
+				factor = 3
+				date > "1301.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	
+	math_0 = {
+	
+		start_year = 1302
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+		path = {
+			leads_to_tech = math_1 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		research_speed_factor = 0.025
+		
+		categories = {
+			electronics
+		}
+	}
+	math_1 = {
+	
+		start_year = 1304
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+		path = {
+			leads_to_tech = math_2 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		research_speed_factor = 0.025
+		
+		categories = {
+			electronics
+		}
+	}
+	math_2 = {
+	
+		start_year = 1306
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+		path = {
+			leads_to_tech = navigation_0 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = math_3 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		research_speed_factor = 0.025
+		
+		categories = {
+			electronics
+		}
+	}
+	navigation_0 = {
+	
+		start_year = 1308
+		research_cost = 1.5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		naval_speed_factor = 0.1
+		army_speed_factor = 0.01
+		categories = {
+			electronics
+		}
+	}
+	math_3 = {
+	
+		start_year = 1310
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		research_speed_factor = 0.025
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	medicine_0 = {
+	
+		start_year = 1300
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 8 y = 0 }
+		}
+		path = {
+			leads_to_tech = medicine_1 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		army_morale_factor = 0.02
+		
+		categories = {
+			electronics
+		}
+	}
+	medicine_1 = {
+	
+		start_year = 1301
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 8 y = 2 }
+		}
+		path = {
+			leads_to_tech = medicine_2 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		army_morale_factor = 0.02
+		
+		categories = {
+			electronics
+		}
+	}
+	medicine_2 = {
+	
+		start_year = 1302
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 8 y = 4 }
+		}
+		path = {
+			leads_to_tech = medicine_3 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		army_morale_factor = 0.02
+		
+		categories = {
+			electronics
+		}
+	}
+	medicine_3 = {
+	
+		start_year = 1303
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 8 y = 6 }
+		}
+		path = {
+			leads_to_tech = medicine_4 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		army_morale_factor = 0.02
+		
+		categories = {
+			electronics
+		}
+	}
+	medicine_4 = {
+	
+		start_year = 1304
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 8 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		army_morale_factor = 0.02
+		
+		categories = {
+			electronics
+		}
+	}
+	zelie_0 = {
+	
+		start_year = 1305
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 8 y = 0 }
+		}
+		path = {
+			leads_to_tech = zelie_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zelie_2 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zelie_3 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = zelie_4 
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		
+		research_speed_factor = 0.01
+		
+		categories = {
+			electronics
+		}
+	}
+	zelie_1 = {
+	
+		start_year = 1306
+		research_cost = 2
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 9 y = 2 }
+		}
+		#path = {
+		#	leads_to_tech = zelie_2 
+		#	research_cost_coeff = 1
+		#}
+		ai_will_do = {
+			factor = 10
+		}
+		
+		MONTHLY_POPULATION = 0.2
+		
+		categories = {
+			electronics
+		}
+	}
+	zelie_2 = {
+	
+		start_year = 1306
+		research_cost = 2
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 7 y = 2 }
+		}
+		#path = {
+		#	leads_to_tech = zelie_2 
+		#	research_cost_coeff = 1
+		#}
+		ai_will_do = {
+			factor = 10
+		}
+		
+		army_speed_factor = 0.05
+		
+		categories = {
+			electronics
+		}
+	}
+	zelie_3 = {
+	
+		start_year = 1306
+		research_cost = 2
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 2 }
+		}
+		#path = {
+		#	leads_to_tech = zelie_2 
+		#	research_cost_coeff = 1
+		#}
+		ai_will_do = {
+			factor = 10
+		}
+		
+		no_supply_grace = 12
+		
+		categories = {
+			electronics
+		}
+	}
+	zelie_4 = {
+	
+		start_year = 1306
+		research_cost = 2
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 11 y = 2 }
+		}
+		#path = {
+		#	leads_to_tech = zelie_2 
+		#	research_cost_coeff = 1
+		#}
+		ai_will_do = {
+			factor = 10
+		}
+		
+		acclimatization_cold_climate_gain_factor = 0.15
+		
+		categories = {
+			electronics
+		}
+	}
+	material_1 = {
+	
+		start_year = 1301
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 0 }
+		}
+		path = {
+			leads_to_tech = material_5 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		production_speed_buildings_factor = 0.07
+		
+		categories = {
+			electronics
+		}
+	}
+	material_2 = {
+	
+		start_year = 1301
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 16 y = 0 }
+		}
+		
+		path = {
+			leads_to_tech = material_6 
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		
+		conversion_cost_civ_to_mil_factor = -0.2
+		
+		categories = {
+			electronics
+		}
+	}
+	material_3 = {
+	
+		start_year = 1301
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 0 }
+		}
+		path = {
+			leads_to_tech = material_7 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		local_resources_factor = 0.07
+		
+		categories = {
+			electronics
+		}
+	}
+	material_4 = {
+	
+		start_year = 1301
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 24 y = 0 }
+		}
+		
+		path = {
+			leads_to_tech = material_8 
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		
+		local_resources_factor = 0.07
+		
+		categories = {
+			electronics
+		}
+	}
+	material_5 = {
+	
+		start_year = 1302
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 2 }
+		}
+		path = {
+			leads_to_tech = material_9 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		army_morale_factor = 0.01
+		offence = 0.01
+		categories = {
+			electronics
+		}
+	}
+	material_6 = {
+	
+		start_year = 1302
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 16 y = 2 }
+		}
+		path = {
+			leads_to_tech = material_10
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		artillery = {
+			soft_attack = 0.1
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	material_7 = {
+	
+		start_year = 1302
+		research_cost = 1
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 2 }
+		}
+		path = {
+			leads_to_tech = material_11 
+			research_cost_coeff = 1
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		on_research_complete = {
+            random_owned_state = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+        }
+		
+		categories = {
+			electronics
+		}
+	}
+	material_8 = {
+	
+		start_year = 1302
+		research_cost = 1
+		path = {
+			leads_to_tech = material_12 
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 24 y = 2 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		political_power_factor = 0.2
+		
+		categories = {
+			electronics
+		}
+	}
+	material_9 = {
+	
+		start_year = 1303
+		research_cost = 2
+		path = {
+			leads_to_tech = material_13 
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 4 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		defence = 0.05
+		
+		categories = {
+			electronics
+		}
+	}
+	material_10 = {
+	
+		start_year = 1303
+		research_cost = 2
+		path = {
+			leads_to_tech = material_13 
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 16 y = 4 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		production_speed_buildings_factor = 0.1
+		
+		categories = {
+			electronics
+		}
+	}
+	material_11 = {
+	
+		start_year = 1303
+		research_cost = 2
+		path = {
+			leads_to_tech = material_13 
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 20 y = 4 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		army_armor_speed_factor = 0.1
+		
+		categories = {
+			electronics
+		}
+	}
+	material_12 = {
+	
+		start_year = 1303
+		research_cost = 2
+		path = {
+			leads_to_tech = material_13 
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 24 y = 4 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		army_morale_factor = 0.01
+		political_power_factor = 0.5
+		
+		categories = {
+			electronics
+		}
+	}
+	material_13 = {
+	
+		start_year = 1305
+		research_cost = 8
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 18 y = 8 }
+		}
+		dependencies = {
+            material_9 = 1
+			material_10 = 1
+			material_11 = 1
+			material_12 = 1
+        }
+		
+		ai_will_do = {
+			factor = 10
+		}
+		production_factory_max_efficiency_factor = 0.25
+		industry_repair_factor = 0.25
+		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.3
+		local_resources_factor = 0.10
+		stability_factor = -0.10
+		
+		on_research_complete = {
+            every_owned_state = {
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+
+				
+			}
+			news_event = {
+				id = news.1033
+			}
+        }
+		categories = {
+			electronics
+		}
+	}
+}

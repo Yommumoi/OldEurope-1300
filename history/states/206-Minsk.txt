@@ -1,0 +1,31 @@
+
+state={
+	id=206
+	name="STATE_206"
+	manpower =  205090
+	
+	state_category = city
+	
+	resources={
+		rubber=4
+	}
+
+	history={
+		owner = BLR
+	    add_core_of = BLR
+		victory_points = {
+			11370 10
+		}
+		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+		
+		
+	}
+
+	provinces={
+		216 294 3267 11216 11370 
+	}
+}

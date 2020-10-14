@@ -1,0 +1,26 @@
+state={
+	id=834
+	name="STATE_834"
+	
+	state_category = city
+
+	history={
+		
+		
+		
+		
+        owner = VEN
+	    add_core_of = VEN
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		11735 
+	}
+	manpower=30567
+	buildings_max_level_factor=1.000
+}

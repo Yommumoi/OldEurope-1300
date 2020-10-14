@@ -1,0 +1,86 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = {torg_company_size > 0}
+				}
+				add_to_variable = {torg_company_factor = 0.01}
+				clamp_variable = {
+					var = torg_company_factor
+					min = 0.01
+					max = 1.0
+				}
+				random_list = {
+					20 = {
+						add_to_variable = {torg_company_factor = -0.01}
+						clamp_variable = {
+							var = torg_company_factor
+							min = 0.01
+							max = 1.0
+						}
+					}
+					10 = {
+						add_to_variable = {torg_company_factor = -0.02}
+						clamp_variable = {
+							var = torg_company_factor
+							min = 0.01
+							max = 1.0
+						}
+					}
+					70 = {}
+				}
+				
+			}
+			if = {
+				limit = {
+					has_stability < 0.5
+				}
+				random_list = {
+					10 = {
+						add_to_variable = {torg_company_factor = -0.01}
+						clamp_variable = {
+							var = torg_company_factor
+							min = 0.01
+							max = 1.0
+						}
+					}
+					90 = {}
+				}
+			}
+			set_temp_variable = { torg_temp1 = 3 } 
+			multiply_temp_variable = { torg_temp1 = torg_company_factor }
+			multiply_temp_variable = { torg_temp1 = torg_company_size }
+			add_to_variable = {torg_company_income = torg_temp1}
+			
+			set_temp_variable = { torg_temp2 = 1 } 
+			multiply_temp_variable = { torg_temp2 = torg_company_factor }
+			multiply_temp_variable = { torg_temp2 = torg_company_size }
+			multiply_temp_variable = { torg_temp2 = 0.001 }
+			multiply_temp_variable = { torg_temp2 = product_masters_value }
+			add_to_variable = {torg_company_income = torg_temp2}
+			
+
+		}		
+	}
+	on_daily = {
+		effect = {
+			set_temp_variable = { ttemp1 = 100 } 
+			subtract_from_temp_variable = { ttemp1 = uspeh_chance }
+			set_variable = {ne_uspeh_chance = ttemp1}
+		}
+	}
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = { torg_company_size > 0}
+				}
+				country_event = {
+					id = torg.7
+				}
+			}
+		}
+	}
+	
+}

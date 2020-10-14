@@ -1,0 +1,27 @@
+
+state={
+	id=794
+	name="STATE_794"
+	manpower = 408159
+
+	state_category = city
+
+	history={
+		owner = VRT
+	    add_core_of = VRT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			3474 3 
+		}
+		
+
+	}
+
+	provinces={
+		3474 6421 9416 9572 11404 
+	}
+}

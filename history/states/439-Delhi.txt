@@ -1,0 +1,36 @@
+
+state={
+	id=439
+	name="STATE_439"
+	manpower = 7784200
+	
+	state_category = city
+	
+	resources={
+		chromium=15
+		aluminium = 59
+	}
+	
+	history={
+		owner = DEL
+	    add_core_of = DEL
+		buildings = {
+			
+			infrastructure = 5
+			money_town = 1
+			industrial_complex = 1
+			arms_factory = 3
+			2086 = {
+				bunker = 3
+			}
+		}
+		victory_points = {
+			2086 25 
+		}
+
+	}
+
+	provinces={
+		1129 1898 2002 2032 2076 2086 3989 5002 5157 7106 10021 10729 11955 12708 12868 
+	}
+}

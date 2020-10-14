@@ -1,0 +1,56 @@
+new_iq_level = {
+
+	iq_level = {
+		fire_only_once = yes
+	
+		cost = 150
+		available = {
+			date > 1305.01.01
+			OR = {
+				AND = {
+					political_power_daily > 5
+					num_of_factories > 15
+					num_divisions > 10
+					has_stability > 0.7
+					has_war = no
+				}
+				AND = {
+					is_puppet = yes
+					OVERLORD = {
+						political_power_daily > 5
+						num_of_factories > 15
+						num_divisions > 10
+						has_stability > 0.7
+						has_war = no
+					}
+				}
+			}
+		}
+
+		visible = {
+			FROM = {
+				has_idea = tupost
+				
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				remove_ideas = {
+					tupost
+				}
+				add_political_power = 300
+				
+			}
+			news_event = news.1034
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

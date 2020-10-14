@@ -1,0 +1,899 @@
+scripted_gui = {
+	scripted_gui_economica_button = {
+
+		context_type = player_context
+
+		parent_window_token = politics_tab
+
+		window_name = "economica"
+		effects = {
+			open_economica_click = {
+				set_variable = { current_economica_main = 1 }
+				
+			}
+			
+			
+		}
+	}
+	
+	scripted_gui_podsk = {
+
+		context_type = player_context
+
+		parent_window_token = top_bar
+
+		window_name = "podsk"
+		visible = {
+			check_variable = {podsk_var = 1}
+		}
+	}
+	
+	#scripted_gui_okno_mira = {
+#
+	#	window_name = "peace_summery_popup_window"
+	#	triggers = {
+	##		Background_visible = {
+	#			always = no
+	#		}
+	#		
+	#		
+	#		
+	#		
+	#	}
+	#}
+	
+	
+	
+	
+	scripted_gui_economica = {
+
+		context_type = player_context
+
+		parent_window_token = politics_tab
+	    window_name = "economica_main"
+		visible = {
+			check_variable = { current_economica_main = 1 }
+		}
+		triggers = {
+            zaem1_click_enabled = {
+                NOT = {
+					has_idea = zaem_10
+				}
+            }
+			strelki1_icon_visible = {
+				has_dynamic_modifier = {
+					modifier = product_dynamic_modifier
+				}
+			}
+			strelki2_icon_visible = {
+				has_dynamic_modifier = {
+					modifier = product_dynamic_modifier2
+				}
+			}
+			bank_button_plus_click_enabled = {
+                has_political_power > 100
+				has_game_rule = { 
+					rule = bank_rule
+					option = normal 
+				}
+            }
+			bank_button_minus_click_enabled = {
+                check_variable = { bank_money > 100 }
+				check_variable = { bank_grabiat < 1 }
+				has_game_rule = { 
+					rule = bank_rule
+					option = normal 
+				}
+            }
+			stab_bonus1_click_enabled = {
+				has_stability < 0.6
+				has_political_power > 200
+            }
+			mil_button_buy_click_enabled = {
+				has_political_power > 450
+				check_variable = { product_masters_value > 0 }
+            }
+			civ_button_buy_click_enabled = {
+				has_political_power > 450
+				check_variable = { product_masters_value > 0 }
+            }
+			cas_button_click_enabled = {
+				has_political_power > 200
+            }
+			product_1_click_enabled = {
+				has_political_power > 10
+            }
+			product_10_click_enabled = {
+				has_political_power > 100
+            }
+			product_100_click_enabled = {
+				has_political_power > 1000
+            }
+			nalog_money_click_enabled = {
+				NOT = {
+					has_dynamic_modifier = {
+					modifier = product_dynamic_modifier
+					}
+				}
+			}
+			nalog_product_click_enabled = {
+				NOT = {
+					has_dynamic_modifier = {
+					modifier = product_dynamic_modifier2
+					}
+				}
+			}
+			reform_button_click_enabled = {
+				OR = {
+					AND = {
+						check_variable = {reform_value = 0}
+						check_variable = {index_eco > 500}
+						has_political_power > 2000
+					}
+					AND = {
+						check_variable = {reform_value = 1}
+						check_variable = {index_eco > 1000}
+						has_political_power > 3000
+					}
+					AND = {
+						check_variable = {reform_value = 2}
+						check_variable = {index_eco > 2500}
+						has_political_power > 4000
+					}
+					AND = {
+						check_variable = {reform_value = 3}
+						check_variable = {index_eco > 5000}
+						has_political_power > 5000
+					}
+					AND = {
+						check_variable = {reform_value = 4}
+						check_variable = {index_eco > 7500}
+						has_political_power > 10000
+					}
+				}
+			}
+        }
+		effects = {
+			close_button_click = {
+				set_variable = { current_economica_main = 0 }
+				
+			}
+			Esc_click = {
+				set_variable = { current_economica_main = 0 }
+				set_variable = {podsk_var2 = 0}
+				set_variable = {podsk_var = 0}
+				
+			}
+			eco11_click = {
+				add_to_variable = { A = 1 }
+				clamp_variable = { 
+					var = A
+					min = 0
+					max = 100
+				}
+				
+			}
+			podskazka_button_click = {
+				if = {
+					limit = {
+						check_variable = {podsk_var = 1}
+					}
+					set_variable = {podsk_var = 0}
+				}
+				else_if = {
+					limit = {
+						check_variable = {podsk_var = 0}
+					}
+					set_variable = {podsk_var = 1}
+				}
+				set_variable = {podsk_var2 = 0}
+			}
+			zaem1_click = {
+				if = {
+					limit = {
+						has_idea = zaem_no
+					}
+					add_ideas = money_dolg 
+					add_political_power = 100
+					else_if = {
+						limit = {
+							has_idea = money_dolg
+						}
+						add_ideas = zaem_2
+						add_political_power = 100
+					}
+					else_if = {
+						limit = {
+							has_idea = zaem_2
+						}
+						add_ideas = zaem_3 
+						add_political_power = 100
+					}
+					else_if = {
+						limit = {
+							has_idea = zaem_3
+						}
+						add_ideas = zaem_4
+						add_political_power = 100
+					}
+					else_if = {
+						limit = {
+							has_idea = zaem_4
+						}
+						add_ideas = zaem_5
+						add_political_power = 100
+					}
+					else_if = {
+						limit = {
+							has_idea = zaem_5
+						}
+						add_ideas = zaem_6
+						add_political_power = 100
+					}
+					else_if = {
+						limit = {
+							has_idea = zaem_6
+						}
+						add_ideas = zaem_7
+						add_political_power = 100
+					}
+					else_if = {
+						limit = {
+							has_idea = zaem_7
+						}
+						add_ideas = zaem_8
+						add_political_power = 100
+					}
+					else_if = {
+						limit = {
+							has_idea = zaem_8
+						}
+						add_ideas = zaem_9
+						add_political_power = 100
+					}
+					else_if = {
+						limit = {
+							has_idea = zaem_9
+						}
+						add_ideas = zaem_10
+						add_political_power = 100
+					}
+				}
+				
+				
+			}
+			nalog_money_click = {
+				add_dynamic_modifier = {
+					modifier = product_dynamic_modifier
+				}
+				remove_dynamic_modifier = {
+					modifier = product_dynamic_modifier2
+				}
+			}
+			nalog_product_click = {
+				add_dynamic_modifier = {
+					modifier = product_dynamic_modifier2
+				}	
+				remove_dynamic_modifier = {
+					modifier = product_dynamic_modifier
+				}
+			}
+			stab_bonus1_click = {
+				add_stability = 0.1
+				add_political_power = -300 ##200
+				
+			}
+			civ_button_buy_click = {
+				add_political_power = -450 ###300
+				add_to_variable = { product_masters_value = -1 }
+				random_owned_controlled_state = {
+					
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+			}
+			mil_button_buy_click = {
+				add_political_power = -450 ###300
+				add_to_variable = { product_masters_value = -1 }
+				random_owned_controlled_state = {
+					
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+			}
+			reform_button_click = {
+				
+				if = {
+					limit = {
+						check_variable = {reform_value = 0}
+						check_variable = {index_eco > 500}
+						has_political_power > 2000
+					}
+					add_political_power = -2000
+					every_owned_state = {
+						add_resource = {
+							type = chromium
+							amount = 1
+						}
+					}
+					capital_scope = {
+						add_extra_state_shared_building_slots = 3
+					}
+					set_technology = {
+						zelie_0 = 1
+						medicine_0 = 1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {reform_value = 1}
+						check_variable = {index_eco > 1000}
+						has_political_power > 3000
+					}
+					set_variable = {emb = 1}
+					add_political_power = -3000
+					army_experience = 20
+					navy_experience = 20
+					modify_building_resources = {
+						building = wood_cut
+						resource = rubber
+						amount = 3
+					}
+					modify_building_resources = {
+						building = cloth_master
+						resource = chromium
+						amount = 3
+					}
+					modify_building_resources = {
+						building = plavil
+						resource = steel
+						amount = 3
+					}
+					add_to_variable = {product_masters_value = 100}
+				}
+				else_if = {
+					limit = {
+						check_variable = {reform_value = 2}
+						check_variable = {index_eco > 2500}
+						has_political_power > 4000
+					}
+					add_political_power = -4000
+					add_to_variable = {product_masters_value = 200}
+					every_owned_state = {
+						add_extra_state_shared_building_slots = 1
+					}
+					add_manpower = 12500
+					add_stability = 0.1
+					add_to_variable = {adm_limit = 7}
+					add_ideas = reform3
+				}
+				else_if = {
+					limit = {
+						check_variable = {reform_value = 3}
+						check_variable = {index_eco > 5000}
+						has_political_power > 5000
+					}
+					add_political_power = -5000
+					add_ideas = reform4
+					capital_scope = {
+						add_resource = {
+							type = oil
+							amount = 20
+						}
+					}
+					every_owned_state = {
+						add_resource = {
+							type = steel
+							amount = 2
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {reform_value = 4}
+						check_variable = {index_eco > 7500}
+						has_political_power > 10000
+					}
+					add_political_power = -10000
+					add_dynamic_modifier = {modifier = fac_dohod_dynamic_modifier}
+					add_ideas = reform5
+					add_research_slot = 2
+					set_technology = {
+						porox_tech = 1
+						arke_tech = 1
+					}
+					every_owned_state = {
+						add_core_of = ROOT
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 1
+					}
+				}
+				add_to_variable = { reform_value = 1}
+			}
+			cas_button_click = {
+				add_political_power = -200 ###300
+				add_to_variable = { adm_limit = 1}
+				
+			}
+			product_1_click = {
+				add_political_power = -10
+				add_to_variable = { product_masters_value = 1}
+				
+			}
+			product_10_click = {
+				add_political_power = -100
+				add_to_variable = { product_masters_value = 10}
+				
+			}
+			bank_button_plus_click = {
+				add_political_power = -100
+				add_to_variable = { bank_money = 100 }
+			}
+			bank_button_minus_click = {	
+				add_political_power = 100
+				add_to_variable = { bank_money = -100 }
+			}
+			eco1_1_click = {
+				add_to_variable = { A = -1 }
+				clamp_variable = { 
+					var = A
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco1_10_click = {
+				add_to_variable = { A = -10 }
+				clamp_variable = { 
+					var = A
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco110_click = {
+				add_to_variable = { A = 10 }
+				clamp_variable = { 
+					var = A
+					min = 0
+					max = 100
+				}
+				
+			}
+			
+			eco21_click = {
+				add_to_variable = { A2 = 1 }
+				clamp_variable = { 
+					var = A2
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco2_1_click = {
+				add_to_variable = { A2 = -1 }
+				clamp_variable = { 
+					var = A2
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco2_10_click = {
+				add_to_variable = { A2 = -10 }
+				clamp_variable = { 
+					var = A2
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco210_click = {
+				add_to_variable = { A2 = 10 }
+				clamp_variable = { 
+					var = A2
+					min = 0
+					max = 100
+				}
+				
+			}
+			
+			eco31_click = {
+				add_to_variable = { A3 = 1 }
+				clamp_variable = { 
+					var = A3
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco3_1_click = {
+				add_to_variable = { A3 = -1 }
+				clamp_variable = { 
+					var = A3
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco3_10_click = {
+				add_to_variable = { A3 = -10 }
+				clamp_variable = { 
+					var = A3
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco310_click = {
+				add_to_variable = { A3 = 10 }
+				clamp_variable = { 
+					var = A3
+					min = 0
+					max = 100
+				}
+				
+			}
+			
+			eco41_click = {
+				add_to_variable = { A4 = 1 }
+				clamp_variable = { 
+					var = A4
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco4_1_click = {
+				add_to_variable = { A4 = -1 }
+				clamp_variable = { 
+					var = A4
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco4_10_click = {
+				add_to_variable = { A4 = -10 }
+				clamp_variable = { 
+					var = A4
+					min = 0
+					max = 100
+				}
+				
+			}
+			eco410_click = {
+				add_to_variable = { A4 = 10 }
+				clamp_variable = { 
+					var = A4
+					min = 0
+					max = 100
+				}
+				
+			}
+		}
+		
+		ai_enabled = {
+			always = yes
+		}
+		ai_max_weight_taken_per_test = 3
+		ai_weights = {
+			cas_button_click = {
+                ai_will_do = {
+					factor = 70
+					modifier = {
+						factor = 1000
+						check_variable = {num_controlled_states > adm_limit}
+					}
+					modifier = {
+						factor = 300
+						check_variable = {num_controlled_states = adm_limit}
+					}
+                }
+			}
+			zaem1_click = {
+                ai_will_do = {
+					factor = 0
+					modifier = {
+						factor = 1
+						has_political_power < 1
+					}
+                    
+                }
+			}
+			mil_button_buy_click = {
+                ai_will_do = {
+					factor = 0
+					modifier = {
+						factor = 20
+						has_political_power > 300
+					}
+               
+                }
+			}
+			civ_button_buy_click = {
+                ai_will_do = {
+					factor = 0
+					modifier = {
+						factor = 5
+						has_political_power > 300
+					}
+                 
+                }
+			}
+			bank_button_plus_click = {
+                ai_will_do = {
+                    factor = 0.2                    
+                }
+			}
+			bank_button_minus_click = {
+                ai_will_do = {
+					factor = 0.1
+					modifier = {
+						factor = 3
+						has_political_power < 90
+					}
+                    
+                }
+			}
+			
+            eco110_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily > 3.5
+					}
+                    
+                }
+			}
+			eco11_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+		
+						political_power_daily > 3.5
+					}
+                   
+                }
+			}
+			eco21_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily > 3.5
+					}
+                   
+                }
+			}
+			eco31_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily > 3.5
+					}
+                   
+                }
+			}
+			eco41_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily > 3.5
+					}
+                
+                }
+			}
+			eco1_1_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily < 1.75
+					}
+                    
+                }
+			}
+			eco2_1_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily < 1.75
+					}
+                    
+                }
+			}
+			eco3_1_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+						
+						political_power_daily < 1.75
+					}
+                }
+			}
+			eco4_1_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						
+						political_power_daily < 1.75
+				    }
+                }
+			}
+			eco210_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily > 3
+					}
+					modifier = {
+						add = 50
+
+						has_war = yes
+						political_power_daily > 1.5
+					}
+                    
+					
+                }
+				
+			}
+			eco310_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily > 3.5
+					}
+                   
+                }
+			}
+			eco410_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 3
+
+						political_power_daily > 3.5
+					}
+                    
+                }
+			}
+			eco1_10_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 15
+
+						has_war = yes
+							
+						political_power_daily < 1.5
+					}
+                    
+                }
+			}
+			eco2_10_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 25
+						political_power_daily < 1.5
+						has_war = yes	
+					}					
+					
+                }
+			}
+			eco3_10_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 15
+
+						has_war = yes
+						political_power_daily < 1.5
+					}
+                    
+                }
+			}
+			eco4_10_click = {
+                ai_will_do = {
+					base = 0
+					modifier = {
+						add = 15
+
+						has_war = yes
+						political_power_daily < 1.5
+					}
+                    
+                }
+			}
+			reform_button_click = {
+				ai_will_do = {
+					base = 10
+					
+                    
+                }
+			}
+		}
+	}
+}
+scripted_gui = {
+	product_main = {
+		window_name = product_main
+		context_type = player_context
+		parent_window_token = top_bar
+		effects = {
+			orda_button_click = {
+				load_oob = "ORDA"
+				set_variable = {orda_uzh = 1}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Hordeguard\" division_template = \"Hordeguard\" start_experience_factor = 0.3 start_equipment_factor = 0.6" 
+						owner = ROOT
+					}
+				}
+				set_division_template_lock = {
+					division_template = "Hordeguard"
+					is_locked = yes
+				}
+			}
+		}
+		triggers = {
+			orda_button_click_enabled = {
+				check_variable = {orda_uzh = 0}
+				has_war = yes
+				has_government = communism
+			}	
+			orda_button_visible = {
+				has_government = communism
+			}	
+		}
+		ai_enabled = {
+			always = yes
+		}
+		ai_max_weight_taken_per_test = 1
+		ai_weights = {
+			orda_button_click = {
+                ai_will_do = {
+					factor = 100
+                }
+			}
+		}
+	}
+}
+#scripted_gui = {
+#	product_infoo = {
+#		window_name = product_info
+#		context_type = selected_country_context
+#		parent_window_token = selected_country_view
+#	}
+#}

@@ -1,0 +1,33 @@
+
+state={
+	id=172
+	name="STATE_172"
+	manpower = 548720
+	
+	state_category = city
+	
+	resources={
+		steel=8 # was: 12
+	}
+
+	history={
+		owner = BHT
+	    add_core_of = BHT
+		victory_points = {
+			932 3 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			932 = {
+				bunker = 2
+			}
+		}
+		
+	}
+
+	provinces={
+		 932 3737 3931 3933 9857 
+	}
+}

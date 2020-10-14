@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		KAZ_cav = {
+			
+			removal_cost = -1
+			allowed = {
+			   always = no
+			}
+			
+			picture = shitmech
+			
+			modifier = {
+				cavalry_attack_factor = 0.01
+				cavalry_defence_factor = 0.01
+				army_speed_factor = 0.2
+			}
+		}
+	}
+}

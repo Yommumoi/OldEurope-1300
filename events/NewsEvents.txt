@@ -1,0 +1,779 @@
+﻿add_namespace = news
+
+news_event = {
+	id = news.1000
+	title = news.1000.t
+	desc = news.1000.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1000.a
+		
+	}
+}
+news_event = {
+	id = news.1001
+	title = news.1001.t
+	desc = news.1001.d
+	picture = GFX_report_LUX_ric
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1001.a
+		
+	}
+}
+news_event = {
+	id = news.1002
+	title = news.1002.t
+	desc = news.1002.d
+	picture = GFX_report_LUX_ric
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1002.a
+		
+	}
+}
+
+news_event = {
+	id = news.1003
+	title = news.1003.t
+	desc = news.1003.d
+	picture = GFX_report_papyaz
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1003.a
+		
+	}
+}
+news_event = {
+	id = news.1004
+	title = news.1004.t
+	desc = news.1004.d
+	picture = GFX_report_zak
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1004.a
+		
+	}
+}
+news_event = {
+	id = news.1005
+	title = news.1005.t
+	desc = news.1005.d
+	picture = GFX_report_polotsk
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1005.a
+		
+	}
+}
+news_event = {
+	id = news.1006
+	title = news.1006.t
+	desc = news.1006.d
+	picture = GFX_report_krestpoh
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1006.a
+		
+	}
+}
+news_event = {
+	id = news.1007
+	title = news.1007.t
+	desc = news.1007.d
+	picture = GFX_report_papwar
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1007.a
+		
+	}
+}
+news_event = {
+	id = news.1008
+	title = news.1008.t
+	desc = news.1008.d
+	picture = GFX_report_swepoh
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1008.a
+		
+	}
+}
+news_event = {
+	id = news.1009
+	title = news.1009.t
+	desc = news.1009.d
+	picture = GFX_report_azteccivilwar
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1009.a
+		
+	}
+}
+news_event = {
+	id = news.1010
+	title = news.1010.t
+	desc = news.1010.d
+	picture = GFX_report_aztecEurope
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1010.a
+		
+	}
+}
+news_event = {
+	id = news.1011
+	title = news.1011.t
+	desc = news.1011.d
+	picture = GFX_report_hordehelp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1011.a
+		
+	}
+}
+news_event = {
+	id = news.1012
+	title = news.1012.t
+	desc = news.1012.d
+	picture = GFX_report_hordehelp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1012.a
+		
+	}
+}
+news_event = {
+	id = news.1013
+	title = news.1013.t
+	desc = news.1013.d
+	picture = GFX_report_litpohod
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1013.a
+		
+	}
+}
+news_event = {
+	id = news.1014
+	title = news.1014.t
+	desc = news.1014.d
+	picture = GFX_report_federation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1014.a
+		
+	}
+}
+news_event = {
+	id = news.1015
+	title = news.1015.t
+	desc = news.1015.d
+	picture = GFX_report_pir
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1015.a
+		
+	}
+}
+news_event = {
+	id = news.1016
+	title = news.1016.t
+	desc = news.1016.d
+	picture = GFX_report_deathEduardNews
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1016.a
+		
+	}
+}
+news_event = {
+	id = news.1017
+	title = news.1017.t
+	desc = news.1017.d
+	picture = GFX_report_chinawar
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1017.a
+		
+	}
+}
+news_event = {
+	id = news.1018
+	title = news.1018.t
+	desc = news.1018.d
+	picture = GFX_report_italyzamok
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1018.a
+		
+	}
+}
+news_event = {
+	id = news.1019
+	title = news.1019.t
+	desc = news.1019.d
+	picture = GFX_report_hordehelp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1019.a
+		
+	}
+}
+news_event = {
+	id = news.1020
+	title = news.1020.t
+	desc = news.1020.d
+	picture = GFX_report_songay
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1020.a
+		
+	}
+}
+news_event = {
+	id = news.1021
+	title = news.1021.t
+	desc = news.1021.d
+	picture = GFX_report_kitaygorod
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1021.a
+		
+	}
+}
+news_event = {
+	id = news.1022
+	title = news.1022.t
+	desc = news.1022.d
+	picture = GFX_report_arborea
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1022.a
+		
+	}
+}
+news_event = {
+	id = news.1023
+	title = news.1023.t
+	desc = news.1023.d
+	picture = GFX_report_arborea
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1023.a
+		
+	}
+}
+news_event = {
+	id = news.1024
+	title = news.1024.t
+	desc = news.1024.d
+	picture = GFX_report_moskova
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1024.a
+		
+	}
+}
+news_event = {
+	id = news.1025
+	title = news.1025.t
+	desc = news.1025.d
+	picture = GFX_report_moskova
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1025.a
+		
+	}
+}
+news_event = {
+	id = news.1026
+	title = news.1026.t
+	desc = news.1026.d
+	picture = GFX_report_zlyemongoly
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1026.a
+		
+	}
+}
+news_event = {
+	id = news.1027
+	title = news.1027.t
+	desc = news.1027.d
+	picture = GFX_report_smertboy
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1027.a
+		
+	}
+}
+news_event = {
+	id = news.1028
+	title = news.1028.t
+	desc = news.1028.d
+	picture = GFX_report_gediminperevorot
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1028.a
+		
+	}
+}
+news_event = {
+	id = news.1029
+	title = news.1029.t
+	desc = news.1029.d
+	picture = GFX_report_frankempire
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1029.a
+		
+	}
+}
+news_event = {
+	id = news.1030
+	title = news.1030.t
+	desc = news.1030.d
+	picture = GFX_report_bitvashpor
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1030.a
+		
+	}
+}
+#####Start
+news_event = {
+	id = news.1031
+	title = news.1031.t
+	desc = news.1031.d
+	picture = GFX_report_oe1300
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1031.a
+	}
+	option = {
+		name = news.1031.b
+		
+	}
+}
+news_event = {
+	id = news.1032
+	title = news.1032.t
+	desc = news.1032.d
+	picture = GFX_report_oe1300
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1032.a
+		
+	}
+}
+news_event = {
+	id = news.1033
+	title = news.1033.t
+	desc = news.1033.d
+	picture = GFX_report_manufact
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1033.a
+		
+	}
+}
+news_event = {
+	id = news.1034
+	title = news.1034.t
+	desc = news.1034.d
+	picture = GFX_report_tupfeod
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1034.a
+		
+	}
+}
+news_event = {
+	id = news.1035
+	title = news.1035.t
+	desc = news.1035.d
+	picture = GFX_report_tupfeod
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1035.a
+		
+	}
+}
+
+news_event = {
+	id = news.1036
+	title = news.1036.t
+	desc = news.1036.d
+	picture = GFX_report_severmarkgraf
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1036.a
+		
+	}
+}
+news_event = {
+	id = news.1037
+	title = news.1037.t
+	desc = news.1037.d
+	picture = GFX_report_mosksul
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1037.a
+		
+	}
+}
+news_event = {
+	id = news.1038
+	title = news.1038.t
+	desc = news.1038.d
+	picture = GFX_report_frankempf
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1038.a
+		
+	}
+}
+news_event = {
+	id = news.1039
+	title = news.1039.t
+	desc = news.1039.d
+	picture = GFX_report_romeaemp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1039.a
+		
+	}
+}
+news_event = {
+	id = news.1040
+	title = news.1040.t
+	desc = news.1040.d
+	picture = GFX_report_ireland
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1040.a
+		
+	}
+}
+news_event = {
+	id = news.1041
+	title = news.1041.t
+	desc = news.1041.d
+	picture = GFX_report_russozd
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1041.a
+		
+	}
+}
+news_event = {
+	id = news.1042
+	title = news.1042.t
+	desc = news.1042.d
+	picture = GFX_report_zopavsri
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1042.a
+		
+	}
+}
+news_event = {
+	id = news.1043
+	title = news.1043.t
+	desc = news.1043.d
+	picture = GFX_report_zopavsri
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1043.a
+		
+	}
+}
+news_event = {
+	id = news.1044
+	title = news.1044.t
+	desc = news.1044.d
+	picture = GFX_report_arborea
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1044.a
+		
+	}
+}
+#####
+add_namespace = otkrytte
+
+news_event = {
+	id = otkrytte.1
+	title = otkrytte.1.t
+	desc = otkrytte.1.d
+	picture = GFX_report_otkrytie
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = otkrytte.1.a
+		
+	}
+}
+news_event = {
+	id = otkrytte.2
+	title = otkrytte.2.t
+	desc = otkrytte.2.d
+	picture = GFX_report_otkrytie
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = otkrytte.2.a
+		
+	}
+}
+news_event = {
+	id = otkrytte.3
+	title = otkrytte.3.t
+	desc = otkrytte.3.d
+	picture = GFX_report_otkrytie
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = otkrytte.3.a
+		
+	}
+}
+
+
+
+news_event = {
+	id = otkrytte.11
+	title = otkrytte.1.t
+	desc = otkrytte.1.d
+	picture = GFX_report_otkrytie
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = otkrytte.1.a
+		
+	}
+}
+news_event = {
+	id = otkrytte.21
+	title = otkrytte.2.t
+	desc = otkrytte.2.d
+	picture = GFX_report_otkrytie
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = otkrytte.2.a
+		
+	}
+}
+news_event = {
+	id = otkrytte.31
+	title = otkrytte.3.t
+	desc = otkrytte.3.d
+	picture = GFX_report_otkrytie
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = otkrytte.3.a
+		
+	}
+}

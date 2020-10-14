@@ -1,0 +1,32 @@
+
+state={
+	id=557
+	name="STATE_557" # Mauritania
+	manpower = 115431
+	
+	state_category = pastoral
+	
+	resources={
+		aluminium=13 
+		oil = 15
+	}
+
+	history={
+		
+		owner = JOL
+	    add_core_of = JOL
+		victory_points = {
+			5034 1
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		5034 5077 7992 8058 10814
+	}
+}

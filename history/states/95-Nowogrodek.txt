@@ -1,0 +1,38 @@
+state={
+	id=95
+	name="STATE_95"
+	
+	resources={
+		rubber = 14
+		steel = 12
+	}
+
+	history={
+		victory_points = {
+			9304 1
+		}
+		victory_points = {
+			9359 20
+		}
+		
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 2
+			9359 = {
+				bunker = 3
+			}
+
+		}
+		
+		owner = LIT
+	    add_core_of = LIT
+
+	}
+
+	provinces={
+		6413 9236 9304 9359 11341
+	}
+	manpower=449725
+	state_category=town
+}

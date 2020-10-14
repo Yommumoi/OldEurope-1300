@@ -1,0 +1,31 @@
+state={
+	id=877
+	name="STATE_877"
+	manpower = 130125
+	
+	state_category = pastoral
+	resources={
+		oil = 3
+	}
+	history=
+	{
+		
+		owner = GVY
+	    add_core_of = GVY
+		victory_points = {
+			2094 1 
+		}
+		buildings = {
+			infrastructure = 3
+			2094 = {
+				naval_base = 1
+				torgnaval_base = 2
+			}
+		}
+
+	}
+	
+	provinces={
+		2094 
+	}
+}

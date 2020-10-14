@@ -1,0 +1,184 @@
+ideas = {
+	country = {
+		byz_raby = {
+
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = raby
+				
+			modifier = {
+				industrial_capacity_factory = 0.65
+				research_speed_factor = -0.03
+				political_power_factor = 0.1
+				stability_factor = -0.7
+				production_speed_arms_factory_factor = 0.5
+			}
+		}
+		byz_podgotovka = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = veterans
+				
+			modifier = {
+				training_time_factor = -0.15
+			}
+		}
+		byz_proisvodstvo = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = stroitely
+				
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		byz_veterans = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = veterans
+				
+			modifier = {
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				conscription = 0.005
+			}
+		}
+		byz_raby_in_army = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = raby
+				
+			modifier = {
+				max_planning = -0.15
+				army_morale_factor = -0.08
+				conscription = 0.05
+			}
+		}
+		byz_vylazki = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = derzkvylazki
+				
+			modifier = {
+				army_speed_factor = 0.1
+				army_morale_factor = 0.03
+				justify_war_goal_time = -0.05
+			}
+		}
+		byz_metafeod = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = metafeodalism
+				
+			modifier = {
+				industrial_capacity_factory = 0.2
+				research_speed_factor = 0.05
+				political_power_factor = -1.75
+				stability_factor = 0.01
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+		byz_ekoproblems = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = ecoproblem
+				
+			modifier = {
+				research_speed_factor = -0.01
+				political_power_factor = -1.5
+				stability_factor = -0.1
+			}
+		}
+		byz_controldenezhnoysistemy = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = ecoreform
+				
+			modifier = {
+				political_power_factor = 1.0
+				
+			}
+		}
+		byz_povysz_soderz = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = denigi
+				
+			modifier = {
+				political_power_factor = -1.2
+				conscription = 0.015
+				
+			}
+		}
+		byz_regarmyie = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = regarm
+				
+			modifier = {
+				political_power_factor = -0.5
+				conscription = 0.005
+				training_time_factor = -0.15
+			}
+		}
+		byz_VospominaniaoRime = {
+		
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+				
+			picture = vospominaniaOrim
+				
+			modifier = {
+				stability_factor = -0.1
+				invasion_preparation = -0.05
+				justify_war_goal_time = -0.05
+			}
+		}
+	}
+}

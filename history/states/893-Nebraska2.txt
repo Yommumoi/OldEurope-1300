@@ -1,0 +1,27 @@
+
+state={
+	id=893
+	name="STATE_893"
+	manpower = 244490
+	
+	state_category = large_town
+
+	history={
+		owner = SIU
+	    add_core_of = SIU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		
+		victory_points = {
+			12586 1 
+		}
+
+	}
+
+	provinces={
+		10676 3708 12586 7852 1683
+	}
+}

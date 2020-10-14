@@ -1,0 +1,210 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+eco1_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = B
+    production_speed_buildings_factor = C
+}
+eco2_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+	political_power_factor = B2
+	army_org_factor = C2
+}
+eco3_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = B3
+    industrial_capacity_factory = C3
+}
+eco4_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = B4
+    industrial_capacity_dockyard = C4
+}
+eco5_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = B5
+}
+gold_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = gold_bonus
+}
+product_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = product_masters_value_del
+}
+product_dynamic_modifier2 = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	industrial_capacity_factory = product_masters_value_del2
+}
+army_rise_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+	training_time_factor = -0.999
+	army_morale_factor = 0.5
+}
+naval_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+	political_power_factor = torgnaval
+
+}
+infa_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+	icon = "GFX_islam"
+
+	political_power_factor = infa
+}
+
+
+
+steelbuy_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = steel_buy
+	political_power_factor = steel_sell
+}
+goldbuy_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = gold_buy
+	political_power_factor = gold_sell
+}
+tkanbuy_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = tkan_buy
+	political_power_factor = tkan_sell
+}
+derevobuy_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = wood_buy
+	political_power_factor = wood_sell
+}
+mednobuy_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = medno_buy
+	political_power_factor = medno_sell
+}
+rabibuy_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = rabi_buy
+	political_power_factor = rabi_sell
+}
+
+warust_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = warust_stability
+	training_time_factor = warust_science
+	experience_loss_factor = warust_stability_plus
+	production_factory_max_efficiency_factor = warust_stability
+	line_change_production_efficiency_factor = warust_stability
+	production_speed_buildings_factor = warust_stability
+	research_speed_factor = warust_science
+}
+
+res_prod_test_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = global.resource_exported@steel
+}
+factoria_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = factoria_income
+}
+workslave_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	industrial_capacity_factory = slave_bonus
+}
+
+economtraty_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = ecotraty_bonus
+}
+fac_dohod_dynamic_modifier = {
+	enable = { always = yes } 
+	remove_trigger = { always = no }
+
+
+	political_power_factor = fac_dohod
+}
+
+

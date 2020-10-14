@@ -1,0 +1,249 @@
+add_namespace = msk
+country_event = {
+	id = msk.1
+	title = msk.1.t
+	desc = msk.1.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.1.a
+		MSK = { country_event = msk.2 }
+		add_ideas = Slavic
+		add_political_power = 25
+		ai_chance = { factor = 60 }
+		
+	}
+	option = { 
+		name = msk.1.b
+		MSK = { country_event = msk.3 }
+		ai_chance = { factor = 40 }
+		
+	}
+	
+}
+country_event = {
+	id = msk.2
+	title = msk.2.t
+	desc = msk.2.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.2.a
+		add_political_power = 25
+		ai_chance = { factor = 60 }
+		
+	}
+	
+}
+country_event = {
+	id = msk.3
+	title = msk.3.t
+	desc = msk.3.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.3.a
+		
+
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+			
+		
+		ai_chance = { factor = 60 }
+		
+	}
+	
+}
+###Catholic
+country_event = {
+	id = msk.4
+	title = msk.4.t
+	desc = msk.4.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.4.a	
+		MSK = {
+			add_political_power = 300
+		}
+		add_political_power = -300
+		ai_chance = { factor = 45 }
+		
+	}
+	option = {
+		name = msk.4.b
+		MSK = {
+			add_manpower = 5500
+		}
+		add_manpower = -5500
+
+		ai_chance = { factor = 45 }
+		
+	}
+	option = {
+		name = msk.4.c
+		
+		ai_chance = { factor = 10 }
+		
+	}
+	
+}
+country_event = {
+	id = msk.5
+	title = msk.5.t
+	desc = msk.5.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.5.a	
+		MSK = {
+			country_event = msk.7
+		}
+		ai_chance = { factor = 50 }
+		
+	}
+	option = {
+		name = msk.5.b
+		MSK = {
+			country_event = msk.6
+		}
+
+		ai_chance = { factor = 50 }
+		
+	}
+	
+}
+country_event = {
+	id = msk.6
+	title = msk.6.t
+	desc = msk.6.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.6.a	
+
+		
+	}
+	
+}
+country_event = {
+	id = msk.7
+	title = msk.7.t
+	desc = msk.7.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.7.a	
+		give_guarantee = CZE
+		CZE = {
+			give_guarantee = MSK
+		}
+
+		
+	}
+	
+}
+####Orthodox
+country_event = {
+	id = msk.8
+	title = msk.8.t
+	desc = msk.8.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.8.a	
+		GRE = {
+			add_to_faction = MSK
+		}
+		ai_chance = { factor = 70 }
+		
+	}
+	option = {
+		name = msk.8.b
+		ai_chance = { factor = 30 }
+		
+	}
+	
+}
+
+
+
+country_event = {
+	id = msk.9
+	title = msk.9.t
+	desc = msk.9.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.9.a	
+		MSK = {
+			country_event = msk.11
+		}
+		ai_chance = { factor = 50 }
+		
+	}
+	option = {
+		name = msk.9.b
+		MSK = {
+			country_event = msk.10
+		}
+
+		ai_chance = { factor = 50 }
+		
+	}
+	
+}
+country_event = {
+	id = msk.10
+	title = msk.10.t
+	desc = msk.10.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.10.a	
+
+		
+	}
+	
+}
+country_event = {
+	id = msk.11
+	title = msk.11.t
+	desc = msk.11.desc
+	picture = GFX_report_rusichi
+	
+	is_triggered_only = yes
+
+	option = {
+		name = msk.11.a	
+		give_guarantee = BUL
+		BUL = {
+			give_guarantee = MSK
+		}
+
+		
+	}
+	
+}
