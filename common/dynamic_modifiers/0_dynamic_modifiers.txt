@@ -197,7 +197,7 @@ economtraty_dynamic_modifier = {
 	remove_trigger = { always = no }
 
 
-	political_power_factor = ecotraty_bonus
+	political_power_factor = 0
 }
 fac_dohod_dynamic_modifier = {
 	enable = { always = yes } 
